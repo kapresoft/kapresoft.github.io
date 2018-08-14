@@ -1,3 +1,15 @@
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- kapresoft_footer-1_AdSense3_1x1_as -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5036910301295841"
+     data-ad-slot="8330980586"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 # Overview
 
 The following page will be an excellent guide with getting started with the gradle build system in your
