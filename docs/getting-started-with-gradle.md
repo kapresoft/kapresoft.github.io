@@ -1,5 +1,19 @@
 <script>
 
+var head = document.getElementsByTagName('head')[0];
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.async = "true";
+script.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+head.appendChild(script);
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5036910301295841",
+          enable_page_level_ads: true
+     });
+</script>
+
 alert('hello');
 
 </script>
