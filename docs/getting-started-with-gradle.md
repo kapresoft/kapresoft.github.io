@@ -6,7 +6,7 @@
     script.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
 
     (function(){
-        script.onload = onLoad();
+        script.onload = onLoad;
         console.debug('Google Ads Loaded:', script.onload);
         function onLoad() {
              (adsbygoogle = window.adsbygoogle || []).push({
@@ -17,6 +17,8 @@
     })();
 
     head.appendChild(script);
+    
+    myScript = script;
 </script>
 
 # Overview
