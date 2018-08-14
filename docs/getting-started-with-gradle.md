@@ -1,24 +1,20 @@
 <script type="text/javascript">
-    var head = document.getElementsByTagName('head')[0];
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.async = "true";
-    script.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
-
     (function(){
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = "true";
+        script.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
         script.onload = onLoad;
-        console.debug('Google Ads Loaded:', script.onload);
         function onLoad() {
              (adsbygoogle = window.adsbygoogle || []).push({
                   google_ad_client: "ca-pub-5036910301295841",
                   enable_page_level_ads: true
              });
+            console.debug('Google Ads Loaded inside:', script.onload);
         }
+        head.appendChild(script);
     })();
-
-    head.appendChild(script);
-    
-    myScript = script;
 </script>
 
 # Overview
