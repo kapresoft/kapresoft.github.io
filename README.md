@@ -2,5 +2,5 @@
 KapreSoft GitHub Page
 
 <p>
-Please visit:  http://www.kapresoft.com
+  Please visit:  <a href="http://www.kapresoft.com">http://www.kapresoft.com</a>
 </p>
