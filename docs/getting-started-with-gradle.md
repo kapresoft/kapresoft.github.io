@@ -7,6 +7,7 @@
 
     (function(){
         script.onload = onLoad();
+        console.debug('Google Ads Loaded:', script.onload);
         function onLoad() {
              (adsbygoogle = window.adsbygoogle || []).push({
                   google_ad_client: "ca-pub-5036910301295841",
