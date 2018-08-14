@@ -11,7 +11,6 @@
                   google_ad_client: "ca-pub-5036910301295841",
                   enable_page_level_ads: true
              });
-            console.debug('Google Ads Loaded inside:', script.onload);
         }
         head.appendChild(script);
     })();
