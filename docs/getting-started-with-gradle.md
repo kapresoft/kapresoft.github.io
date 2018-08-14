@@ -17,6 +17,9 @@ Java&trade; projects.&nbsp;&nbsp;Use this guide as a reference when using Gradle
    - Run Your App
    - Gradle Tasks
 5. Gradle Help
+
+<hr/>
+
 # 1.&nbsp;&nbsp;What is Gradle?
 
 Gradle is an evolutionary build system that extends upon the concepts of the <b>Apache Ant</b> and the <b>Apache Maven</b> 
