@@ -8,15 +8,16 @@ Java&trade; projects.&nbsp;&nbsp;Use this guide as a reference when using Gradle
 1. What is Gradle?
 2. Downloading and Installing Gradle
 3. Environment Variables and System Paths
-4. Your First Gradle Project
-
-   1. Create Project Directory
-   1. Create a Gradle Wrapper
-   1. Initialize a New Gradle Build
-   1. Initialize Your Project
-   1. Build Your Project
-   1. Run Your App
-   1. Gradle Tasks
+4. Your First Gradle Project   
+   <ol>
+   <li>Create Project Directory</li>   
+   <li>Create a Gradle Wrapper</li>
+   <li>Initialize a New Gradle Build</li>
+   <li>Initialize Your Project</li>
+   <li>Build Your Project</li>
+   <li>Run Your App</li>
+   <li>Gradle Tasks</li>
+   </ol>
 
 # 1.&nbsp;&nbsp;What is Gradle?
 
