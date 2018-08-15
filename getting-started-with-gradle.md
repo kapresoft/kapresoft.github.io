@@ -24,6 +24,7 @@ Java&trade; projects.&nbsp;&nbsp;Use this guide as a reference when using Gradle
    - Gradle Tasks
 5. Gradle Help
 
+{% unless site.show_google_ads == "false" %}
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
@@ -33,6 +34,7 @@ Java&trade; projects.&nbsp;&nbsp;Use this guide as a reference when using Gradle
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+{% endunless %}
 
 <hr/>
 
