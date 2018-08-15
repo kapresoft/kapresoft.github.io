@@ -1,5 +1,5 @@
 ---
-title: This is my title
+title: Getting Started With Gradle
 ---
 
 <script type="text/javascript">
