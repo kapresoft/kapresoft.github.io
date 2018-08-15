@@ -1,3 +1,8 @@
+---
+title: This is my title
+layout: post
+---
+
 <script type="text/javascript">
     (function(){
         var head = document.getElementsByTagName('head')[0];
