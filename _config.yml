@@ -1,4 +1,5 @@
 theme: jekyll-theme-leap-day
+title: The Java Blogger
 google_analytics: UA-123953282-1
 plugins:
   - jekyll-seo-tag
