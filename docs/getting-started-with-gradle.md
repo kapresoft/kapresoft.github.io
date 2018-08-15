@@ -1,5 +1,6 @@
 ---
 title: Getting Started With Gradle
+layout: my-default
 ---
 
 <script type="text/javascript">
