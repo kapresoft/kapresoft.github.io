@@ -565,8 +565,7 @@ Group
 
 BUILD SUCCESSFUL
 
-Total time: 0.924 secs
+Total time: 0.923 secs
 ```
-
 
 
