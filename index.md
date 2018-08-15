@@ -1,7 +1,9 @@
+---
+layout: default
+---
+
 # kapresoft.github.io
 The Java Blogger
-
-Original README.md
 
 ## Articles
 
