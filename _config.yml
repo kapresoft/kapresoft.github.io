@@ -1,4 +1,4 @@
-theme: jekyll-theme-leap-day
+theme: jekyll-theme-cayman
 google_analytics: UA-123953282-1
 plugins:
   - jekyll-seo-tag
