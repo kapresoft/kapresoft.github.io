@@ -1,6 +1,5 @@
 ---
 layout: default
-show_google_ads: false
 ---
 
 # kapresoft.github.io

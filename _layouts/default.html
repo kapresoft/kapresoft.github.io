@@ -13,7 +13,7 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    {% unless site.show_google_ads == "false" %}
+    {% if site.show_google_ads %}
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script type="text/javascript">
       (adsbygoogle = window.adsbygoogle || []).push({
@@ -21,7 +21,7 @@
           enable_page_level_ads: true
       });
     </script>
-    {% endunless %}
+    {% endif %}
 
   </head>
 
@@ -39,7 +39,7 @@
       <section>
         {{ content }}
 
-        {% unless site.show_google_ads == "false" %}
+        {% if site.show_google_ads %}
         <!-- docs.kapresoft.com (bottom) -->
         <ins class="adsbygoogle"
              style="display:block"
@@ -50,7 +50,7 @@
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-        {% endunless %}
+        {% endif %}
 
       </section>
 
