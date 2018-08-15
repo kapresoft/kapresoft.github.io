@@ -368,7 +368,7 @@ The default project layout that the java plugin implicitly uses is shown below.
 $ mkdir -p src/main/java src/test/java
 ```
 
-For the purpose of this demonstration create a simple App.java and AppTest.java in the package com.kapresoft.&nbps;&nbsp;
+For the purpose of this demonstration create a simple App.java and AppTest.java in the package com.kapresoft.&nbsp;&nbsp;
 The src directory should contain the following files.
 
 ```commandline
@@ -570,5 +570,17 @@ BUILD SUCCESSFUL
 
 Total time: 0.923 secs
 ```
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- docs.kapresoft.com (bottom) -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5036910301295841"
+     data-ad-slot="8814891654"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
