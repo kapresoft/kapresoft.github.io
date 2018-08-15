@@ -7,6 +7,7 @@ plugins:
 title: KapreSoft
 description: The Java Blogger by Antonio Lagnada
 google_analytics: UA-123953282-1
+show_google_ads: true
 
 github:
     is_project_page: true

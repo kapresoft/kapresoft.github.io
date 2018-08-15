@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: no_ads
 ---
 
 # kapresoft.github.io

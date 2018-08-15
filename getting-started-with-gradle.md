@@ -2,7 +2,6 @@
 title: Getting Started With Gradle
 layout: default
 redirect_from: "/docs/getting-started-with-gradle"
-show_google_ads: true
 ---
 
 # Overview
