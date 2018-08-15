@@ -2,6 +2,7 @@
 title: Getting Started With Gradle
 layout: default
 redirect_from: "/docs/getting-started-with-gradle"
+show_google_ads: true
 ---
 
 # Overview
@@ -24,7 +25,7 @@ Java&trade; projects.&nbsp;&nbsp;Use this guide as a reference when using Gradle
    - Gradle Tasks
 5. Gradle Help
 
-{% unless site.show_google_ads == "false" %}
+{% if site.show_google_ads %}
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
@@ -34,7 +35,7 @@ Java&trade; projects.&nbsp;&nbsp;Use this guide as a reference when using Gradle
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-{% endunless %}
+{% endif %}
 
 <hr/>
 
