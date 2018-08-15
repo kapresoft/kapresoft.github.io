@@ -3,24 +3,6 @@ title: Getting Started With Gradle
 layout: my-default
 ---
 
-<script type="text/javascript">
-    (function(){
-        var head = document.getElementsByTagName('head')[0];
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.async = "true";
-        script.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
-        script.onload = onLoad;
-        function onLoad() {
-             (adsbygoogle = window.adsbygoogle || []).push({
-                  google_ad_client: "ca-pub-5036910301295841",
-                  enable_page_level_ads: true
-             });
-        }
-        head.appendChild(script);
-    })();
-</script>
-
 # Overview
 
 The following page will be an excellent guide with getting started with the gradle build system in your
@@ -41,7 +23,6 @@ Java&trade; projects.&nbsp;&nbsp;Use this guide as a reference when using Gradle
    - Gradle Tasks
 5. Gradle Help
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
@@ -575,17 +556,4 @@ BUILD SUCCESSFUL
 
 Total time: 0.923 secs
 ```
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- docs.kapresoft.com (bottom) -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5036910301295841"
-     data-ad-slot="8814891654"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 
