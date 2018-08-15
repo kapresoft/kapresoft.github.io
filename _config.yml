@@ -1,6 +1,8 @@
 theme: jekyll-theme-leap-day
+
 plugins:
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 title: KapreSoft
 description: The Java Blogger by Antonio Lagnada
@@ -8,4 +10,3 @@ google_analytics: UA-123953282-1
 
 github:
     is_project_page: true
-    
