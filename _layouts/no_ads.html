@@ -30,10 +30,12 @@
       </section>
 
       <footer>
-        {% if site.github.is_project_page %}
-          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+        <p><small>Hosted on GitHub Pages<br/>
+          {% if site.github.is_project_page %}
+          by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br/>
+          {% endif %}
+        </small></p>
+        <p><small>Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
 

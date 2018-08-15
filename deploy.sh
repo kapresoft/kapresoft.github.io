@@ -14,4 +14,8 @@ cmd="cp *.md $template_dir/."
 echo running: $cmd
 eval $cmd
 
+echo; echo "$template_dir/:"
 ls -ltr $template_dir/*.md
+
+echo; echo "$template_dir/_layouts/:"
+ls -ltr $template_dir/_layouts/*.html

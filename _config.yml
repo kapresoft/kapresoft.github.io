@@ -1,9 +1,4 @@
 theme: jekyll-theme-leap-day
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-redirect-from
-
 title: KapreSoft
 description: The Java Blogger by Antonio Lagnada
 google_analytics: UA-123953282-1
@@ -11,3 +6,9 @@ show_google_ads: true
 
 github:
     is_project_page: true
+    owner_url: https://github.com/kapresoft/kapresoft.github.io
+    owner_name: KapreSoft (Antonio Lagnada)
+
+plugins:
+- jekyll-seo-tag
+- jekyll-redirect-from
