@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+template_dir=../gh-pages/leap-day
+
+cmd="cp assets/css/style.scss $template_dir/assets/css/style.scss"
+echo running: $cmd
+eval $cmd
+
+cmd="cp _layouts/* $template_dir/_layouts/."
+echo running: $cmd
+eval $cmd
+
+cmd="cp *.md $template_dir/."
+echo running: $cmd
+eval $cmd
+
+ls -ltr $template_dir/*.md

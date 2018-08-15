@@ -1,5 +1,8 @@
-# kapresoft.github.io
-KapreSoft GitHub Page
+---
+title: Syntax
+layout: default
+redirect_from: "/docs/getting-started-with-gradle"
+---
 
 ## Articles
 

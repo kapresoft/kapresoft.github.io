@@ -1,6 +1,7 @@
 ---
 title: Getting Started With Gradle
-layout: my-default
+layout: default
+redirect_from: "/docs/getting-started-with-gradle"
 ---
 
 # Overview
