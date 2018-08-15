@@ -1,6 +1,5 @@
 ---
 title: This is my title
-layout: post
 ---
 
 <script type="text/javascript">
