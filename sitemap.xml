@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://doc.kapresoft.com/docs/getting-started-with-gradle</loc>
-        <lastmod>2018-08-14T20:38:38-0800</lastmod>
+    </url>
+    <url>
+        <loc>https://doc.kapresoft.com/java/2018/08/15/getting-started-with-java</loc>
     </url>
 </urlset>
