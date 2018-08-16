@@ -2,6 +2,6 @@
 layout: no_ads
 ---
 
-## Articles
+# Recent Articles
 
 {% include excerpts.html page=page %}
