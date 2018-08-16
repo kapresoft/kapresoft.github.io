@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://doc.kapresoft.com/docs/getting-started-with-gradle</loc>
+        <loc>https://doc.kapresoft.com/docs/getting-started-with-gradle.html</loc>
     </url>
     <url>
-        <loc>https://doc.kapresoft.com/java/2018/08/15/getting-started-with-java</loc>
+        <loc>https://doc.kapresoft.com/java/2018/08/15/getting-started-with-java.html</loc>
     </url>
 </urlset>
