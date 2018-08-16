@@ -1,12 +1,14 @@
-<ul>
+# Recent Articles
+
+<div>
     {% for post in site.posts %}
-    <li>
+    <div>
         <a href="{{ post.url }}">{{ post.title }}</a>
         <span style="float: right;">Post Date: {{ post.date | date_to_string }}</span><br/>
         <div style="padding: 5px 0 20px 0;">
-        {{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_html | remove: 'Overview' }}
+            {{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_html | remove: 'Overview' }}
             <a href="{{ post.url }}">...more</a>
         </div>
-    </li>
+    </div>
     {% endfor %}
-</ul>
+</div>
