@@ -5,18 +5,19 @@ redirect_from: "/docs/getting-started-with-gradle"
 category: java
 ---
 
-# Overview
+## Overview
 
 The following page will be an excellent guide with getting started with the gradle build system in your
 Java&trade; projects.&nbsp;&nbsp;Use this guide as a reference when using Gradle as a build system for the very first time.
 
 <!--excerpt-->
 
-# Table of Contents
+## Table of Contents
 
 1. What is Gradle?
 2. Downloading and Installing Gradle
 3. Environment Variables and System Paths
+   - Alternative Ways to Install Gradle
 4. Your First Gradle Project   
    - Create Project Directory   
    - Create a Gradle Wrapper
@@ -41,14 +42,14 @@ Java&trade; projects.&nbsp;&nbsp;Use this guide as a reference when using Gradle
 
 <hr/>
 
-# 1.&nbsp;&nbsp;What is Gradle?
+## 1.&nbsp;&nbsp;What is Gradle?
 
 Gradle is an evolutionary build system that extends upon the concepts of the <b>Apache Ant</b> and the <b>Apache Maven</b> 
 build system.&nbsp;&nbsp;The project configuration is based off the <b>Groovy</b> DSL (Domain-specific Language) as 
 opposed to the XML form used by Apache Maven.
 
 
-# 2.&nbsp;&nbsp;Downloading and Installing Gradle
+## 2.&nbsp;&nbsp;Downloading and Installing Gradle
 
 Gradle runs on all major operating systems and requires a Java JDK version 7 or higher to run.&nbsp;&nbsp;In order for 
 gradle to run, the <b>JAVA_HOME</b> environment variable must be set.
@@ -79,7 +80,7 @@ zip from the [Gradle Releases](https://gradle.org/releases/) page.
 A common place to install software tools in *nix is in the /usr/local folder.&nbsp;&nbsp;For the purpose of this 
 document, the gradle install path will be /usr/local/gradle.  In windows, it would be in C:\java.
 
-## Alternative Ways to Install Gradle
+### Alternative Ways to Install Gradle
 
 There are package managers or installers that will provide an easier way to install gradle.&nbsp;&nbsp;If you are 
 familiar with such package managers or installers, here are several examples on alternative ways to install java tools 
@@ -106,16 +107,16 @@ $ sdk install gradle 3.5.1
 
 <!-- ##################################################### -->
 
-# 3.&nbsp;&nbsp;Environment Variables and System Paths
+## 3.&nbsp;&nbsp;Environment Variables and System Paths
 
-## Environment Variable for *NIX Systems
+### Environment Variable for *NIX Systems
 
 In this example, the following environment variable is set for *nix systems:
 
 ```
 GRADLE_HOME=/usr/local/gradle
 ```
-## Environment Variable for Windows&trade;
+### Environment Variable for Windows&trade;
 
 For Windows, the following environment variable is set:
 
@@ -138,7 +139,7 @@ When gradle is in the system path, it may be executed without specifying the ent
 $ gradle --version
 ```
 
-## Mac OS&trade;
+### Mac OS&trade;
 
 Add the following export line in your $HOME/.bashrc file
 
@@ -158,7 +159,7 @@ $ cat /etc/paths
 /usr/local/gradle/bin
 ```
 
-## Other Unix and Linux Systems
+### Other Unix and Linux Systems
 
 Line #1 will define the environment variable GRADLE_HOME.&nbsp;&nbsp;Line #2 will add gradle to the system path.
 
@@ -184,7 +185,7 @@ JVM:          1.8.0_131 (Oracle Corporation 25.131-b11)
 OS:           Mac OS X 10.12.5 x86_64</pre>
 ```
 
-## Windows&trade;
+### Windows&trade;
 
 Setup the environment variable in a Windows operating system by following the series of steps below.
 
@@ -206,7 +207,7 @@ C:\> gradle --version
 
 <!-- ##################################################### -->
 
-# 4.&nbsp;&nbsp;Your First Gradle Project
+## 4.&nbsp;&nbsp;Your First Gradle Project
 
 ### Create Project Directory
 
@@ -423,7 +424,7 @@ public class AppTest extends TestCase {
 }
 ```
 
-### Build Your Project
+#### Build Your Project
 
 Now that we have created the **App.java** and **AppTest.java** we are ready to build the project.
 
@@ -448,7 +449,7 @@ BUILD SUCCESSFUL
 Total time: 7.544 se
 ```
 
-### Run Your App
+#### Run Your App
 
 Run your App using the built jar library
 
@@ -464,7 +465,9 @@ my-first-app$ java -cp build/classes/main com.kapresoft.App
 Hello World!
 ```
 
-### Gradle Tasks
+### Useful Gradle Commands
+
+#### Gradle Tasks
 
 Gradle provides many available automated tasks. For the purpose of this documentation we are only interested in 
 the **build** task.  Please refer to the Gradle documentation for full details.
@@ -535,7 +538,7 @@ BUILD SUCCESSFUL
 Total time: 0.961 secs
 ```
 
-### Gradle Help
+#### Gradle Help
 
 If you need more details on a particular task you may use the built-in help.
 
@@ -562,4 +565,3 @@ BUILD SUCCESSFUL
 
 Total time: 0.923 secs
 ```
-
