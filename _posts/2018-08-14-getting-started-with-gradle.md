@@ -2,12 +2,15 @@
 title: Getting Started With Gradle
 layout: default
 redirect_from: "/docs/getting-started-with-gradle"
+category: java
 ---
 
 # Overview
 
 The following page will be an excellent guide with getting started with the gradle build system in your
 Java&trade; projects.&nbsp;&nbsp;Use this guide as a reference when using Gradle as a build system for the very first time.
+
+<!--excerpt-->
 
 # Table of Contents
 

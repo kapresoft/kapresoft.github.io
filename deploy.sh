@@ -10,6 +10,14 @@ cmd="cp _layouts/* $template_dir/_layouts/."
 echo running: $cmd
 eval $cmd
 
+cmd="cp _includes/* $template_dir/_includes/."
+echo running: $cmd
+eval $cmd
+
+cmd="cp _posts/* $template_dir/_posts/."
+echo running: $cmd
+eval $cmd
+
 cmd="cp *.md $template_dir/."
 echo running: $cmd
 eval $cmd
@@ -19,3 +27,6 @@ ls -ltr $template_dir/*.md
 
 echo; echo "$template_dir/_layouts/:"
 ls -ltr $template_dir/_layouts/*.html
+
+echo; echo "$template_dir/_posts/:"
+ls -ltr $template_dir/_posts/*
