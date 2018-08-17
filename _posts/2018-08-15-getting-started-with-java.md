@@ -2,7 +2,9 @@
 layout: default
 title: Getting Started With Java
 category: java
-redirect_from: "/p/getting-started-with-java.html"
+redirect_from: 
+    - /p/getting-started-with-java.html
+    - /p/get-started-with-java.html
 ---
 
 ## Overview
