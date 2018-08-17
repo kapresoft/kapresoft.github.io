@@ -1,6 +1,7 @@
 ---
 title: Getting Started With Gradle
 layout: default
+image: /assets/images/mvn_project_structure.png
 redirect_from: "/p/getting-started-with-gradle.html"
 category: java
 ---

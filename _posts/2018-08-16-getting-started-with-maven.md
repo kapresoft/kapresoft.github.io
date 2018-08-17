@@ -3,6 +3,7 @@ layout: default
 title: Getting Started With Maven
 category: java
 redirect_from: "/p/getting-started-with-maven.html"
+image: /assets/images/mvn_project_structure.png
 ---
 
 # Overview
