@@ -16,3 +16,6 @@ github:
 plugins:
 - jekyll-seo-tag
 - jekyll-redirect-from
+
+# seo-tag
+author: Antonio Lagnada
