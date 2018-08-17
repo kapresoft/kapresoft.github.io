@@ -2,7 +2,10 @@ theme: jekyll-theme-leap-day
 title: KapreSoft
 description: The Java Blogger by Antonio Lagnada
 google_analytics: UA-123953282-1
+
 show_google_ads: true
+show_banner: true
+
 excerpt_separator: <!--excerpt-->
 
 github:
