@@ -1,26 +1,27 @@
 #!/usr/bin/env bash
 
-template_dir=../gh-pages/leap-day
+template_dir=~/sandbox/github/nfet/gh-pages/leap-day
+
+dirs=( "_posts" "_layouts" "_includes" "assets/images" )
+
+cmd="cp *.md $template_dir/."
+echo running: $cmd
+eval $cmd
 
 cmd="cp assets/css/style.scss $template_dir/assets/css/style.scss"
 echo running: $cmd
 eval $cmd
 
-cmd="cp _layouts/* $template_dir/_layouts/."
-echo running: $cmd
-eval $cmd
-
-cmd="cp _includes/* $template_dir/_includes/."
-echo running: $cmd
-eval $cmd
-
-cmd="cp _posts/* $template_dir/_posts/."
-echo running: $cmd
-eval $cmd
-
-cmd="cp *.md $template_dir/."
-echo running: $cmd
-eval $cmd
+for d in "${dirs[@]}"
+do
+    target_dir="$template_dir/${d}"
+    if [ ! -d "${target_dir}" ]; then
+        mkdir -p ${target_dir}
+    fi
+    cmd="cp ${d}/* ${target_dir}/."
+    echo running: $cmd
+    eval $cmd
+done
 
 echo; echo "$template_dir/:"
 ls -ltr $template_dir/*.md
