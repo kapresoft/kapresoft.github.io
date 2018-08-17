@@ -2,10 +2,7 @@
     {% for post in site.posts %}
     <div>
         <a href="{{ post.url }}">{{ post.title }}</a>
-        <span style="float: right; font-size: smaller;">
-            <span style="padding-right: 20px;">Post Date: {{ post.date | date_to_string }}</span>
-            <span>Last Modified: {% last_modified_at %}</span>
-        </span>
+        <span style="float: right;">Post Date: {{ post.date | date_to_string }}</span><br/>
         <div style="padding: 5px 0 20px 0;">
             {{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_html | remove: 'Overview' }}
             <a href="{{ post.url }}">...more</a>
