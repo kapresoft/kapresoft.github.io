@@ -28,9 +28,16 @@
 <body>
 
 <header>
-    <h1>{{ site.title | default: site.github.repository_name }}</h1>
+    <a href="/"><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
     <p>{{ site.description | default: site.github.project_tagline }}</p>
 </header>
+
+{% if site.show_banner %}
+<div id="banner">
+    <span id="logo"></span>
+    <a href="/" class="button fork"><strong>Home</strong></a>
+</div><!-- end banner -->
+{% endif %}
 
 <div class="wrapper">
     <nav>
