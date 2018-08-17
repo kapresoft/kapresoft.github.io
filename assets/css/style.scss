@@ -6,3 +6,43 @@
 section {
   margin-top: 160px;
 }
+
+h1 {
+  font-size:24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+nav {
+  ul {
+    li {
+      &.tag-h1 {
+        font-size: 1.0em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      &.tag-h2 {
+        font-size: 0.9em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      &.tag-h3 {
+        font-size: 0.8em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        a {
+          color: #66819d;
+        }
+      }
+    }
+  }
+}
