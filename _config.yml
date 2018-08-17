@@ -14,8 +14,9 @@ github:
     owner_name: KapreSoft (Antonio Lagnada)
 
 plugins:
-- jekyll-seo-tag
-- jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-last-modified-at
 
 # seo-tag
 author: Antonio Lagnada
