@@ -2,6 +2,7 @@
 layout: default
 title: Getting Started With Maven
 category: java
+redirect_from: "/p/getting-started-with-maven.html"
 ---
 
 # Overview

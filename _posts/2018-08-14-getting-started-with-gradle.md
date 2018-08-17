@@ -1,7 +1,7 @@
 ---
 title: Getting Started With Gradle
 layout: default
-redirect_from: "/docs/getting-started-with-gradle"
+redirect_from: "/p/getting-started-with-gradle.html"
 category: java
 ---
 
