@@ -1,11 +1,12 @@
 ---
-layout: default
+layout: kapresoft
 title: Getting Started With Java
 category: java
 image: /assets/images/mvn_project_structure.png
 redirect_from: 
     - /p/getting-started-with-java.html
     - /p/get-started-with-java.html
+    - /getting-started-with-java.html
 ---
 
 ## Overview
@@ -37,7 +38,7 @@ illustrates how to compile and run your first Hello World java code.
 </script>
 {% endif %}
 
-<hr/>
+{% include separator.html %}
 
 ## 1.&nbsp;&nbsp;Downloading and Installing a Java Development Kit
 

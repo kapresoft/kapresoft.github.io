@@ -12,6 +12,10 @@ cmd="cp assets/css/style.scss $template_dir/assets/css/style.scss"
 echo running: $cmd
 eval $cmd
 
+cmd="cp _posts_dev/* $template_dir/_posts/"
+echo running: $cmd
+eval $cmd
+
 for d in "${dirs[@]}"
 do
     target_dir="$template_dir/${d}"

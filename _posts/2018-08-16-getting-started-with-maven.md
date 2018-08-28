@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: kapresoft
 title: Getting Started With Maven
 category: java
-redirect_from: "/p/getting-started-with-maven.html"
+redirect_from: 
+    - /p/getting-started-with-maven.html
+    - /getting-started-with-maven.html
 image: /assets/images/mvn_project_structure.png
 ---
 
@@ -15,19 +17,19 @@ java projects.&nbsp;&nbsp;Use this guide as a reference when using Maven for the
 
 # Table of Contents
 
-- What is Maven?
-- Downloading and Installing Maven
-- Environment Variables and System Paths
-- Your First Maven Project
+1. What is Maven?
+2. Downloading and Installing Maven
+3. Environment Variables and System Paths
+4. Your First Maven Project
 
-<hr/>
+{% include separator.html %}
 
 # 1.&nbsp;&nbsp;What is Maven?
 
 Maven is a project management utility that provides a means to manage builds, dependencies,
 documentation, reporting, source control management, releases and distribution.
 
-<a target="_blank" href="https://maven.apache.org/index.html">Maven Project</a>
+- <a target="_blank" href="https://maven.apache.org/index.html">Maven Project</a>
 
 <!-- ##################################################### -->
 

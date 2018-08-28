@@ -1,8 +1,10 @@
 ---
+layout: kapresoft
 title: Getting Started With Gradle
-layout: default
 image: /assets/images/mvn_project_structure.png
-redirect_from: "/p/getting-started-with-gradle.html"
+redirect_from: 
+    - /p/getting-started-with-gradle.html
+    - /getting-started-with-gradle.html
 category: java
 ---
 
@@ -41,7 +43,7 @@ Java&trade; projects.&nbsp;&nbsp;Use this guide as a reference when using Gradle
 </script>
 {% endif %}
 
-<hr/>
+{% include separator.html %}
 
 # 1.&nbsp;&nbsp;What is Gradle?
 
