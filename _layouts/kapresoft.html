@@ -13,6 +13,12 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    {% if site.show_banner %}
+    <style type="text/css">
+        section { margin-top: 180px; }
+    </style>
+    {% endif %}
+
     {% if site.show_google_ads %}
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script type="text/javascript">
@@ -28,7 +34,7 @@
 <body>
 
 <header>
-    <a href="/"><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
+    <a href="/" title="Click to navigate to kapresoft.com home page."><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
     <p>{{ site.description | default: site.github.project_tagline }}</p>
 </header>
 
@@ -44,7 +50,7 @@
         <ul></ul>
     </nav>
     <section>
-        <h1 class="title">{{ page.title | '' }}</h1>
+        <h1 class="title">{{ page.title | default: ''}}</h1>
 
         {{ content }}
 
@@ -70,9 +76,9 @@
     </section>
 
     <footer>
-        <p><small>Hosted on GitHub Pages<br/>
+        <p><small>Hosted on <a href="{{ site.github.owner_url }}">GitHub Pages</a><br/>
             {% if site.github.is_project_page %}
-            by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br/>
+            by <a href="/">{{ site.github.owner_name }}</a><br/>
             {% endif %}
         </small></p>
         <p><small>Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>

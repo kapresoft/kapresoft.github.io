@@ -4,13 +4,7 @@
 @import "{{ site.theme }}";
 
 section {
-  margin-top: 180px;
-}
-
-@media print, screen and (max-width: 480px) {
-  section {
-    margin-top: 5px;
-  }
+  margin-top: 150px;
 }
 
 h1 {
