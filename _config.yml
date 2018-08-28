@@ -4,7 +4,7 @@ description: The Java Blogger by Antonio Lagnada
 google_analytics: UA-123953282-1
 
 show_google_ads: true
-show_banner: true
+show_banner: false
 
 excerpt_separator: <!--excerpt-->
 
