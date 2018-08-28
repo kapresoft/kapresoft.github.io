@@ -17,14 +17,18 @@ java projects.&nbsp;&nbsp;Use this guide as a reference when using Maven for the
 
 # Table of Contents
 
-1. What is Maven?
-2. Downloading and Installing Maven
-3. Environment Variables and System Paths
-4. Your First Maven Project
+1. Prerequisite
+2. What is Maven?
+3. Downloading and Installing Maven
+4. Environment Variables and System Paths
+5. Your First Maven Project
 
 {% include separator.html %}
 
-# 1.&nbsp;&nbsp;What is Maven?
+# 1.&nbsp;&nbsp;Prerequisite
+- JDK 1.10 or below installed ~ [Getting Started with Java](/getting-started-with-java.html)
+
+# 2.&nbsp;&nbsp;What is Maven?
 
 Maven is a project management utility that provides a means to manage builds, dependencies,
 documentation, reporting, source control management, releases and distribution.
@@ -34,7 +38,7 @@ documentation, reporting, source control management, releases and distribution.
 <!-- ##################################################### -->
 
 
-# 2.&nbsp;&nbsp;Downloading and Installing Maven
+# 3.&nbsp;&nbsp;Downloading and Installing Maven
 
 ## Mac OS&trade; and other Unix or Linux Systems
 
@@ -50,7 +54,7 @@ purpose of this document, the maven install path will be C:\java\apache-maven.
 <!-- ##################################################### -->
 
 
-# 3.&nbsp;&nbsp;Environment Variables and System Paths
+# 4.&nbsp;&nbsp;Environment Variables and System Paths
 
 ## Mac OS&trade; and other Unix or Linux Systems
 
@@ -155,7 +159,7 @@ C:\> mvn --version
 
 <!-- ##################################################### -->
 
-# 4.&nbsp;&nbsp;Your First Maven Project
+# 5.&nbsp;&nbsp;Your First Maven Project
 
 Creating your first maven project can be done in several ways.  One convenient way is to use the Maven's archetype mechanism.
 
