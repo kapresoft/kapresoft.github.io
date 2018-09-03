@@ -1,19 +1,26 @@
 ---
 layout: kapresoft
-title: Using the Apple Keyboard on IntelliJ IDEA or Android Studio on Windows
+title: Using the Apple Keyboard in Windows IntelliJ IDEA or Android Studio
 image: /assets/images/mvn_project_structure.png
 category: java
 ---
 
 # Overview
 
-If you are a type of software developer or a cross operating system user where keyboard consistency (key distance, 
-locations, and feel) is very important, this documentation will be very helpful for you.
+I was once with an agile company that had pairing stations throughout the work area. Some pairing stations were 
+Windows-based and some where Mac-based.  The one particular thing that I did not appreciate was that the key bindings in
+IntelliJ IDEA or Android Studio were different whether you were working on a Mac or on a Windows.
+
+<!--excerpt-->
+
+If you are a type of software developer or a cross operating system user where keyboard consistency (the physical key distance, 
+locations, feel, and keybindings) is very important, this documentation will be very helpful for you.
 
 Whether you choose to use a mac keyboard or a windows keyboard as your primary keyboard, the goal of this technical 
 documentation is to make your keyboard consistent and operating system independent.
 
-<!--excerpt-->
+This article will demonstrate the usage of a mac keyboard on windows for IntelliJ IDEA or Android Studio by adding 
+mac key bindings using AutoHotKey. 
 
 # Table of Contents
 
@@ -36,7 +43,7 @@ documentation is to make your keyboard consistent and operating system independe
 
 | Symbol | Description |
 | ------ | :---------- |
-| # | Win Key (Windows Logo Key) |
+| # | Win Key (Windows Logo Key or Command Key in Apple Keyboards) |
 | ! | Alt Key |
 | ^ | Control Key |
 | + | Shift Key |
