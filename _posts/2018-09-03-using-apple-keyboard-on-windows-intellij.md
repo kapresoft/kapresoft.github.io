@@ -32,7 +32,7 @@ mac key bindings using AutoHotKey.
 
 # Prerequisite
 
-- [AutoHotkey by Chriss Mallet](https://autohotkey.com/) installed in Windows&trade;
+- [AutoHotkey by Chris Mallet](https://autohotkey.com/) installed in Windows&trade;
 - Knowledge on how to run or compile a script
 - Knowledge on how to run a compiled/executable ahk during startup
 - IntelliJ IDEA or Android Studio Installed on Windows
