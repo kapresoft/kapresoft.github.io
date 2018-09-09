@@ -6,6 +6,7 @@ image: /assets/images/mvn_project_structure.png
 redirect_from: 
     - /p/getting-started-with-java.html
     - /p/get-started-with-java.html
+    - /p/getting-started-with-java-programming.html
     - /getting-started-with-java.html
 ---
 
