@@ -5,6 +5,8 @@ redirect_from:
     - /feeds/posts/default
     - /2017/07/
     - /search
+    - /2017/07/welcome.html
+    - /x/px/ 
 ---
 
 # Recent Posts
