@@ -6,7 +6,7 @@ category: java
 redirect_from: 
     - /p/getting-started-with-maven.html
     - /getting-started-with-maven.html
-image: /assets/images/mvn_project_structure.png
+image: /assets/images/kapresoft.png
 ---
 
 # Overview

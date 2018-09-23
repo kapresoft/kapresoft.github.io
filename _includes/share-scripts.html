@@ -1,9 +1,17 @@
-<div id="fb-root"></div>
 <script>
 
-    insertElement(document, 'script', 'google-share', 'https://apis.google.com/js/platform.js');
-    insertElement(document, 'script', 'twitter-share', 'https://platform.twitter.com/widgets.js');
-    insertElement(document, 'script', 'facebook-jssdk', 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1');
+    $(document).ready(function () {
+        setTimeout(function () {
+            insertElement(document, 'script', 'google-share', 'https://apis.google.com/js/platform.js');
+            insertElement(document, 'script', 'twitter-share', 'https://platform.twitter.com/widgets.js');
+            insertElement(document, 'script', 'facebook-jssdk', 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1');
+
+            setTimeout(function () {
+                $('.share-placeholder').hide();
+                $('.share').show();
+            }, 2000);
+        }, 10);
+    });
 
     function insertElement(d, s, id, src) {
         var js, fjs = d.getElementsByTagName(s)[0];

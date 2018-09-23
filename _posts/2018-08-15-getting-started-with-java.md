@@ -3,7 +3,7 @@ layout: kapresoft
 title: Getting Started With Java
 canonical_url: https://www.kapresoft.com/java/2018/08/15/getting-started-with-java.html
 category: java
-image: /assets/images/mvn_project_structure.png
+image: /assets/images/kapresoft.png
 redirect_from: 
     - /p/getting-started-with-java.html
     - /p/get-started-with-java.html

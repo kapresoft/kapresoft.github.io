@@ -25,17 +25,22 @@ h3 {
   font-size: 16px;
 }
 
+.share-placeholder {
+  height: 29px;
+}
+
 div.share {
   margin-bottom: 20px;
 
-  .share-button-box {
+  .share-button-group {
     float: left;
     margin-top: 2px !important;
   }
 
   .share-button {
-    margin: 0;
-    margin-right: 2px;
+    //margin: 0;
+    float: left;
+    margin-right: 3px;
   }
 
   .fb-share-button {
