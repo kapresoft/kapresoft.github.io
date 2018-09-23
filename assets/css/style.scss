@@ -14,7 +14,7 @@ h1 {
 h1.title {
   font-size:28px;
   color: #3399cc;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -23,6 +23,26 @@ h2 {
 
 h3 {
   font-size: 16px;
+}
+
+div.share {
+  margin-bottom: 20px;
+
+  .share-button-box {
+    float: left;
+    margin-top: 2px !important;
+  }
+
+  .share-button {
+    margin: 0;
+    margin-right: 2px;
+  }
+
+  .fb-share-button {
+    vertical-align: top !important;
+    zoom: 1;
+    *display: inline;
+  }
 }
 
 hr.separator {

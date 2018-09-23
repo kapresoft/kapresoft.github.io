@@ -1,0 +1,12 @@
+<div class="share">
+    <span class="share-button fbb"><div class="fb-share-button" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php" class="fb-xfbml-parse-ignore">Share</a></div></span>
+    <div class="share-button-box">
+        <span class="share-button"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="true">Tweet</a></span>
+        <span class="share-button"><div class="g-plus" data-action="share"></div></span>
+    </div>
+</div>
+<div style="clear: both;"></div>
+<script>
+    var canonHref = $("link[rel='canonical']").attr("href");
+    $('.fb-share-button').data('href', canonHref).attr('data-href', canonHref);
+</script>

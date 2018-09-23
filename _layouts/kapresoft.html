@@ -33,6 +33,8 @@
 
 <body>
 
+{% include share-scripts.html %}
+
 <header>
     <a href="/" title="Click to navigate to kapresoft.com home page."><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
     <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -52,7 +54,11 @@
     <section>
         <h1 class="title">{{ page.title | default: ''}}</h1>
 
+        {% include share.html %}
+
         {{ content }}
+
+        {% include share.html %}
 
         {% if site.show_google_ads %}
         <!-- docs.kapresoft.com (bottom) -->
