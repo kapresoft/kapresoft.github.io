@@ -21,7 +21,7 @@ Spring Boot is implemented to have you up and running as quickly as possible wit
 
 # Repository
 
-While going through this article, the example code will be referenced in this github repository [https://github.com/nfet/spring-boot-lambda](https://github.com/nfet/spring-boot-lambda).  You may follow or navigate directly to the source located here.
+While going through this article, the example code will be referenced in this github repository [https://github.com/kapresoft/spring-boot-aws-lambda](https://github.com/kapresoft/spring-boot-aws-lambda).  You may follow or navigate directly to the source located here.
 
 # Initializing Spring Boot
 
@@ -33,9 +33,9 @@ com.kapresoft.demo.springbootlambda.Lambda::handler
 
 ## Constructor Initialization
 
-See: [Lambda.java](https://github.com/nfet/spring-boot-lambda/blob/master/src/main/java/com/kapresoft/demo/springbootlambda/Lambda.java) in github
+See: [Lambda.java](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/java/com/kapresoft/demo/springbootlambda/Lambda.java) in github
 
-In this example, the AWS Lambda function code manually initializes Spring Boot using the SpringApplicationBuilder. The constructor code below creates the builder and sets up the spring active profiles.  Notice that after the constructor initialization, all the dependent objects need by this lambda have been assign as fields.
+In this example, the AWS Lambda function code manually initializes Spring Boot using the SpringApplicationBuilder. The constructor code below creates the builder and sets up the spring active profiles.  Notice that after the constructor initialization, all the dependent objects needed by this lambda have been assigned as instance fields.
 
 ```java
 public class Lambda {
@@ -83,7 +83,7 @@ public class Lambda {
 ```
 ## Use of Environment Variables in Lambda
 
-Setting the environment variables to set the spring active profile is a good way to run your lambda in different environments. In this example, we will need to specify an environment variable "test" or "prod".  In addition to the base [application.yml](https://github.com/nfet/spring-boot-lambda/blob/master/src/main/resources/application.yml), this will configure the application to pickup additional settings specified in the [application-test.yml](https://github.com/nfet/spring-boot-lambda/blob/master/src/main/resources/application-test.yml) or [application-prod.yml](https://github.com/nfet/spring-boot-lambda/blob/master/src/main/resources/application-prod.yml) configuration files.
+Setting the environment variables to set the spring active profile is a good way to run your lambda in different environments. In this example, we will need to specify an environment variable "test" or "prod".  In addition to the base [application.yml](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/resources/application.yml), this will configure the application to pickup additional settings specified in the [application-test.yml](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/resources/application-test.yml) or [application-prod.yml](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/resources/application-prod.yml) configuration files.
 
 # Example Cloud Watch Log
 
