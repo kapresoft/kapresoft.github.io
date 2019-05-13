@@ -9,7 +9,10 @@ category: java
 
 # Overview
 
-This article discusses running a Spring Boot application in [AWS Lambda](https://aws.amazon.com/lambda/).
+This article discusses the use of the [Spring Framework](https://spring.io/projects/spring-framework) using 
+[Spring Boot](https://spring.io/projects/spring-boot) to run a java code without provisioning or 
+running servers in [AWS Lambda](https://aws.amazon.com/lambda/) using Spring Boot. This short guide also illustrates the
+advantage of utilizing the spring framework and all the benefits that come with it.
 
 <!--excerpt-->
 
@@ -17,7 +20,10 @@ This article discusses running a Spring Boot application in [AWS Lambda](https:/
 
 Spring is a framework that allows you to wire application components together.  Spring utilizes dependency injection or as others may call it, Inversion of Control (IoC).  Dependency Injection provides a consistent way of configuring and managing components which makes your code less dependent on the container than it would be in a traditional enterprise development. The framework also promotes easy unit testing.
 
-Spring Boot is implemented to have you up and running as quickly as possible with fewer upfront configuration.
+Spring Boot is implemented to have you up and running as quickly as possible with fewer upfront configuration. The [Spring Boot Initializr](https://start.spring.io/) online tool can help you kick start your app.
+
+# Is Spring Boot too slow or too bloated to run in AWS Lambda
+Not at all.  The modern spring framework is lightweight and has been broken up into different components.  You only need to import the components you need.  Take a look at the example [Cloud Watch Log](https://cdngh.kapresoft.com/img/spring-boot-demo-cloudwatch-log.gif) running a base example app and you will see that the framework loads in 2 to 5 seconds.
 
 # Repository
 
@@ -91,8 +97,3 @@ Click the following image to see the expanded-view of the example AWS Cloud Watc
 
 <a target="_blank" href="https://cdngh.kapresoft.com/img/spring-boot-demo-cloudwatch-log.gif"><img width="560" src="https://cdngh.kapresoft.com/img/spring-boot-demo-cloudwatch-log.gif"/></a>
 
-# References
-
-* [Spring Framework](https://spring.io/projects/spring-framework)
-* [Spring Boot](https://spring.io/projects/spring-boot)
-* [Spring Boot Initializr](https://start.spring.io/) ~ bootstrap your application
