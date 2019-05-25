@@ -1,6 +1,6 @@
 ---
 layout: kapresoft
-title: Converting double to a String
+title: Converting double to a String in Java
 image: /assets/images/kapresoft.png
 canonical_url: https://www.kapresoft.com/java/2019/05/11/converting-double-value-to-string.html
 category: java
@@ -8,7 +8,7 @@ category: java
 
 # Overview
 
-This article discusses the various ways to convert double to a string in Java.
+Converting double to a String value in Java has been a typical task to do for software development. This article discusses the various ways on how to convert a double to a string in Java. While there are advantages in representing a double to its String object representation, the opposite task of converting a String object to a double can also be addressed.  This document examines the reasons why conversions of double in Java are beneficial for beginners who are learning to develop in java.
 
 <!--excerpt-->
 
