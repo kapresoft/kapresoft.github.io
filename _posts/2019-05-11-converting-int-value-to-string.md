@@ -1,6 +1,6 @@
 ---
 layout: kapresoft
-title: Converting int to a String
+title: Converting int to a String in Java
 image: /assets/images/kapresoft.png
 canonical_url: https://www.kapresoft.com/java/2019/05/11/converting-int-value-to-string.html
 category: java
@@ -8,7 +8,7 @@ category: java
 
 # Overview
 
-This article discusses the various ways to convert int to a string in Java.
+In Java, often times the ability to return a string representing the specified integer is a common task.  This article illustrates several mechanisms to convert int to a string in Java. In the opposite scenario, the means to resolve an integer representing the value of the specified String.  The returned value is an Integer object that is the equivalent integer value of the argument string.
 
 <!--excerpt-->
 
