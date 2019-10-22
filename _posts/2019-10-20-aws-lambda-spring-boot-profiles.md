@@ -49,7 +49,8 @@ REPORT RequestId: e74bf096-cb73-4b3f-91b3-562ffaf74483
     Duration: 2122.24 ms 
     Billed Duration: 2200 ms 
     Memory Size: 320 MB 
-    Max Memory Used: 161 MB Init Duration: 3317.31 ms
+    Max Memory Used: 161 MB 
+    Init Duration: 3317.31 ms
 ```
 
 # Subsequent Executions
