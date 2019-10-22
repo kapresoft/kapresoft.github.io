@@ -31,7 +31,7 @@ Additional information can be found on Spring Boot Profiles here
 
 In AWS Lambda **Environment Variables** we will be activating spring provides via environment variable **SPRING_PROFILES_ACTIVE**.
 Additional profiles can also be provided using comma-separated values (i.e. prod,secure to activate both prod and secure profile).
-In this scenario, spring boot AWS lambda application will be activating the configurations: application-<profile>.yml.  
+In this scenario, spring boot AWS lambda application will be activating the configurations: application-&lt;profile&gt;.yml.  
 
 The following AWS Lambda Console Environment variables configuration will activate the profile *prod* during execution.
 
