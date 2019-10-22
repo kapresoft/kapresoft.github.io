@@ -47,7 +47,7 @@ occur between 1 and 10 minutes after initialization.
 Cold start will have an initial cost **Init Duration** in addition to the **Duration** of the execution.
 
 The Cold Start initialization for this example is 3317.31 ms and an execution of 2122.24 ms.
-Subsequent executions have the duration of 2.33 ms.
+Subsequent executions have the duration of 2.33 ms (and zero-cost initialization) which is significantly faster.
  
 ```text
 REPORT RequestId: e74bf096-cb73-4b3f-91b3-562ffaf74483 
