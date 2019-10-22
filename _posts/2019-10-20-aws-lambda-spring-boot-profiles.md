@@ -41,7 +41,7 @@ The following AWS Lambda Console Environment variables configuration will activa
 
 AWS Lambda cold starts occur when the very first request arrives after deployment.  After the first request is
 executed, the AWS Lambda instance will be available to be utilized for subsequent requests.  There is no specific
-settings on how long a lambda instance will be kept but the probably of having a good chance of acold start will
+settings on how long a lambda instance will be kept but the probably of having a good chance of a cold start will
 occur between 1 and 10 minutes after initialization.  
 
 ```text
