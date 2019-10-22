@@ -37,7 +37,7 @@ The following AWS Lambda Console Environment variables configuration will activa
 
 <img src="https://cdngh.kapresoft.com/img/spring-profiles-lambda-env.png"/>
 
-# Spring Boot AWS Lambda Initial Execution (Cold Starts)
+# Initial Execution (Cold Starts)
 
 AWS Lambda cold starts occur when the very first request arrives after deployment.  After the first request is
 executed, the AWS Lambda instance will be available to be utilized for subsequent requests.  There is no specific
@@ -67,11 +67,11 @@ REPORT RequestId: 3bfcb1ba-c9ef-40b0-9e45-f0d1e9d78f7c
     Max Memory Used: 161 MB
 ```
 
-### Lamba Documentation can be found here in AWS:
+**Lamba Documentation can be found here in AWS:**
 
 - https://docs.aws.amazon.com/lambda/latest/dg/running-lambda-code.html
 
-# Console Log
+# AWS Console Log (Cold Start)
 
 ```text
 =========================================================
@@ -111,7 +111,7 @@ END RequestId: e74bf096-cb73-4b3f-91b3-562ffaf74483
 REPORT RequestId: e74bf096-cb73-4b3f-91b3-562ffaf74483 Duration: 2122.24 ms Billed Duration: 2200 ms Memory Size: 320 MB Max Memory Used: 161 MB Init Duration: 3317.31 ms
 ```
 
-# Lambda in Github
+# Lambda Source Code in Github
 
 [Spring Boot AWS Lambda.java](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/java/com/kapresoft/demo/springbootlambda/Lambda.java) source code is avaialble 
 in [github](https://github.com/kapresoft/spring-boot-aws-lambda).
