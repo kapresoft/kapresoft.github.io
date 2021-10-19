@@ -18,7 +18,7 @@ In this article, we are going to look at the use of [Spring Boot](https://spring
 
 # Why Spring Boot?
 
-Think of Spring Boot as an extension of the [Spring Framework](https://spring.io/projects/spring-framework) which provides bootstraps to eliminate boilerplate or ceremonial configurations.  Spring Framework is a framework that allows you to wire application components together.  Spring utilizes dependency injection or as others may call it, Inversion of Control (IoC).  Dependency Injection provides a consistent way of configuring and managing components which makes your code less dependent on the container than it would be in a traditional enterprise development. On top of other main features, sprig has excellent support and advocates for unit and integration testing and best practices. 
+Think of Spring Boot as an extension of the [Spring Framework](https://spring.io/projects/spring-framework) which provides bootstraps to eliminate boilerplate or ceremonial configurations.  Spring Framework is a framework that allows you to wire application components together.  Spring utilizes dependency injection or as others may call it, Inversion of Control (IoC).  Dependency Injection provides a consistent way of configuring and managing components which makes your code less dependent on the container than it would be in a traditional enterprise development. On top of other main features, spring has excellent support and advocates for unit and integration testing and best practices. 
 
 Spring Boot is implemented to have you up and running as quickly as possible with fewer upfront configuration. The [Spring Boot Initializr](https://start.spring.io/) online tool can help you kickstart your app.  Spring Boot together with AWS Lambda, allows developers to focus more on business logic and less time supporting server infrastructures.
 
@@ -26,17 +26,19 @@ Spring Boot is implemented to have you up and running as quickly as possible wit
 
 >Is Spring Boot too slow or too bloated to run in AWS Lambda?
 
-Not at all.  The modern spring framework is lightweight and has been broken up into different components.  You only need to import the components you need.  Take a look at the example [Cloud Watch Log](https://cdngh.kapresoft.com/img/spring-boot-demo-cloudwatch-log.gif) running a base example app and you will see that the framework loads in 2 to 5 seconds.  
+The modern spring framework is lightweight and has been broken up into different components.  You only need to import the components you need.  Take a look at the example [Cloud Watch Log](https://cdngh.kapresoft.com/img/spring-boot-demo-cloudwatch-log.gif) running a base example app and you will see that the framework loads in 2 to 5 seconds.  
 
 When running a Lambda code there are a couple of things that you need to be mindful of:
+1. Cold Start
+2. Subsequent Execution of Code
 
 ### Cold Start
 
 The Cold Start is essentially the cost or latency incurred when a first request comes in after deployment. After the first request is process, the instance is alive and will be reused for subsequent incoming requests.  When the instance is idle there is a probability that it will be recycled and for the purpose of this article, we will not cover this topic of recycling here.
 
-### The subsequent execution of your code
+### The Subsequent Execution of Code
 
-After the cost of Cold Start is incurred, the lambda code is up and running and is ready to take tons of requests.
+After the cost of Cold Start is incurred, the lambda code is up and running and is ready to take tons of requests.  The lambda instance at this state should be running optimally with no startup costs unless the instance is recycled.
 
 # Repository
 
