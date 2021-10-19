@@ -17,7 +17,7 @@ In this article, we are going to look at the use of Spring Boot in AWS Lambda.  
 <!--excerpt-->
 
 # Why Spring Boot?
-s
+
 Think of Spring Boot as an extension of the [Spring Framework](https://spring.io/projects/spring-framework) which provides bootstraps to eliminate boilerplate or ceremonial configurations.  Spring Framework is a framework that allows you to wire application components together.  Spring utilizes dependency injection or as others may call it, Inversion of Control (IoC).  Dependency Injection provides a consistent way of configuring and managing components which makes your code less dependent on the container than it would be in a traditional enterprise development. On top of other main features, spring has excellent support and advocates for unit and integration testing and best practices. 
 
 Spring Boot is implemented to have you up and running as quickly as possible with fewer upfront configuration. The [Spring Boot Initializr](https://start.spring.io/) online tool can help you kickstart your app.  Spring Boot together with AWS Lambda, allows developers to focus more on business logic and less time supporting server infrastructures.
