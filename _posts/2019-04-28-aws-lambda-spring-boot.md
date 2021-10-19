@@ -106,6 +106,9 @@ In the case of multiple profile values like 'prod,experiment', Spring Boot will 
 
 An example usecase for this type of profile is for running experiments without actually having to redeploy any code changes is to specify an additional profile like "experiment" and have it pickup additional configuration, in this case, to enable an experiment.  When the experiment is complete, you will be able to update the profile to only pickup "prod".
 
+### See Article for more details on Spring Boot Profiles
+* [Spring Boot Profiles in AWS Lambda](/java/2019/10/20/aws-lambda-spring-boot-profiles.html)
+
 # Example Cloud Watch Log
 
 Click the following image to see the expanded-view of the example AWS Cloud Watch log.
