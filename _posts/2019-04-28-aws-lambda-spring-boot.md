@@ -12,12 +12,12 @@ redirect_from:
 
 # Overview
 
-In this article, we are going to look at the use of [Spring Boot](https://spring.io/projects/spring-boot) for running an AWS (or Amazon Web Services) Lambda Compute Code.  [AWS Lambda](https://aws.amazon.com/lambda/) is a compute service that allows you to run code without provisioning or managing servers.
+In this article, we are going to look at the use of Spring Boot in AWS Lambda.  AWS Lambda is a serverless compute service that allows you to run code without provisioning or managing servers.  AWS Lambda is fully integrated with the AWS cloud and is able to run in response to several AWS events like S3, Messaging Gateways, API Gateway, or any other generic AWS Resource events.  The benefit of invoking code in an AWS Lambda environment is that you are only paying for compute services at the time a request is being processed. This particular time of adhoc on-demand service alleviates the pain points of spinning up and maintain your own infrastructure services.
 
 <!--excerpt-->
 
 # Why Spring Boot?
-
+s
 Think of Spring Boot as an extension of the [Spring Framework](https://spring.io/projects/spring-framework) which provides bootstraps to eliminate boilerplate or ceremonial configurations.  Spring Framework is a framework that allows you to wire application components together.  Spring utilizes dependency injection or as others may call it, Inversion of Control (IoC).  Dependency Injection provides a consistent way of configuring and managing components which makes your code less dependent on the container than it would be in a traditional enterprise development. On top of other main features, spring has excellent support and advocates for unit and integration testing and best practices. 
 
 Spring Boot is implemented to have you up and running as quickly as possible with fewer upfront configuration. The [Spring Boot Initializr](https://start.spring.io/) online tool can help you kickstart your app.  Spring Boot together with AWS Lambda, allows developers to focus more on business logic and less time supporting server infrastructures.
@@ -46,7 +46,7 @@ While going through this article, the example code will be referenced in this gi
 
 # Handler function
 
-The Handler in the AWS Lambda config page is specified as:
+In order to invoke a code (or a lambda function), we need to specify a handler in the AWS Lambda configuration. For this specific example, the Handler in the AWS Lambda config page is specified as:
 
 ```
 com.kapresoft.demo.springbootlambda.Lambda::handler
