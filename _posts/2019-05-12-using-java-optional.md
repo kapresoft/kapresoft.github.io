@@ -62,7 +62,7 @@ String version = app.flatMap(MyApplication::getFeature)
                     .orElse("NO VERSION");
 ```
 
-# Optional.ofNullable(val:Object)
+## Optional.ofNullable(val:Object)
 
 Creates an Optional instance of the supplied argument where the *val* could be absent (or not present).
 
@@ -72,7 +72,7 @@ System.out.println(Optional.ofNullable(firstName).isPresent());
 // Output: false
 ```
 
-# Optional.of(val:Object)
+## Optional.of(val:Object)
 
 Creates an Optional instance of the passed argument where the *val* is expected to be present (non-null value).
 
@@ -94,7 +94,7 @@ System.out.println(Optional.of(firstName).isPresent());
 // Output: true
 ```
 
-# Replace if (var == null)
+## Replace if (var == null)
 
 Replacing a null-based control block.
 
@@ -114,7 +114,7 @@ if (feature.isPresent()) {
 }
 ```
 
-# Reduce if-else logic using functional methods
+## Reduce if-else logic using functional methods
 
 ```java
 Feature feature = application.getFeature();
@@ -130,7 +130,7 @@ String version = application.getFeature().map(Feature::getVersion).orElse("NO VE
 System.out.println(version);
 ```
 
-# Streaming calls
+## Streaming calls
 
 The following call can fail several ways when someone along the call chain a null object is returned.
 ```java
@@ -163,6 +163,6 @@ String attrValue = app.flatMap(MyApplication::getFeature)
 ```
 The following code looks a lot cleaner and (big AND) there's no literal null checks.
 
-# Conclusion
+## Conclusion
 
 The Optional-based programming would be best for you to protect your code against null pointers exceptions.  The goal of java.lang.Optional will not replace all null reference in your code but rather help create a better and cleaner code. 
