@@ -9,12 +9,14 @@ redirect_from:
 - /aws-lambda-spring-boot.html
 ---
 
-
 # Overview
 
-In this article, we are going to look at the use of Spring Boot in AWS Lambda.  AWS Lambda is a serverless compute service that allows you to run code without provisioning or managing servers.  AWS Lambda is fully integrated with the AWS cloud and is able to run in response to several AWS events like S3, Messaging Gateways, API Gateway, or any other generic AWS Resource events.  The benefit of invoking code in an AWS Lambda environment is that you are only paying for compute services at the time a request is being processed. This particular time of adhoc on-demand service alleviates the pain points of spinning up and maintain your own infrastructure services.
-
+In this article, we are going to look at the use of Spring Boot with AWS Lambda.  AWS Lambda is a serverless compute service that allows you to run code without provisioning or managing servers.  AWS Lambda is fully integrated with the AWS cloud and is able to run in response to several AWS events like S3, Messaging Gateways, API Gateway, or any other generic AWS Resource events.  
 <!--excerpt-->
+
+## AWS Lambda Serverless Compute Environment
+
+The benefit of invoking code in an AWS Lambda environment is that you are only paying for compute services at the time a request is being processed. This particular time of adhoc on-demand service alleviates the pain points of spinning up and maintain your own infrastructure services.
 
 # Why Spring Boot?
 
@@ -22,7 +24,7 @@ Think of Spring Boot as an extension of the [Spring Framework](https://spring.io
 
 Spring Boot is implemented to have you up and running as quickly as possible with fewer upfront configuration. The [Spring Boot Initializr](https://start.spring.io/) online tool can help you kickstart your app.  Spring Boot together with AWS Lambda, allows developers to focus more on business logic and less time supporting server infrastructures.
 
-# Spring Boot Performance
+## Spring Boot Performance
 
 >Is Spring Boot too slow or too bloated to run in AWS Lambda?
 

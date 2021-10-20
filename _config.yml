@@ -16,7 +16,13 @@ github:
 plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
+  - jekyll-last-modified-at
+
+last-modified-at:
+  date-format: '%d-%b-%y %T %z'
 
 # seo-tag
-author: Antonio Lagnada
+author:
+  name: Antonio Lagnada
+  twitter: deloy72
 logo: /assets/images/kapresoft.png
