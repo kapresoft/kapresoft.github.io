@@ -94,6 +94,20 @@ public class Lambda {
 
 }
 ```
+## Dependency Injection Strategy
+
+### At Constructor
+
+1. Notes about injecting in constructor
+2. Diagram
+
+### Using AppContext During Run-time
+1. Notes about performance
+
+## Testability
+1. 
+2. Structure Class to be testable and permeable during test
+
 ## Use of Environment Variables in Lambda
 
 Setting the environment variables to set the spring active profile is a good way to run your lambda in different environments. In this example, we will need to specify an environment variable "test" or "prod".  In addition to the base [application.yml](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/resources/application.yml), this will configure the application to pickup additional settings specified in the [application-test.yml](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/resources/application-test.yml) or [application-prod.yml](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/resources/application-prod.yml) configuration files.
