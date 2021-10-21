@@ -11,10 +11,7 @@ redirect_from:
 
 # Overview
 
-Spring and Spring Boot Profiles provide a way to define a set of configuration for each environment (i.e. dev, test, integration, and 
-prod).  In addition, Spring Boot extends the profile feature by providing the *@Profile* annotation to limit when components are loaded. 
-This article will demonstrate how to utilize the spring profiles feature with a spring boot code running 
-in AWS Lambda. 
+This article will demonstrate how to utilize the Spring Boot **Profiles** feature in an AWS Lambda Compute environment to define and activate a set of configuration for each environment (i.e. dev, test, integration, and prod).
 
 <!--excerpt-->
 
