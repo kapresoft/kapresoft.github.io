@@ -8,11 +8,11 @@ category: java
 
 # Overview
 
-This article discusses the use of [java.util.Optional](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html) to completely avoid null-based programming in java. We will deep dive into understanding why developers may care about the Optional class. This development article will also illustrate the use of the functional interface in java.util.Optional to simply and reduce if-else logic in your code.
+This article discusses the use of **Java** **Optional** to introduce optional values instead of null. We will deep dive into understanding why developers prefer the Optional class to clearly communicate an optional value as opposed to a vague null representation of a variable.
 
 <!--excerpt-->
 
-In Java 8, an Optional class was introduced to treat such values at the type level to steer developers away from null-based programming.  When it comes to null-safety in java, often times we are forced to write defensive code.  Null checks in code has been around since the beginning. Others might argue that having a null is not the best way to represent whether a value is present or absent. Some may say that having an Optional class type will make the code a lot easier to read. Often times the source of several problems is the null reference to an object.  When null is used to indicate the absence of a value, many can encounter the dangers of null.
+This article will also illustrate the use of the functional interface in java.util.Optional to simply and reduce if-else logic in your code.  In Java 8, an [java.util.Optional](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html) class was introduced to treat such values at the type level to steer developers away from null-based programming.  When it comes to null-safety in java, often times we are forced to write defensive code.  Null checks in code has been around since the beginning. Others might argue that having a null is not the best way to represent whether a value is present or absent. Some may say that having an Optional class type will make the code a lot easier to read. Often times the source of several problems is the null reference to an object.  When null is used to indicate the absence of a value, many can encounter the dangers of null.
 
 ```java
 String version = application.getFeature().getVersion();
