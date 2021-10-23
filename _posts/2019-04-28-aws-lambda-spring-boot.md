@@ -111,7 +111,7 @@ An example usecase for this type of profile is for running experiments without a
 ### See Article for more details on Spring Boot Profiles
 * [Spring Boot Profiles in AWS Lambda](/java/2019/10/20/aws-lambda-spring-boot-profiles.html)
 
-# Example Cloud Watch Log
+## Example Cloud Watch Log
 
 Click the following image to see the expanded-view of the example AWS Cloud Watch log.
 
