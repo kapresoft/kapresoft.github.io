@@ -18,7 +18,7 @@ In this article, we are going to look at the use of Spring Boot with AWS Lambda.
 
 The benefit of invoking code in an AWS Lambda environment is that you are only paying for compute services at the time a request is being processed. This particular time of adhoc on-demand service alleviates the pain points of spinning up and maintain your own infrastructure services.
 
-# Why Spring Boot?
+## Why Spring Boot?
 
 Think of Spring Boot as an extension of the [Spring Framework](https://spring.io/projects/spring-framework) which provides bootstraps to eliminate boilerplate or ceremonial configurations.  Spring Framework is a framework that allows you to wire application components together.  Spring utilizes dependency injection or as others may call it, Inversion of Control (IoC).  Dependency Injection provides a consistent way of configuring and managing components which makes your code less dependent on the container than it would be in a traditional enterprise development. On top of other main features, spring has excellent support and advocates for unit and integration testing and best practices. 
 
@@ -42,11 +42,11 @@ The Cold Start is essentially the cost or latency incurred when a first request 
 
 After the cost of Cold Start is incurred, the lambda code is up and running and is ready to take tons of requests.  The lambda instance at this state should be running optimally with no startup costs unless the instance is recycled.
 
-# Repository
+## Repository
 
 While going through this article, the example code will be referenced in this github repository [https://github.com/kapresoft/spring-boot-aws-lambda](https://github.com/kapresoft/spring-boot-aws-lambda).  You may follow or navigate directly to the source located here.
 
-# Handler function
+## Handler function
 
 In order to invoke a code (or a lambda function), we need to specify a handler in the AWS Lambda configuration. For this specific example, the Handler in the AWS Lambda config page is specified as:
 
