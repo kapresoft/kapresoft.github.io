@@ -1,12 +1,14 @@
 <div>
     {% for post in site.posts %}
     <div>
+        {% if page.title != post.title %}
         <a href="{{ post.url }}">{{ post.title }}</a>
         <span style="float: right; font-size: smaller;">Post Date: {{ post.date | date_to_string }}</span><br/>
         <div style="padding: 5px 0 20px 0;">
-            {{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_html | remove: 'Overview' }}
-            <a href="{{ post.url }}">...more</a>
+            {{ post.excerpt | remove: '<p>' | remove: '</p>' | remove_first: '1.' | remove_first: 'Overview' | strip_html }}
+            <a href="{{ post.url }}"></a>
         </div>
+        {% endif %}
     </div>
     {% endfor %}
 </div>

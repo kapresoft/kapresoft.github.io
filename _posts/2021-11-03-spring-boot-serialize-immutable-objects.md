@@ -3,7 +3,6 @@ layout: kapresoft
 title: "Spring Boot • Serialize Immutable Objects"
 image: /assets/images/kapresoft.png
 category: java
-tagline: "hello der"
 description: "This article illustrates how to serialize and write tests for immutable objects using Jackson and Lombok in Spring Boot."
 ---
 
