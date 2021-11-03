@@ -2,6 +2,10 @@ theme: jekyll-theme-leap-day
 title: KapreSoft
 name: KapreSoft.com
 description: The Java Blogger by Antonio Lagnada
+
+# set to "dev" so that analytics and adds won't show
+env: prod
+
 google_analytics: UA-123953282-1
 
 show_google_ads: true
@@ -27,3 +31,8 @@ author:
   name: Antonio Lagnada
   twitter: deloy72
 logo: /assets/images/kapresoft.png
+
+twitter:
+  username: deloy72
+  card: summary
+
