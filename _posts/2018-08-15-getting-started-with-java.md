@@ -28,20 +28,6 @@ illustrates how to compile and run your first Hello World java code.
 2. Environment variables
 3. Compiling and Running Your Java Application
 
-{% if site.show_google_ads %}
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5036910301295841"
-     data-ad-slot="9747456101"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-{% endif %}
-
-{% include separator.html %}
-
 # 1.&nbsp;&nbsp;Downloading and Installing a Java Development Kit
 
 A Java Development Kit or JDK may be downloaded from the Oracle Java Website or the Open JDK.

@@ -1,0 +1,6 @@
+title: KapreSoft (Dev)
+
+# set to "dev" so that analytics and adds won't show
+env: dev
+show_google_ads: false
+

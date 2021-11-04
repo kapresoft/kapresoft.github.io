@@ -32,20 +32,6 @@ Java&trade; projects.&nbsp;&nbsp;Use this guide as a reference when using Gradle
    - Gradle Tasks
 5. Gradle Help
 
-{% if site.show_google_ads %}
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-5036910301295841"
-     data-ad-slot="9747456101"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-{% endif %}
-
-{% include separator.html %}
-
 # 1.&nbsp;&nbsp;What is Gradle?
 
 Gradle is an evolutionary build system that extends upon the concepts of the <b>Apache Ant</b> and the <b>Apache Maven</b> 
