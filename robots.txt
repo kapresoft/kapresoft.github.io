@@ -5,4 +5,4 @@ User-agent: *
 Disallow:
 Allow: /
 
-Sitemap: https://doc.kapresoft.com/sitemap.xml
+Sitemap: https://kapresoft.com/sitemap.xml
