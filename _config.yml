@@ -7,6 +7,7 @@ exclude:
   - "*.sh"
   - "*.code-workspace"
   - "*.gemspec"
+  - "README*.md"
 
 # set to "dev" so that analytics and adds won't show
 env: prod
