@@ -3,6 +3,11 @@ title: KapreSoft
 name: KapreSoft.com
 description: The Java Blogger by Antonio Lagnada
 
+exclude:
+  - "*.sh"
+  - "*.code-workspace"
+  - "*.gemspec"
+
 # set to "dev" so that analytics and adds won't show
 env: prod
 
