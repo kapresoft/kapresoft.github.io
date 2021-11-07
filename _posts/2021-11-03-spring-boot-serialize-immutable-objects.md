@@ -242,7 +242,13 @@ The java source can be viewed here for [BaseAccount.java]( https://github.com/ka
 
 ### 3.4.2 HierarchicalAccount Class
 
-The only difference with the original flat Account class is that the HierarchicalAccount is a child class of BaseAccount and must:
+For this parent-child hierarchical structure, the figure below shows that HierarchicalAccount class extends from the parent BaseAccount class.
+
+**Figure 3.4.2.1.**  HierarchicalAccount Class Diagram
+
+<a href="/assets/img/jackson-serializable-hierarchy.png"><img alt="Hierarchical Account Class Diagram" src="/assets/img/jackson-serializable-hierarchy.png" title="Hierarchical Account Class Diagram" width="400"/></a>
+
+Lombok updates to handle a hierarchical structure:
 
 1. Annotate the type with @EqualsAndHashCode(callSuper = true)
    - Hints Lombok code generation to take into account the parent class hashCode() method when generating its own hashCode() method.
