@@ -131,7 +131,7 @@ The java source can be viewed here for [Account.java](https://github.com/kapreso
 
 #### 3.2.1 Unit Test for Converting Account Object to JSON String (Serialization)
 
-For a given Account instance with values, the follow unit test demonstrates the serialization of the java object into a JSON string.
+For a given Account instance with values, the following unit test demonstrates the serialization of the java object into a JSON string.
 
 ```java
 @Test
@@ -187,7 +187,7 @@ The java source can be viewed here for [AccountWithoutUsingValue.java](https://g
 
 #### 3.3.1 Unit Test for Converting AccountWithoutUsingValue Object to JSON String (Serialization)
 
-For a given AccountWithoutUsingValue instance with values, the follow unit test demonstrates the serialization of the java object into a JSON string.
+For a given AccountWithoutUsingValue instance with values, the following unit test demonstrates the serialization of the java object into a JSON string.
 
 ```java
 @Test
@@ -258,7 +258,7 @@ The java source can be viewed here for [HierarchicalAccount.java]( https://githu
 
 #### 3.4.3 Unit Test for Converting HierarchicalAccount Object to JSON String (Serialization)
 
-For a given HierarchicalAccount instance with values, the follow unit test demonstrates the serialization of the java object into a JSON string.
+For a given HierarchicalAccount instance with values, the following unit test demonstrates the serialization of the java object into a JSON string.
 
 ```java
 @Test
