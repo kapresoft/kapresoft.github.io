@@ -101,9 +101,6 @@ Writing Serialization tests for your Java Data Transport Objects are essentially
 
 Immutable objects are thread-safe and the state of the objects cannot be modified once created. Developers do not need to worry about passing in data that could be manipulated. After construction, objects can be handed-off downstream without side effects.  
 
-As a side note for the readers of this article, the complete details of the pros and cons of immutability and will leave it up to the reader to familiarize with this subject.
-
-
 # 3. Serialization of Immutable Objects
 
 Jackson provides a mechanism called Object Serialization or Deserialization where an object can be represented as JSON, XML, and others formats.  This tutorial will only demonstrate serialization of JSON data to and from a Java Object.
