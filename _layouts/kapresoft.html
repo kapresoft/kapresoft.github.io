@@ -27,12 +27,6 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 
-    {% if site.show_banner %}
-    <style type="text/css">
-        section { margin-top: 180px; }
-    </style>
-    {% endif %}
-
     {% if site.env != "dev" %}
     {% if site.show_google_ads %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5036910301295841"
@@ -50,13 +44,6 @@
     <a href="/" title="Click to navigate to kapresoft.com home page."><h1>{{ site.title | default: site.github.repository_name }}</h1></a>
     <p>{{ site.description | default: site.github.project_tagline }}</p>
 </header>
-
-{% if site.show_banner %}
-<div id="banner">
-    <span id="logo"></span>
-    <a href="/" class="button fork"><strong>Home</strong></a>
-</div><!-- end banner -->
-{% endif %}
 
 <div class="wrapper">
     <nav>

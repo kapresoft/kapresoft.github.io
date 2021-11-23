@@ -7,6 +7,54 @@ section {
   margin-top: 150px;
 }
 
+@media print, screen {
+  h1 {
+    padding: 0px 0px;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+  section {
+    margin: 130px 5px 10px 5px;
+  }
+  header {
+    p { display: block;}
+  }
+}
+
+@media print, screen and (max-width: 680px) {
+  section,section.index-page {
+    margin: 120px auto;
+  }
+
+  header {
+    p {
+      display: block;
+      font-size: 16px;
+    }
+  }
+
+}
+
+@media print, screen and (max-width: 480px) {
+
+  section {
+    margin: 5px;
+  }
+
+  header {
+    p {
+      display: block;
+      font-size: 13px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      -ms-text-overflow: ellipsis;
+    }
+  }
+}
+
 h1 {
   font-size:24px;
 }
@@ -32,22 +80,30 @@ h3 {
 div.share {
   margin-bottom: 20px;
 
-  .share-button-group {
-    float: left;
-    margin-top: 2px !important;
-  }
-
-  .share-button {
-    //margin: 0;
+  .fb-share-button-wrap {
     float: left;
     margin-right: 3px;
+    .fb-share-button {
+      vertical-align: top !important;
+      zoom: 1;
+      *display: inline;
+    }
   }
 
-  .fb-share-button {
-    vertical-align: top !important;
-    zoom: 1;
-    *display: inline;
+  .tw-share-button-wrap {
+    float: left;
+    margin-top: 2px !important;
+    height: 20px !important;
+
+    .tw-share-button {
+      zoom: 1;
+      *display: inline;
+    }
   }
+}
+.clear-spacer {
+  clear: both;
+  margin-top: 50px;
 }
 
 hr.separator {
