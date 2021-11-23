@@ -21,7 +21,7 @@ excerpt_separator: <!--excerpt-->
 
 github:
     is_project_page: true
-    owner_url: https://github.com/kapresoft/kapresoft.github.io
+    owner_url: https://tony.resume.lagnada.com
     owner_name: KapreSoft (Antonio Lagnada)
 
 plugins:
