@@ -6,11 +6,17 @@ by Matt Graham
 @import "normalize";
 @import "fonts";
 @import "rouge-base16-dark";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700&family=Roboto:wght@100;300;500;700&display=swap');
+
+$body-font: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+$header-font-weight: 700;
+$header-font-family: 'Roboto Slab', serif;
 
 body {
-  font:14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $body-font;
+  font-size: 1rem;
   color:#666;
-  font-weight:300;
+  font-weight: 300;
   margin: 0px;
   padding:0px 0 20px 0px;
   background: url(../images/body-background.png) #eae6d1;
@@ -19,6 +25,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color:#333;
   margin:0 0 10px;
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
 }
 
 div {
