@@ -1,7 +1,7 @@
 ---
 layout: no_ads
 canonical_url: https://www.kapresoft.com
-image: /assets/images/kapresoft1-400x.png
+image: /assets/images/kapresoft1-210x.png
 redirect_from: 
     - /feeds/7963693856642027814/comments/default
     - /feeds/posts/default

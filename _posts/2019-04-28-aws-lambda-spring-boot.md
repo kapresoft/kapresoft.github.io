@@ -1,7 +1,7 @@
 ---
 layout: kapresoft
 title: Spring Boot AWS Lambda
-image: /assets/images/kapresoft1-400x.png
+image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/04/28/aws-lambda-spring-boot.html
 category: java
 redirect_from:

@@ -1,7 +1,7 @@
 ---
 layout: kapresoft
 title: Extending Spring Annotations in Test
-image: /assets/images/kapresoft1-400x.png
+image: /assets/images/kapresoft1-210x.png
 category: java
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: kapresoft
 title: Spring Boot Jackson and Lombok Best Practices
-image: /assets/images/kapresoft1-400x.png
+image: /assets/images/kapresoft1-210x.png
 category: java
 ---
 
