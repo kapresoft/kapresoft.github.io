@@ -1,7 +1,7 @@
 ---
 layout: kapresoft
 title: Using Java Optional
-image: /assets/images/kapresoft.png
+image: /assets/images/kapresoft1-400x.png
 canonical_url: https://www.kapresoft.com/java/2019/05/12/using-java-optional.html
 category: java
 ---

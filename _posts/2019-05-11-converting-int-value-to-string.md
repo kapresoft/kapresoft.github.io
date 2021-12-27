@@ -1,7 +1,7 @@
 ---
 layout: kapresoft
 title: Converting int to a String in Java
-image: /assets/images/kapresoft.png
+image: /assets/images/kapresoft1-400x.png
 canonical_url: https://www.kapresoft.com/java/2019/05/11/converting-int-value-to-string.html
 category: java
 ---

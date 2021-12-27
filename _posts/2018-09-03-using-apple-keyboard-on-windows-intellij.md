@@ -2,7 +2,7 @@
 layout: kapresoft
 title: Using the Apple Keyboard in Windows IntelliJ IDEA or Android Studio
 canonical_url: https://www.kapresoft.com/java/2018/09/03/using-apple-keyboard-on-windows-intellij.html
-image: /assets/images/kapresoft.png
+image: /assets/images/kapresoft1-400x.png
 category: java
 ---
 
