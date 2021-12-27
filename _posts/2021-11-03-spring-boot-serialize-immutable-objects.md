@@ -1,6 +1,7 @@
 ---
 layout: kapresoft
 title: "Spring Boot • Serialize Immutable Objects"
+canonical_url: https://www.kapresoft.com/java/2021/11/03/spring-boot-serialize-immutable-objects.html
 image: /assets/images/kapresoft.png
 category: java
 description: "This article illustrates how to serialize and write tests for immutable objects using Jackson and Lombok in Spring Boot."
@@ -33,9 +34,9 @@ The spring initializr page configured the pom parent element as shown below.
 </parent>
 ```
 
-The dependencies block will include jackson-databind and lombok.  Note that developers should avoid specifying the version of the dependency sot that it will default to the spring-boot-provided version as defined in the jackson-bom-&lt;version&gt;.pom file.
+The dependencies block will include jackson-databind and lombok.  Note that developers should avoid specifying the version of the dependency so that the build will default to the spring-boot-provided version defined in the jackson-bom-&lt;version&gt;.pom file.
 
-Spring boot is packaged and tested with the default jackson-databind version in the bom file and should be beneficial to use.  Developers may override the dependency version of the spring-boot-provided dependencies by specifying a different version.
+Spring boot is packaged and tested with the default lombok version in the bom file and should be beneficial to use.  Developers may override the dependency version of the spring-boot-provided dependencies by specifying a different version.
 
 ```xml
 <dependencies>

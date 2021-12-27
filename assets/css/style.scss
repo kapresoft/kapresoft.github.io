@@ -7,6 +7,14 @@ section {
   margin-top: 150px;
 }
 
+.figure {
+  margin-bottom: .5em;
+  .title {
+    font-weight: bold;
+    margin-right: .5em;
+  }
+}
+
 h1 {
   font-size:24px;
 }
@@ -29,6 +37,20 @@ h3 {
   height: 29px;
 }
 
+div.share-spt {
+  margin-top: 30px;
+}
+
+div.share-spb {
+  margin-bottom: 100px;
+}
+
+div.share-note {
+  margin-bottom: 5px;
+  font-family: 'Merriweather', 'SansSerif';
+  font-size: 0.7em;
+  font-weight: 400;
+}
 div.share {
   margin-bottom: 20px;
 

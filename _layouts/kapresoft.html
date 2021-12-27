@@ -52,7 +52,7 @@
     <section>
         <h1 class="title">{{ page.title | default: ''}}</h1>
 
-        {% include share.html %}
+        {% include share-page.html %}
 
         {% if site.env != "dev" %}
         {% if site.show_google_ads %}
@@ -71,7 +71,9 @@
 
         {{ content }}
 
-        {% include share.html %}
+        <div class="share-spt">&nbsp;</div>
+        {% include share-page.html %}
+        <div class="share-spb">&nbsp;</div>
 
         {% include separator.html %}
 

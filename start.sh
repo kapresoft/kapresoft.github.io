@@ -2,8 +2,7 @@
 
 function _runJekyll()
 {
-  local cmd="bundle exec jekyll serve --incremental --config _config.yml,_config_dev.yml$*"
-  #local cmd="bundle exec jekyll serve --incremental"
+  local cmd="bundle exec jekyll serve --incremental --config _config.yml,_config_dev.yml"
   echo "executing: ${cmd}"
   eval "${cmd}"
 }
@@ -34,4 +33,4 @@ function _startJekyllMain()
 
 }
 
-_startJekyllMain $*
+_startJekyllMain "$*"
