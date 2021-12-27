@@ -121,9 +121,15 @@ nav {
     font-family: $header-font-family;
     font-weight: 500;
   }
+  .logo-wrap {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    left: 40px;
+    top: 10px;
+    border: 0px solid #000000;
+  }
 }
-
-
 
 @media print, screen and (max-width: 720px) {
 
@@ -200,5 +206,9 @@ nav {
       -o-text-overflow: ellipsis;
       -ms-text-overflow: ellipsis;
     }
+  }
+
+  .logo-wrap {
+    display: none;
   }
 }
