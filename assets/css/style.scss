@@ -126,8 +126,14 @@ nav {
     width: 100px;
     height: 100px;
     left: 40px;
-    top: 10px;
+    top: 0px;
     border: 0px solid #000000;
+    .inner-wrap {
+      float: left;
+    }
+    .logo {
+      width: 140px;
+    }
   }
 }
 
@@ -176,6 +182,11 @@ nav {
     }
   }
 
+  .logo-wrap {
+    .logo {
+      width: 110px;
+    }
+  }
 }
 
 @media print, screen and (max-width: 480px) {
