@@ -1,9 +1,10 @@
 ---
 layout: kapresoft
-title: Using the Apple Keyboard in Windows IntelliJ IDEA or Android Studio
+title: Apple Keyboard in Windows • IntelliJ or Android Studio
 canonical_url: https://www.kapresoft.com/java/2018/09/03/using-apple-keyboard-on-windows-intellij.html
 image: /assets/images/kapresoft1-210x.png
 category: java
+description: "Using a mac keyboard on windows for IntelliJ IDEA or Android Studio by adding mac key bindings using AutoHotKey"
 ---
 
 # Overview
