@@ -35,7 +35,7 @@ In this scenario, spring boot AWS lambda application will be activating the conf
 
 The following AWS Lambda Console Environment variables configuration will activate the profile *prod* during execution.
 
-<img src="https://cdngh.kapresoft.com/img/spring-profiles-lambda-env.png"/>
+<img src="https://cdngh.kapresoft.com/img/spring-profiles-lambda-env.png" alt="spring lambda profiles env"/>
 
 # Initial Execution (Cold Starts)
 
