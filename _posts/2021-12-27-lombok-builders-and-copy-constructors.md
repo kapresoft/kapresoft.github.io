@@ -7,17 +7,17 @@ category: java
 description: "Lombok's builder and copy constructor feature using @Builder is a mechanism that allows the implementation of the Builder Pattern and Copy Constructors in Object-Oriented Programming. This article further illustrates how Lombok mitigates the disadvantages of creating builder methods and copy constructors, making Lombok's @Builder a good foundation for design and code maintainability."
 ---
 
-# 1. Overview
+## Overview
 
 Lombok's builder and copy constructor feature using _[@Builder](https://projectlombok.org/features/Builder)_ is a mechanism that allows the implementation of the _Builder Pattern_ and _Copy Constructors_ in Object-Oriented Programming.  This article further illustrates how Lombok mitigates the disadvantages of creating builder methods and copy constructors making Lombok's @Builder a good foundation for design and code maintainability.
 
 <!--excerpt-->
 
-# 2. Project
+## Project
 
 For simplicity and speed of development the maven project provided in this example used the spring initializr page [https://start.spring.io](https://start.spring.io) to generate the initial source code.
 
-## 2.1. POM Dependencies
+### POM Dependencies
 
 The spring initializr page configured the pom parent element as shown below.
 
@@ -67,15 +67,15 @@ Developers may override the lombok version as needed in the properties section o
 </properties>
 ```
 
-# 3. Builders
+## Builders
 
 Builders are methods designed to aid developers in creating objects.  This design is also referred to as the Builder Pattern are one of the original The [Gang of Four (GoF)](https://en.wikipedia.org/wiki/Design_Patterns) patterns referred to by the four authors ( Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides) of the book _Design Patterns: Elements of Reusable Object-Oriented Software (1994)._
 
-## 3.1. Benefits of Builders
+### Benefits of Builders
 
 Builders allow developers to "encapsulate" code for construction and representation and provides "control" over the code of the construction process.
 
-## 3.2. Disadvantages
+### Disadvantages
 
 1. A concrete builder must be created for each object creation.
 2. Builder classes should be mutable.
@@ -83,7 +83,7 @@ Builders allow developers to "encapsulate" code for construction and representat
 
 Lombok, in general, mitigates the above pain points by making it convenient for developers to handle boilerplate code. Eliminating boilerplate code in creating a builder method is an attractive option for implementing the Builder Pattern. 
 
-# 4. Copy Constructors
+## Copy Constructors
 
 Copy constructors allow a new object to be created from an existing object of the same class, as a copy of an existing object.  If this operation is beneficial for a particular business process is executing a few copies.
 
@@ -91,7 +91,7 @@ Copy constructors are newly instantiated objects that are independent of the ori
 
 One caveat worth mentioning is that copy constructor are not inheritable by subclasses.  However, lombok provides an _experimental_ feature that allows this type of structure via the lombok annotation _@SuperBuilder_.
 
-### 4.1. Mutable Classes
+### Mutable Classes
 
 ```java
 @Data
@@ -104,7 +104,7 @@ public class SuperUser extends User {
 public class User {
 }
 ```
-### 4.2. Immutable Classes
+### Immutable Classes
 
 For an immutable Parent/Child relationship, a minor change should suffice by unwrapping some _@Value_ compounded annotations.
 
@@ -155,7 +155,7 @@ public class User {
 }
 ```
 
-# 5. Caveats for Both Builder and Copy Constructors
+## Caveats for Both Builder and Copy Constructors
 
 1. Maintenance
    - In Lombok, since the code is generated and can be ignored during test coverage, the maintenance is no longer an issue. Item #4 below still applies.
@@ -168,9 +168,9 @@ public class User {
 
 
 
-# 6. Example Use Cases
+## Example Use Cases
 
-## 6.1 ETL Use Case
+### ETL Use Case
 
 A valid use case for builder and copy constructors could be if a situation exists where a developer needs to create user objects with base properties avoiding code duplication.  This pattern normally occurs on data migration or during an ETL process where coding is involved.
 
@@ -186,9 +186,9 @@ User wileECoyote = user.toBuilder()
                        .email("wile.e.coyote@gmail.com").build();
 ```
 
-## 6.2. Deep Copies of Objects with Immutable fields for Updates
+### Deep Copies of Objects with Immutable fields for Updates
 
-### 6.2.1. Incremental Update of Object fields
+#### Incremental Update of Object fields
 
 If we are dealing with a pure immutable object, we can retrieve the current state, create a new state and call a service for update.  In example below, an HTTP request arrives and we essentially convert the incoming User request object to our domain User object using builders.
 
@@ -228,11 +228,11 @@ public class UserConverter implements Converter<UserRequest, User> {
 ```
 
 
-# 7. Unit Tests
+## Unit Tests
 
 The following are snippets for Unit test methods for User and SuperUser classes. To automate our checks and guarantee business critical methods like _isSuperUser()_ to continue to work as expected, we would write tests for these classes. 
 
-## 7.1. UserTest
+### UserTest
 
 ```java
 @Test
@@ -257,7 +257,7 @@ void builder_IsNotSuperUser() {
 
 Full User tests can be found in [UserTest](https://github.com/kapresoft/lombok/blob/887698214954e34b9016137547b30b9f83844082/src/test/java/com/kapresoft/lombok/builders/UserTest.java#L1).
 
-## 7.2. SuperUserTest
+### SuperUserTest
 
 ```java
 @Test
@@ -284,7 +284,7 @@ void copyConstructor_ShouldHaveEqualFieldValues() {
 Full SuperUser tests can be found in [SuperUserTest](https://github.com/kapresoft/lombok/blob/887698214954e34b9016137547b30b9f83844082/src/test/java/com/kapresoft/lombok/builders/SuperUserTest.java#L1).
 
 
-# 8. Summary
+## Summary
 
 For this article, the Lombok _@Builder_ annotation on a method was illustrated to create a builder and copy constructor via the default _builder()_ and  _toBuilder()_ methods on immutable objects. A few points are also mentioned how the caveats with implementing builder and copy constructors in plain java implementations may no longer apply when using Lombok.
 
