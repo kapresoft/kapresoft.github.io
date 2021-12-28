@@ -4,30 +4,20 @@ title: Setting Java Compiler Version in Maven
 canonical_url: https://www.kapresoft.com/java/2018/08/27/setting-java-compiler-version-in-maven.html
 image: /assets/images/kapresoft1-210x.png
 category: java
+description: "Set the java compiler version in maven via the maven.compiler.target property and the maven-compiler-plugin configuration section."
 ---
 
 # Overview
 
-This document demonstrates a couple of ways to set the java compiler source and target version in maven via the 
-**maven.compiler.target** property and the **maven-compiler-plugin** configuration section.
+This document demonstrates ways to set the java compiler version in maven via the **maven.compiler.target** property and the **maven-compiler-plugin** configuration section.
 
 <!--excerpt-->
 
-# Table of Contents
-
-1. Prerequisite
-2. Setting the java compiler through the maven-compiler-plugin
-3. Setting the java compiler via maven-compiler-plugin
-4. Compiler Error Message
-5. Example Maven Repo
-
-{% include separator.html %}
-
-# 1.&nbsp;&nbsp;Prerequisite
+## Prerequisite
 - JDK 1.10 or below installed ~ [Getting Started with Java](/getting-started-with-java.html)
 - Maven 3.8.0 and above installed ~ [Getting Started with Maven](/getting-started-with-maven.html)
 
-# 2.&nbsp;&nbsp;Setting the java compiler via maven property
+# Setting the java compiler via maven property
 
 ```xml
 <properties>
@@ -37,7 +27,7 @@ This document demonstrates a couple of ways to set the java compiler source and 
 </properties>
 ```
 
-# 3.&nbsp;&nbsp;Setting the java compiler via the plugin config
+# Setting the java compiler via the plugin config
 
 - For maven-compiler-version below version 3.8.0 has the default compiler set to 1.5
 - Since maven-compiler-version 3.8.0, the default java compiler version is now 1.6
@@ -65,8 +55,7 @@ This document demonstrates a couple of ways to set the java compiler source and 
 </build>
 ```
 
-
-# 4.&nbsp;&nbsp;Compiler Error Message
+# Compiler Error Message
 
 The following is displayed when a compiler mismatch is detected during **compile** phase.  In this example, the java compiler used (1.7) is less than
 the required version (1.10).
@@ -102,7 +91,7 @@ $ mvn clean install
 <script src="https://gist.github.com/kapresoft/71d2c6d703fadcfef3b38e8040feddd3.js#25"></script>
 
 
-#  5.&nbsp;&nbsp;Example Maven Repo
+#  Example Maven Repo
 
 ## Github
 

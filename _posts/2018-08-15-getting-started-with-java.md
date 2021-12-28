@@ -9,6 +9,8 @@ redirect_from:
     - /p/get-started-with-java.html
     - /p/getting-started-with-java-programming.html
     - /getting-started-with-java.html
+description: "Get started with the Java Programming Language.  Install java and configure environment variables. How to compile and run your first Hello World java code."
+
 ---
 
 # Overview
