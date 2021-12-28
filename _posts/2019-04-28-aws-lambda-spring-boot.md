@@ -7,25 +7,25 @@ category: java
 redirect_from:
 - /p/aws-lambda-spring-boot.html
 - /aws-lambda-spring-boot.html
-description: "Use of Spring Boot with AWS Lambda, Performance, Cold Start.  AWS Lambda is a serverless compute service that allows you to run code without provisioning or managing servers.  AWS Lambda is fully integrated with the AWS cloud and is able to run in response to several AWS events like S3, Messaging Gateways, API Gateway, or any other generic AWS Resource events."
+description: "Spring Boot with AWS Lambda, Serverless, Performance, Cold Start"
 ---
 
-# 1. Overview
+# Overview
 
 In this article, we are going to look at the use of Spring Boot with AWS Lambda.  AWS Lambda is a serverless compute service that allows you to run code without provisioning or managing servers.  AWS Lambda is fully integrated with the AWS cloud and is able to run in response to several AWS events like S3, Messaging Gateways, API Gateway, or any other generic AWS Resource events.  
 <!--excerpt-->
 
-# 2. AWS Lambda Serverless Compute Environment
+# AWS Lambda Serverless Compute Environment
 
 The benefit of invoking code in an AWS Lambda environment is that you are only paying for compute services at the time a request is being processed. This particular time of adhoc on-demand service alleviates the pain points of spinning up and maintain your own infrastructure services.
 
-# 3. Why Spring Boot?
+# Why Spring Boot?
 
 Think of Spring Boot as an extension of the [Spring Framework](https://spring.io/projects/spring-framework) which provides bootstraps to eliminate boilerplate or ceremonial configurations.  Spring Framework is a framework that allows you to wire application components together.  Spring utilizes dependency injection or as others may call it, Inversion of Control (IoC).  Dependency Injection provides a consistent way of configuring and managing components which makes your code less dependent on the container than it would be in a traditional enterprise development. On top of other main features, spring has excellent support and advocates for unit and integration testing and best practices. 
 
 Spring Boot is implemented to have you up and running as quickly as possible with fewer upfront configuration. The [Spring Boot Initializr](https://start.spring.io/) online tool can help you kickstart your app.  Spring Boot together with AWS Lambda, allows developers to focus more on business logic and less time supporting server infrastructures.
 
-# 4. Spring Boot Performance
+# Spring Boot Performance
 
 >Is Spring Boot too slow or too bloated to run in AWS Lambda?
 
@@ -35,19 +35,19 @@ When running a Lambda code there are a couple of things that you need to be mind
 1. Cold Start
 2. Subsequent Execution of Code
 
-## 4.1 Cold Start
+## Cold Start
 
 The Cold Start is essentially the cost or latency incurred when a first request comes in after deployment. After the first request is process, the instance is alive and will be reused for subsequent incoming requests.  When the instance is idle there is a probability that it will be recycled and for the purpose of this article, we will not cover this topic of recycling here.
 
-## 4.2 The Subsequent Execution of Code
+## The Subsequent Execution of Code
 
 After the cost of Cold Start is incurred, the lambda code is up and running and is ready to take tons of requests.  The lambda instance at this state should be running optimally with no startup costs unless the instance is recycled.
 
-# 5. Repository
+# Repository
 
 While going through this article, the example code will be referenced in this github repository [https://github.com/kapresoft/spring-boot-aws-lambda](https://github.com/kapresoft/spring-boot-aws-lambda).  You may follow or navigate directly to the source located here.
 
-# 6. Handler function
+# Handler function
 
 In order to invoke a code (or a lambda function), we need to specify a handler in the AWS Lambda configuration. For this specific example, the Handler in the AWS Lambda config page is specified as:
 
@@ -55,7 +55,7 @@ In order to invoke a code (or a lambda function), we need to specify a handler i
 com.kapresoft.demo.springbootlambda.Lambda::handler
 ```
 
-# 7. Constructor Initialization
+# Constructor Initialization
 
 See: [Lambda.java](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/java/com/kapresoft/demo/springbootlambda/Lambda.java) in github
 
@@ -96,7 +96,7 @@ public class Lambda {
 }
 ```
 
-# 8. Use of Environment Variables in Lambda
+# Use of Environment Variables in Lambda
 
 Setting the environment variables to set the spring active profile is a good way to run your lambda in different environments. In this example, we will need to specify an environment variable "test" or "prod".  In addition to the base [application.yml](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/resources/application.yml), this will configure the application to pickup additional settings specified in the [application-test.yml](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/resources/application-test.yml) or [application-prod.yml](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/resources/application-prod.yml) configuration files.
 
@@ -110,10 +110,10 @@ In the case of multiple profile values like 'prod,experiment', Spring Boot will 
 
 An example usecase for this type of profile is for running experiments without actually having to redeploy any code changes is to specify an additional profile like "experiment" and have it pickup additional configuration, in this case, to enable an experiment.  When the experiment is complete, you will be able to update the profile to only pickup "prod".
 
-## 8.1. See Article for more details on Spring Boot Profiles
+## See Article for more details on Spring Boot Profiles
 * [Spring Boot Profiles in AWS Lambda](/java/2019/10/20/aws-lambda-spring-boot-profiles.html)
 
-# 9. Example Cloud Watch Log
+# Example Cloud Watch Log
 
 Click the following image to see the expanded-view of the example AWS Cloud Watch log.
 
