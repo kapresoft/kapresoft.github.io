@@ -13,7 +13,7 @@ description: "Get started with the Java Programming Language.  Install java and 
 
 ---
 
-# Overview
+## Overview
 
 The following page will illustrate how to get started with the Java Programming
 Language.&nbsp;&nbsp;In addition, this document provides an overview of how to install
@@ -22,15 +22,7 @@ illustrates how to compile and run your first Hello World java code.
 
 <!--excerpt-->
 
-# Table of Contents
-1. Downloading and Installing a Java Development Kit (JDK)
-  - Oracle Java Development Kit
-  - Open Java Development Kit
-
-2. Environment variables
-3. Compiling and Running Your Java Application
-
-# 1.&nbsp;&nbsp;Downloading and Installing a Java Development Kit
+## Downloading and Installing a Java Development Kit
 
 A Java Development Kit or JDK may be downloaded from the Oracle Java Website or the Open JDK.
 
@@ -48,11 +40,11 @@ $ java -version
 
 <!-- ########################################################### -->
 
-# 2.&nbsp;&nbsp;Environment Variables
+## Environment Variables
 
 After the installation of the JDK the JAVA_HOME is a system environment variable will need to be set.
 
-## Mac OS
+### Mac OS
 
 To setup environment variables in Mac OS, open a console and execute the following command.
 Note that in this example, 1.8 is the version of the installed JDK.
@@ -61,7 +53,7 @@ Note that in this example, 1.8 is the version of the installed JDK.
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 ```
 
-## Linux/Unix Systems
+### Linux/Unix Systems
 
 In Linux or Unix systems the environment variable should be set to the JDK installation path as shown below.
 
@@ -76,7 +68,7 @@ echo $JAVA_HOME
    /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
 ```
 
-## Windows
+### Windows
 Setup the environment variable in a windows system by following the series of steps below.
 
 - Right-click on the My Computer or This PC. and select the <b>Properties</b> from the menu item. The Control Panel window will open up.
@@ -107,7 +99,7 @@ C:\> java -version
 
 <!-- ########################################################### -->
 
-# 3.&nbsp;&nbsp;Compiling and Running Your Java Application
+## Compiling and Running Your Java Application
 
 The very first program we will write is the Hello World program.
 This Java code will print out to the console the words "Hello World!"
