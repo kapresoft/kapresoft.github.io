@@ -7,13 +7,13 @@ category: java
 description: "This article illustrates how to serialize and write tests for immutable objects using Jackson and Lombok in Spring Boot."
 ---
 
-# 1. Overview
+## Overview
 
 This article illustrates how to serialize and write tests for immutable objects using Jackson and Lombok in Spring Boot.
 
 <!--excerpt-->
 
-# 2. Project
+## Project
 
 The maven project provided in this example used the spring initializr page https://start.spring.io to generate the initial source code.
 
@@ -21,7 +21,7 @@ The github repository that this article references can be found in [https://gith
 
 For checking out and building the Spring Boot project, please refer to the [README](https://github.com/kapresoft/spring-boot-serialize-immutable-objects/blob/main/README.md) documentation on the github repository.
 
-## **2.1.** POM Dependencies
+### POM Dependencies
 
 The spring initializr page configured the pom parent element as shown below.
 
@@ -76,21 +76,21 @@ Avoid declaring the version as such unless it is necessary:
 
 See the full project [pom.xml](https://github.com/kapresoft/spring-boot-serialize-immutable-objects/blob/main/pom.xml)
 
-## 2.2. Jackson
+### Jackson
 
 Jackson is a multi-purpose high-performance Java library used for serializing / deserializing byte streams into Java Data Transfer Objects. Developers also refer to the term "serialization" to be the same as Marshalling and Unmarshalling. The most common example is the serialization of JSON or XML byte streams into Java Objects.
 
-## 2.3. Lombok
+### Lombok
 
 Lombok is a java library that developers use to eliminate boilerplate code such as getters and setters of a field. Lombok runs as an annotation project processor that adds generated code to your lombok-qualified classes at compile time. With the help of a plugin, most modern developer tools like IntelliJ or Visual Studio code support Lombok. In addition, the Lombok @Builder annotation is also used in this article to simplify the creation of new objects through builder factory methods.
 
-## 2.4. AssertJ
+### AssertJ
 
 AssertJ is a fluent assertion framework is an extensible component that is included with the base spring boot starter project.  The framework provides readability, fluent method assertion flow, continuity, and auto-completion of methods if using an IDE.  The assertion framework also encourages eliminating code duplication in your test code. There are many other benefits provided by AssertJ compared to the standard JUnit assertions.
 
 Please visit [AssertJ Document](https://assertj.github.io/doc/) for more details.
 
-## 2.5. Serialization Unit Tests
+### Serialization Unit Tests
 
 As a basic rule for developers, Unit Testing guarantees that all code meets quality standards before it's deployed. In addition, existing Unit Tests can be used to verify a bug that may be discovered in production in the future.
 
@@ -98,11 +98,11 @@ Over the course of the Software Development Life Cycle (SDLC), testing your code
 
 Writing Serialization tests for your Java Data Transport Objects are essentially cheap and easy to maintain along with utilizing an assertion framework like AssertJ.
 
-## 2.6. Benefits of Immutability
+### Benefits of Immutability
 
 Immutable objects are thread-safe and the state of the objects cannot be modified once created. Developers do not need to worry about passing in data that could be manipulated. After construction, objects can be handed-off downstream without side effects.  
 
-# 3. Serialization of Immutable Objects
+## Serialization of Immutable Objects
 
 Jackson provides a mechanism called Object Serialization or Deserialization where an object can be represented as JSON, XML, and others formats.  This tutorial will only demonstrate serialization of JSON data to and from a Java Object.
 
@@ -114,13 +114,13 @@ The JSON string below can be converted or deserialized into a Java Account class
 **Deserialization**
 - JSON String to Java Object
 
-## 3.1. JSON Representation of an Account
+### JSON Representation of an Account
 
 For demonstration, this article uses the following JSON representation of an Account payload.
 
 <script src="https://gist.github.com/kapresoft/4294056068aba51b3de244e1db045d90.js"></script>
 
-## 3.2. Immutable Account Class using Lombok @Value Annotation
+### Immutable Account Class using Lombok @Value Annotation
 
 The following example utilizes the _Lombok_ @Value annotation to conveniently write a Java class whose instance is an immutable object.
 
@@ -130,7 +130,7 @@ Using the @Value annotation will produce a class with final properties or fields
 
 The java source can be viewed here for [Account.java](https://github.com/kapresoft/spring-boot-serialize-immutable-objects/blob/main/src/main/java/com/kapresoft/springboot/serializeimmutableobjects/dto/simple/Account.java).
 
-#### 3.2.1 Unit Test for Converting Account Object to JSON String (Serialization)
+##### Unit Test for Converting Account Object to JSON String (Serialization)
 
 For a given Account instance with values, the following unit test demonstrates the serialization of the java object into a JSON string.
 
@@ -150,7 +150,7 @@ void canSerializeAccount() throws JsonProcessingException {
 
 The java source can be viewed here for [AccountSerializationTest.java](https://github.com/kapresoft/spring-boot-serialize-immutable-objects/blob/main/src/test/java/com/kapresoft/springboot/serializeimmutableobjects/simple/AccountSerializationTest.java#L27-L37).
 
-#### 3.2.2 Unit Test for Converting JSON String to Account Object (Deserialization)
+##### Unit Test for Converting JSON String to Account Object (Deserialization)
 
 Given the following JSON string content depicted in section 3.1, the following unit test demonstrates the JSON deserialization into an Account object.
 
@@ -170,7 +170,7 @@ void canDeserializeAccountJSON() throws JsonProcessingException {
 
 The java source can be viewed here for [AccountSerializationTest.java](https://github.com/kapresoft/spring-boot-serialize-immutable-objects/blob/main/src/test/java/com/kapresoft/springboot/serializeimmutableobjects/simple/AccountSerializationTest.java#L39-L48).
 
-## 3.3. Immutable Account Class without using Lombok @Value Annotation
+### Immutable Account Class without using Lombok @Value Annotation
 
 The following example is an alternate implementation of an Account class in the previous section that doesn't use @Value, but instead uses @Getter and specifies explicitly additional annotations to represent a java immutable object.
 
@@ -186,7 +186,7 @@ Either use of Lombok @Value or the explicit @Getter shown on sections 3.2 and 3.
 
 The java source can be viewed here for [AccountWithoutUsingValue.java](https://github.com/kapresoft/spring-boot-serialize-immutable-objects/blob/main/src/main/java/com/kapresoft/springboot/serializeimmutableobjects/dto/simple/AccountWithoutUsingValue.java).
 
-#### 3.3.1 Unit Test for Converting AccountWithoutUsingValue Object to JSON String (Serialization)
+##### Unit Test for Converting AccountWithoutUsingValue Object to JSON String (Serialization)
 
 For a given AccountWithoutUsingValue instance with values, the following unit test demonstrates the serialization of the java object into a JSON string.
 
@@ -206,7 +206,7 @@ void canSerializeAccount_WithoutUsingValue() throws JsonProcessingException {
 
 The java source can be viewed here for [AccountSerializationTest.java](https://github.com/kapresoft/spring-boot-serialize-immutable-objects/blob/main/src/test/java/com/kapresoft/springboot/serializeimmutableobjects/simple/AccountSerializationTest.java#L50-L60).
 
-#### 3.3.2 Unit Test for Converting JSON String to AccountWithoutUsingValue Object (Deserialization)
+##### Unit Test for Converting JSON String to AccountWithoutUsingValue Object (Deserialization)
 
 Given the following JSON string content depicted in section 3.1, the following unit test demonstrates the JSON deserialization into an AccountWithoutUsingValue object.
 
@@ -226,11 +226,11 @@ void canDeserializeAccountJSON_WithoutUsingValue() throws JsonProcessingExceptio
 
 The java source can be viewed here for [AccountSerializationTest.java](https://github.com/kapresoft/spring-boot-serialize-immutable-objects/blob/main/src/test/java/com/kapresoft/springboot/serializeimmutableobjects/simple/AccountSerializationTest.java#L62-L71).
 
-## 3.4. Immutability and Inheritance
+### Immutability and Inheritance
 
 Immutability and Lombok also works well with a hierarchical or parent-child object structure.  HierarchicalAccount class which extends from a BaseAccount class is implemented in Jackson as shown in the next two sections.
 
-### 3.4.1 BaseAccount Class
+#### BaseAccount Class
 
 The BaseAccount is an abstract class and must declare a @Getter annotation for the property getter methods.
 
@@ -238,7 +238,7 @@ The BaseAccount is an abstract class and must declare a @Getter annotation for t
 
 The java source can be viewed here for [BaseAccount.java]( https://github.com/kapresoft/spring-boot-serialize-immutable-objects/blob/main/src/main/java/com/kapresoft/springboot/serializeimmutableobjects/dto/hierarchical/BaseAccount.java)
 
-### 3.4.2 HierarchicalAccount Class
+#### HierarchicalAccount Class
 
 For this parent-child hierarchical structure, the figure below shows that HierarchicalAccount class extends from the parent BaseAccount class.
 
@@ -257,7 +257,7 @@ Lombok updates to handle a hierarchical structure:
 
 The java source can be viewed here for [HierarchicalAccount.java]( https://github.com/kapresoft/spring-boot-serialize-immutable-objects/blob/main/src/main/java/com/kapresoft/springboot/serializeimmutableobjects/dto/hierarchical/HierarchicalAccount.java)
 
-#### 3.4.3 Unit Test for Converting HierarchicalAccount Object to JSON String (Serialization)
+##### Unit Test for Converting HierarchicalAccount Object to JSON String (Serialization)
 
 For a given HierarchicalAccount instance with values, the following unit test demonstrates the serialization of the java object into a JSON string.
 
@@ -277,7 +277,7 @@ void canSerializeHierarchicalAccount() throws JsonProcessingException {
 
 The java source can be viewed here for [HierarchicalAccountSerializationTest.java](https://github.com/kapresoft/spring-boot-serialize-immutable-objects/blob/main/src/test/java/com/kapresoft/springboot/serializeimmutableobjects/hierarchical/HierarchicalAccountSerializationTest.java#L26-L36).
 
-#### 3.4.4 Unit Test for Converting JSON String to HierarchicalAccount Object (Deserialization)
+##### Unit Test for Converting JSON String to HierarchicalAccount Object (Deserialization)
 
 Given the following JSON string content depicted in section 3.1, the following unit test demonstrates the JSON deserialization into an HierarchicalAccount object.
 
@@ -297,7 +297,7 @@ void canDeserializeHierarchicalAccount() throws JsonProcessingException {
 
 The java source can be viewed here for [HierarchicalAccountSerializationTest.java](https://github.com/kapresoft/spring-boot-serialize-immutable-objects/blob/main/src/test/java/com/kapresoft/springboot/serializeimmutableobjects/hierarchical/HierarchicalAccountSerializationTest.java#L38-L47).
 
-# 4. Summary
+## Summary
 
 This article in summary discussed the following points:
 
