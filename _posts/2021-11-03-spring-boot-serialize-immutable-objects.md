@@ -1,5 +1,4 @@
 ---
-layout: kapresoft
 title: "Spring Boot • Serialize Immutable Objects"
 canonical_url: https://www.kapresoft.com/java/2021/11/03/spring-boot-serialize-immutable-objects.html
 image: /assets/images/kapresoft1-210x.png

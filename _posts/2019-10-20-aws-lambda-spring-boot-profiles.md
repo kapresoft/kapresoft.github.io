@@ -1,5 +1,4 @@
 ---
-layout: kapresoft
 title: Spring Boot Profiles in AWS Lambda
 image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/10/20/aws-lambda-spring-boot-profiles.html

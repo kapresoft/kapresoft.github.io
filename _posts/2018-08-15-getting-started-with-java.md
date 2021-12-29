@@ -1,5 +1,4 @@
 ---
-layout: kapresoft
 title: Getting Started With Java
 canonical_url: https://www.kapresoft.com/java/2018/08/15/getting-started-with-java.html
 category: java

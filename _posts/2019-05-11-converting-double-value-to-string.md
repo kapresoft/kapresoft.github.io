@@ -1,5 +1,4 @@
 ---
-layout: kapresoft
 title: Converting double to a String in Java
 image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/05/11/converting-double-value-to-string.html

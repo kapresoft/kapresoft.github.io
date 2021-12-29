@@ -2,12 +2,14 @@ theme: jekyll-theme-leap-day
 title: KapreSoft
 name: KapreSoft.com
 description: The Java Blogger by Antonio Lagnada
+layout: kapresoft
 
 exclude:
   - "*.sh"
   - "*.code-workspace"
   - "*.gemspec"
   - "README*.md"
+  - ".idea/*"
 
 # set to "dev" so that analytics and adds won't show
 env: prod
@@ -28,6 +30,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-last-modified-at
+  - jekyll-default-layout
 
 last-modified-at:
   date-format: '%d-%b-%y %T %z'

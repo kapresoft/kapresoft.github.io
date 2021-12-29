@@ -1,5 +1,4 @@
 ---
-layout: kapresoft
 title: Getting Started With Maven
 canonical_url: https://www.kapresoft.com/java/2018/08/16/getting-started-with-maven.html
 category: java

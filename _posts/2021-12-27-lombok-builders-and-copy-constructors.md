@@ -1,5 +1,4 @@
 ---
-layout: kapresoft
 title: "Lombok • Builders and Copy Constructors"
 canonical_url: https://www.kapresoft.com/java/2021/12/27/lombok-builders-and-copy-constructors.html
 image: /assets/images/kapresoft1-210x.png

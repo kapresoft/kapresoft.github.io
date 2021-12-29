@@ -1,5 +1,4 @@
 ---
-layout: kapresoft
 title: Getting Started With Gradle
 canonical_url: https://www.kapresoft.com/java/2018/08/14/getting-started-with-gradle.html
 image: /assets/images/kapresoft1-210x.png

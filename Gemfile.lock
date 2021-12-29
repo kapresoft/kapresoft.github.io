@@ -46,6 +46,8 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-default-layout (0.1.5)
+      jekyll (>= 3.0, < 5.0)
     jekyll-last-modified-at (1.3.0)
       jekyll (>= 3.7, < 5.0)
       posix-spawn (~> 0.3.9)
@@ -120,6 +122,7 @@ DEPENDENCIES
   addressable (>= 2.8.0)
   html-proofer (~> 3.0)
   jekyll (~> 3.8)
+  jekyll-default-layout
   jekyll-last-modified-at
   jekyll-theme-leap-day!
   kramdown-parser-gfm

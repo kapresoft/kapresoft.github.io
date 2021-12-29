@@ -1,5 +1,5 @@
 ---
-layout: kapresoft
+#
 title: AWS Lambda Spring Cloud Functions
 image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2021/04/02/aws-lambda-springcloud-functions.html
