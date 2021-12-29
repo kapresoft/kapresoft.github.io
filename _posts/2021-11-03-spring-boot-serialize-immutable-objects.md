@@ -4,7 +4,7 @@ title: "Spring Boot • Serialize Immutable Objects"
 canonical_url: https://www.kapresoft.com/java/2021/11/03/spring-boot-serialize-immutable-objects.html
 image: /assets/images/kapresoft1-210x.png
 category: java
-description: "This article illustrates how to serialize and write tests for immutable objects using Jackson and Lombok in Spring Boot."
+description: "Serialize immutable objects using Jackson and Lombok in Spring Boot."
 ---
 
 ## Overview
