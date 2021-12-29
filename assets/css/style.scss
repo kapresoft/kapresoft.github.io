@@ -3,6 +3,14 @@
 
 @import "{{ site.theme }}";
 
+p, div.excerpt {
+  line-height: 1.3em;
+}
+
+div.excerpt {
+  padding: 5px 0 20px 0;
+}
+
 div.site-name {
   line-height:1.1;
   font-size:28px;
