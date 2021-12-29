@@ -7,39 +7,24 @@ redirect_from:
     - /p/getting-started-with-gradle.html
     - /getting-started-with-gradle.html
 category: java
+description: "Getting started with the gradle build system in java"
 ---
 
-# Overview
+## Overview
 
 The following page will be an excellent guide with getting started with the gradle build system in your
 Java&trade; projects.&nbsp;&nbsp;Use this guide as a reference when using Gradle as a build system for the very first time.
 
 <!--excerpt-->
 
-# Table of Contents
-
-1. What is Gradle?
-2. Downloading and Installing Gradle
-3. Environment Variables and System Paths
-   - Alternative Ways to Install Gradle
-4. Your First Gradle Project   
-   - Create Project Directory   
-   - Create a Gradle Wrapper
-   - Initialize a New Gradle Build
-   - Initialize Your Project
-   - Build Your Project
-   - Run Your App
-   - Gradle Tasks
-5. Gradle Help
-
-# 1.&nbsp;&nbsp;What is Gradle?
+## What is Gradle?
 
 Gradle is an evolutionary build system that extends upon the concepts of the <b>Apache Ant</b> and the <b>Apache Maven</b> 
 build system.&nbsp;&nbsp;The project configuration is based off the <b>Groovy</b> DSL (Domain-specific Language) as 
 opposed to the XML form used by Apache Maven.
 
 
-# 2.&nbsp;&nbsp;Downloading and Installing Gradle
+## Downloading and Installing Gradle
 
 Gradle runs on all major operating systems and requires a Java JDK version 7 or higher to run.&nbsp;&nbsp;In order for 
 gradle to run, the <b>JAVA_HOME</b> environment variable must be set.
@@ -97,7 +82,7 @@ $ sdk install gradle 3.5.1
 
 <!-- ##################################################### -->
 
-# 3.&nbsp;&nbsp;Environment Variables and System Paths
+## Environment Variables and System Paths
 
 ### Environment Variable for *NIX Systems
 
@@ -197,7 +182,7 @@ C:\> gradle --version
 
 <!-- ##################################################### -->
 
-# 4.&nbsp;&nbsp;Your First Gradle Project
+## Your First Gradle Project
 
 ### Create Project Directory
 
