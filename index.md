@@ -1,5 +1,5 @@
 ---
-layout: no_ads
+layout: homepage
 canonical_url: https://www.kapresoft.com
 image: /assets/images/kapresoft1-210x.png
 redirect_from: 
