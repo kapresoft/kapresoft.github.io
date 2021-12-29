@@ -6,11 +6,13 @@ by Matt Graham
 @import "normalize";
 @import "fonts";
 @import "rouge-base16-dark";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700&family=Roboto:wght@100;300;500;700&family=Merriweather:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700&family=Roboto:wght@100;300;500;700&family=Merriweather:ital,wght@0,700;1,300&display=swap');
 
 $body-font: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 $header-font-weight: 700;
 $header-font-family: 'Roboto Slab', serif;
+$header3-font-family: 'Merriweather', serif;
+$header3-font-weight: 700;
 
 body {
   font-family: $body-font;
@@ -22,11 +24,16 @@ body {
   background: url(../images/body-background.png) #eae6d1;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   color:#333;
   margin:0 0 10px;
   font-family: $header-font-family;
   font-weight: $header-font-weight;
+}
+
+h3 {
+  font-family: $header3-font-family;
+  font-weight: $header3-font-weight;
 }
 
 div {

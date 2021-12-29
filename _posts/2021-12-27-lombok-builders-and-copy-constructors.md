@@ -49,7 +49,7 @@ Line #141 on the pom file in the link and figure below shows the specified versi
 
 $HOME/.m2/repository/<a target="_blank" href="https://gist.github.com/kapresoft/05f5d652767b30c885b8290a3ea937b3#file-spring-boot-dependencies-2-6-1-pom-L140-L142">org/springframework/boot/spring-boot-dependencies/2.6.1/spring-boot-dependencies-2.6.1.pom</a>
 
-<div class="figure"><span class="title">Figure 2.1.</span>Lombok Version Configured in Spring Dependencies POM</div>
+<div class="figure"><span class="title">Figure 1.</span>Lombok Version Configured in Spring Dependencies POM</div>
 ![Lombok Version in POM](/assets/img/lombok-version.webp)
 
 
