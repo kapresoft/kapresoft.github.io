@@ -69,9 +69,7 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
-    nokogiri (1.13.6-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.13.6-x86_64-linux)
+    nokogiri (1.13.8-x86_64-darwin)
       racc (~> 1.4)
     parallel (1.21.0)
     parser (3.0.3.2)
@@ -119,7 +117,7 @@ GEM
 PLATFORMS
   x86_64-darwin-19
   x86_64-darwin-20
-  x86_64-linux
+  x86_64-darwin-21
 
 DEPENDENCIES
   addressable (>= 2.8.0)
@@ -129,7 +127,7 @@ DEPENDENCIES
   jekyll-last-modified-at
   jekyll-theme-leap-day!
   kramdown-parser-gfm
-  nokogiri (>= 1.12.5)
+  nokogiri (>= 1.13.8)
   rubocop (~> 0.50)
   w3c_validators (~> 1.3)
   webrick
