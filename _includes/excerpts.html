@@ -1,13 +1,24 @@
 <div>
     {% for post in site.posts %}
     <div>
-        {% unless page.title == post.title or post.draft == true %}
-        <a href="{{ post.url }}"><span class="excerpt_title">{{ post.title }}</span></a>
-        <span style="float: right; font-size: smaller;">Post Date: {{ post.date | date_to_string }}</span><br/>
-        <div class="excerpt">
+        {% unless page.title == post.title %}
+            {% unless post.draft == true %}
+            <a href="{{ post.url }}"><span class="excerpt_title">{{ post.title }}</span></a>
+            <span style="float: right; font-size: smaller;">Post Date: {{ post.date | date_to_string }}</span><br/>
+            <div class="excerpt">
+                {{ post.excerpt | remove: '<p>' | remove: '</p>' | remove_first: '1.' | remove_first: 'Overview' | strip_html }}
+                <a href="{{ post.url }}"></a>
+            </div>
+            {% else %}
+            {% if site.env == 'dev' %}
+            <a href="{{ post.url }}"><span class="excerpt_title">{% if post.draft %}DRAFT // {% endif %}{{ post.title }}</span></a>
+            <span style="float: right; font-size: smaller;">Post Date: {{ post.date | date_to_string }}</span><br/>
+            <div class="excerpt">
             {{ post.excerpt | remove: '<p>' | remove: '</p>' | remove_first: '1.' | remove_first: 'Overview' | strip_html }}
             <a href="{{ post.url }}"></a>
-        </div>
+            </div>
+            {% endif %}
+            {% endunless %}
         {% endunless %}
     </div>
     {% endfor %}

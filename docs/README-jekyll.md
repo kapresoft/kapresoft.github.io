@@ -11,5 +11,11 @@ Here are some of the most common commands:
 - ```jekyll new-theme``` - Creates a new Jekyll theme scaffold.
 - ```jekyll doctor``` - Outputs any deprecation or configuration issues.
 
-See Also
+## Liquid
+
+### Comment Line
+```{% comment %} This is a comment in Liquid {% endcomment %}```
+
+## See Also
 - https://jekyllrb.com/docs/usage/
+- https://shopify.dev/api/liquid#liquid_basics
