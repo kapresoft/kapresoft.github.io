@@ -4,3 +4,9 @@ title: KapreSoft (Dev)
 env: dev
 show_google_ads: false
 
+# ----------------
+# Google Analytics
+ga:
+  enable: false
+  tracking_id: G-1111111111
+

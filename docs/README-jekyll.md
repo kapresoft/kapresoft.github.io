@@ -12,6 +12,7 @@ Here are some of the most common commands:
 - ```jekyll doctor``` - Outputs any deprecation or configuration issues.
 
 ## Liquid
+- https://shopify.dev/api/liquid/basics
 
 ### Comment Line
 ```{% comment %} This is a comment in Liquid {% endcomment %}```

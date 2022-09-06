@@ -14,7 +14,14 @@ exclude:
 # set to "dev" so that analytics and adds won't show
 env: prod
 
-google_analytics: UA-123953282-1
+# OLD Analytics Tracking ID (Deprecated)
+# google_analytics: UA-123953282-1
+
+# ----------------
+# Google Analytics (V4)
+ga:
+  enable: true
+  tracking_id: G-1EG60WX50K
 
 show_google_ads: true
 show_banner: false

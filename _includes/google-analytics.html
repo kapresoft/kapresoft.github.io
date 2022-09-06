@@ -1,0 +1,11 @@
+{% if site.ga.enable %}{% comment %}Global site tag (gtag.js) - Google Analytics V4 (NEW){% endcomment %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga.tracking_id }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.ga.tracking_id }}', {
+            'page_title': 'Home Page'
+        });
+    </script>
+{% endif %}
