@@ -1,0 +1,46 @@
+{% comment %}
+## Page Level Highlighting using Highlightjs
+
+### In Page Properties
+highlighterjs:
+    enable: true
+    theme: qtcreator-dark (optional)
+
+### Example HTML
+
+<pre class="hljs"><code class="language-java">
+@Value @Builder
+public class Resident {
+
+    @With
+    String fullName;
+    @With
+    String phoneNumber;
+    String streetAddress;
+    String city;
+    String state;
+    String zipCode;
+    String country;
+
+}
+</code></pre>
+{% endcomment %}
+{% comment %}More Themes: https://github.com/highlightjs/highlight.js/tree/main/src/styles{% endcomment %}
+{% comment %}Favorites: a11y-dark, androidstudio, atom-one-dark{% endcomment %}
+{% if page.highlighterjs.enable %}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/{{ page.highlighterjs.theme | default: site.highlighterjs.default_theme }}.min.css">
+{% comment %}<link rel="stylesheet" href="{{ '/assets/css/highlightjs-androidstudio.min.css' | relative_url }}">{% endcomment %}
+
+<style>
+    .hljs { padding: 5px !important; background: #333333 !important; }
+    .hljs-meta { color: #3399cc; }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre.hljs code').forEach((el) => {
+            hljs.highlightElement(el);
+        });
+    });
+</script>
+{% endif %}

@@ -3,9 +3,18 @@ Leap Day for GitHub Pages
 by Matt Graham
 */
 
+
 @import "normalize";
 @import "fonts";
+
+// ==============================================================
+// Used in rouge themes
+//Get more themes at: https://jwarby.github.io/jekyll-pygments-themes/languages/java.html
+$pre-bg: #333333;
 @import "rouge-base16-dark";
+//@import "rouge-zenburn";
+// ==============================================================
+//@import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/androidstudio.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;700&family=Roboto:wght@100;300;500;700&family=Merriweather:ital,wght@0,700;1,300&display=swap');
 
 $body-font: 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -114,13 +123,13 @@ code {
   text-shadow: 0px 1px 0px #000;
   margin: 0 4px;
   padding: 2px 6px;
-  background: #333;
+  background: $pre-bg;
   border-radius: 2px;
 }
 
 pre {
   padding:8px 15px;
-  background: #333333;
+  background: $pre-bg;
   border-radius: 3px;
   border:1px solid #c7c7c7;
   overflow: auto;
@@ -129,6 +138,17 @@ pre {
   code {
     margin: 0px;
     padding: 0px;
+  }
+
+}
+
+.highlight table {
+  $lineNumberMode-Padding: 5px 0 5px 5px !important;
+  td pre.lineno {
+    padding: $lineNumberMode-Padding;
+  }
+  td.code pre {
+    padding: $lineNumberMode-Padding;
   }
 }
 

@@ -17,6 +17,34 @@ Here are some of the most common commands:
 ### Comment Line
 ```{% comment %} This is a comment in Liquid {% endcomment %}```
 
+### Highlighting using rogue
+- see: https://jekyllrb.com/docs/liquid/tags/
+
+#### Example #1
+
+```text
+```java
+class Person {
+   private String name;
+   Person(String name) {}
+}
+// end with ```
+```
+
+#### Example #2
+
+>There is a second argument to highlight called linenos that is optional. Including the linenos argument will force the highlighted code to include line numbers. For instance, the following code block would include line numbers next to each line:
+
+```text
+{% highlight java linenos %}
+class Person {
+   private String name;
+   Person(String name) {}
+}
+{% endhighlight %}
+```
+
+
 ## See Also
 - https://jekyllrb.com/docs/usage/
 - https://shopify.dev/api/liquid#liquid_basics

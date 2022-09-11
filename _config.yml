@@ -28,6 +28,13 @@ show_banner: false
 
 excerpt_separator: <!--excerpt-->
 
+# ---------------
+# highlighterjs
+#  - no line number supper
+# Themes: https://github.com/highlightjs/highlight.js/tree/main/src/styles
+highlighterjs:
+    default_theme: androidstudio
+
 github:
     is_project_page: true
     owner_url: https://tony.resume.lagnada.com

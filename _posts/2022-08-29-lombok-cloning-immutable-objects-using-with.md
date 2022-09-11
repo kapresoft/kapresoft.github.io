@@ -1,12 +1,17 @@
 ---
+theme: hello
 title: "Lombok • Using @With Annotation to Clone Immutable Objects"
 canonical_url: https://www.kapresoft.com/java/2022/08/29/lombok-cloning-immutable-objects-using-with.html
 image: /assets/images/kapresoft1-210x.png
 category: java
 description: "Using @With Annotation to Clone Immutable Objects"
+highlighterjs:
+    enable: true
+    xxxtheme: qtcreator-dark
 ---
 
 ## Overview
+{{ site.highlighter }}
 
 Using Lombok's [@With](https://projectlombok.org/features/With) Annotation to Clone Immutable Objects is a beneficial feature that helps developers minimize code replication and ceremonial code.  It is the next best alternative to Copy Constructs in object-oriented programming.  The _@With_ annotation also requires _@AllArgsConstructor_ to function correctly.
 
@@ -22,8 +27,7 @@ The source code referenced by this article can be found at [https://github.com/k
 
 In this simple example, we will model a resident of a house.  The _Resident_ class can be modeled in Lombok as:
 
-```java
-@Value @Builder
+<pre class="hljs"><code class="language-java">@Value @Builder
 public class Resident {
 
     @With
@@ -37,14 +41,29 @@ public class Resident {
     String country;
 
 }
-```
+</code></pre>
+
 Source: [Resident.java](https://github.com/kapresoft/lombok-with/blob/master/src/main/java/com/kapresoft/lombok/builders/Resident.java)
 
 In order to utilize the power _@With_ annotation, you must use it in conjunction with _@AllArgsConstructor_. In the above class definition, _@Value_ is used.  The _@Value_ is a simplification for configuring a class with immutable fields. 
 
 The _@Value_ annotation can be similarly modeled by _@Getter_ and final fields and other annotations as shown below:
 
-```java@Getter 
+<pre class="hljs"><code class="language-java">@Getter 
+@FieldDefaults(makeFinal=true, level=AccessLevel.PRIVATE) 
+@AllArgsConstructor 
+@ToString 
+@EqualsAndHashCode
+public class Resident {
+    @Getter @With
+    private final String fullName;
+    // ... etc
+}
+</code></pre>
+
+
+```java 
+@Getter 
 @FieldDefaults(makeFinal=true, level=AccessLevel.PRIVATE) 
 @AllArgsConstructor 
 @ToString 
@@ -129,8 +148,7 @@ The _@With_ annotation is a class or field-level annotation.
 #### Class Level
 In the main example, the _@With_ was placed at the field-level. In this example, a class-level _@With_ annotation means that a 'with' method is generated for each and every field.
 
-```java
-@Value @Builder @With
+<pre class="hljs"><code class="language-java">@Value @Builder @With
 public class Resident {
 
     String fullName;
@@ -142,10 +160,9 @@ public class Resident {
     String country;
 
 }
-```
+</code></pre>
 
 ```java
-
 final Resident johnDoe = Resident.builder()
             .streetAddress("100 Main St")
             .city("Bellevue").state("WA")
@@ -161,7 +178,6 @@ final Resident janeDoe = johnDoe
         .withCity("Beverly Hills")
         .withState("CA")
         .withZipCode("90210");
-
 ```
 
 #### Access Level
