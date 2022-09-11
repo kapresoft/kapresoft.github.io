@@ -1,14 +1,14 @@
 ---
-title: "Lombok • Cloning Immutable Objects Using @With Annotation"
+title: "Lombok • Using @With Annotation to Clone Immutable Objects"
 canonical_url: https://www.kapresoft.com/java/2022/08/29/lombok-cloning-immutable-objects-using-with.html
 image: /assets/images/kapresoft1-210x.png
 category: java
-description: "Cloning Immutable Objects Using @With Annotation"
+description: "Using @With Annotation to Clone Immutable Objects"
 ---
 
 ## Overview
 
-Cloning immutable objects using Lombok's [@With](https://projectlombok.org/features/With) annotation is a beneficial feature that helps developers minimize code replication and ceremonial code.  It is the next best alternative to Copy Constructs in object-oriented programming.  The _@With_ annotation also requires _@AllArgsConstructor_ to function correctly.
+Using Lombok's [@With](https://projectlombok.org/features/With) Annotation to Clone Immutable Objects is a beneficial feature that helps developers minimize code replication and ceremonial code.  It is the next best alternative to Copy Constructs in object-oriented programming.  The _@With_ annotation also requires _@AllArgsConstructor_ to function correctly.
 
 <!--excerpt-->
 
