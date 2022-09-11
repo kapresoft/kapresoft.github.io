@@ -61,20 +61,6 @@ public class Resident {
 }
 </code></pre>
 
-
-```java 
-@Getter 
-@FieldDefaults(makeFinal=true, level=AccessLevel.PRIVATE) 
-@AllArgsConstructor 
-@ToString 
-@EqualsAndHashCode
-public class Resident {
-    @Getter @With
-    private final String fullName;
-    // ... etc
-}
-``` 
-
 Please Refer to [Lombok • Builders and Copy Constructors](/java/2021/12/27/lombok-builders-and-copy-constructors.html) for more details on immutable objects in Lombok.
 
 A few thing worth mentioning is that you must adhere to Lombok's class field naming convention. Static fields are not supported by _@With_ and _$_ symbols are ignored.
