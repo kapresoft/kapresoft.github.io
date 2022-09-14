@@ -11,7 +11,6 @@ highlighterjs:
 ---
 
 ## Overview
-{{ site.highlighter }}
 
 Using Lombok's [@With](https://projectlombok.org/features/With) Annotation to Clone Immutable Objects is a beneficial feature that helps developers minimize code replication and ceremonial code.  It is the next best alternative to Copy Constructs in object-oriented programming.  The _@With_ annotation also requires _@AllArgsConstructor_ to function correctly.
 
