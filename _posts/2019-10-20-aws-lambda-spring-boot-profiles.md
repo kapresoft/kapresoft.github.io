@@ -6,13 +6,15 @@ category: java
 redirect_from:
 - /p/aws-lambda-spring-boot-profiles.html
 - /aws-lambda-spring-boot-profiles.html
+description: "Learn how to use Spring Boot Profiles in an AWS Lambda Compute environment to define and activate configuration for each environment, for SEO-friendly app deployment."
 ---
 
 # Overview
 
-This article will demonstrate how to utilize the Spring Boot **Profiles** feature in an AWS Lambda Compute environment to define and activate a set of configuration for each environment (i.e. dev, test, integration, and prod).
+In this article, we will explore how to leverage the Spring Boot Profiles feature in an AWS Lambda Compute environment to configure and activate specific settings for each environment, such as development, testing, integration, and production.<!--excerpt--> Spring Boot Profiles provide a powerful mechanism for configuring applications for different deployment environments, allowing developers to define environment-specific properties, such as database credentials, caching settings, or logging levels. By using Spring Boot Profiles with AWS Lambda, developers can easily manage and switch between multiple configurations for their applications, making it easier to maintain and deploy code across different environments. In this article, we will walk through the steps to define and activate different Spring Boot Profiles in an AWS Lambda Compute environment, giving you the tools you need to build and deploy robust, scalable applications on the cloud.
 
-<!--excerpt-->
+
+
 
 ## Spring Boot Profiles
 
