@@ -42,4 +42,10 @@
     <url>
         <loc>https://www.kapresoft.com/java/2022/08/29/lombok-cloning-immutable-objects-using-with.html</loc>
     </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/03/13/lombok-overview.html</loc>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/03/13/lombok-exclude-generated-code-from-test-coverage.html</loc>
+    </url>
 </urlset>
