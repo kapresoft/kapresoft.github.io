@@ -1,14 +1,8 @@
 ---
 layout: no_ads
-canonical_url: https://www.kapresoft.com
+title: Privacy Policy for Kapresoft.com
+canonical_url: https://www.kapresoft.com/privacy.html
 image: /assets/images/kapresoft1-210x.png
-redirect_from: 
-    - /feeds/7963693856642027814/comments/default
-    - /feeds/posts/default
-    - /2017/07/
-    - /search
-    - /2017/07/welcome.html
-    - /x/px/ 
 notes:
     - template from https://www.inforbiro.com/blog/google-adsense-privacy-policy-example
 ---
