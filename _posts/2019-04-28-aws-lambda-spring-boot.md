@@ -116,5 +116,5 @@ An example usecase for this type of profile is for running experiments without a
 
 Click the following image to see the expanded-view of the example AWS Cloud Watch log.
 
-<a target="_blank" href="https://cdngh.kapresoft.com/img/spring-boot-demo-cloudwatch-log.gif"><img width="560" src="https://cdngh.kapresoft.com/img/spring-boot-demo-cloudwatch-log.gif"/></a>
+<a target="_blank" href="https://cdngh.kapresoft.com/img/spring-boot-demo-cloudwatch-log.gif"><img width="560" src="https://cdngh.kapresoft.com/img/spring-boot-demo-cloudwatch-log.gif" alt="Cloud Watch Logs"/></a>
 
