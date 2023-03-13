@@ -3,7 +3,7 @@ title: "Lombok • Builders and Copy Constructors"
 canonical_url: https://www.kapresoft.com/java/2021/12/27/lombok-builders-and-copy-constructors.html
 image: /assets/images/kapresoft1-210x.png
 category: java
-description: "Lombok's builder and copy constructor feature using @Builder is a mechanism that allows the implementation of the Builder Pattern and Copy Constructors in Object-Oriented Programming. This article further illustrates how Lombok mitigates the disadvantages of creating builder methods and copy constructors, making Lombok's @Builder a good foundation for design and code maintainability."
+description: "Discover how Lombok's @Builder simplifies implementing the Builder Pattern and Copy Constructors in OOP, improving code maintainability. Learn more here."
 ---
 
 ## Overview
