@@ -1,5 +1,5 @@
 ---
-title: Setting Java Compiler Version in Maven
+title: "Setting Java Compiler Version in Maven"
 canonical_url: https://www.kapresoft.com/java/2018/08/27/setting-java-compiler-version-in-maven.html
 image: /assets/images/kapresoft1-210x.png
 category: java
