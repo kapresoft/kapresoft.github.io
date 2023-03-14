@@ -3,7 +3,7 @@ title: Java Records
 canonical_url: https://www.kapresoft.com/java/2023/03/14/java-records.html
 category: java
 image: /assets/images/kapresoft1-210x.png
-description: "Java record is a new feature introduced in Java 14 for creating classes primarily used for storing data. It's a concise way to define a class consisting mainly of fields and getters."
+description: "Java record is a concise feature for creating data storage classes. Introduced in Java 14, it primarily consists of fields and getters."
 
 ---
 
