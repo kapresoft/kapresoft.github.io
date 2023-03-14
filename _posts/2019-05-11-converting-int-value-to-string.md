@@ -1,8 +1,9 @@
 ---
-title: Converting int to a String in Java
+title: "Converting int to String and String to int in Java: A Comprehensive Guide"
 image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/05/11/converting-int-value-to-string.html
 category: java
+description: "Convert int to String and String to int in Java with our guide. Explore methods for managing integer and String values in Java programming."
 ---
 
 # Overview

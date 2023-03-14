@@ -1,9 +1,9 @@
 ---
-title: Converting double to a String in Java
+title: "Java Double to String Conversion: Techniques and Benefits | Beginner's Guide"
 image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/05/11/converting-double-value-to-string.html
 category: java
-desription: "Convert double to string in Java & learn advantages of representing double as string. Also convert string to double. Perfect for Java beginners!"
+description: "Learn how to convert double to string in Java using the String class. Convert string to double. Perfect for Java beginners."
 ---
 
 # Overview

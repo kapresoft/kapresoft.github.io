@@ -1,17 +1,18 @@
 ---
-title: Spring Boot AWS Lambda
+title: "AWS Lambda with Spring Boot: A Comprehensive Guide"
 image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/04/28/aws-lambda-spring-boot.html
 category: java
 redirect_from:
 - /p/aws-lambda-spring-boot.html
 - /aws-lambda-spring-boot.html
-description: "Spring Boot with AWS Lambda, Serverless, Performance, Cold Start"
+description: "Learn how to deploy and manage your application on the AWS cloud with AWS Lambda and Spring Boot integration. Discover the benefits in this guide."
 ---
 
 # Overview
 
-In this article, we are going to look at the use of Spring Boot with AWS Lambda.  AWS Lambda is a serverless compute service that allows you to run code without provisioning or managing servers.  AWS Lambda is fully integrated with the AWS cloud and is able to run in response to several AWS events like S3, Messaging Gateways, API Gateway, or any other generic AWS Resource events.  
+This article explores the benefits of using Spring Boot with AWS Lambda, a powerful serverless compute service that enables developers to run code without worrying about server management. By integrating with the AWS cloud, AWS Lambda can respond to a variety of AWS events, such as S3, Messaging Gateways, API Gateway, and other generic AWS Resource events, providing an efficient and scalable solution for your application needs.  
+
 <!--excerpt-->
 
 # AWS Lambda Serverless Compute Environment

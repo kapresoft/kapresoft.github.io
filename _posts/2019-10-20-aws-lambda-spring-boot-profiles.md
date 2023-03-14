@@ -1,5 +1,5 @@
 ---
-title: Spring Boot Profiles in AWS Lambda
+title: "Optimizing App Deployment with Spring Boot Profiles in AWS Lambda: A Comprehensive Guide"
 image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/10/20/aws-lambda-spring-boot-profiles.html
 category: java
