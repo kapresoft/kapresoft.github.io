@@ -3,7 +3,7 @@ title: FDIC • What you need to know
 canonical_url: https://www.kapresoft.com/finance/2023/03/13/fdic-what-you-need-to-know.html
 image: /assets/images/kapresoft1-210x.png
 category: finance
-description: "The Federal Deposit Insurance Corporation (FDIC) is an independent agency of the U.S. government that provides deposit insurance to protect depositors in case their bank or savings institution fails. FDIC insurance covers up to $250,000 per depositor, per insured bank, for each account ownership category"
+description: "Learn how the FDIC protects depositors with deposit insurance up to $250,000 per depositor, per insured bank. Safeguard your funds in case of a bank failure."
 ---
 
 ## Overview
