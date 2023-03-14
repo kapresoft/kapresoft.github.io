@@ -6,17 +6,17 @@ category: java
 description: "Set the java compiler version in maven via the maven.compiler.target property and the maven-compiler-plugin configuration section."
 ---
 
-# Overview
+## Overview
 
 This document demonstrates ways to set the java compiler version in maven via the **maven.compiler.target** property and the **maven-compiler-plugin** configuration section.
 
 <!--excerpt-->
 
-## Prerequisite
+### Prerequisite
 - JDK 1.10 or below installed ~ [Getting Started with Java](/getting-started-with-java.html)
 - Maven 3.8.0 and above installed ~ [Getting Started with Maven](/getting-started-with-maven.html)
 
-# Setting the java compiler via maven property
+## Setting the java compiler via maven property
 
 ```xml
 <properties>
@@ -26,7 +26,7 @@ This document demonstrates ways to set the java compiler version in maven via th
 </properties>
 ```
 
-# Setting the java compiler via the plugin config
+## Setting the java compiler via the plugin config
 
 - For maven-compiler-version below version 3.8.0 has the default compiler set to 1.5
 - Since maven-compiler-version 3.8.0, the default java compiler version is now 1.6
@@ -54,7 +54,7 @@ This document demonstrates ways to set the java compiler version in maven via th
 </build>
 ```
 
-# Compiler Error Message
+## Compiler Error Message
 
 The following is displayed when a compiler mismatch is detected during **compile** phase.  In this example, the java compiler used (1.7) is less than
 the required version (1.10).
@@ -67,7 +67,7 @@ Java(TM) SE Runtime Environment (build 1.7.0_40-b43)
 Java HotSpot(TM) 64-Bit Server VM (build 24.0-b56, mixed mode)
 ```
 
-## Error Message
+### Error Message
 
 The error message as shown on Line 25 of the <a target="_blank" href="https://gist.github.com/kapresoft/71d2c6d703fadcfef3b38e8040feddd3#file-java-compiler-mismatch-log-L25">Maven Console Log</a>
 
@@ -77,32 +77,32 @@ The error message as shown on Line 25 of the <a target="_blank" href="https://gi
         Fatal error compiling: invalid target release: 1.10 -> [Help 1]
 ```
 
-## Maven Compile Command
+### Maven Compile Command
 
 ```bash
 $ mvn clean install
 ```
 
-### Maven Console Log
+#### Maven Console Log
 
 - The error message is on <a target="_blank" href="https://gist.github.com/kapresoft/71d2c6d703fadcfef3b38e8040feddd3#file-java-compiler-mismatch-log-L25">Line #25</a>.
 
 <script src="https://gist.github.com/kapresoft/71d2c6d703fadcfef3b38e8040feddd3.js#25"></script>
 
 
-#  Example Maven Repo
+##  Example Maven Repo
 
-## Github
+### Github
 
 - <a target="_blank" href="https://github.com/kapresoft/mvn_set_java_compiler_version">https://github.com/kapresoft/mvn_set_java_compiler_version</a>
 
-## Clone the Repo
+### Clone the Repo
 
 ```bash
 $ git clone https://github.com/kapresoft/mvn_set_java_compiler_version.git
 ```
 
-## Project pom.xml
+### Project pom.xml
 
 - <a target="_blank" href="https://github.com/kapresoft/mvn_set_java_compiler_version/blob/master/pom.xml">pom.xml</a> from the repo.
 

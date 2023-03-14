@@ -1,18 +1,18 @@
 ---
-title: "Converting int to String and String to int in Java: A Comprehensive Guide"
+title: "Java: Int to String Conversion Guide"
 image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/05/11/converting-int-value-to-string.html
 category: java
 description: "Convert int to String and String to int in Java with our guide. Explore methods for managing integer and String values in Java programming."
 ---
 
-# Overview
+## Overview
 
 In Java, often times the ability to return a string representing the specified integer is a common task.  This article illustrates several mechanisms to convert int to a string in Java. In the opposite scenario, the means to resolve an integer representing the value of the specified String.  The returned value is an Integer object that is the equivalent integer value of the argument string.
 
 <!--excerpt-->
 
-# Integer.valueOf(val:int) : Integer
+## Integer.valueOf(val:int) : Integer
 
 Creates a java.lang.Integer represented by the argument *val* of primitive int type.
 
@@ -22,7 +22,7 @@ System.out.println(number);
 // Output: 3
 ```
 
-# Integer.valueOf(val:String) : Integer
+## Integer.valueOf(val:String) : Integer
 
 Creates a java.lang.Integer represented by the string argument *val*.
 
@@ -32,7 +32,7 @@ System.out.println(number);
 // Output: 4
 ```
 
-# Integer.toString(val:int) : String
+## Integer.toString(val:int) : String
 
 Creates a string representation of the argument *val* of primitive int type.
 
@@ -42,7 +42,7 @@ System.out.println(numberString);
 // Output: 5
 ```
 
-# Integer.parseInt(val:String)
+## Integer.parseInt(val:String)
 Creates a primitive int representation of the string argument *val*.
 
 ```java
@@ -51,7 +51,7 @@ System.out.println(number)
 // Output: 6
 ```
 
-# String.valueOf(val:int) : String
+## String.valueOf(val:int) : String
 
 Returns a java.lang.String representation with the value extracted from the primitive int *val*.
 
@@ -61,7 +61,7 @@ System.out.println(numberString)
 // Output: 7
 ```
 
-# Integer.getInteger(sysPropName:String) : Integer
+## Integer.getInteger(sysPropName:String) : Integer
 Resolves a java.lang.Integer value of the given system property
 *sysPropName*, otherwise returns a null.
 
@@ -78,7 +78,7 @@ System.out.println(versionNumber);
 // Output: 1
 ```
 
-# Integer.getInteger(sysPropName:String, val:int) : Integer
+## Integer.getInteger(sysPropName:String, val:int) : Integer
 
 Resolves a java.lang.Integer value of the given system property
 *sysPropName* with the specified name with the fallback value

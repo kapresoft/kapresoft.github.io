@@ -6,7 +6,7 @@ category: java
 description: "Using a mac keyboard on windows for IntelliJ IDEA or Android Studio by adding mac key bindings using AutoHotKey"
 ---
 
-# Overview
+## Overview
 
 I was once with an agile company that had pairing stations throughout the work area. Some pairing stations were 
 Windows-based and some where Mac-based.  The one particular thing that I did not appreciate was that the key bindings in
@@ -23,7 +23,7 @@ documentation is to make your keyboard consistent and operating system independe
 This article will demonstrate the usage of a mac keyboard on windows for IntelliJ IDEA or Android Studio by adding 
 mac key bindings using AutoHotKey. 
 
-# Table of Contents
+## Table of Contents
 
 1. Prerequisite
 2. AutoHotKey Symbols
@@ -31,14 +31,14 @@ mac key bindings using AutoHotKey.
 4. Alternative
 5. AutoHotKey Source File
 
-# Prerequisite
+## Prerequisite
 
 - [AutoHotkey by Chris Mallet](https://autohotkey.com/) installed in Windows&trade;
 - Knowledge on how to run or compile a script
 - Knowledge on how to run a compiled/executable ahk during startup
 - IntelliJ IDEA or Android Studio Installed on Windows
 
-# AutoHotKey Symbols
+## AutoHotKey Symbols
 
 - See <a target="_blank" href="https://autohotkey.com/docs/Tutorial.htm#s21">AutoHotKey - a. Keys and their mysterious symbols</a> for more details.
 
@@ -52,9 +52,9 @@ mac key bindings using AutoHotKey.
 
 # IntelliJ IDEA or Android Studio
 
-## Common Keyboard Shortcuts
+### Common Keyboard Shortcuts
 
-### Find Action
+#### Find Action
 
 ```
 ; Find Action (⌘+Shift+A) -> (Ctrl+Shift+A)
@@ -65,11 +65,11 @@ mac key bindings using AutoHotKey.
 }
 ```
 
-<!-- ########################################## -->
+<!-- ########################################### -->
 
-## Editing
+### Editing
 
-### Duplicate Line
+#### Duplicate Line
 
 ```
 ; Duplicate Line (⌘+D) -> (Ctrl+D)
@@ -80,7 +80,7 @@ mac key bindings using AutoHotKey.
 }
 ```
 
-### Delete Line
+#### Delete Line
 
 ```
 ; Delete Line (⌘+Backspace) -> (Ctrl+Y)
@@ -91,7 +91,7 @@ mac key bindings using AutoHotKey.
 }
 ```
 
-### Quick Documentation
+#### Quick Documentation
 
 ```
 ; Quick Documentation (F1) -> (Ctrl+Q)
@@ -102,7 +102,7 @@ F1::
 }
 ```
 
-### Find
+#### Find
 
 ```
 ; Find (⌘+F) -> (Ctrl+F)
@@ -113,7 +113,7 @@ F1::
 }    
 ```
 
-### Find in Path
+#### Find in Path
 
 ```
 ; Find in Path (⌘+Shift-F) -> (Ctrl+Shift+F)
@@ -124,7 +124,7 @@ F1::
 }
 ```
 
-### Replace
+#### Replace
 
 ```
 ; Replace (⌘+R) -> (Ctrl+R)
@@ -135,7 +135,7 @@ F1::
 }
 ```
 
-### Replace in Path
+#### Replace in Path
 
 ```
 ; Replace in Path (⌘+Shift+R) -> (Ctrl+Shift+R)
@@ -146,7 +146,7 @@ F1::
 }
 ```
 
-### Move Statement Up
+#### Move Statement Up
 
 ```
 ; Move Statement Up (⌘+Shift+Up) -> (Ctrl+Shift+Up)
@@ -157,7 +157,7 @@ F1::
 }
 ```
 
-### Move Statement Down
+#### Move Statement Down
 
 ```
 ; Move Statement Down (⌘+Shift+Down) -> (Ctrl+Shift+Down)
@@ -168,7 +168,7 @@ F1::
 }
 ```
 
-### Extend Selection
+#### Extend Selection
 
 ```
 ; Extend Selection (⌘+Up) -> (Ctrl+W)
@@ -179,7 +179,7 @@ F1::
 }
 ```
 
-### Shrink Selection
+#### Shrink Selection
 
 ```
 ; Shrink Selection (⌘+Down) -> (Ctrl-Shift+W)
@@ -190,7 +190,7 @@ F1::
 }
 ```
 
-### New (Context-Sensitive)
+#### New (Context-Sensitive)
 
 ```
 ; New (⌘+N) -> (Alt+Insert)
@@ -201,7 +201,7 @@ F1::
 }
 ```
 
-### Complete Current Statement
+#### Complete Current Statement
 
 ```
 ; Complete Current Statement (⌘+Shift+Enter) -> (Ctrl+Shift+Enter)
@@ -212,7 +212,7 @@ F1::
 }
 ```
 
-### Toggle Case
+#### Toggle Case
 
 ```
 ; Toggle Case (⌘+Shift+U) -> (Ctrl+Shift+U)
@@ -225,9 +225,9 @@ F1::
 
 <!-- ########################################## -->
 
-## Navigation
+### Navigation
 
-### Jump to Navigation Bar
+#### Jump to Navigation Bar
 ```
 ; Jump to Navigation Bar (⌘+Up) -> (Alt+Home)
 #up::
@@ -237,7 +237,7 @@ F1::
 }
 ```
 
-### Navigate to Declaration
+#### Navigate to Declaration
 
 ```
 ; Navigate to Declaration (⌘+LeftClick) -> (Ctrl+LeftClick)
@@ -256,7 +256,7 @@ F1::
 }
 ```
 
-### Navigate to next word block
+#### Navigate to next word block
 
 In Windows, Alt+Left navigates to the next tab.  We want to remap this to navigate to the next word block.
 
@@ -269,7 +269,7 @@ In Windows, Alt+Left navigates to the next tab.  We want to remap this to naviga
 }
 ```
 
-### Go to Line Number
+#### Go to Line Number
 
 Since WindowsKey+L locks the workstation, the best way to solve this issue is to add a Shift key, i.e. (⌘+Shift+L). 
 
@@ -282,7 +282,7 @@ Since WindowsKey+L locks the workstation, the best way to solve this issue is to
 }
 ```
 
-### Hide All Windows
+#### Hide All Windows
 
 ```
 ; Hide All Windows (⌘+Shift+F12) -> (Ctrl+Shift+F12)
@@ -293,7 +293,7 @@ Since WindowsKey+L locks the workstation, the best way to solve this issue is to
 }
 ```
 
-### Select Next Tab
+#### Select Next Tab
 
 ```
 ; Select Next Tab (⌘+Shift+]) -> (Alt-Right)
@@ -304,7 +304,7 @@ Since WindowsKey+L locks the workstation, the best way to solve this issue is to
 }
 ```
 
-### Select Previous Tab
+#### Select Previous Tab
 
 ```
 ; Select Previous Tab (⌘+Shift+[) -> (Alt-Left)
@@ -315,7 +315,7 @@ Since WindowsKey+L locks the workstation, the best way to solve this issue is to
 }
 ```
 
-### Project View
+#### Project View
 
 ```
 #1::
@@ -325,7 +325,7 @@ Since WindowsKey+L locks the workstation, the best way to solve this issue is to
 }
 ```
 
-### Favorites View
+#### Favorites View
 
 ```
 #2::
@@ -335,7 +335,7 @@ Since WindowsKey+L locks the workstation, the best way to solve this issue is to
 }
 ```
 
-### Run view
+#### Run view
 
 ```
 #4::
@@ -345,7 +345,7 @@ Since WindowsKey+L locks the workstation, the best way to solve this issue is to
 }
 ```
 
-### Debug View
+#### Debug View
 
 ```
 #5::
@@ -355,7 +355,7 @@ Since WindowsKey+L locks the workstation, the best way to solve this issue is to
 }
 ```
 
-### Log Cat (on Android Studio)
+#### Log Cat (on Android Studio)
 
 ```
 #6::
@@ -365,7 +365,7 @@ Since WindowsKey+L locks the workstation, the best way to solve this issue is to
 }
 ```
 
-### Structure View
+#### Structure View
 
 ```
 #7::
@@ -375,7 +375,7 @@ Since WindowsKey+L locks the workstation, the best way to solve this issue is to
 }
 ```
 
-### Version Control View
+#### Version Control View
 
 ```
 #9::
@@ -387,9 +387,9 @@ Since WindowsKey+L locks the workstation, the best way to solve this issue is to
 
 <!-- ########################################## -->
 
-## Windows and Tabs
+### Windows and Tabs
 
-### Close Current Tab
+#### Close Current Tab
 ```
 ; Close Current Tab (⌘+W) -> (Ctrl+F4)
 #w::
@@ -399,7 +399,7 @@ Since WindowsKey+L locks the workstation, the best way to solve this issue is to
 }
 ```
 
-# Alternative
+## Alternative
 
 Use this alternative and map Windows Key to Meta key in IntelliJ IDEA or Android Studio.
 
@@ -421,7 +421,7 @@ Solution:
 - Add new keymap:  Ctrl+W
 - Add new AutoHotKey keymap mapping ⌘+W -> Ctrl+W
 
-## Enable Meta key
+### Enable Meta key
 
 Enable Meta Key by navigating to Help->Edit Custom Properties
 
@@ -429,11 +429,8 @@ Enable Meta Key by navigating to Help->Edit Custom Properties
 keymap.windows.as.meta=true
 ```
 
-# AutoHotKey Source File
+## AutoHotKey Source File
 
 The AutoHotKey can be downloaded here: <a target="_blank" href="https://gist.github.com/kapresoft/bee88e2e673fb0c4e4efc96238486715">mac-intellij-android-studio.ahk</a>.
 
 <script src="https://gist.github.com/kapresoft/bee88e2e673fb0c4e4efc96238486715.js"></script>
-
-
- 

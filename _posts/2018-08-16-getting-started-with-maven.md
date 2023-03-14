@@ -1,21 +1,22 @@
 ---
-title: Getting Started With Maven
+title: "Getting Started with Maven Build System in Java Projects"
 canonical_url: https://www.kapresoft.com/java/2018/08/16/getting-started-with-maven.html
 category: java
 redirect_from: 
     - /p/getting-started-with-maven.html
     - /getting-started-with-maven.html
 image: /assets/images/kapresoft1-210x.png
+description: "Learn how to use Maven for the first time with this comprehensive guide. Get started with the Maven build system and improve your Java project."
 ---
 
-# Overview
+## Overview
 
 The following page will illustrate how to get started with the maven build system in your
 java projects.&nbsp;&nbsp;Use this guide as a reference when using Maven for the very first time.
 
 <!--excerpt-->
 
-# Table of Contents
+## Table of Contents
 
 1. Prerequisite
 2. What is Maven?
@@ -25,10 +26,10 @@ java projects.&nbsp;&nbsp;Use this guide as a reference when using Maven for the
 
 {% include separator.html %}
 
-# 1.&nbsp;&nbsp;Prerequisite
+## 1.&nbsp;&nbsp;Prerequisite
 - JDK 1.10 or below installed ~ [Getting Started with Java](/getting-started-with-java.html)
 
-# 2.&nbsp;&nbsp;What is Maven?
+## 2.&nbsp;&nbsp;What is Maven?
 
 Maven is a project management utility that provides a means to manage builds, dependencies,
 documentation, reporting, source control management, releases and distribution.
@@ -38,15 +39,15 @@ documentation, reporting, source control management, releases and distribution.
 <!-- ##################################################### -->
 
 
-# 3.&nbsp;&nbsp;Downloading and Installing Maven
+## 3.&nbsp;&nbsp;Downloading and Installing Maven
 
-## Mac OS&trade; and other Unix or Linux Systems
+### Mac OS&trade; and other Unix or Linux Systems
 
 Download Maven and install where you usually put your java tools.&nbsp;&nbsp;A common
 place to put them in a Unix/Linux system is /usr/local/.&nbsp;&nbsp;For the purpose of
 this document, the maven install path will be /usr/local/apache-maven.
 
-## Windows&trade;
+### Windows&trade;
 
 In Windows, use a common place to install your java tools like C:\java.&nbsp;&nbsp;For the
 purpose of this document, the maven install path will be C:\java\apache-maven.
@@ -54,15 +55,15 @@ purpose of this document, the maven install path will be C:\java\apache-maven.
 <!-- ##################################################### -->
 
 
-# 4.&nbsp;&nbsp;Environment Variables and System Paths
+## 4.&nbsp;&nbsp;Environment Variables and System Paths
 
-## Mac OS&trade; and other Unix or Linux Systems
+### Mac OS&trade; and other Unix or Linux Systems
 
 ```bash
 M2_HOME=/usr/local/apache-maven
 ```
 
-## Windows&trade;
+### Windows&trade;
 
 ```bash
 M2_HOME=C:\java\apache-maven
@@ -91,7 +92,7 @@ Output:
  OS name: "mac os x", version: "10.13.6", arch: "x86_64", family: "mac"
 ```
 
-## Mac OS&trade;
+### Mac OS&trade;
 
 Add the following export line in your $HOME/.bashrc file
 
@@ -112,7 +113,7 @@ Output:
  /usr/local/apache-maven/bin
 ```
 
-## Other Unix and Linux Systems
+### Other Unix and Linux Systems
 
 Line #1 will define the environment variable M2_HOME.  Line #2 will add maven to the system
 path.
@@ -137,7 +138,7 @@ Output:
  OS name: "mac os x", version: "10.12.5", arch: "x86_64", family: "mac"
 ```
 
-## Windows&trade;
+### Windows&trade;
 
 Setup the environment variable in a windows system by following the series of steps below.
 
@@ -159,7 +160,7 @@ C:\> mvn --version
 
 <!-- ##################################################### -->
 
-# 5.&nbsp;&nbsp;Your First Maven Project
+## 5.&nbsp;&nbsp;Your First Maven Project
 
 Creating your first maven project can be done in several ways.  One convenient way is to use the Maven's archetype mechanism.
 
@@ -239,9 +240,9 @@ Output:
  │                   └── AppTest.java
 ```
 
-## Project Components
+### Project Components
 
-### The POM XML File (pom.xml)
+#### The POM XML File (pom.xml)
 
 The pom.xml is the **Project Object Model** file.&nbsp;&nbsp;This is an XML configuration file that contains all 
 necessary information about a project.
@@ -276,7 +277,7 @@ library.&nbsp;&nbsp;Library dependencies are declared under the dependencies ele
 </project>
 ```
 
-### App.java
+#### App.java
 
 The **App** class is your java class containing code to print out "Hello World!".
 
@@ -296,7 +297,7 @@ public class App
 }
 ```
 
-### AppTest.java
+#### AppTest.java
 
 The **AppTest** class is a class used for unit testing the **App** class.&nbsp;&nbsp;In this simple example the 
 AppTest class is using a simple assertion.&nbsp;&nbsp;In a real world test, the test class will be making 
@@ -342,9 +343,9 @@ public class AppTest extends TestCase
 }
 ```
 
-## Building your Maven Project
+### Building your Maven Project
 
-### Run the compile command
+#### Run the compile command
 
 Change to the project directory **my-first-app** and run the maven compile command.&nbsp;&nbsp;This will compile the 
 **App** and the **AppTest** classes.
@@ -376,7 +377,7 @@ Output:
  [INFO] ------------------------------------------------------------------------
 ```
 
-### Run the compile command with clean option
+#### Run the compile command with clean option
 
 Optionally, you may instruct maven to scrub clean the project build files which is by default named the **target** 
 directory.
@@ -385,7 +386,7 @@ directory.
 my-first-app$ mvn clean compile
 ```
 
-### Packaging your Maven Project
+#### Packaging your Maven Project
 
 Run the following maven command when packaging the jar file.
 

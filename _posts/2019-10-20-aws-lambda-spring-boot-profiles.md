@@ -1,5 +1,5 @@
 ---
-title: "Optimizing App Deployment with Spring Boot Profiles in AWS Lambda: A Comprehensive Guide"
+title: "Spring Boot Profiles & AWS Lambda: Deployment Guide"
 image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/10/20/aws-lambda-spring-boot-profiles.html
 category: java
@@ -9,14 +9,14 @@ redirect_from:
 description: "Using Spring Boot Profiles in AWS Lambda to define and activate configuration for each environment. Improve app deployment strategies with this guide."
 ---
 
-# Overview
+## Overview
 
 In this article, we will explore how to leverage the Spring Boot Profiles feature in an AWS Lambda Compute environment to configure and activate specific settings for each environment, such as development, testing, integration, and production.<!--excerpt--> Spring Boot Profiles provide a powerful mechanism for configuring applications for different deployment environments, allowing developers to define environment-specific properties, such as database credentials, caching settings, or logging levels. By using Spring Boot Profiles with AWS Lambda, developers can easily manage and switch between multiple configurations for their applications, making it easier to maintain and deploy code across different environments. In this article, we will walk through the steps to define and activate different Spring Boot Profiles in an AWS Lambda Compute environment, giving you the tools you need to build and deploy robust, scalable applications on the cloud.
 
 
 
 
-## Spring Boot Profiles
+### Spring Boot Profiles
 
 Note that any spring components annotated with the following can be annotated with @Profile to limit what profile they are loaded.
 
@@ -28,7 +28,7 @@ Additional information can be found on Spring Boot Profiles here
 
 - [https://docs.spring.io/spring-boot/docs](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-profiles)
 
-## Activating Spring Profiles
+### Activating Spring Profiles
 
 In AWS Lambda **Environment Variables** we will be activating spring provides via environment variable **SPRING_PROFILES_ACTIVE**.
 Additional profiles can also be provided using comma-separated values (i.e. prod,secure to activate both prod and secure profile).
@@ -38,7 +38,7 @@ The following AWS Lambda Console Environment variables configuration will activa
 
 <img src="https://cdngh.kapresoft.com/img/spring-profiles-lambda-env.png" alt="spring lambda profiles env"/>
 
-## Initial Execution (Cold Starts)
+### Initial Execution (Cold Starts)
 
 AWS Lambda cold starts occur when the very first request arrives after deployment.  After the first request is
 executed, the AWS Lambda instance will be available to be utilized for subsequent requests.  There is no specific
@@ -59,7 +59,7 @@ REPORT RequestId: e74bf096-cb73-4b3f-91b3-562ffaf74483
     Init Duration: 3317.31 ms
 ```
 
-## Subsequent Executions
+### Subsequent Executions
 ```text
 REPORT RequestId: 3bfcb1ba-c9ef-40b0-9e45-f0d1e9d78f7c	
     Duration: 2.33 ms	
@@ -72,7 +72,7 @@ REPORT RequestId: 3bfcb1ba-c9ef-40b0-9e45-f0d1e9d78f7c
 
 - https://docs.aws.amazon.com/lambda/latest/dg/running-lambda-code.html
 
-## AWS Console Log (Cold Start)
+### AWS Console Log (Cold Start)
 
 ```text
 =========================================================
@@ -112,8 +112,8 @@ END RequestId: e74bf096-cb73-4b3f-91b3-562ffaf74483
 REPORT RequestId: e74bf096-cb73-4b3f-91b3-562ffaf74483 Duration: 2122.24 ms Billed Duration: 2200 ms Memory Size: 320 MB Max Memory Used: 161 MB Init Duration: 3317.31 ms
 ```
 
-## Lambda Source Code in Github
+### Lambda Source Code in Github
 
-[Spring Boot AWS Lambda.java](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/java/com/kapresoft/demo/springbootlambda/Lambda.java) source code is avaialble 
+[Spring Boot AWS Lambda.java](https://github.com/kapresoft/spring-boot-aws-lambda/blob/master/src/main/java/com/kapresoft/demo/springbootlambda/Lambda.java) source code is available 
 in [github](https://github.com/kapresoft/spring-boot-aws-lambda).
 
