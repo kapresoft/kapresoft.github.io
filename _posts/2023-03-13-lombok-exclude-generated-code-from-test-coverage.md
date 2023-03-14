@@ -3,7 +3,7 @@ title: Lombok • Exclude Generated Code From Test Coverage
 canonical_url: https://www.kapresoft.com/java/2023/03/13/lombok-exclude-generated-code-from-test-coverage.html
 image: /assets/images/kapresoft1-210x.png
 category: java
-description: "Learn how Lombok-generated code in Java projects can affect test coverage reports and how to exclude these files using the Maven Surefire plugin. Configure the plugin to exclude files with the Lombok-generated suffix _*.java and get a more accurate view of your project's test coverage."
+description: "Maximize your Java project's test coverage accuracy by learning how to exclude Lombok-generated code with the Maven Surefire plugin. Get started now."
 ---
 
 ## Overview
