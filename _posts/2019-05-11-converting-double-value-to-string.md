@@ -3,7 +3,7 @@ title: Converting double to a String in Java
 image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/05/11/converting-double-value-to-string.html
 category: java
-desription: "Convert double to a string value in java"
+desription: "Convert double to string in Java & learn advantages of representing double as string. Also convert string to double. Perfect for Java beginners!"
 ---
 
 # Overview

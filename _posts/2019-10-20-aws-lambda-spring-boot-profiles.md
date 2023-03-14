@@ -6,7 +6,7 @@ category: java
 redirect_from:
 - /p/aws-lambda-spring-boot-profiles.html
 - /aws-lambda-spring-boot-profiles.html
-description: "Learn how to use Spring Boot Profiles in an AWS Lambda Compute environment to define and activate configuration for each environment, for SEO-friendly app deployment."
+description: "Using Spring Boot Profiles in AWS Lambda to define and activate configuration for each environment. Improve app deployment strategies with this guide."
 ---
 
 # Overview
