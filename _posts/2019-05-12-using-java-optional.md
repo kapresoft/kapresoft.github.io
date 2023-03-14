@@ -1,5 +1,5 @@
 ---
-title: "Java Optional - Why Developers Prefer Optional Values | Kapresoft"
+title: "Java Optional - Why Developers Prefer Optional Values"
 image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/05/12/using-java-optional.html
 category: java
