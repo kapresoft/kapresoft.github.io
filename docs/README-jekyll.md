@@ -43,7 +43,16 @@ class Person {
 }
 {% endhighlight %}
 ```
+## Last Modified Date Example
+Add last_modified_at to override default
 
+```
+---
+title: "Spring Boot Profiles & AWS Lambda: Deployment Guide"
+last_modified_at:   2019-03-25 8:30:00 -0700
+---
+
+```
 
 ## See Also
 - https://jekyllrb.com/docs/usage/
