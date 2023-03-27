@@ -37,7 +37,7 @@ highlighterjs:
 
 github:
     is_project_page: true
-    owner_url: https://tony.resume.lagnada.com
+    owner_url: /about-antonio-lagnada.html
     owner_name: KapreSoft (Antonio Lagnada)
 
 plugins:
