@@ -1,10 +1,9 @@
 ---
-draft: true
 title: Java Final Modifier
 canonical_url: https://www.kapresoft.com/java/2023/03/27/java-final-modifier.html
 category: java
 image: /assets/images/kapresoft1-210x.png
-description: "Java Final Modifier (TBD)"
+description: "Learn how the final keyword modifier in Java creates immutable variables, methods, and classes, preserving their initial value and behavior."
 ---
 
 ## Overview
