@@ -42,7 +42,14 @@
         <ul></ul>
     </nav>
     <section>
-        <h1 class="title">{{ page.title | default: ''}}</h1>
+        {% assign headerSize = 'h1' %}
+        {% if page.style.headerSize %} {% assign headerSize = page.style.headerSize %} {% endif %}
+        <{{ headerSize }} class='title'>{{ page.title | default: ''}}</{{ headerSize }}>
+
+<!--        {% if page.style.headerTitle == 'small' %}<h2 class="title">{% else %}<h1 class="title">{% endif %}-->
+<!--        {{ page.title | default: ''}}-->
+<!--        {% if page.style.headerTitle == 'small' %}</h2>{% else %}</h1>{% endif %}-->
+
         {% comment %}<span style="float: right; font-size: smaller;">Last Update: {% last_modified_at %}</span><br/>{% endcomment %}
 
         {% if page.last_modified_at %}
