@@ -7,7 +7,7 @@ gem "jekyll", "~> 3.8"
 gem "kramdown-parser-gfm"
 gem "webrick"
 gem "addressable", ">= 2.8.0"
-gem "nokogiri", ">= 1.13.8"
+gem "nokogiri", ">= 1.13.10"
 gem 'jekyll-default-layout'
 
 group :jekyll_plugins do
