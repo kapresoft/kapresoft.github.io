@@ -95,4 +95,8 @@
         <loc>https://www.kapresoft.com/java/2023/03/30/lombok-allargsconstructor-vs-requiredargsconstructor.html</loc>
         <lastmod>2023-03-30</lastmod>
     </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/03/30/secure-smtp-with-spring-javamailsender.html</loc>
+        <lastmod>2023-03-30</lastmod>
+    </url>
 </urlset>
