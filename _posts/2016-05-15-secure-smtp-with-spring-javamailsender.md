@@ -1,11 +1,7 @@
 ---
 title: "Secure SMTP with Spring JavaMailSender"
-canonical_url: https://www.kapresoft.com/java/2023/03/30/secure-smtp-with-spring-javamailsender.html
+canonical_url: https://www.kapresoft.com/java/2016/05/15/secure-smtp-with-spring-javamailsender.html
 category: java
-
-[//]: # (style:)
-
-[//]: # (    headerSize: h2)
 image: /assets/images/kapresoft1-210x.png
 description: "Secure SMTP with Spring JavaMailSender"
 ---
