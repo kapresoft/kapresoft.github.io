@@ -87,7 +87,12 @@
         <loc>https://www.kapresoft.com/java/2023/03/28/encrypting-property-file-values-with-jasypt.html</loc>
         <lastmod>2023-03-28</lastmod>
     </url>
-    <!--<url>
-        <loc>https://www.kapresoft.com/finance/2023/03/15/is-bitcoin-gold-killer.html</loc>
-    </url>-->
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/03/30/how-to-use-constructor-lombok.html</loc>
+        <lastmod>2023-03-30</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/03/30/lombok-allargsconstructor-vs-requiredargsconstructor.html</loc>
+        <lastmod>2023-03-30</lastmod>
+    </url>
 </urlset>
