@@ -6,11 +6,11 @@ image: /assets/images/kapresoft1-210x.png
 description: "Antonio Lagnada, a highly-motivated Senior Software Engineer with experience in designing, and development of enterprise-wide systems."
 ---
 
-## I. About the Author
+# About the Author (Antonio Lagnada)
 
 Antonio or Tony, a highly-motivated Senior Software Engineer with extensive experience in designing, developing, and supporting enterprise-wide client/server systems.<!--excerpt--> Antonio's programming expertise includes agile, test-driven, XP practices using object-oriented, open-source, and clean coding Java technologies.
 
-## II. Background and Experience
+## I. Background and Experience
 
 Antonio received a Bachelor's degree in Electrical Engineering from the University of Minnesota Institute of Technology, Minneapolis Campus. After working as an I.O. Processor Applications Engineer at IBM's Input Output Processor Group and a Design Engineer II at LSI Logic, he transitioned to software engineering in 2001. Since then, he has worked for companies such as a Java Developer at 3M Corporation in St. Paul, Minnesota, and as a Senior Software Dev Engineer for Disney, Precor, and Expedia in Bellevue and Seattle.
 
@@ -24,11 +24,11 @@ His years of experience in programming and commitment to staying up-to-date with
 - [https://www.linkedin.com/in/lagnada/](https://www.linkedin.com/in/lagnada/)
 
 
-## III. Writing Credentials
+## II. Writing Credentials
 
 Antonio's passion for technology and innovation is evident in his writing. In fact, his very first technical article, written in 1993, explored the potential of email and its impact on the mail industry. Since then, Antonio has continued to share his expertise and insights through numerous articles, many of which can be found on his website, [https://kapresoft.com](https://kapresoft.com). His articles cover a wide range of topics, from programming languages and software development to emerging technologies and industry trends. With his extensive knowledge and ability to communicate complex technical concepts in a clear and concise manner, Antonio's articles are a valuable resource for anyone interested in the field of technology.
 
-## IV. Personal Life
+## III. Personal Life
 
 **Welcome to the United States**
 
@@ -66,6 +66,6 @@ During his senior year, he secured an internship at Honeywell, Inc in Golden Val
 
 Antonio received a Bachelor's degree in Electrical Engineering from the University of Minnesota Institute of Technology, Minneapolis Campus. After working as an I.O. Processor Applications Engineer at IBM's I.O. Processor Group and a Design Engineer II at LSI Logic, Antonio transitioned to software engineering in 2001. Since then, Antonio has worked for companies like 3M Corporation in St. Paul, Minnesota, and as a Senior Software Dev Engineer for Disney, Precor, and Expedia in Seattle.
 
-## V. Conclusion
+## IV. Conclusion
 
 In conclusion, Antonio W. Lagnada is a highly skilled and experienced Senior Software Engineer with a passion for technology and innovation. His programming expertise is evident in his extensive background in designing, developing, and supporting enterprise-wide client/server systems. He is also a prolific writer, with a vast collection of articles on various topics in the field of technology. Antonio's life journey demonstrates his resilience, dedication, and hard work, which he learned from his experience in the United States Army. He credits his military training for instilling in him the values of discipline, teamwork, and leadership that have enabled him to succeed in his subsequent endeavors.
