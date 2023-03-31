@@ -1,5 +1,6 @@
 ---
 title: "Decoupling Domain Objects: Simplifying System Architecture"
+title_style: title2
 canonical_url: https://www.kapresoft.com/java/2023/03/31/decoupling-domain-objects.html
 category: java
 image: /assets/images/kapresoft1-210x.png
@@ -8,14 +9,14 @@ description: "Decoupling objects in object-oriented design separates layers of a
 
 ## Overview
 
-When you design an object-oriented system from top to bottom, sometimes the objects that represent the "domain" (what the system is about) don't match the objects that represent the "entities" (what the system stores). To solve this problem, you can use a technique called "decoupling" to separate the layers of objects.
+When you design an object-oriented system from top to bottom, sometimes the objects that represent the "domain" (what the system is about) don't match the objects that represent the "entities" (what the system stores). To solve this problem, you can use a technique called "decoupling" to separate the layers of objects.<!--excerpt-->
 
 One way to do this is to use "composite" objects. These are objects that contain other objects, and they allow each layer of abstraction (domain and view) to have its own composite object. It might seem like a lot of work to set this up, but most integrated development environments (IDEs) now have tools to make it easier to create the necessary code.
-<!-- -->
+
 
 ## Design Layers
 
-Service Layer, Persistence Layer, Domain Layer, View Object
+Service Layer, Persistence Layer, Domain Layer, View Layer
 
 ### Service Layer
 
