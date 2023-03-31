@@ -1,10 +1,9 @@
 ---
 title: "Encrypting Properties File Values with Jasypt"
+title_style: title2
 canonical_url: https://www.kapresoft.com/java/2023/03/28/encrypting-property-file-values-with-jasypt.html
 category: java
 image: /assets/images/kapresoft1-210x.png
-style:
-    headerSize: h2
 description: "Encrypt your web app's property files with Jasypt. Learn how to keep your sensitive info secure & benefit from Spring Framework integration."
 ---
 

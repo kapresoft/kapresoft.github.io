@@ -1,7 +1,7 @@
+{% capture randomNumber %}{{ 'now' | date: "%09N" }}{% endcapture %}
+            <div id="fb-root-{{ randomNumber }}"></div>
 
-            <div id="fb-root"></div>
-
-            <div class="share-note">If you like this article, please like and share it with your friends and colleagues.</div>
+            {% if isArticlePage %}<div class="share-note">If you like this article, please like and share it with your friends and colleagues.</div>{% endif %}
             <div class="share" style="visibility: hidden;">
                 <div class="fb-share-button-wrap">
                     <div class="fb-share-button" data-layout="button" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php" class="fb-xfbml-parse-ignore">Share</a></div>
@@ -12,6 +12,6 @@
             </div>
             <div class="clear-spacer"></div>
             <script>
-                var canonHref = $("link[rel='canonical']").attr("href");
+                let canonHref = $("link[rel='canonical']").attr("href");
                 $('.fb-share-button').data('href', canonHref).attr('data-href', canonHref);
             </script>

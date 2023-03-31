@@ -26,6 +26,7 @@
 
 <body>
 
+{% assign isArticlePage = true %}
 {% include share-scripts.html %}
 
 <header>
@@ -42,9 +43,7 @@
         <ul></ul>
     </nav>
     <section>
-        {% assign headerSize = 'h1' %}
-        {% if page.style.headerSize %} {% assign headerSize = page.style.headerSize %} {% endif %}
-        <{{ headerSize }} class='title'>{{ page.title | default: ''}}</{{ headerSize }}>
+        <h1 class="{{ page.title_style | default: 'title' }}">{{ page.title | default: ''}}</h1>
         {% comment %}<span style="float: right; font-size: smaller;">Last Update: {% last_modified_at %}</span><br/>{% endcomment %}
         {% if page.last_modified_at %}
             <div style="clear: both">

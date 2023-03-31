@@ -26,15 +26,9 @@
   <div class="site-name">{{ site.title | default: site.github.repository_name }}</div>
   <p>{{ site.description | default: site.github.project_tagline }}</p>
 </header>
-
 <div class="wrapper">
-<!--
-  <nav>
-    <ul></ul>
-  </nav>
--->
   <section>
-    {% include share.html %}
+    {% include share-page.html %}
 
     {{ content }}
   </section>
