@@ -7,13 +7,13 @@ description: "Explore the potential of Bitcoin to replace gold as a store of val
 
 ---
 
-<a id='lXLj1WTySZphozmsNadd2g' class='gie-single' href='http://www.gettyimages.com/detail/1300276608' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'lXLj1WTySZphozmsNadd2g',sig:'9St_0VOKwlH0nihHBfKxq-GUOwNApYGBUlUOBI-giZQ=',w:'508px',h:'339px',items:'1300276608',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
-
 ## Overview
 
 Can bitcoin replace gold? It may not be accurate to say that Bitcoin is the "gold killer" because Bitcoin and gold serve different purposes and have different characteristics. While both are often seen as stores of value, they are fundamentally different assets.<!--excerpt-->
 
 [Please read the disclaimer before you continue...](/disclaimer.html)
+
+<a id='lXLj1WTySZphozmsNadd2g' class='gie-single' href='http://www.gettyimages.com/detail/1300276608' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'lXLj1WTySZphozmsNadd2g',sig:'9St_0VOKwlH0nihHBfKxq-GUOwNApYGBUlUOBI-giZQ=',w:'508px',h:'339px',items:'1300276608',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
 
 Gold has been used as a store of value for thousands of years and is known for its stability and resistance to inflation. It has a physical presence and can be held in your hand, making it attractive to some investors who value tangible assets.
 

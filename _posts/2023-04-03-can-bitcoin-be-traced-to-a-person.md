@@ -6,12 +6,11 @@ image: /assets/images/kapresoft1-210x.png
 description: "Learn how Bitcoin transactions can be traced through the blockchain, exchanges, and analysis, but also how it can be used anonymously."
 ---
 
-![](https://cdngh.kapresoft.com/img/btc-transactions-1693b45.jpg)
-
-
 ## Overview
 
 Bitcoin is often associated with anonymity, but it is not entirely untraceable. Transactions on the Bitcoin network are recorded on a public ledger called the blockchain, which is visible to anyone. This means that all transactions are publicly available and can be traced, but it can be challenging to identify who is behind each transaction.<!--excerpt-->
+
+![](https://cdngh.kapresoft.com/img/btc-transactions-1693b45.jpg)
 
 ## Bitcoin Ledger (Blockchain)
 
