@@ -3,7 +3,6 @@ title: "Bitcoin Environmental Impact"
 title_style: title2
 canonical_url: https://www.kapresoft.com/finance/2023/04/03/bitcoin-environmental-impact.html
 category: finance
-image: /assets/images/kapresoft1-210x.png
 description: "Discover the environmental impact of Bitcoin and how it affects the planet. Learn about the solutions to minimize Bitcoin's carbon footprint."
 ---
 

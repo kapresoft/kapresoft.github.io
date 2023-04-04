@@ -3,7 +3,6 @@ title: "Java • Avoid Getters & Setters Methods With Lombok"
 title_style: title3
 canonical_url: https://www.kapresoft.com/java/2023/04/04/java-avoid-getters-setters-with-lombok.html
 category: java
-image: /assets/images/kapresoft1-210x.png
 description: "Avoid Eliminate and reduce repetitive java boilerplate methods with Lombok's @Getter and @Setter annotations."
 ---
 

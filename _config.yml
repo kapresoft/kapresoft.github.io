@@ -59,3 +59,9 @@ twitter:
   username: deloy72
   card: summary
 
+# See:
+#  - https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md
+#  - https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  - values:
+      image: /assets/images/kapresoft1-210x.png
