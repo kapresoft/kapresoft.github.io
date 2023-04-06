@@ -35,7 +35,7 @@ Heat distribution: _All-Clad_ frying pans are known for their superior heat dist
 
 ### Country of Origin
 
-![](https://cdngh.kapresoft.com/img/madein-1.jpg "Made In Italy")
+![Made In Italy](https://cdngh.kapresoft.com/img/madein-1-6f3248c.jpg "Made In Italy")
 
 _Made In_ is a US-based company that manufactures its products in the USA, Italy, and France, with the majority of their production still taking place in the USA and France. On the other hand, All-Clad is also made in the USA, but it is important to note that some of their components, such as handles, may be sourced from other countries like China. If you prefer to buy products that are made in your own country, this may be a factor to consider.
 
