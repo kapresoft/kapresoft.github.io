@@ -61,7 +61,7 @@ While Ripple Labs has significant influence over the development of XRP, they do
 
 So while Ripple Labs plays a major role in the development and promotion of XRP, the XRP ledger itself is controlled by the distributed network of users who participate in its operation.
 
-## Who Controls Testing And Releases Of XRP?
+## Who Controls Testing And Releases ff XRP?
 
 The development, testing, and release of new XRP code updates are primarily managed by Ripple Labs, the company that created XRP. Ripple Labs has a team of developers who work on the XRP codebase and are responsible for testing and deploying updates to the XRP network.
 
@@ -95,7 +95,7 @@ According to a [Twitter thread](https://twitter.com/JohnEDeaton1/status/16423894
 
 <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">“INVESTMENT CONTRACT”<br><br>Is one of the most misunderstood legal terms in the law. The Howey Test must be the most misapplied legal test or doctrine on social media. <br><br>“Investment contract” is a legal term of art adopted from state law by Congress when it enacted the 1933 Act.</p>&mdash; John E Deaton (@JohnEDeaton1) <a href="https://twitter.com/JohnEDeaton1/status/1642389473521434624?ref_src=twsrc%5Etfw">April 2, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## Should the Public be Concerned about XRP
+## Public Concerns about XRP?
 
 As with any investment or technology, it is important for individuals to do their own research and make informed decisions based on their personal circumstances and risk tolerance. Some people may have concerns about the regulatory environment surrounding XRP, as well as potential risks related to the volatility of cryptocurrency markets. However, others may see potential benefits and view XRP as a promising technology with unique advantages over traditional financial systems. Ultimately, the decision of whether or not to invest in XRP or use it as a means of payment should be made after careful consideration of all relevant factors.
 
