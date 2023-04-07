@@ -26,7 +26,10 @@ The proposed tax would apply to commercial real estate transactions as well, inc
 
 ## Homelessness in Los Angeles
 
+<a id='FDW6tZfeQD9vupsoy8d7Jg' class='gie-slideshow' href='http://www.gettyimages.com/detail/1275297513' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'FDW6tZfeQD9vupsoy8d7Jg',sig:'4I2WY3lusS21B3cfplmSIPPAspId4MButVp9_nWYWbE=',w:'509px',h:'340px',items:'1275297513,1038471838,663366867,1140488468',caption: false ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+
 Skid Row is a neighborhood in downtown Los Angeles known for its high concentration of homelessness and poverty. An estimated 4,700 people experience homelessness on any given night in the Skid Row area, with many individuals struggling with mental illness, addiction, or physical disabilities. Despite ongoing efforts to address the issue, the situation remains a persistent challenge.
+
 
 While Skid Row is one of the most visible areas with a high concentration of homelessness, there are other neighborhoods and communities throughout Los Angeles where people are experiencing homelessness. Homeless encampments have become more visible in many parts of Los Angeles, and the city has implemented various initiatives and programs to address homelessness, such as providing shelter and housing, mental health services, and job training. However, the problem remains complex and challenging, and it will require ongoing collaboration between community organizations, local government, and the public to find lasting solutions.
 
