@@ -12,6 +12,8 @@ In April 2023, Measure ULA, or the Homelessness and Housing Solutions Tax, went 
 
 As we reflect on the significance of the right to healthcare and housing, it is essential to recognize that certain policies and regulations can have an impact on individuals' ability to access and maintain these basic human rights. The recent introduction of the ULA tax in Los Angeles has sparked discussions regarding its potential effects on property ownership and investment in the city.
 
+<a id='x0ErMrBnTZ5EPUguHvxXEA' class='gie-slideshow' href='http://www.gettyimages.com/detail/520395882' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'x0ErMrBnTZ5EPUguHvxXEA',sig:'ThYecZAey0qwJO10sR2LNvguCnQBc4tAym8c54DCTho=',w:'509px',h:'338px',items:'520395882,1175414500,155378367,175397044',caption: false ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+
 As the deadline for the mansion tax approaches in January 2023, homeowners are started to feel increasingly anxious, and some were choosing to list their mansions for sale with incentives in anticipation of the tax. According to a report by Inside Edition, one [Los Angeles real estate agent is offering a luxury vehicle as an incentive to entice buyers to purchase a property before the tax goes into effect](https://www.insideedition.com/la-realtor-offers-luxury-vehicle-to-buyers-in-hopes-of-selling-home-before-mansion-tax-goes-into).
 
 ## What is ULA?
