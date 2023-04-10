@@ -9,6 +9,8 @@ description: "Java 19 Virtual Threads: lightweight and efficient approach to con
 
 In this article, we will provide an overview of virtual threads in Java and their use in concurrent programming. We will define what virtual threads are and how they differ from normal threads. Additionally, we will discuss the benefits of virtual threads over traditional concurrency approaches and provide code examples to illustrate the differences between the two.<!--excerpt--> By the end of this article, you should have a better understanding of Java Virtual Threads and how they can be used to write more efficient and scalable concurrent code in Java.
 
+<a id='mWgrqmJqTlpaspZE4HAOlA' class='gie-single' href='http://www.gettyimages.com/detail/1451309507' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'mWgrqmJqTlpaspZE4HAOlA',sig:'P3PApMuDGDoNRBODfuek2PtdXWdZOByk_eNQz5ZOud0=',w:'553px',h:'211px',items:'1451309507',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+
 ## What are Java Virtual Threads?
 
 In Java 19, virtual threads are lightweight threads that are managed by the Java Virtual Machine (JVM). They are also known as fibers or continuations.
