@@ -10,6 +10,8 @@ description: "Avoid Eliminate and reduce repetitive java boilerplate methods wit
 
 This article provides an overview of how to avoid the repetitive code associated with writing getter and setter methods in Java classes using Lombok. By using Lombok's annotations, such as @Getter and @Setter, developers can generate these methods automatically, thereby reducing the amount of boilerplate code required in their classes.<!--excerpt--> The article highlights the benefits of using Lombok to simplify code and improve readability, and provides a step-by-step guide on how to integrate Lombok into a Java project. Overall, the article presents a useful tool for developers looking to streamline their code and improve their productivity.
 
+<img alt="Java Getters and Setters" height="300" src="https://cdngh.kapresoft.com/img/java-getters-setters-6e53417.svg" width="553" title="Java Getters And Setters"/><br/>
+
 ## What issue are we trying to solve?
 
 The use of getters and setters to encapsulate the data and methods of an object is a fundamental design pattern in object-oriented programming.
