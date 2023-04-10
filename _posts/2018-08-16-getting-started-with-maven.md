@@ -219,7 +219,7 @@ were created the generating this archetype.
 
 **Figure 4.**&nbsp;&nbsp;Maven project structure
 
-![Maven Project Structure](https://cdngh.kapresoft.com/img/mvn_project_structure.png)
+<img alt="Maven Project Structure" src="https://cdngh.kapresoft.com/img/mvn-project-structure-4874190.svg" title="Maven Project Structure" width="553" height="200"/>
 
 Alternatively, you can use the *nix tree command using the terminal to display the following directory tree content.
 
