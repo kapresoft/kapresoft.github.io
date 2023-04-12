@@ -65,7 +65,7 @@
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/03/13/lombok-exclude-generated-code-from-test-coverage.html</loc>
-        <lastmod>2023-03-14</lastmod>
+        <lastmod>2023-04-12</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/finance/2023/03/13/fdic-what-you-need-to-know.html</loc>
@@ -138,5 +138,9 @@
     <url>
         <loc>https://www.kapresoft.com/finance/2023/04/07/los-angeles-ula-tax.html</loc>
         <lastmod>2023-04-07</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/04/12/spring-boot-jackson-and-lombok-best-practices.html</loc>
+        <lastmod>2023-04-12</lastmod>
     </url>
 </urlset>
