@@ -11,6 +11,8 @@ description: "Learn best practices for using Jackson and Lombok with Spring Boot
 
 This article discusses the recommended practices for using Jackson and Lombok in conjunction with Spring Boot, a popular framework for building enterprise-level Java applications.<!--excerpt-->
 
+<a id='C8ca3qDUQo5sUZAv41u3Sg' class='gie-single' href='http://www.gettyimages.com/detail/1258130605' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'C8ca3qDUQo5sUZAv41u3Sg',sig:'r5AkaTh021M8JrWiW7q__GvgmhVraw-FPPoygkMjGwQ=',w:'589px',h:'295px',items:'1258130605',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+
 ## Jackson & Project Lombok
 Jackson is a high-performance JSON parsing and serialization library used to convert JSON data into Java objects and vice versa. Lombok is a code generation library that simplifies the creation of Java classes by generating boilerplate code, such as getters, setters, constructors, and equals/hashCode methods.
 
