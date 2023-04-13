@@ -254,7 +254,7 @@ void builder_IsNotSuperUser() {
 }
 ```
 
-Full User tests can be found in [UserTest](https://github.com/kapresoft/lombok/blob/887698214954e34b9016137547b30b9f83844082/src/test/java/com/kapresoft/lombok/builders/UserTest.java#L1).
+Full User tests can be found in [UserTest](https://github.com/kapresoft/lombok/blob/1.0.0/src/test/java/com/kapresoft/lombok/builders/UserTest.java#L1).
 
 ### SuperUserTest
 
@@ -280,11 +280,11 @@ void copyConstructor_ShouldHaveEqualFieldValues() {
 }
 ```
 
-Full SuperUser tests can be found in [SuperUserTest](https://github.com/kapresoft/lombok/blob/887698214954e34b9016137547b30b9f83844082/src/test/java/com/kapresoft/lombok/builders/SuperUserTest.java#L1).
+Full SuperUser tests can be found in [SuperUserTest](https://github.com/kapresoft/lombok/blob/1.0.0/src/test/java/com/kapresoft/lombok/builders/SuperUserTest.java#L1).
 
 
 ## Summary
 
 For this article, the Lombok _@Builder_ annotation on a method was illustrated to create a builder and copy constructor via the default _builder()_ and  _toBuilder()_ methods on immutable objects. A few points are also mentioned how the caveats with implementing builder and copy constructors in plain java implementations may no longer apply when using Lombok.
 
-The GitHub repository that this article references can be found in [https://github.com/kapresoft/lombok](https://github.com/kapresoft/lombok). Refer to the main documentation on the repository on how to build this project in your local environment.
+The GitHub repository that this article references can be found in [https://github.com/kapresoft/lombok/tree/1.0.0](https://github.com/kapresoft/lombok/tree/1.0.0). Refer to the main documentation on the repository on how to build this project in your local environment.
