@@ -151,4 +151,8 @@
         <loc>https://www.kapresoft.com/java/2023/05/01/maven-vs-gradle.html</loc>
         <lastmod>2023-05-01</lastmod>
     </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/05/01/lombok-singular-annotation.html</loc>
+        <lastmod>2023-05-01</lastmod>
+    </url>
 </urlset>
