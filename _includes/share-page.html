@@ -12,6 +12,8 @@
             </div>
             <div class="clear-spacer"></div>
             <script>
-                let canonHref = $("link[rel='canonical']").attr("href");
+                if (typeof canonHref === 'undefined') {
+                    canonHref = $("link[rel='canonical']").attr("href");
+                }
                 $('.fb-share-button').data('href', canonHref).attr('data-href', canonHref);
             </script>
