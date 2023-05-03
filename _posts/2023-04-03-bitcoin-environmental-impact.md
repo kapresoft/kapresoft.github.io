@@ -10,7 +10,7 @@ description: "Discover the environmental impact of Bitcoin and how it affects th
 
 Gold mining and extraction can have a significant impact on the environment, including deforestation, water pollution, and soil erosion. Bitcoin mining, while also energy-intensive, does not have the same level of impact on the physical environment.<!--excerpt-->
 
-![](https://cdngh.kapresoft.com/img/Bitcoin-Environmental-Impact-b9c0bb7.jpg)
+![bitcoin environmental impact](https://cdngh.kapresoft.com/img/Bitcoin-Environmental-Impact-b9c0bb7.jpg)
 
 ## Bitcoin's Demand for Electricity
 
