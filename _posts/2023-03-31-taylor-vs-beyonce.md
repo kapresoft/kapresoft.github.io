@@ -10,8 +10,14 @@ description: "Taylor Swift vs Beyoncé Knowles"
 
 Comparing two of the biggest names in the music industry, Taylor Swift and Beyoncé Knowles, is no easy feat. Both women are incredibly talented, successful, and have legions of dedicated fans. However, there are certainly differences between the two that are worth exploring.<!--excerpt--> In this article, we will take a closer look at the careers of Taylor Swift and Beyoncé Knowles and compare their successes, styles, and overall impact on the music industry.
 
-<img src="https://imageio.forbes.com/specials-images/imageserve/5ed56484570be8000647428e/0x0.jpg?width=250&crop=1256,1255,x414,y0,safe"/>&nbsp;&nbsp;
-<img src="https://www.independent.ie/style/celebrity/celebrity-news/91d6c/29935737.ece/AUTOCROP/w250/PANews_ac71d04d-f9af-44a6-94df-64ae61d12ed8_I1.jpg"/>
+<div style="float:left; width: 290px">
+<a id='M_mSOOy1RUFXxAP7V2VtQg' class='gie-slideshow' href='http://www.gettyimages.com/detail/1486203911' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'M_mSOOy1RUFXxAP7V2VtQg',sig:'tCe5-12pUv1MGJG5V7Yts9BlHoatJUu15yk0dxxN5No=',w:'300px',h:'200px',items:'1486203911,1486204576',caption: false ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+</div>
+
+<div style="float:right; width: 290px; margin-left: 10px;">
+<a id='cUWDMNbRTiRWkL4T_UxuBQ' class='gie-slideshow' href='http://www.gettyimages.com/detail/1253172997' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'cUWDMNbRTiRWkL4T_UxuBQ',sig:'tvAqjHQmHq_EG-95QbCwCMj6WZYNVInRiNZeZ3V1W40=',w:'300px',h:'200px',items:'1253172997,89081087',caption: false ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+</div>
+<div style="clear: both">&nbsp;</div>
 
 ## Recent Events
 
