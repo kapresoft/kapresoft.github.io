@@ -1,5 +1,6 @@
 ---
 title: "Getting Started with Maven Build System in Java Projects"
+title_style: titlew
 canonical_url: https://www.kapresoft.com/java/2018/08/16/getting-started-with-maven.html
 category: java
 redirect_from: 

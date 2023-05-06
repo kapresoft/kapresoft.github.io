@@ -1,6 +1,6 @@
 ---
 title: "Decoupling Domain Objects: Simplifying System Architecture"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/03/31/decoupling-domain-objects.html
 category: java
 image: /assets/images/kapresoft1-210x.png

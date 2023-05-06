@@ -1,5 +1,6 @@
 ---
 title: Lombok • Exclude Generated Code From Test Coverage
+title_style: titlew
 canonical_url: https://www.kapresoft.com/java/2023/03/13/lombok-exclude-generated-code-from-test-coverage.html
 image: /assets/images/kapresoft1-210x.png
 category: java

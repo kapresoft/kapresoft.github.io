@@ -1,6 +1,6 @@
 ---
 title: "Lombok • @AllArgsConstruct vs @RequiredArgsConstructor"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/03/30/lombok-allargsconstructor-vs-requiredargsconstructor.html
 category: java
 image: /assets/images/kapresoft1-210x.png

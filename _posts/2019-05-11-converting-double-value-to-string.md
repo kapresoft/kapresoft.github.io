@@ -1,5 +1,6 @@
 ---
 title: "Java • Double to String Conversion | Beginner's Guide"
+title_style: titlew
 image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/05/11/converting-double-value-to-string.html
 category: java

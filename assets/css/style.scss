@@ -43,14 +43,18 @@ h1 {
   font-size:24px;
 }
 
-h1.title, h1.title2, h1.title3 {
+h1.title, h1.titlew, h1.title2, h1.title2w, h1.title3, h1.title3w {
   font-size:28px;
   color: #3399cc;
   margin-bottom: 10px;
 }
 
-h1.title2 {font-size:24px;}
-h1.title3 {font-size:21px;}
+h1.titlew { white-space: normal; }
+h1.title2, h1.title2w { font-size:24px; }
+h1.title2w { white-space: normal; }
+
+h1.title3, h1.title3w { font-size:21px; }
+h1.title3w { white-space: normal; }
 
 h2 {
   font-size: 24px;
