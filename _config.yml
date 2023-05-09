@@ -1,7 +1,7 @@
 theme: jekyll-theme-leap-day
 title: KapreSoft
 name: KapreSoft.com
-description: The Java Blogger by Antonio Lagnada
+description: "From Coding to Cooking to Coins:<br>Antonio Lagnada's Blog on Software, Music, Food, and Finance"
 layout: kapresoft
 
 exclude:

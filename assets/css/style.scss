@@ -24,7 +24,13 @@ div.site-name {
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
   -ms-text-overflow: ellipsis;
+}
 
+div.tag-line {
+  color: #f3f3f3;
+  width: 70%;
+  font-size: small;
+  margin: auto;
 }
 
 section {
@@ -173,6 +179,9 @@ nav {
       width: 140px;
     }
   }
+  div.tag-line {
+    font-size: smaller; width: 60%;
+  }
 }
 
 @media print, screen and (max-width: 720px) {
@@ -191,6 +200,10 @@ nav {
   }
   header {
     p { display: block;}
+  }
+  div.tag-line {
+    font-size: smaller;
+    width: 50%;
   }
 }
 
@@ -224,6 +237,10 @@ nav {
     .logo {
       width: 110px;
     }
+  }
+  div.tag-line {
+    font-size: smaller;
+    width: 60%;
   }
 }
 
@@ -259,5 +276,9 @@ nav {
 
   .logo-wrap {
     display: none;
+  }
+  div.tag-line {
+    font-size: smaller;
+    width: 90%;
   }
 }
