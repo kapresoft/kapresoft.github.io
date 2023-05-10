@@ -1,9 +1,11 @@
 ---
 title: "Cryptographic Algorithms: A Comparison of Security and Strength"
 title_style: title2w
-canonical_url: https://www.kapresoft.com/java/2023/05/07/cryptography-algorithms-comparison.html
-category: java
+canonical_url: https://www.kapresoft.com/software/2023/05/07/cryptography-algorithms-comparison.html
+category: software
 description: "Learn about the strengths and weaknesses of popular cryptographic algorithms to make informed decisions about data security."
+redirect_from:
+    - /java/2023/05/07/cryptography-algorithms-comparison.html
 ---
 
 ## Overview
