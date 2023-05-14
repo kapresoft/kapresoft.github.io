@@ -12,9 +12,13 @@ In the world of music and entertainment, two iconic artists, Beyoncé and Taylor
 
 ## Beyoncé's Renaissance Tour
 
+<a id='DI9YtkscTN5HyQL9naSiTg' class='gie-slideshow' href='http://www.gettyimages.com/detail/1488956116' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'DI9YtkscTN5HyQL9naSiTg',sig:'PFdlH0q3FFXpWJ3RWv2RI4GXUqykJ2pHzpqhgyxMttE=',w:'594px',h:'300px',items:'1488956116,1488935826,1488956115',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+
 Beyoncé, renowned for her mesmerizing performances and unparalleled stage presence, is set to embark on her highly anticipated Renaissance Tour. While specific details regarding the tour's duration are yet to be disclosed, fans are eagerly awaiting the announcement of tour dates and venues. Beyoncé's loyal fanbase and her ability to deliver unforgettable live experiences have contributed to the immense anticipation surrounding the Renaissance Tour.
 
 ## The Meaning of Eras Tour
+
+<a id='UObAWvjzRJ5aRGPkkCl9QA' class='gie-slideshow' href='http://www.gettyimages.com/detail/1489621911' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'UObAWvjzRJ5aRGPkkCl9QA',sig:'n1Adxq7KuPkaFLFE7G6KpTfZ9b17JyQmU4sVtdSXFmI=',w:'594px',h:'300px',items:'1489621911,1489593208,1489621942',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
 
 On the other hand, Taylor Swift's Eras Tour has already left an indelible mark on the music industry. This tour represents a significant milestone in Swift's career, as she embarked on a journey to celebrate the different eras of her music. The Eras Tour showcases Taylor Swift's evolution as an artist, captivating audiences with her powerful performances and emotional storytelling. It is a testament to Swift's unwavering commitment to her craft and her ability to connect with fans on a profound level.
 
