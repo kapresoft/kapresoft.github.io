@@ -2,7 +2,7 @@
 title: "What Is XRP?"
 canonical_url: https://www.kapresoft.com/finance/2023/04/06/what-is-xrp.html
 category: finance
-related: crypto
+related: finance
 description: "Technology, benefits, and challenges of XRP cryptocurrency. Resolving conflicts in XRP validators and the SEC lawsuit against Ripple Labs."
 ---
 
