@@ -5,186 +5,190 @@
     </url>
     <url>
         <loc>https://www.kapresoft.com/about-antonio-lagnada.html</loc>
-        <lastmod>2023-03-27</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2018/08/14/getting-started-with-gradle.html</loc>
-        <lastmod>2021-12-29</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2018/08/15/getting-started-with-java.html</loc>
-        <lastmod>2021-12-29</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2018/08/16/getting-started-with-maven.html</loc>
-        <lastmod>2023-04-10</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2018/08/27/setting-java-compiler-version-in-maven.html</loc>
-        <lastmod>2023-03-14</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2018/09/03/using-apple-keyboard-on-windows-intellij.html</loc>
-        <lastmod>2023-03-14</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2019/04/28/aws-lambda-spring-boot.html</loc>
-        <lastmod>2023-03-14</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2019/05/11/converting-int-value-to-string.html</loc>
-        <lastmod>2023-03-14</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2019/05/11/converting-double-value-to-string.html</loc>
-        <lastmod>2023-03-14</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2019/05/12/using-java-optional.html</loc>
-        <lastmod>2023-03-14</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2019/10/20/aws-lambda-spring-boot-profiles.html</loc>
-        <lastmod>2023-03-20</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2021/11/03/spring-boot-serialize-immutable-objects.html</loc>
-        <lastmod>2021-12-29</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2021/12/27/lombok-builders-and-copy-constructors.html</loc>
-        <lastmod>2023-03-13</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2022/08/29/lombok-cloning-immutable-objects-using-with.html</loc>
-        <lastmod>2022-09-14</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/03/13/lombok-overview.html</loc>
-        <lastmod>2023-03-14</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/03/13/lombok-exclude-generated-code-from-test-coverage.html</loc>
-        <lastmod>2023-04-12</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/finance/2023/03/13/fdic-what-you-need-to-know.html</loc>
-        <lastmod>2023-05-01</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/03/14/java-records.html</loc>
-        <lastmod>2023-03-14</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/03/14/java-17-features.html</loc>
-        <lastmod>2023-03-14</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/03/27/java-final-modifier.html</loc>
-        <lastmod>2023-03-27</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/03/28/encrypting-property-file-values-with-jasypt.html</loc>
-        <lastmod>2023-03-28</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/03/30/how-to-use-constructor-lombok.html</loc>
-        <lastmod>2023-03-30</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/03/30/lombok-allargsconstructor-vs-requiredargsconstructor.html</loc>
-        <lastmod>2023-03-30</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2016/05/15/secure-smtp-with-spring-javamailsender.html</loc>
-        <lastmod>2023-03-30</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/03/31/decoupling-domain-objects.html</loc>
-        <lastmod>2023-03-31</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/music/2023/03/31/taylor-vs-beyonce.html</loc>
-        <lastmod>2023-05-03</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/finance/2023/04/03/can-bitcoin-be-traced-to-a-person.html</loc>
-        <lastmod>2023-05-03</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/finance/2023/04/03/bitcoin-environmental-impact.html</loc>
-        <lastmod>2023-05-03</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/finance/2023/04/03/is-bitcoin-gold-killer.html</loc>
-        <lastmod>2023-04-03</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/04/04/java-avoid-getters-setters-with-lombok.html</loc>
-        <lastmod>2023-04-10</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/04/04/java-virtual-threads.html</loc>
-        <lastmod>2023-04-10</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/kitchen/2023/04/06/madein-vs-allclad-stainless-steel-pans.html</loc>
-        <lastmod>2023-05-08</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/finance/2023/04/06/what-is-xrp.html</loc>
-        <lastmod>2023-04-06</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/finance/2023/04/07/los-angeles-ula-tax.html</loc>
-        <lastmod>2023-04-07</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/04/12/spring-boot-jackson-and-lombok-best-practices.html</loc>
-        <lastmod>2023-04-13</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/software/2023/04/13/ten-best-attributes-software-developer.html</loc>
-        <lastmod>2023-04-13</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/05/01/maven-vs-gradle.html</loc>
-        <lastmod>2023-05-01</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/05/01/lombok-singular-annotation.html</loc>
-        <lastmod>2023-05-01</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/05/03/java-string-to-map.html</loc>
-        <lastmod>2023-05-03</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/music/2023/05/06/why-taylor-swift-fans-connect.html</loc>
-        <lastmod>2023-05-06</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/music/2023/05/08/taylor-the-eras-tour-watch-without-tickets.html</loc>
-        <lastmod>2023-05-08</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/software/2023/05/07/cryptography-algorithms-comparison.html</loc>
-        <lastmod>2023-05-07</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/software/2023/05/10/http-status-misunderstandings.html</loc>
-        <lastmod>2023-05-10</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/software/2023/05/11/is-rest-api-stateless.html</loc>
-        <lastmod>2023-05-11</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/music/2023/05/13/renaissance-outselling-the-eras-tour.html</loc>
-        <lastmod>2023-05-13</lastmod>
+        <lastmod>2023-05-15</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/music/2023/05/14/why-cities-compete-for-taylor-swift.html</loc>
-        <lastmod>2023-05-14</lastmod>
+        <lastmod>2023-05-15</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/05/15/spring-error-handling-best-practices.html</loc>
+        <lastmod>2023-05-15</lastmod>
     </url>
 </urlset>

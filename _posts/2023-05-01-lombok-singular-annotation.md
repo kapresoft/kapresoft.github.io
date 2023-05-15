@@ -3,6 +3,7 @@ title: "Lombok @Singular Annotation"
 title_style: title2
 canonical_url: https://www.kapresoft.com/java/2023/05/01/lombok-singular-annotation.html
 category: java
+related: lombok
 image: /assets/images/kapresoft1-210x.png
 description: "Usecase benefits of the @Singular annotation in Java, and how it simplifies working with collections list map set"
 ---

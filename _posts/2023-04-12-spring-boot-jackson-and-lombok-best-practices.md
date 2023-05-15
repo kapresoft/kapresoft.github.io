@@ -3,6 +3,7 @@ title: "Spring Boot, Jackson, and Lombok Best Practices"
 title_style: title2
 canonical_url: https://www.kapresoft.com/java/2023/04/12/spring-boot-jackson-and-lombok-best-practices.html
 category: java
+related: spring
 image: /assets/images/kapresoft1-210x.png
 description: "Learn best practices for using Jackson and Lombok with Spring Boot to build enterprise-level Java apps"
 ---

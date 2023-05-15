@@ -4,6 +4,7 @@
     {% include google-analytics.html %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex">
 
     {% seo %}
 
@@ -79,7 +80,13 @@
 
         <div class="share-spt">&nbsp;</div>
         {% include share-page.html %}
+
         <div class="share-spb">&nbsp;</div>
+
+        {% include separator.html %}
+
+        <h4 style="margin-top: 50px;">Related Articles:</h4>
+        {% include related.html page=page %}
 
     </section>
 

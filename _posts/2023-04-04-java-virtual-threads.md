@@ -2,6 +2,7 @@
 title: Java 19 Virtual Threads
 canonical_url: https://www.kapresoft.com/java/2023/04/04/java-virtual-threads.html
 category: java
+related: java
 description: "Java 19 Virtual Threads: lightweight and efficient approach to concurrency in Java for high-performance applications."
 ---
 

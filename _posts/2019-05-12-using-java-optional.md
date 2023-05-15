@@ -3,6 +3,7 @@ title: "Java Optional - Why Developers Prefer Optional Values"
 image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/05/12/using-java-optional.html
 category: java
+related: java
 description: "Discover why Java developers prefer Optional class over null for optional values. Explore the benefits and use cases in this in-depth article"
 ---
 

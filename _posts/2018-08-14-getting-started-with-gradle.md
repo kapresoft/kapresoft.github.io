@@ -6,6 +6,7 @@ redirect_from:
     - /p/getting-started-with-gradle.html
     - /getting-started-with-gradle.html
 category: java
+related: java
 description: "Getting started with the gradle build system in java"
 ---
 

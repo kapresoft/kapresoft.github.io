@@ -2,6 +2,7 @@
 title: Getting Started With Java
 canonical_url: https://www.kapresoft.com/java/2018/08/15/getting-started-with-java.html
 category: java
+related: java
 image: /assets/images/kapresoft1-210x.png
 redirect_from: 
     - /p/getting-started-with-java.html

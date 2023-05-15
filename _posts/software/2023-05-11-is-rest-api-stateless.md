@@ -3,6 +3,7 @@ title: "Is REST API Stateless?"
 title_style: titlew
 canonical_url: https://www.kapresoft.com/software/2023/05/11/is-rest-api-stateless.html
 category: software
+related: software
 description: "Unveiling the Statelessness of REST APIs: Benefits, Challenges, and the True Nature of State in Web Services."
 ---
 

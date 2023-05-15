@@ -3,6 +3,7 @@ title: "The Eras Tour: Making the Most of a Taylor Swift Concert Without Tickets
 title_style: title2w
 canonical_url: https://www.kapresoft.com/music/2023/05/08/taylor-the-eras-tour-watch-without-tickets.html
 category: music
+related: taylor_swift
 description: "Experience the passion and dedication of Taylor Swift fans during The Eras Tour in Nashville. From helicopter rides to sidewalk concerts."
 ---
 
