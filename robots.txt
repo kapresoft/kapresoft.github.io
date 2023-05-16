@@ -1,4 +1,15 @@
 User-agent: *
 Allow: /
+Disallow: /search
+Disallow: /feeds/*
+Disallow: /p/*
+Disallow: /2017/*
+Disallow: /x/*
+Disallow: /aws-lambda-spring-boot.html
+Disallow: /java/2023/05/06/why-taylor-swift-fans-connect.html
+Disallow: /java/2023/05/07/cryptography-algorithms-comparison.html
+Disallow: /getting-started-with-maven.html
+Disallow: /getting-started-with-java.html
+Disallow: /getting-started-with-gradle.html
 
 Sitemap: https://www.kapresoft.com/sitemap.xml
