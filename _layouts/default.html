@@ -80,11 +80,6 @@
         <div class="share-spt">&nbsp;</div>
         {% include share-page.html %}
 
-        <div class="share-spb">&nbsp;</div>
-
-        {% include separator.html %}
-
-        <h4 style="margin-top: 50px;">Related Articles:</h4>
         {% include related.html page=page %}
 
     </section>
@@ -113,6 +108,16 @@
 {% endif %}
 {% include highlightjs.html page=page %}
 
+{% comment %}
+Workaround for Bots NoIndex Issue. We don't want related pages to be index.
+{% endcomment %}
+<script>
+    $(document).ready(function() {
+        setTimeout(function() {
+            $('.noindex').show()
+        }, 1000)
+    });
+</script>
 
 </body>
 </html>

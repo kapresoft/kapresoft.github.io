@@ -3,6 +3,8 @@
 
 @import "{{ site.theme }}";
 
+.noindex { display: none; }
+
 p, div.excerpt {
   line-height: 1.3em;
 }
