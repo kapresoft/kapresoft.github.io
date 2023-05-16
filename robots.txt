@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /?m=0
 Disallow: /search
 Disallow: /feeds/*
 Disallow: /p/*
