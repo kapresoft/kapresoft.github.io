@@ -3,7 +3,6 @@ title: Java 17 Features
 canonical_url: https://www.kapresoft.com/java/2023/03/14/java-17-features.html
 category: java
 related: java
-image: /assets/images/kapresoft1-210x.png
 description: "Latest features in JDK 17, including enhanced random number generators, new encoding-specific methods, default classes for Java ciphers, and more."
 
 ---

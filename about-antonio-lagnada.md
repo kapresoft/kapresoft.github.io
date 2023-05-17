@@ -2,7 +2,7 @@
 layout: no_ads
 title: "About Antonio W. Lagnada"
 canonical_url: https://www.kapresoft.com/about-antonio-lagnada.html
-image: /assets/images/kapresoft1-210x.png 
+image: https://cdngh.kapresoft.com/img/kapresoft1-210x-09aaa6e.png 
 description: "Antonio Lagnada, a highly-motivated Senior Software Engineer with experience in designing, and development of enterprise-wide systems."
 ---
 

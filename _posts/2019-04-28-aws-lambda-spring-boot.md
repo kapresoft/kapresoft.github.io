@@ -1,7 +1,6 @@
 ---
 title: "AWS Lambda with Spring Boot: A Comprehensive Guide"
 title_style: titlew
-image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/04/28/aws-lambda-spring-boot.html
 category: java
 related: spring

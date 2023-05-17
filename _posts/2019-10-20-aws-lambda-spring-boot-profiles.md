@@ -1,7 +1,6 @@
 ---
 title: "Spring Boot Profiles & AWS Lambda: Deployment Guide"
 last_modified_at:   2023-03-20 10:17:00 -0700
-image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/10/20/aws-lambda-spring-boot-profiles.html
 category: java
 related: spring

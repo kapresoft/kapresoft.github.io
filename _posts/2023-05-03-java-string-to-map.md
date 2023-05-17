@@ -4,7 +4,6 @@ title_style: title2
 canonical_url: https://www.kapresoft.com/java/2023/05/03/java-string-to-map.html
 category: java
 related: java
-image: /assets/images/kapresoft1-210x.png
 description: "Convert key-value pairs to a Java Map with loops or Stream API. Streamline code for efficient processing and optimize for performance"
 ---
 

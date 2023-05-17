@@ -1,6 +1,5 @@
 ---
 title: "Java • Int to String Conversion Guide"
-image: /assets/images/kapresoft1-210x.png
 canonical_url: https://www.kapresoft.com/java/2019/05/11/converting-int-value-to-string.html
 category: java
 related: java

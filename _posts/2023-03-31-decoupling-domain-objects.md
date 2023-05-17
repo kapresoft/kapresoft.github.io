@@ -4,7 +4,6 @@ title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/03/31/decoupling-domain-objects.html
 category: java
 related: java
-image: /assets/images/kapresoft1-210x.png
 description: "Decoupling objects in object-oriented design separates layers of abstraction. Using composite objects helps match domain and entity objects."
 ---
 

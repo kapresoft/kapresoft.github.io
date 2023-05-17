@@ -3,7 +3,6 @@ title: "Can Bitcoin Be Traced To A Person?"
 canonical_url: https://www.kapresoft.com/finance/2023/04/03/can-bitcoin-be-traced-to-a-person.html
 category: finance
 related: finance
-image: /assets/images/kapresoft1-210x.png
 description: "Learn how Bitcoin transactions can be traced through the blockchain, exchanges, and analysis, but also how it can be used anonymously."
 ---
 

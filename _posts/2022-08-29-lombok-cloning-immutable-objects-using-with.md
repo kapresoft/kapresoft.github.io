@@ -2,7 +2,6 @@
 title: "Lombok • Using @With Annotation to Clone Immutable Objects"
 title_style: titlew
 canonical_url: https://www.kapresoft.com/java/2022/08/29/lombok-cloning-immutable-objects-using-with.html
-image: /assets/images/kapresoft1-210x.png
 category: java
 related: lombok
 description: "Using @With Annotation to Clone Immutable Objects"

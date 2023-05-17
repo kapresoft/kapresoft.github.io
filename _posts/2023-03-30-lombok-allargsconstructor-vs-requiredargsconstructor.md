@@ -4,7 +4,6 @@ title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/03/30/lombok-allargsconstructor-vs-requiredargsconstructor.html
 category: java
 related: lombok
-image: /assets/images/kapresoft1-210x.png
 description: "Lombok • What is the difference between @AllArgsConstruct and @RequiredArgsConstructor"
 ---
 

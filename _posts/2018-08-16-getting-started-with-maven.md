@@ -7,7 +7,6 @@ related: java
 redirect_from: 
     - /p/getting-started-with-maven.html
     - /getting-started-with-maven.html
-image: /assets/images/kapresoft1-210x.png
 description: "Learn how to use Maven for the first time with this comprehensive guide. Get started with the Maven build system and improve your Java project."
 ---
 

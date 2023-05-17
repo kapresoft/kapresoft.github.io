@@ -1,7 +1,6 @@
 ---
 title: Lombok • An Overview
 canonical_url: https://www.kapresoft.com/java/2023/03/13/lombok-overview.html
-image: /assets/images/kapresoft1-210x.png
 category: java
 related: lombok
 description: "Lombok is a Java library that provides annotations to help reduce boilerplate code and increase developer productivity."

@@ -3,7 +3,6 @@ title: "Lombok • How to Use Constructor"
 canonical_url: https://www.kapresoft.com/java/2023/03/30/how-to-use-constructor-lombok.html
 category: java
 related: lombok
-image: /assets/images/kapresoft1-210x.png
 description: "How to use constructor with Lombok"
 ---
 

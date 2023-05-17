@@ -1,9 +1,11 @@
+info:
+  version: "20230517.01"
+
 theme: jekyll-theme-leap-day
 title: KapreSoft
 name: KapreSoft.com
 description: "From Coding to Cooking to Coins:<br>Antonio Lagnada's Blog on Software, Music, Food, and Finance"
 layout: kapresoft
-
 exclude:
   - "*.sh"
   - "*.code-workspace"
@@ -53,7 +55,7 @@ last-modified-at:
 author:
   name: Antonio Lagnada
   twitter: deloy72
-logo: /assets/images/kapresoft1-210x.png
+logo: https://cdngh.kapresoft.com/img/kapresoft1-210x-09aaa6e.png
 
 twitter:
   username: deloy72
@@ -64,4 +66,4 @@ twitter:
 #  - https://jekyllrb.com/docs/configuration/front-matter-defaults/
 defaults:
   - values:
-      image: /assets/images/kapresoft1-210x.png
+      image: https://cdngh.kapresoft.com/img/kapresoft1-210x-09aaa6e.png

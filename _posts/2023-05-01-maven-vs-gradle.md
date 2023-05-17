@@ -4,7 +4,6 @@ title_style: title2
 canonical_url: https://www.kapresoft.com/java/2023/05/01/maven-vs-gradle.html
 category: java
 related: java
-image: /assets/images/kapresoft1-210x.png
 description: "Compare Maven and Gradle, the two most popular build tools for software development. Learn their differences, advantages, and use cases."
 ---
 
