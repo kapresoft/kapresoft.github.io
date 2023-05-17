@@ -9,6 +9,16 @@ p, div.excerpt {
   line-height: 1.3em;
 }
 
+.center, .center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center-image {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 div.excerpt {
   padding: 5px 0 20px 0;
 }

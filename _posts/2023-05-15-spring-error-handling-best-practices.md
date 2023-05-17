@@ -1,6 +1,6 @@
 ---
 title: "Spring 6 Error Handling Best Practices"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/05/15/spring-error-handling-best-practices.html
 category: java
 related: spring
