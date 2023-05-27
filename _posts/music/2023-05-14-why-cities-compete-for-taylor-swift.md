@@ -3,7 +3,7 @@ title: "Why Do Cities Compete for Taylor Swift?"
 title_style: title2w
 canonical_url: https://www.kapresoft.com/music/2023/05/14/why-cities-compete-for-taylor-swift.html
 category: music
-related: taylor_swift
+related: music
 description: "Discover the allure of Taylor Swift's Eras Tour as cities compete for the spotlight. The impact of music in Nashville and beyond."
 ---
 

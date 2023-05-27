@@ -2,7 +2,7 @@
 title: "Taylor Swift vs Beyoncé Knowles"
 canonical_url: https://www.kapresoft.com/music/2023/03/31/taylor-vs-beyonce.html
 category: music
-related: taylor_swift
+related: music
 description: "Taylor Swift vs Beyoncé Knowles"
 ---
 
