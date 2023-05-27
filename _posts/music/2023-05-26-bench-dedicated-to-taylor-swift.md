@@ -3,7 +3,7 @@ title: "A Bench Dedicated to Taylor Swift"
 title_style: title2w
 canonical_url: https://www.kapresoft.com/music/2023/05/26/bench-dedicated-to-taylor-swift.html
 category: music
-description: "TODO:Description"
+description: "Explore Nashville's heartfelt tribute to Taylor Swift as a park bench is dedicated to the artist in Centennial Park."
 ---
 
 ## Overview
