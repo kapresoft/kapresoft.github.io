@@ -7,7 +7,9 @@ related: music
 description: "Experience the passion and dedication of Taylor Swift fans during The Eras Tour in Nashville. From helicopter rides to sidewalk concerts."
 ---
 
-## No Ticket? No Problem! How to Still Have Fun at The Eras Tour
+## Overview
+
+**No Ticket? No Problem! How to Still Have Fun at The Eras Tour**
 
 Picture this: you've been dreaming of seeing Taylor Swift live in concert for The Eras Tour for what feels like forever. You've saved up your money, counted down the days, and made all the necessary sacrifices to be able to make it happen.<!--excerpt--> But when the time comes to buy the tickets, disaster strikes. The website crashes. The server goes down. And before you know it, the tickets are sold out. 
 
