@@ -1,24 +1,4 @@
-# See: https://www.bing.com/indexnow#implementation
-
-GET https://www.kapresoft.com/{{index-now-key}}.txt
-
-> {%
-    client.test("Success", function() {
-        client.assert(response.status === 200, "Not 200")
-    })
-%}
-
-###
-
-GET https://www.bing.com/indexnow?url=https://www.kapresoft.com/kitchen/2023/05/31/smoked-pork-spare-ribs-masterbuilt-1050.html&key={{index-now-key}}
-
-> {%
-    client.test("Success", function() {
-        client.assert(response.status === 200, "Not 200")
-    })
-%}
-
-###
+# Index Now Bulk
 
 POST https://www.bing.com/indexnow
 Content-Type: application/json; charset=utf-8
@@ -28,61 +8,61 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "https://www.kapresoft.com",
-    "https://www.kapresoft.com/about-antonio-lagnada.html",
-    "https://www.kapresoft.com/finance/2023/03/13/fdic-what-you-need-to-know.html",
-    "https://www.kapresoft.com/finance/2023/04/03/bitcoin-environmental-impact.html",
-    "https://www.kapresoft.com/finance/2023/04/03/can-bitcoin-be-traced-to-a-person.html",
-    "https://www.kapresoft.com/finance/2023/04/03/is-bitcoin-gold-killer.html",
-    "https://www.kapresoft.com/finance/2023/04/06/what-is-xrp.html",
-    "https://www.kapresoft.com/finance/2023/04/07/los-angeles-ula-tax.html",
-    "https://www.kapresoft.com/java/2016/05/15/secure-smtp-with-spring-javamailsender.html",
-    "https://www.kapresoft.com/java/2018/08/14/getting-started-with-gradle.html",
-    "https://www.kapresoft.com/java/2018/08/15/getting-started-with-java.html",
-    "https://www.kapresoft.com/java/2018/08/16/getting-started-with-maven.html",
-    "https://www.kapresoft.com/java/2018/08/27/setting-java-compiler-version-in-maven.html",
-    "https://www.kapresoft.com/java/2018/09/03/using-apple-keyboard-on-windows-intellij.html",
-    "https://www.kapresoft.com/java/2019/04/28/aws-lambda-spring-boot.html",
-    "https://www.kapresoft.com/java/2019/05/11/converting-double-value-to-string.html",
-    "https://www.kapresoft.com/java/2019/05/11/converting-int-value-to-string.html",
-    "https://www.kapresoft.com/java/2019/05/12/using-java-optional.html",
-    "https://www.kapresoft.com/java/2019/10/20/aws-lambda-spring-boot-profiles.html",
-    "https://www.kapresoft.com/java/2021/11/03/spring-boot-serialize-immutable-objects.html",
-    "https://www.kapresoft.com/java/2021/12/27/lombok-builders-and-copy-constructors.html",
-    "https://www.kapresoft.com/java/2022/08/29/lombok-cloning-immutable-objects-using-with.html",
-    "https://www.kapresoft.com/java/2023/03/13/lombok-exclude-generated-code-from-test-coverage.html",
-    "https://www.kapresoft.com/java/2023/03/13/lombok-overview.html",
-    "https://www.kapresoft.com/java/2023/03/14/java-17-features.html",
-    "https://www.kapresoft.com/java/2023/03/14/java-records.html",
-    "https://www.kapresoft.com/java/2023/03/27/java-final-modifier.html",
-    "https://www.kapresoft.com/java/2023/03/28/encrypting-property-file-values-with-jasypt.html",
-    "https://www.kapresoft.com/java/2023/03/30/how-to-use-constructor-lombok.html",
-    "https://www.kapresoft.com/java/2023/03/30/lombok-allargsconstructor-vs-requiredargsconstructor.html",
-    "https://www.kapresoft.com/java/2023/03/31/decoupling-domain-objects.html",
-    "https://www.kapresoft.com/java/2023/04/04/java-avoid-getters-setters-with-lombok.html",
-    "https://www.kapresoft.com/java/2023/04/04/java-virtual-threads.html",
-    "https://www.kapresoft.com/java/2023/04/12/spring-boot-jackson-and-lombok-best-practices.html",
-    "https://www.kapresoft.com/java/2023/05/01/lombok-singular-annotation.html",
-    "https://www.kapresoft.com/java/2023/05/01/maven-vs-gradle.html",
-    "https://www.kapresoft.com/java/2023/05/03/java-string-to-map.html",
-    "https://www.kapresoft.com/java/2023/05/15/spring-error-handling-best-practices.html",
-    "https://www.kapresoft.com/java/2023/05/16/java-vs-kotlin.html",
-    "https://www.kapresoft.com/java/2023/05/16/spring-bean-scopes.html",
-    "https://www.kapresoft.com/java/2023/05/17/java-comprehensive-guide.html",
-    "https://www.kapresoft.com/java/2023/05/17/spring-framework-events.html",
-    "https://www.kapresoft.com/java/2023/05/26/spring-shell-aws-cloudfront.html",
-    "https://www.kapresoft.com/kitchen/2023/04/06/madein-vs-allclad-stainless-steel-pans.html",
-    "https://www.kapresoft.com/kitchen/2023/05/31/smoked-pork-spare-ribs-masterbuilt-1050.html",
-    "https://www.kapresoft.com/music/2023/03/31/taylor-vs-beyonce.html",
-    "https://www.kapresoft.com/music/2023/05/06/why-taylor-swift-fans-connect.html",
-    "https://www.kapresoft.com/music/2023/05/08/taylor-the-eras-tour-watch-without-tickets.html",
-    "https://www.kapresoft.com/music/2023/05/13/renaissance-outselling-the-eras-tour.html",
-    "https://www.kapresoft.com/music/2023/05/14/why-cities-compete-for-taylor-swift.html",
-    "https://www.kapresoft.com/music/2023/05/26/bench-dedicated-to-taylor-swift.html",
-    "https://www.kapresoft.com/software/2023/04/13/ten-best-attributes-software-developer.html",
-    "https://www.kapresoft.com/software/2023/05/07/cryptography-algorithms-comparison.html",
-    "https://www.kapresoft.com/software/2023/05/10/http-status-misunderstandings.html",
-    "https://www.kapresoft.com/software/2023/05/11/is-rest-api-stateless.html"
+    "{{site}}",
+    "{{site}}/about-antonio-lagnada.html",
+    "{{site}}/finance/2023/03/13/fdic-what-you-need-to-know.html",
+    "{{site}}/finance/2023/04/03/bitcoin-environmental-impact.html",
+    "{{site}}/finance/2023/04/03/can-bitcoin-be-traced-to-a-person.html",
+    "{{site}}/finance/2023/04/03/is-bitcoin-gold-killer.html",
+    "{{site}}/finance/2023/04/06/what-is-xrp.html",
+    "{{site}}/finance/2023/04/07/los-angeles-ula-tax.html",
+    "{{site}}/java/2016/05/15/secure-smtp-with-spring-javamailsender.html",
+    "{{site}}/java/2018/08/14/getting-started-with-gradle.html",
+    "{{site}}/java/2018/08/15/getting-started-with-java.html",
+    "{{site}}/java/2018/08/16/getting-started-with-maven.html",
+    "{{site}}/java/2018/08/27/setting-java-compiler-version-in-maven.html",
+    "{{site}}/java/2018/09/03/using-apple-keyboard-on-windows-intellij.html",
+    "{{site}}/java/2019/04/28/aws-lambda-spring-boot.html",
+    "{{site}}/java/2019/05/11/converting-double-value-to-string.html",
+    "{{site}}/java/2019/05/11/converting-int-value-to-string.html",
+    "{{site}}/java/2019/05/12/using-java-optional.html",
+    "{{site}}/java/2019/10/20/aws-lambda-spring-boot-profiles.html",
+    "{{site}}/java/2021/11/03/spring-boot-serialize-immutable-objects.html",
+    "{{site}}/java/2021/12/27/lombok-builders-and-copy-constructors.html",
+    "{{site}}/java/2022/08/29/lombok-cloning-immutable-objects-using-with.html",
+    "{{site}}/java/2023/03/13/lombok-exclude-generated-code-from-test-coverage.html",
+    "{{site}}/java/2023/03/13/lombok-overview.html",
+    "{{site}}/java/2023/03/14/java-17-features.html",
+    "{{site}}/java/2023/03/14/java-records.html",
+    "{{site}}/java/2023/03/27/java-final-modifier.html",
+    "{{site}}/java/2023/03/28/encrypting-property-file-values-with-jasypt.html",
+    "{{site}}/java/2023/03/30/how-to-use-constructor-lombok.html",
+    "{{site}}/java/2023/03/30/lombok-allargsconstructor-vs-requiredargsconstructor.html",
+    "{{site}}/java/2023/03/31/decoupling-domain-objects.html",
+    "{{site}}/java/2023/04/04/java-avoid-getters-setters-with-lombok.html",
+    "{{site}}/java/2023/04/04/java-virtual-threads.html",
+    "{{site}}/java/2023/04/12/spring-boot-jackson-and-lombok-best-practices.html",
+    "{{site}}/java/2023/05/01/lombok-singular-annotation.html",
+    "{{site}}/java/2023/05/01/maven-vs-gradle.html",
+    "{{site}}/java/2023/05/03/java-string-to-map.html",
+    "{{site}}/java/2023/05/15/spring-error-handling-best-practices.html",
+    "{{site}}/java/2023/05/16/java-vs-kotlin.html",
+    "{{site}}/java/2023/05/16/spring-bean-scopes.html",
+    "{{site}}/java/2023/05/17/java-comprehensive-guide.html",
+    "{{site}}/java/2023/05/17/spring-framework-events.html",
+    "{{site}}/java/2023/05/26/spring-shell-aws-cloudfront.html",
+    "{{site}}/kitchen/2023/04/06/madein-vs-allclad-stainless-steel-pans.html",
+    "{{site}}/kitchen/2023/05/31/smoked-pork-spare-ribs-masterbuilt-1050.html",
+    "{{site}}/music/2023/03/31/taylor-vs-beyonce.html",
+    "{{site}}/music/2023/05/06/why-taylor-swift-fans-connect.html",
+    "{{site}}/music/2023/05/08/taylor-the-eras-tour-watch-without-tickets.html",
+    "{{site}}/music/2023/05/13/renaissance-outselling-the-eras-tour.html",
+    "{{site}}/music/2023/05/14/why-cities-compete-for-taylor-swift.html",
+    "{{site}}/music/2023/05/26/bench-dedicated-to-taylor-swift.html",
+    "{{site}}/software/2023/04/13/ten-best-attributes-software-developer.html",
+    "{{site}}/software/2023/05/07/cryptography-algorithms-comparison.html",
+    "{{site}}/software/2023/05/10/http-status-misunderstandings.html",
+    "{{site}}/software/2023/05/11/is-rest-api-stateless.html"
   ]
 }
 
@@ -91,3 +71,28 @@ Content-Type: application/json; charset=utf-8
         client.assert(response.status === 200, "Not 200")
     })
 %}
+
+###
+# Submit Individual Page
+
+GET https://www.bing.com/indexnow?url={{site}}/kitchen/2023/05/31/smoked-pork-spare-ribs-masterbuilt-1050.html&key={{index-now-key}}
+
+> {%
+    client.test("Success", function() {
+        client.assert(response.status === 200, "Not 200")
+    })
+%}
+
+###
+# Check Index Now Key File
+# See: https://www.bing.com/indexnow#implementation
+
+GET {{site}}/{{index-now-key}}.txt
+
+> {%
+    client.test("Success", function() {
+        client.assert(response.status === 200, "Not 200")
+    })
+%}
+
+###
