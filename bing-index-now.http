@@ -18,7 +18,6 @@ GET https://www.bing.com/indexnow?url=https://www.kapresoft.com/kitchen/2023/05/
     })
 %}
 
-
 ###
 
 POST https://www.bing.com/indexnow
@@ -26,8 +25,8 @@ Content-Type: application/json; charset=utf-8
 
 {
   "host": "www.kapresoft.com",
-  "index-now-key": "8eaf4132630549bb879397bb14400815",
-  "keyLocation": "https://www.kapresoft.com/8eaf4132630549bb879397bb14400815.txt",
+  "key": "{{index-now-key}}",
+  "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "https://www.kapresoft.com",
     "https://www.kapresoft.com/about-antonio-lagnada.html",
