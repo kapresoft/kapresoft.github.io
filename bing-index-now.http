@@ -9,7 +9,10 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
-    "{{site}}/about-antonio-lagnada.html",
+    "{{site}}/java/2023/06/23/java-cloning-strategies.html",
+    "{{site}}/java/2023/06/21/lombok-test-coverage.html",
+    "{{site}}/java/2023/06/21/lombok-disadvantages.html",
+    "{{site}}/finance/2023/03/13/fdic-what-you-need-to-know.html",
     "{{site}}/finance/2023/03/13/fdic-what-you-need-to-know.html",
     "{{site}}/finance/2023/04/03/bitcoin-environmental-impact.html",
     "{{site}}/finance/2023/04/03/can-bitcoin-be-traced-to-a-person.html",
