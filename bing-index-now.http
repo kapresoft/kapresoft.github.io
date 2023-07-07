@@ -80,7 +80,7 @@ Content-Type: application/json; charset=utf-8
 ###
 # Submit Individual Page
 
-GET https://www.bing.com/indexnow?url={{site}}/music/2023/06/02/taylor-swift-most-prolific-artist.html&key={{index-now-key}}
+GET https://www.bing.com/indexnow?key={{index-now-key}}&url={{site}}/java/2023/06/23/java-cloning-strategies.html
 
 > {%
     client.test("Success", function() {
