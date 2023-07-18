@@ -21,6 +21,20 @@ The articles provided on **{{ site.name }}** are for educational and information
 
 Please note that the information provided on **{{ site.name }}** is for educational and informational purposes only and should not be considered as financial advice. We are not financial advisors and the content provided here is not intended to be a substitute for professional financial advice. Any decisions you make based on the information presented here are at your own risk. Before making any financial decisions, please consult with a licensed financial advisor who can provide you with personalized advice tailored to your specific financial situation. We do not guarantee the accuracy, completeness, or timeliness of the information provided on this site, and we are not responsible for any losses or damages that may result from the use of this information.
 
+The information provided in financial articles on **{{ site.name }}** is for general informational purposes only and does not constitute financial advice. While we strive to present accurate and up-to-date information, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information contained herein.
+
+The content of the articles on **{{ site.name }}** are not intended to be a substitute for professional financial advice, and readers are strongly encouraged to seek guidance from qualified financial advisors or professionals before making any financial decisions. Each individual's financial situation is unique, and specific advice should be sought based on personal circumstances, risk tolerance, and financial goals.
+
+The authors and publishers of this article shall not be held liable for any loss or damage arising from reliance on the information presented here. Readers are urged to exercise due diligence and exercise caution when implementing any financial strategies or recommendations mentioned in any article.
+
+By accessing and using this information, you agree that you do so at your own risk and that the authors, publishers, and anyone associated with the creation of an article shall not be held responsible for any outcome resulting from its use.
+
+Please remember that financial markets and regulations can change rapidly, and information provided in this article may become outdated over time. We recommend conducting further research and consulting with a qualified financial professional to stay informed about current developments in the financial industry.
+
+In conclusion, articles on **{{ site.name }}** is intended to offer general financial insights and strategies, but it should not be considered as personalized financial advice. Always consult with a licensed financial advisor to tailor strategies to your specific financial circumstances and goals.
+
+Thank you for understanding and your compliance with this disclaimer.
+
 ### Privacy
 
 • See [/privacy](/privacy)
