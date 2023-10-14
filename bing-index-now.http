@@ -9,6 +9,9 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/10/01/spring-framework-annotations.html",
+    "{{site}}/java/2023/10/01/spring-framework-expression-language.html",
+    "{{site}}/java/2023/10/01/spring-boot-conditional-annotations.html",
     "{{site}}/finance/2023/07/18/building-wealth.html",
     "{{site}}/java/2023/06/23/java-cloning-strategies.html",
     "{{site}}/java/2023/06/21/lombok-test-coverage.html",
