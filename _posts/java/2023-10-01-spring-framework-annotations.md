@@ -3,7 +3,7 @@ title: "Spring Framework Annotations"
 canonical_url: https://www.kapresoft.com/java/2023/10/01/spring-framework-annotations.html
 category: java
 related: spring
-description: "Spring Framework Annotations"
+description: "Comprehensive guide on key Spring Framework annotations: their parameters, use-cases, and examples for robust application development."
 ---
 
 ## Overview
