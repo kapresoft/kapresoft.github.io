@@ -4,7 +4,7 @@ title_style: title2
 canonical_url: https://www.kapresoft.com/java/2023/10/01/spring-controller-vs-restcontroller.html
 category: java
 related: spring
-description: "Spring Controller vs RestController"
+description: "Spring MVC: A detailed guide on @Controller and @RestController annotations, their uses, and best practices in web development."
 ---
 
 ## Overview
