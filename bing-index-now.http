@@ -9,6 +9,11 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/10/01/spring-bean-manipulation-and-beanwrapper.html",
+    "{{site}}/java/2023/10/01/spring-controller-vs-restcontroller.html",
+    "{{site}}/java/2023/10/01/spring-type-conversion.html",
+    "{{site}}/java/2023/10/01/spring-validator-interface.html",
+    "{{site}}/java/2023/10/01/spring-validator-resolving-error-codes.html",
     "{{site}}/java/2023/10/01/spring-framework-annotations.html",
     "{{site}}/java/2023/10/01/spring-framework-expression-language.html",
     "{{site}}/java/2023/10/01/spring-boot-conditional-annotations.html",

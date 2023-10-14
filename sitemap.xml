@@ -255,5 +255,25 @@
         <loc>https://www.kapresoft.com/java/2023/10/01/spring-boot-conditional-annotations.html</loc>
         <lastmod>2023-10-01</lastmod>
     </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/10/01/spring-bean-manipulation-and-beanwrapper.html</loc>
+        <lastmod>2023-10-01</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/10/01/spring-controller-vs-restcontroller.html</loc>
+        <lastmod>2023-10-01</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/10/01/spring-type-conversion.html</loc>
+        <lastmod>2023-10-01</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/10/01/spring-validator-interface.html</loc>
+        <lastmod>2023-10-01</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/10/01/spring-validator-resolving-error-codes.html</loc>
+        <lastmod>2023-10-01</lastmod>
+    </url>
 
 </urlset>
