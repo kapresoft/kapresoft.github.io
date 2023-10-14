@@ -3,7 +3,7 @@ title: "Spring Boot Conditional Annotations"
 title_style: title2
 canonical_url: https://www.kapresoft.com/java/2023/10/01/spring-boot-conditional-annotations.html
 category: java
-related: java
+related: spring
 description: "Explore how to use Spring Boot's conditional annotations for seamless autoconfiguration. Master custom module integration with examples."
 ---
 
