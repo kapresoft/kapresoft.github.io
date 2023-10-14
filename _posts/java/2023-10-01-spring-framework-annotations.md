@@ -457,7 +457,7 @@ Here's a simple example to demonstrate its use:
 **Scenario:**
 You have a service _NotificationService_ which interacts with a third-party service to send notifications. When testing, you don't want to send real notifications, but rather you want to mock the behavior.
 
-**1. The Service:**
+#### The Service
 ```java
 @Service
 public class NotificationService {
@@ -469,7 +469,7 @@ public class NotificationService {
 }
 ```
 
-**2. Test Configuration with _@TestBean_:**
+#### Test Configuration with @TestBean
 ```java
 @RunWith(SpringRunner.class)
 @SpringBootTest
