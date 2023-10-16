@@ -9,6 +9,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/10/16/java-uri-vs-url.html",
     "{{site}}/java/2023/10/16/spring-uricomponentsbuilder-best-practices.html",
     "{{site}}/java/2023/10/16/spring6-whats-new-and-migration-guide.html",
     "{{site}}/java/2023/10/02/spring-field-formatting.html",
