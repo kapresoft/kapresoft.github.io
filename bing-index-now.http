@@ -9,9 +9,10 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/10/19/logback-for-beginners.html",
+
     "{{site}}/java/2023/10/18/java-lombok-val-vs-var.html",
     "{{site}}/java/2023/10/18/java-var-best-practices.html",
-
     "{{site}}/java/2023/10/18/observer-design-pattern.html",
     "{{site}}/java/2023/10/18/factory-design-pattern.html",
     "{{site}}/java/2023/10/17/spring-webflux-reactive-faqs.html",
