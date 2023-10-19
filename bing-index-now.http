@@ -9,12 +9,12 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/10/19/spring-devops-profiles-best-practices.html",
     "{{site}}/java/2023/10/19/java-modern-looping-and-filtering.html",
     "{{site}}/java/2023/10/19/java-string-to-list.html",
     "{{site}}/java/2023/10/19/java-parallel-streams.html",
     "{{site}}/java/2023/10/19/springboot-logback.html",
     "{{site}}/java/2023/10/19/logback-for-beginners.html",
-
     "{{site}}/java/2023/10/18/java-lombok-val-vs-var.html",
     "{{site}}/java/2023/10/18/java-var-best-practices.html",
     "{{site}}/java/2023/10/18/observer-design-pattern.html",
