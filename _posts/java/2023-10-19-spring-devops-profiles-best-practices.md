@@ -3,7 +3,7 @@ title: "Spring • DevOps Best Practices with Spring Profiles"
 title_style: title2
 canonical_url: https://www.kapresoft.com/java/2023/10/19/spring-devops-profiles-best-practices.html
 category: java
-related: java
+related: spring
 description: "Master Spring DevOps best practices with our comprehensive guide. Learn to manage AWS resources, secure secret keys, and optimize Docker machine images for a streamlined production environment."
 ---
 
