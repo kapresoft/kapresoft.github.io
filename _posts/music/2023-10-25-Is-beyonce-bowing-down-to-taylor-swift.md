@@ -1,10 +1,10 @@
 ---
 title: "Beyoncé vs Taylor: Who will bow down at the end of 2023?"
 title_style: title2
-canonical_url: https://www.kapresoft.com/java/2023/10/25/Is-beyonce-bowing-down-to-taylor-swift.html
-category: java
+canonical_url: https://www.kapresoft.com/music/2023/10/25/Is-beyonce-bowing-down-to-taylor-swift.html
+category: music
 related: music
-description: "Discover the battle for supremacy between Beyoncé and Taylor Swift in 2023, analyzing concert sales, performances, and potential shifts in their iconic statuses."
+description: "Battle for supremacy between Beyoncé and Taylor Swift in 2023, analyzing concert sales, performances, films."
 ---
 
 ## Overview
