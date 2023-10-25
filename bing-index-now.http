@@ -1,4 +1,4 @@
-# Index Now: Home + Updated Pages
+### Index Now: Home + Updated Pages
 
 POST https://www.bing.com/indexnow
 Content-Type: application/json; charset=utf-8
@@ -20,9 +20,9 @@ Content-Type: application/json; charset=utf-8
     })
 %}
 
-###
 
-# Index Now Bulk
+###
+### Index Now Bulk
 
 POST https://www.bing.com/indexnow
 Content-Type: application/json; charset=utf-8
@@ -138,7 +138,7 @@ Content-Type: application/json; charset=utf-8
 %}
 
 ###
-# Submit Individual Page
+### Submit Individual Page
 
 GET https://www.bing.com/indexnow?key={{index-now-key}}&url={{site}}/finance/2023/07/18/building-wealth.html
 
@@ -149,7 +149,7 @@ GET https://www.bing.com/indexnow?key={{index-now-key}}&url={{site}}/finance/202
 %}
 
 ###
-# Check Index Now Key File
+### Check Index Now Key File
 # See: https://www.bing.com/indexnow#implementation
 
 GET {{site}}/{{index-now-key}}.txt
