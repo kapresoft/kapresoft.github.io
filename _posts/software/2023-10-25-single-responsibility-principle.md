@@ -3,7 +3,7 @@ title: "Single Responsibility Principle in Software Development"
 title_style: title2
 canonical_url: https://www.kapresoft.com/software/2023/10/25/single-responsibility-principle.html
 category: software
-related: java
+related: software
 description: "Dive deep into the Single Responsibility Principle, a core design pattern in OOP, exemplified through Java and insights from Robert C. Martin."
 ---
 
