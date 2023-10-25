@@ -9,9 +9,10 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/10/25/Is-beyonce-bowing-down-to-taylor-swift.html",
+
     "{{site}}/java/2023/10/23/factory-design-pattern-best-practices.html",
     "{{site}}/java/2023/10/19/spring-boot-env-specific-profiles.html",
-
     "{{site}}/java/2023/10/19/spring-devops-profiles-best-practices.html",
     "{{site}}/java/2023/10/19/java-modern-looping-and-filtering.html",
     "{{site}}/java/2023/10/19/java-string-to-list.html",
