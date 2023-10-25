@@ -1,3 +1,26 @@
+# Index Now: Home + Updated Pages
+
+POST https://www.bing.com/indexnow
+Content-Type: application/json; charset=utf-8
+
+{
+  "host": "www.kapresoft.com",
+  "key": "{{index-now-key}}",
+  "keyLocation": "{{index-now-key-url}}",
+  "urlList": [
+    "{{site}}/java/2023/10/25/lombok-builder-clean-code.html"
+    "{{site}}"
+  ]
+}
+
+> {%
+    client.test("Success", function() {
+        client.assert(response.status === 200, "Not 200")
+    })
+%}
+
+###
+
 # Index Now Bulk
 
 POST https://www.bing.com/indexnow
