@@ -555,7 +555,7 @@ The _createShape_ method of _ShapeFactory_ then simply looks up the shape type i
 
 The factory pattern should provide a consistent way of creating objects, ensuring that all instances are created following the defined rules and guidelines.
 
-Certainly! Ensuring consistency in object creation is crucial to maintaining the integrity and reliability of the application. Here's an example to illustrate the importance of consistency in object creation using the Factory Pattern:
+Ensuring consistency in object creation is crucial to maintaining the integrity and reliability of the application. Here's an example to illustrate the importance of consistency in object creation using the Factory Pattern:
 
 ### Inconsistent Object Creation
 
