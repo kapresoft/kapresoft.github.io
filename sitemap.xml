@@ -383,5 +383,9 @@
         <loc>https://www.kapresoft.com/software/2023/10/25/software-loose-coupling.html</loc>
         <lastmod>2023-10-25</lastmod>
     </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/10/26/lombok-data-annotation-best-practices.html</loc>
+        <lastmod>2023-10-26</lastmod>
+    </url>
 
 </urlset>
