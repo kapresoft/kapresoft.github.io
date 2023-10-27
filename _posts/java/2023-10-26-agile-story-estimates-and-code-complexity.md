@@ -3,7 +3,7 @@ title: "Agile • How Code Complexity Affects Story Points"
 title_style: title2
 canonical_url: https://www.kapresoft.com/software/2023/10/26/agile-story-estimates-and-code-complexity.html
 category: software
-related: agile
+related: software
 description: "Explore the relationship between code complexity and story points within the Agile framework, and learn how it impacts project management and estimates."
 ---
 
