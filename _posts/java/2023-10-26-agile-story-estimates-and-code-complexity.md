@@ -11,6 +11,8 @@ description: "Explore the relationship between code complexity and story points 
 
 Software development has been revolutionized by the Agile process, which has significantly changed how projects are managed and executed. A crucial aspect of this methodology is the utilization of stories and story points, instrumental in determining the complexity and estimated time required to complete a feature or task.<!--excerpt--> In this article, we will delve into the intricacies of stories, story points, and how code complexity plays a pivotal role in shaping these estimates.
 
+<a id='Rugsuy1VQQhQR6qEMEuGEw' class='gie-single' href='http://www.gettyimages.com/detail/1463692288' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'Rugsuy1VQQhQR6qEMEuGEw',sig:'fxrFISg44C3KVP1AYR5zz4BXi42qNTSuP0TlS92kafw=',w:'550px',h:'200px',items:'1463692288',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+
 ## Understanding Stories and Story Points in Agile Practices
 
 In _Agile framework_, a _user story_ is essentially a simplified description of a feature or functionality that is desired in the final product. It is written from the perspective of the end user and aims to convey the value that the particular feature will bring to them. On the other hand, _story points_ are a unit of measurement used in _Agile_ methodologies to gauge the complexity and effort required to implement a _user story_.
