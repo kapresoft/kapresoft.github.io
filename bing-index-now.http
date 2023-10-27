@@ -8,7 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/2023/10/27/strategy-pattern-over-polymorphism.html",
+    "{{site}}/software/2023/10/27/strategy-pattern-over-polymorphism.html",
     "{{site}}"
   ]
 }
@@ -32,7 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
-    "{{site}}/2023/10/27/strategy-pattern-over-polymorphism.html",
+    "{{site}}/software/2023/10/27/strategy-pattern-over-polymorphism.html",
     "{{site}}/food/2023/10/27/pizza-da-michele-naples.html",
     "{{site}}/software/2023/10/27/software-leverage-abstractions.html",
     "{{site}}/java/2023/10/27/java-assertj-vs-hamcrest-assertion.html",
