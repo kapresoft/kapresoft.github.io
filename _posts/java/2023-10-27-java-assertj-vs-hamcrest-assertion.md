@@ -11,6 +11,8 @@ description: "A detailed comparison of Java's AssertJ and Hamcrest assertion fra
 
 When working with testing frameworks like _JUnit_ or _TestNG_, selecting the right _assertion framework_ can significantly enhance the _readability_ of your _test code_ and improve the overall quality of your tests. Two of the most popular _Java assertion frameworks_ are _AssertJ_ and _Hamcrest_.<!--excerpt--> In this article, we will provide an in-depth comparison of these two frameworks, highlighting their respective features, strengths, and examples of how to implement them in your test cases.
 
+<a id='vKc_41nYRZpcuf2dXg2QkQ' class='gie-single' href='http://www.gettyimages.com/detail/1705600203' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'vKc_41nYRZpcuf2dXg2QkQ',sig:'sodmF0l-eauftWfAMfZKTB5vXZIDMO5apACUn1KXdmM=',w:'550px',h:'200px',items:'1705600203',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+
 ## AssertJ Assertion Framework
 
 _AssertJ_ is a powerful and flexible _Java library_ designed to enhance the _readability_ of your _test code_ by providing a rich set of _assertion methods_. These methods allow you to write more concise and human-readable _assertions_ for your tests.

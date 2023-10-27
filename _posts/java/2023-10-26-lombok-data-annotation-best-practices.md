@@ -11,6 +11,8 @@ description: "Master the art of clean Java coding using the Lombok @Data annotat
 
 When it comes to clean and efficient Java coding, the power of Project Lombok cannot be overstated. Specifically, the @Data annotation provided by Lombok stands out as a valuable tool for Java developers.<!--excerpt--> In this article, we will delve into the intricacies of using the @Data annotation in Lombok, highlighting its benefits and how it can elevate your Java applications.
 
+<a id='XdcLGoboT5VbAsnEraFiPQ' class='gie-single' href='http://www.gettyimages.com/detail/1451456915' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'XdcLGoboT5VbAsnEraFiPQ',sig:'SeRF6BXicAXqgFGJOVs5DtZ3hFQeIby8oiohLy7FrzE=',w:'550px',h:'200px',items:'1451456915',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+
 ## The Essence of @Data Annotation in Lombok
 
 The @Data annotation is a part of Project Lombok, a Java library that aims to reduce boilerplate code and simplify your Java projects. When you annotate a class with @Data, Lombok automatically generates all the necessary getter and setter methods, as well as the equals, hashCode, and toString methods. This not only makes your code more readable but also significantly reduces the time spent on writing repetitive code.

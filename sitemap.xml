@@ -369,7 +369,7 @@
     </url>
     <url>
         <loc>https://www.kapresoft.com/music/2023/10/25/Is-beyonce-bowing-down-to-taylor-swift.html</loc>
-        <lastmod>2023-10-25</lastmod>
+        <lastmod>2023-10-27</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/10/25/lombok-builder-clean-code.html</loc>
@@ -401,7 +401,11 @@
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/10/27/java-assertj-vs-hamcrest-assertion.html</loc>
-        <lastmod>2023-10-26</lastmod>
+        <lastmod>2023-10-27</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/software/2023/10/27/software-leverage-abstractions.html</loc>
+        <lastmod>2023-10-27</lastmod>
     </url>
 
 </urlset>

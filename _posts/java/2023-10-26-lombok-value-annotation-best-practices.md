@@ -11,6 +11,8 @@ description: "Master the best practices for utilizing Lombok's @Value annotation
 
 When it comes to _clean coding_ and _enhanced testability_ in Java applications, _Project Lombok_ is a game-changer. Its _@Value annotation_ not only simplifies your code but also enhances its readability, maintainability, and testability.<!--excerpt--> In this article, we'll delve into the best practices for utilizing the _@Value annotation_ in your Java projects, providing detailed examples and insights to help you master this powerful feature.
 
+<a id='jney4GYpRmJk-4I8RjyYuw' class='gie-single' href='http://www.gettyimages.com/detail/1127196619' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'jney4GYpRmJk-4I8RjyYuw',sig:'0MbUreSQAYy19_lKYKNERaD8IiZFbXu4La2RbakN8lU=',w:'550px',h:'200px',items:'1127196619',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+
 ## The Significance of @Value Annotation in Java Applications
 
 The _@Value_ annotation in _Java Applications_ serves as a crucial tool in significantly reducing boilerplate code. As a class-level annotation, its primary role is to automatically transform all fields in a class to final, subsequently generating _getter methods_ for each field and promoting a clean, immutable design pattern. In addition to these functionalities, _@Value_ furnishes the class with essential _equals and hashCode methods_, as well as an _all-args constructor_, thereby establishing a strong foundation for any robust Java application.
