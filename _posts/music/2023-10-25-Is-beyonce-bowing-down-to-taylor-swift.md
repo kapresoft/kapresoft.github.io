@@ -11,11 +11,15 @@ description: "Battle for supremacy between Beyoncé and Taylor Swift in 2023, an
 
 As the curtain falls on 2023, a compelling narrative unfolds in the music industry, raising the question of whether Beyoncé, the longstanding Queen B, will bow down to the sensational Taylor Swift. In an industry where the throne is never secure, the achievements, performances, and gross sales of these two iconic artists are scrutinized to determine who will reign supreme.<!--excerpt-->
 
+<a id='EdP8TBZtSSVDyvPqP_xHDQ' class='gie-slideshow' href='http://www.gettyimages.com/detail/511229214' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'EdP8TBZtSSVDyvPqP_xHDQ',sig:'wwloTaJTb_XkOxHZrYhdD0-e08kdxEC300v8wjbjNrQ=',w:'594px',h:'395px',items:'511229214,1730942822,90715390',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
+
 **Disclaimer:** The figures and estimates mentioned in this article are based on projected estimates taken from reference articles [^1] [^2] and should not be considered as definitive financial data. The numbers are for illustrative purposes only and actual revenue may vary. All financial figures and statistics are subject to change and should be verified with authoritative sources before being used for any financial or business-related decisions.
 
 ## Beyoncé's 2023 _Renaissance Tour_: A Resurgence of the Queen
 
 Beyoncé's _Renaissance Tour_ was equally spectacular, with her grace and talent on full display across continents. From Stockholm, Sweden, to New Orleans, Louisiana, Beyoncé enthralled audiences at 41 venues, demonstrating her enduring appeal and regality. The venues such as the Friends Arena, Olympic Stadium, and Levi’s Stadium were arenas where Beyoncé asserted her dominance.
+
+<a id='PfKXVjR5TnNapcrtZv3sfw' class='gie-single' href='http://www.gettyimages.com/detail/1499317064' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'PfKXVjR5TnNapcrtZv3sfw',sig:'o8AVgTs6YkYmwhoWgjRuRCgVdxHVDg4IPO3Yx6Z17mY=',w:'594px',h:'396px',items:'1499317064',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
 
 To calculate the projected gross revenue for Beyoncé's concerts in a year, we need to know the total number of venues she is performing at.
 
@@ -89,6 +93,8 @@ With an average gross revenue of **$14.85 million per venue**, Beyoncé's concer
 ## Taylor Swift's Eras Tour: A Phenomenon
 
 Taylor Swift's Eras Tour has been nothing short of a phenomenon, capturing hearts across the globe. From Glendale, Arizona, to São Paulo, Brazil, each venue bore witness to the immense popularity and draw of this musical juggernaut. With 33 performances across diverse locations such as the State Farm Stadium, SoFi Stadium, and Allianz Parque, Taylor's presence on the stage was ubiquitous.
+
+<a id='V1OIm5TASsVVpu7UBmU4rw' class='gie-single' href='http://www.gettyimages.com/detail/1507701360' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'V1OIm5TASsVVpu7UBmU4rw',sig:'AmOjPtMKPsjaohD5NCAFBa59lR5L3e04c9Js7FAHUnU=',w:'594px',h:'392px',items:'1507701360',caption: true ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
 
 ### Estimating Gross Sales and Audience Impact
 
