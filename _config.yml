@@ -25,7 +25,7 @@ ga:
   enable: true
   tracking_id: G-1EG60WX50K
 
-show_google_ads: false
+show_google_ads: true
 show_banner: false
 
 excerpt_separator: <!--excerpt-->
