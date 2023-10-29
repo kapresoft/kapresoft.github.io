@@ -8,6 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
+    "{{site}}/software/2023/10/29/docker-compose-best-practices.html",
     "{{site}}/software/2023/10/27/strategy-pattern-over-polymorphism.html",
     "{{site}}/music/2023/10/25/is-beyonce-bowing-down-to-taylor-swift.html",
     "{{site}}"

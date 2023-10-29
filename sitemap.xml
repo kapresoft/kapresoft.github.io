@@ -345,7 +345,7 @@
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/10/19/java-parallel-streams.html</loc>
-        <lastmod>2023-10-19</lastmod>
+        <lastmod>2023-10-29</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/10/19/java-string-to-list.html</loc>
@@ -414,6 +414,10 @@
     <url>
         <loc>https://www.kapresoft.com/software/2023/10/27/strategy-pattern-over-polymorphism.html</loc>
         <lastmod>2023-10-27</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/software/2023/10/29/docker-compose-best-practices.html</loc>
+        <lastmod>2023-10-29</lastmod>
     </url>
 
 </urlset>
