@@ -13,7 +13,5 @@ Disallow: /java/2023/05/07/cryptography-algorithms-comparison.html
 Disallow: /getting-started-with-maven.html
 Disallow: /getting-started-with-java.html
 Disallow: /getting-started-with-gradle.html
-Disallow: /java/2023/10/25/is-beyonce-bowing-down-to-taylor-swift.html
-Disallow: /java/2023/10/25/Is-beyonce-bowing-down-to-taylor-swift.html
 
 Sitemap: https://www.kapresoft.com/sitemap.xml

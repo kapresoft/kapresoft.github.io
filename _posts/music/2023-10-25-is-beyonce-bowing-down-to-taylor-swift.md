@@ -5,6 +5,9 @@ canonical_url: https://www.kapresoft.com/music/2023/10/25/is-beyonce-bowing-down
 category: music
 related: music
 description: "Battle for supremacy between Beyoncé and Taylor Swift in 2023, analyzing concert sales, performances, films."
+redirect_from: 
+   - /java/2023/10/25/is-beyonce-bowing-down-to-taylor-swift.html
+   - /java/2023/10/25/Is-beyonce-bowing-down-to-taylor-swift.html
 ---
 
 ## Overview
