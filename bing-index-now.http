@@ -8,6 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
+    "{{site}}/java/2023/11/06/java-static-and-default-interface-methods.html",
     "{{site}}/java/2023/11/06/java-concatenating-streams.html",
     "{{site}}/java/2023/11/06/java-modern-collection-utilities.html",
     "{{site}}"
@@ -33,6 +34,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/11/06/java-static-and-default-interface-methods.html",
     "{{site}}/java/2023/11/06/java-concatenating-streams.html",
     "{{site}}/java/2023/11/06/java-modern-collection-utilities.html",
     "{{site}}/java/2023/10/26/java-unit-testing-best-practices.html",
