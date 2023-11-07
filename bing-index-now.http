@@ -8,8 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/java/2023/11/07/lombok-good-bad-ugly.html",
-    "{{site}}/finance/2023/11/06/finance-azul-wells-five-reasons-to-retire.html",
+    "{{site}}/java/2023/11/07/java-int-vs-integer-best-practices.html",
     "{{site}}"
   ]
 }
@@ -33,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/11/07/java-int-vs-integer-best-practices.html",
     "{{site}}/java/2023/11/07/lombok-good-bad-ugly.html",
     "{{site}}/finance/2023/11/06/finance-azul-wells-five-reasons-to-retire.html",
     "{{site}}/java/2023/11/06/java-static-and-default-interface-methods.html",
