@@ -2,6 +2,7 @@
 title: FDIC • What you need to know
 canonical_url: https://www.kapresoft.com/finance/2023/03/13/fdic-what-you-need-to-know.html
 category: finance
+related: finance
 description: "FDIC protects depositors with deposit insurance up to $250,000 per depositor, per insured bank. Safeguard your funds in case of a bank failure."
 ---
 
