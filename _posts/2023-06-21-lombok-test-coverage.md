@@ -3,7 +3,7 @@ title: "Lombok Test Coverage"
 title_style: title2
 canonical_url: https://www.kapresoft.com/java/2023/06/21/lombok-test-coverage.html
 category: java
-related: java
+related: lombok
 description: "Importance of test coverage when using Lombok, configuring coverage tools like JaCoCo, and best practices."
 ---
 
