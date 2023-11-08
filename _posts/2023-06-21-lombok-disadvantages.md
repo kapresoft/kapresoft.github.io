@@ -3,7 +3,7 @@ title: "Lombok Disadvantages"
 title_style: title2
 canonical_url: https://www.kapresoft.com/java/2023/06/21/lombok-disadvantages.html
 category: java
-related: java
+related: lombok
 description: "Discover the pros and cons of using Project Lombok in Java development. Streamline code, save time, and drawbacks."
 ---
 
