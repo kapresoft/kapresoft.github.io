@@ -8,6 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
+    "{{site}}/food/2023/11/16/why-brandy-or-cognac-taste-sweet.html",
     "{{site}}/software/2023/11/09/html-anchor-tags.html",
     "{{site}}"
   ]
@@ -32,6 +33,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/food/2023/11/16/why-brandy-or-cognac-taste-sweet.html",
     "{{site}}/software/2023/11/09/html-anchor-tags.html",
     "{{site}}/software/2023/11/09/rest-hateoas-best-practices.html",
     "{{site}}/software/2023/11/08/rest-api-core-principles.html",
