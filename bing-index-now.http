@@ -8,6 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
+    "{{site}}/java/2023/11/16/spring-boot-mockmvc-best-practices.html",
     "{{site}}/food/2023/11/16/why-brandy-or-cognac-taste-sweet.html",
     "{{site}}/software/2023/11/09/html-anchor-tags.html",
     "{{site}}"
@@ -33,6 +34,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/11/16/spring-boot-mockmvc-best-practices.html",
     "{{site}}/food/2023/11/16/why-brandy-or-cognac-taste-sweet.html",
     "{{site}}/software/2023/11/09/html-anchor-tags.html",
     "{{site}}/software/2023/11/09/rest-hateoas-best-practices.html",
