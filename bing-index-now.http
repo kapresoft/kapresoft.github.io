@@ -8,6 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
+    "{{site}}/software/2023/11/19/java-vs-javascript.html",
     "{{site}}/software/2023/11/17/design-patterns-composition-vs-aggregation.html",
     "{{site}}"
   ]
@@ -32,6 +33,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/software/2023/11/19/java-vs-javascript.html",
     "{{site}}/software/2023/11/17/design-patterns-composition-vs-aggregation.html",
     "{{site}}/java/2023/11/16/java-primitives-and-primitive-wrappers.html",
     "{{site}}/java/2023/11/16/spring-boot-mockmvc-best-practices.html",
