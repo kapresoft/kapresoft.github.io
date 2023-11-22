@@ -8,9 +8,8 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/software/2023/11/19/java-vs-javascript-syntax.html",
-    "{{site}}/software/2023/11/19/java-vs-javascript.html",
-    "{{site}}/software/2023/11/17/design-patterns-composition-vs-aggregation.html",
+    "{{site}}/java/2023/11/22/java-multiple-inheritance-using-interface.html",
+    "{{site}}/java/2023/11/22/java-interfaces-are-replacing-abstract-classes.html",
     "{{site}}"
   ]
 }
@@ -34,6 +33,8 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/11/22/java-interfaces-are-replacing-abstract-classes.html",
+    "{{site}}/java/2023/11/22/java-multiple-inheritance-using-interface.html",
     "{{site}}/software/2023/11/19/java-vs-javascript-syntax.html",
     "{{site}}/software/2023/11/19/java-vs-javascript.html",
     "{{site}}/software/2023/11/17/design-patterns-composition-vs-aggregation.html",
