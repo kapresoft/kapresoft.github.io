@@ -1,7 +1,7 @@
 ---
 title: "Java • Decoupling Arbitrary Objects Through Composition"
 title_style: title2
-canonical_url: https://www.kapresoft.com/java/2023/11/22/java/2023/11/22/java-decoupling-arbitrary-objects-composition.html
+canonical_url: https://www.kapresoft.com/java/2023/11/22/java-decoupling-arbitrary-objects-composition.html
 category: java
 related: java
 description: "Explore how to decouple objects in Java using composition, enhancing modularity and flexibility in your applications."
