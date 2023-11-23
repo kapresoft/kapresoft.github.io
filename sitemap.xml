@@ -499,5 +499,9 @@
         <loc>https://www.kapresoft.com/java/2023/11/22/java-decoupling-arbitrary-objects-composition.html</loc>
         <lastmod>2023-11-22</lastmod>
     </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/11/23/java-single-responsibility-principle.html</loc>
+        <lastmod>2023-11-23</lastmod>
+    </url>
 
 </urlset>
