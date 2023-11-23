@@ -459,7 +459,7 @@ Transitioning from inheritance to composition represents a strategic shift in ho
 **Figure 1.** Class Diagram Using Composition through Behavior
 
 <div class="uml-diagram">
-   <img src="https://www.planttext.com/api/plantuml/png/XP5D2eCm58JtEKMMIaaF829YmMtFaEeB1c8YoLCgRU_Un9zMGJ2h_7p3cvda3hd5lbM4I8rW1Q-0bceieE63D9Q-2FNh8jGOnGaTZAp9Xv1ASUVeZMkFdY5unXJIrWl0n7zqilKnou7ZJpvTEC0D58d7JhH3En_EsBOySd1tQ6NLh2wNOnG7Obj6-hvUrzG9JLFPTWfQqEYox134Gv9CYGrZkwO3rZi8mEg7iMnk9xp14q7Napxtc_1dNm00">
+   <img src="https://cdngh.kapresoft.com/img/java-decoupling-arbitrary-objects-1-961c31a.png" alt="Class Diagram Using Composition through Behavior">
    <small>Also available in: <a href="https://www.planttext.com/api/plantuml/svg/XP5D2eCm58JtEKMMIaaF829YmMtFaEeB1c8YoLCgRU_Un9zMGJ2h_7p3cvda3hd5lbM4I8rW1Q-0bceieE63D9Q-2FNh8jGOnGaTZAp9Xv1ASUVeZMkFdY5unXJIrWl0n7zqilKnou7ZJpvTEC0D58d7JhH3En_EsBOySd1tQ6NLh2wNOnG7Obj6-hvUrzG9JLFPTWfQqEYox134Gv9CYGrZkwO3rZi8mEg7iMnk9xp14q7Napxtc_1dNm00" target="_blank">SVG</a>&nbsp;|
    <a href="https://www.planttext.com/?text=XP5D2eCm58JtEKMMIaaF829YmMtFaEeB1c8YoLCgRU_Un9zMGJ2h_7p3cvda3hd5lbM4I8rW1Q-0bceieE63D9Q-2FNh8jGOnGaTZAp9Xv1ASUVeZMkFdY5unXJIrWl0n7zqilKnou7ZJpvTEC0D58d7JhH3En_EsBOySd1tQ6NLh2wNOnG7Obj6-hvUrzG9JLFPTWfQqEYox134Gv9CYGrZkwO3rZi8mEg7iMnk9xp14q7Napxtc_1dNm00" target="_blank">PlantText</a>
    </small>
@@ -568,7 +568,7 @@ The Strategy Pattern is a prime example of utilizing composition in Java to enab
 **Figure 2.**  SortingStrategy Class Diagram
 
 <div class="uml-diagram">
-   <img src="https://www.planttext.com/api/plantuml/png/dP9D2i8m48NtEKMMBT8U89JIXHj1GUa9GZgMODkKp5GGzUwcFw9j_K6p7DxtUFCc2PAqr9G5OxeYi7kfWAV6agxobAmao4_ypBXx2tHZBvCa1Lzhf6ZbW1nix0j-D3fZLyPK8H7vhj7gq9hyJ6x0vl0NkNIQhJKAq2437U2mWPYkr9kF6E-js1-Y0Dqd7xH3heweU-yl-QTjHvSmVAfGy2ZIPLr02HLX7B_MFugRwTcu6XC4imEtJ8FGgHEeilO_t000">
+   <img src="https://cdngh.kapresoft.com/img/java-decoupling-arbitrary-objects-2-ce6714b.png" alt="SortingStrategy Class Diagram">
    <small>Also available in: <a href="https://www.planttext.com/api/plantuml/svg/dP9D2i8m48NtEKMMBT8U89JIXHj1GUa9GZgMODkKp5GGzUwcFw9j_K6p7DxtUFCc2PAqr9G5OxeYi7kfWAV6agxobAmao4_ypBXx2tHZBvCa1Lzhf6ZbW1nix0j-D3fZLyPK8H7vhj7gq9hyJ6x0vl0NkNIQhJKAq2437U2mWPYkr9kF6E-js1-Y0Dqd7xH3heweU-yl-QTjHvSmVAfGy2ZIPLr02HLX7B_MFugRwTcu6XC4imEtJ8FGgHEeilO_t000" target="_blank">SVG</a>&nbsp;|
    <a href="https://www.planttext.com/?text=dP9D2i8m48NtEKMMBT8U89JIXHj1GUa9GZgMODkKp5GGzUwcFw9j_K6p7DxtUFCc2PAqr9G5OxeYi7kfWAV6agxobAmao4_ypBXx2tHZBvCa1Lzhf6ZbW1nix0j-D3fZLyPK8H7vhj7gq9hyJ6x0vl0NkNIQhJKAq2437U2mWPYkr9kF6E-js1-Y0Dqd7xH3heweU-yl-QTjHvSmVAfGy2ZIPLr02HLX7B_MFugRwTcu6XC4imEtJ8FGgHEeilO_t000" target="_blank">PlantText</a>
    </small>
@@ -627,7 +627,7 @@ The Decorator Pattern in Java is a perfect illustration of how composition can b
 **Figure 3.**  MilkDecorator Class Diagram
 
 <div class="uml-diagram">
-   <img src="https://www.planttext.com/api/plantuml/png/hP113e9034NtFSKi8KOEG0WXojOL9nXB8Ot339cMbNftHTXCt1cxxFzv_R-Dg8swJ0w0lL8SB98vXs4WCdSmxpcCf2q9HfwLWy_oqdGQsO-RYa5qtVLXkJg29m0wAs9ELXZ_0RgmkxM48LeDSKSTyGCkzwGR835ccvB_TddFNJsA8YbIcghYQNOqaLUfwyIO1ltsGaE-Np_z0W00">
+   <img src="https://cdngh.kapresoft.com/img/java-decoupling-arbitrary-objects-3-1bf9902.png" alt="MilkDecorator Class Diagram">
    <small>Also available in: <a href="https://www.planttext.com/api/plantuml/svg/hP113e9034NtFSKi8KOEG0WXojOL9nXB8Ot339cMbNftHTXCt1cxxFzv_R-Dg8swJ0w0lL8SB98vXs4WCdSmxpcCf2q9HfwLWy_oqdGQsO-RYa5qtVLXkJg29m0wAs9ELXZ_0RgmkxM48LeDSKSTyGCkzwGR835ccvB_TddFNJsA8YbIcghYQNOqaLUfwyIO1ltsGaE-Np_z0W00" target="_blank">SVG</a>&nbsp;|
    <a href="https://www.planttext.com/?text=hP113e9034NtFSKi8KOEG0WXojOL9nXB8Ot339cMbNftHTXCt1cxxFzv_R-Dg8swJ0w0lL8SB98vXs4WCdSmxpcCf2q9HfwLWy_oqdGQsO-RYa5qtVLXkJg29m0wAs9ELXZ_0RgmkxM48LeDSKSTyGCkzwGR835ccvB_TddFNJsA8YbIcghYQNOqaLUfwyIO1ltsGaE-Np_z0W00" target="_blank">PlantText</a>
    </small>
