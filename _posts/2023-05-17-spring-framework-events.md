@@ -368,8 +368,9 @@ In addition to the standard events, you can create and publish your own custom e
 
 The diagram showcases the relationship between the custom event class _BlockedListEvent_ and the _EmailService_ class in the example code.
 
-<img class="center-image" src="https://cdngh.kapresoft.com/img/spring-custom-event-39fdf59.svg" title="Spring Custom Event" alt="Spring Custom Event" width="80%"/>
-
+<div class="illustration">
+<img src="https://cdngh.kapresoft.com/img/spring-custom-event-39fdf59.svg" title="Spring Custom Event" alt="Spring Custom Event" width="80%"/>
+</div>
 The _**BlockedListEvent**_ class is a custom event class that extends the _ApplicationEvent_ class provided by Spring. It represents an event where an email is blocked due to the recipient's address being present in the blocked list. The event contains the address and content of the blocked email.
 
 The _**EmailService**_ class is a service class that sends emails. It implements the _ApplicationEventPublisherAware_ interface to gain access to the _ApplicationEventPublisher_ provided by Spring.

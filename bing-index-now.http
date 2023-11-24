@@ -8,6 +8,8 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
+    "{{site}}/software/2023/11/23/software-code-cohesion.html",
+    "{{site}}/software/2023/11/23/software-webp-vs-png-vs-jpg.html",
     "{{site}}/java/2023/11/23/java-single-responsibility-principle.html",
     "{{site}}"
   ]
@@ -32,6 +34,8 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/software/2023/11/23/software-code-cohesion.html",
+    "{{site}}/software/2023/11/23/software-webp-vs-png-vs-jpg.html",
     "{{site}}/java/2023/11/23/java-single-responsibility-principle.html",
     "{{site}}/java/2023/11/22/java-decoupling-arbitrary-objects-composition.html",
     "{{site}}/java/2023/11/22/java-static-classes-thing-of-the-past.html",

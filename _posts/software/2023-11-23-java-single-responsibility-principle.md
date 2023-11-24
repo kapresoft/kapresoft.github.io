@@ -70,7 +70,7 @@ In an e-commerce application, a class named _OrderManager_ was initially handlin
 **Figure 1.**  OrderManager with Multiple Responsibilities
 
 <div class="uml-diagram">
-   <img src="https://www.planttext.com/api/plantuml/png/SoWkIImgAStDuKhEIImkLl0lIaajyatCIqnFBLAevb9Gq2ueoazEBIu6IsZaWqWhY2fDAuMo_CmKa9hYrBmKl_oIpBJCvCIIpFmyZT9YaBBGOXHLfGKfYIMfddbbgNab-KMLM0shvN80cWLo3m00">
+   <img src="https://cdngh.kapresoft.com/img/java-srp-1-c10607f.webp" alt="OrderManager with Multiple Responsibilities">
    <small>Also available in: <a href="https://www.planttext.com/api/plantuml/svg/SoWkIImgAStDuKhEIImkLl0lIaajyatCIqnFBLAevb9Gq2ueoazEBIu6IsZaWqWhY2fDAuMo_CmKa9hYrBmKl_oIpBJCvCIIpFmyZT9YaBBGOXHLfGKfYIMfddbbgNab-KMLM0shvN80cWLo3m00" target="_blank">SVG</a>&nbsp;|
    <a href="https://www.planttext.com/?text=SoWkIImgAStDuKhEIImkLl0lIaajyatCIqnFBLAevb9Gq2ueoazEBIu6IsZaWqWhY2fDAuMo_CmKa9hYrBmKl_oIpBJCvCIIpFmyZT9YaBBGOXHLfGKfYIMfddbbgNab-KMLM0shvN80cWLo3m00" target="_blank">PlantText</a>
    </small>
@@ -88,7 +88,7 @@ The _OrderManager_ class was refactored to solely process orders. Two new classe
 **Figure 2.** OrderManager, InventoryManager, and NotificationService
 
 <div class="uml-diagram">
-   <img src="https://www.planttext.com/api/plantuml/png/VOyn3i8m34Ntd29Z4JVer9K16107i1A3B1Mxifr8gEBk48fGMLZ-ylv_qX_CGRtSnf16C8j7pQXxOBYYnZd4k9rK4fgzGISj-wMrwMCLok4HFjiTLsGNlV_iovJ1ySl-AmxYTA44Ji8dr4e95uiXvpNiYZNBsTQIuLLgLvu0">
+   <img src="https://cdngh.kapresoft.com/img/java-srp-2-140a936.webp" alt="OrderManager, InventoryManager, and NotificationService">
    <small>Also available in: <a href="https://www.planttext.com/api/plantuml/svg/VOyn3i8m34Ntd29Z4JVer9K16107i1A3B1Mxifr8gEBk48fGMLZ-ylv_qX_CGRtSnf16C8j7pQXxOBYYnZd4k9rK4fgzGISj-wMrwMCLok4HFjiTLsGNlV_iovJ1ySl-AmxYTA44Ji8dr4e95uiXvpNiYZNBsTQIuLLgLvu0" target="_blank">SVG</a>&nbsp;|
    <a href="https://www.planttext.com/?text=VOyn3i8m34Ntd29Z4JVer9K16107i1A3B1Mxifr8gEBk48fGMLZ-ylv_qX_CGRtSnf16C8j7pQXxOBYYnZd4k9rK4fgzGISj-wMrwMCLok4HFjiTLsGNlV_iovJ1ySl-AmxYTA44Ji8dr4e95uiXvpNiYZNBsTQIuLLgLvu0" target="_blank">PlantText</a>
    </small>
@@ -108,7 +108,7 @@ In a banking system, a single class, _AccountService_, was used for handling acc
 **Figure 3.** AccountService with Multiple Roles
 
 <div class="uml-diagram">
-   <img src="https://www.planttext.com/api/plantuml/png/TOwx3OKm40HpLt4XY0w8e0OgE7mhiEGFiiyGeDSxE7aPoKgZcM2defor1c-ivr9ejZRLg0lowIpeDaI3u4Z5QSUXgP4arTMZ7-bCJbfmETqby_LTR8Z8h5ZqdO2etIl_O7vcGfJsuW40">
+   <img src="https://cdngh.kapresoft.com/img/java-srp-3-e2350f9.webp" alt="AccountService with Multiple Roles">
    <small>Also available in: <a href="https://www.planttext.com/api/plantuml/svg/TOwx3OKm40HpLt4XY0w8e0OgE7mhiEGFiiyGeDSxE7aPoKgZcM2defor1c-ivr9ejZRLg0lowIpeDaI3u4Z5QSUXgP4arTMZ7-bCJbfmETqby_LTR8Z8h5ZqdO2etIl_O7vcGfJsuW40" target="_blank">SVG</a>&nbsp;|
    <a href="https://www.planttext.com/?text=TOwx3OKm40HpLt4XY0w8e0OgE7mhiEGFiiyGeDSxE7aPoKgZcM2defor1c-ivr9ejZRLg0lowIpeDaI3u4Z5QSUXgP4arTMZ7-bCJbfmETqby_LTR8Z8h5ZqdO2etIl_O7vcGfJsuW40" target="_blank">PlantText</a>
    </small>
@@ -126,7 +126,7 @@ The _AccountService_ was refactored to focus only on account operations. A new c
 **Figure 4.** AccountService and StatementGenerator
 
 <div class="uml-diagram">
-   <img src="https://www.planttext.com/api/plantuml/png/TOun3i8m54FtdEAFHToWKvauG4_moRSWKfAFafzsGDozZOgwCLhsiprLus8jHUSZrqetxxLbcr6Mu44VHtGLlBK66pXrQoJHzeYuZBHea1vOWxsayFedyNM_yjdOa93jZep2fkKOU1uIfp_iw2bsVaAM_d43">
+   <img src="https://cdngh.kapresoft.com/img/java-srp-4-09b5fcc.webp" alt="AccountService and StatementGenerator">
    <small>Also available in: <a href="https://www.planttext.com/api/plantuml/svg/TOun3i8m54FtdEAFHToWKvauG4_moRSWKfAFafzsGDozZOgwCLhsiprLus8jHUSZrqetxxLbcr6Mu44VHtGLlBK66pXrQoJHzeYuZBHea1vOWxsayFedyNM_yjdOa93jZep2fkKOU1uIfp_iw2bsVaAM_d43" target="_blank">SVG</a>&nbsp;|
    <a href="https://www.planttext.com/?text=TOun3i8m54FtdEAFHToWKvauG4_moRSWKfAFafzsGDozZOgwCLhsiprLus8jHUSZrqetxxLbcr6Mu44VHtGLlBK66pXrQoJHzeYuZBHea1vOWxsayFedyNM_yjdOa93jZep2fkKOU1uIfp_iw2bsVaAM_d43" target="_blank">PlantText</a>
    </small>
