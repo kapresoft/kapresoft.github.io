@@ -578,28 +578,9 @@ public class OrderService {
 
 In a monolithic codebase, changes or updates often require extensive testing, as modifications can affect various parts of the application.
 
-```java
-// Monolithic code
-public class MonolithicApp {
-    // ...
-}
-```
-
 ##### Microservices
 
 Microservices promote maintainability by breaking down complex systems into smaller, manageable components, reducing the risk of unintended side effects.
-
-```java
-// Microservice 1
-public class CatalogService {
-    // ...
-}
-
-// Microservice 2
-public class OrderService {
-    // ...
-}
-```
 
 software-agile-refactor-monolithic-code
 
@@ -611,31 +592,11 @@ We'll dive into the intricacies of deploying software systems in both Monolithic
 
 Deploying a monolithic application typically involves updating the entire codebase, which can lead to downtime during deployment.
 
-```java
-// Monolithic code
-public class MonolithicApp {
-    // ...
-}
-```
-
 ##### Microservices
 
 Microservices support continuous deployment, allowing individual services to be updated without affecting the entire application.
 
-```java
-// Microservice 1
-public class CatalogService {
-    // ...
-}
-
-// Microservice 2
-public class OrderService {
-    // ...
-}
-```
-
 By understanding these key differences and visualizing them through architecture diagrams, developers and architects can make informed decisions about which architectural approach best suits their project's needs and objectives. Whether it's the granular scalability of microservices or the simplicity of monolithic architecture, each has its place in the software development landscape.
-
 
 ## Conclusion
 
