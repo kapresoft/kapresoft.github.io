@@ -8,9 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/finance/2023/11/06/finance-azul-wells-five-reasons-to-retire.html",
-    "{{site}}/software/2023/11/24/software-agile-refactor-monolithic-code.html",
-    "{{site}}/software/2023/11/24/treat-test-code-as-production.html",
+    "{{site}}/software/2023/11/25/software-agile-splitting-stories-best-practices.html",
     "{{site}}"
   ]
 }
@@ -34,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/software/2023/11/25/software-agile-splitting-stories-best-practices.html",
     "{{site}}/software/2023/11/24/treat-test-code-as-production.html",
     "{{site}}/software/2023/11/24/software-agile-refactor-monolithic-code.html",
     "{{site}}/software/2023/11/23/software-code-cohesion.html",
