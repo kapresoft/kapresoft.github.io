@@ -9,7 +9,7 @@ description: "Explore the power of Mock Object Design Pattern in software testin
 
 ## Overview
 
-The Mock Object Design Pattern is an essential aspect of modern software development, pivotal for enhancing the efficiency and reliability of software testing. It focuses on creating mock objects that simulate the behavior of real objects in a controlled environment, aimed at isolating the system under test. This isolation ensures that unit tests are independent of external elements and solely focused on the code being tested.<!--excerpt-->
+The <a href="https://en.wikipedia.org/wiki/Mock_object" target="_blank">Mock Object</a> Design Pattern is an essential aspect of modern software development, pivotal for enhancing the efficiency and reliability of software testing. It focuses on creating mock objects that simulate the behavior of real objects in a controlled environment, aimed at isolating the system under test. This isolation ensures that unit tests are independent of external elements and solely focused on the code being tested.<!--excerpt-->
 
 This article delves into the intricacies of the Mock Object Design Pattern, highlighting its implementation, benefits, challenges, and its significance across various programming paradigms. Essential for both seasoned developers and newcomers, this pattern is a key to mastering software testing and accelerating development cycles.
 
@@ -66,7 +66,7 @@ public class EmailServiceTest {
 }
 ```
 
-In this test, we use Mockito, a popular Java mocking framework, to create a mock _SMTPServer_. We then verify that _sendEmail_ method of _EmailService_ correctly interacts with the _SMTPServer_ mock.
+In this test, we use <a href="/java/2023/11/26/java-mockito-vs-easymock.html" target="_blank">Mockito</a>, a popular Java mocking framework, to create a mock _SMTPServer_. We then verify that _sendEmail_ method of _EmailService_ correctly interacts with the _SMTPServer_ mock.
 
 ### Case Studies: Effective Use of Mock Objects in Complex Systems
 
@@ -141,9 +141,9 @@ verify(mockCreditCardService).charge(any(CreditCard.class), eq(100.0));
 
 ### Tools and Frameworks Commonly Used for Creating Mock Objects
 
-1. **Mockito**: A popular Java mocking framework known for its simplicity and readability.
+1. <a href="/java/2023/11/26/java-mockito-vs-easymock.html" target="_blank">Mockito</a>: A popular Java mocking framework known for its simplicity and readability.
 2. **JUnit**: Often used in conjunction with Mockito for unit testing in Java.
-3. **EasyMock**: Another Java framework, known for its ability to create strict mocks.
+3. <a href="/java/2023/11/26/java-mockito-vs-easymock.html" target="_blank">EasyMock</a>: Another Java framework, known for its ability to create strict mocks.
 4. **JMock**: A Java library that allows writing flexible and expressive tests.
 
 ### Autowiring Mocks in Spring Boot Test
