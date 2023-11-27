@@ -8,8 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/software/2023/11/26/deeplink-seo.html",
-    "{{site}}/software/2023/11/26/javascript-prototype.html",
+    "{{site}}/software/2023/11/26/design-patterns-mock-object.html",
     "{{site}}"
   ]
 }
@@ -33,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/software/2023/11/26/design-patterns-mock-object.html",
     "{{site}}/software/2023/11/26/deeplink-seo.html",
     "{{site}}/software/2023/11/26/javascript-prototype.html",
     "{{site}}/software/2023/11/25/software-agile-prefer-story-cards-and-sticky-notes.html",
