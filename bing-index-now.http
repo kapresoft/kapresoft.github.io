@@ -8,7 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/food/2023/11/30/how-to-make-perfect-rib-roast.html",
+    "{{site}}/java/2023/12/01/mastering-spring-mockbean.html",
     "{{site}}"
   ]
 }
@@ -32,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/12/01/mastering-spring-mockbean.html",
     "{{site}}/food/2023/11/30/how-to-make-perfect-rib-roast.html",
     "{{site}}/java/2023/11/29/java-vs-c-sharp-dot-net.html",
     "{{site}}/java/2023/11/26/java-mockito-vs-easymock.html",
