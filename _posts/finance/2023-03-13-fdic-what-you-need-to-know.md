@@ -10,7 +10,7 @@ description: "FDIC protects depositors with deposit insurance up to $250,000 per
 
 The FDIC is a government agency that helps to protect your money if your bank fails. If your bank is FDIC-insured, your deposits are insured up to $250,000 in case something goes wrong. This means that you can feel secure knowing that your money is safe and protected.<!--excerpt-->
 
-[See Disclaimer](/disclaimer.html)
+Please review the [Disclaimer](/disclaimer.html) prior to proceeding with this article.
 
 FDIC coverage protects the money you deposit in certain types of accounts at a bank or savings institution, like checking, savings, money market, and CD accounts, up to $250,000 per account ownership category. However, investments like stocks, bonds, mutual funds, life insurance policies, and annuities are not covered by FDIC insurance.
 

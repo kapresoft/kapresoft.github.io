@@ -33,6 +33,10 @@ Please remember that financial markets and regulations can change rapidly, and i
 
 In conclusion, articles on **{{ site.name }}** is intended to offer general financial insights and strategies, but it should not be considered as personalized financial advice. Always consult with a licensed financial advisor to tailor strategies to your specific financial circumstances and goals.
 
+### Health & Beauty Articles
+
+The information on the articles provided on **{{ site.name }}** is for general informational purposes only and should not be considered a substitute for professional medical advice or consultation. Always seek the advice of your physician or qualified healthcare provider with any questions you may have regarding a medical condition or skincare concerns. The use of any products or strategies mentioned in this content should be discussed and approved by your healthcare provider to ensure they are appropriate for your individual circumstances. The authors and publishers do not endorse or recommend any specific products, treatments, or procedures mentioned herein. Individual results may vary, and any reliance on the information presented in this content is at your own risk.
+
 Thank you for understanding and your compliance with this disclaimer.
 
 ### Privacy
