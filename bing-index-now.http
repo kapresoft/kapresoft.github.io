@@ -8,9 +8,8 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/java/2023/12/02/java-visitor-design-pattern-deep-dive.html",
-    "{{site}}/java/2023/12/03/java-command-pattern.html",
-    "{{site}}/health/2023/12/03/health-secrets-of-healthy-skin.html",
+    "{{site}}/java/2023/12/03/java-functional-programming.html",
+    "{{site}}/health/2023/12/03/how-alcohol-affects-skin.html",
     "{{site}}"
   ]
 }
@@ -34,6 +33,8 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/health/2023/12/03/how-alcohol-affects-skin.html",
+    "{{site}}/java/2023/12/03/java-functional-programming.html",
     "{{site}}/health/2023/12/03/health-secrets-of-healthy-skin.html",
     "{{site}}/java/2023/12/03/java-command-pattern.html",
     "{{site}}/java/2023/12/02/java-visitor-design-pattern-deep-dive.html",
