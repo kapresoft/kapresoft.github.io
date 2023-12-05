@@ -49,6 +49,30 @@ section {
   margin-top: 150px;
 }
 
+.wrapper {
+  section.article1 {
+    ul li {
+      margin-bottom: 1em;
+      ul, ol {
+        margin-top: .5em
+      }
+      ul li, ol li {
+        margin-bottom: auto;
+      }
+    }
+    ol li {
+      margin-bottom: 1em;
+      ul, ol {
+        margin-top: .5em
+      }
+      ul li, ol li {
+        margin-bottom: auto;
+      }
+    }
+  }
+}
+
+
 .figure {
   margin-bottom: .5em;
   .title {

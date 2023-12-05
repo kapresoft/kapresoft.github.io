@@ -42,7 +42,7 @@
     <nav>
         <ul></ul>
     </nav>
-    <section>
+    <section class="{{ page.section_style | default: '' }}">
         <h1 class="{{ page.title_style | default: 'title' }}">{{ page.title | default: ''}}</h1>
 
         {% comment %}<span style="float: right; font-size: smaller;">Last Update: {% last_modified_at %}</span><br/>{% endcomment %}

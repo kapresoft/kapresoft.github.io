@@ -8,8 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/java/2023/12/03/java-functional-programming.html",
-    "{{site}}/health/2023/12/03/how-alcohol-affects-skin.html",
+    "{{site}}/health/2023/12/04/health-stress-and-cortisol.html",
     "{{site}}"
   ]
 }
@@ -33,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/health/2023/12/04/health-stress-and-cortisol.html",
     "{{site}}/health/2023/12/03/how-alcohol-affects-skin.html",
     "{{site}}/java/2023/12/03/java-functional-programming.html",
     "{{site}}/health/2023/12/03/health-secrets-of-healthy-skin.html",

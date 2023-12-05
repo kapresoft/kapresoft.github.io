@@ -1,6 +1,7 @@
 ---
 title: "Java • Deep Dive into the Visitor Design Pattern"
 title_style: title2
+section_style: article1
 canonical_url: https://www.kapresoft.com/java/2023/12/02/java-visitor-design-pattern-deep-dive.html
 category: java
 related: java
@@ -44,7 +45,6 @@ The Visitor pattern is often used in systems where data structures are relativel
 There are two primary components in the Visitor Design Pattern: the Visitor and the Element interfaces.
 
 1. **Visitor Interface**: This defines a _visit()_ method for each type of element that can be visited. The purpose of this method is to perform some operation on the element, which can vary depending on the visitor's implementation. Each new operation implies a new visitor class, adhering to the visitor interface.
-
 2. **Element Interface**: This interface includes an _accept()_ method that takes a visitor object as an argument. The elements of an object structure are made up of classes implementing this interface. When _accept()_ is called on an element, the element then calls the _visit()_ method on the visitor object, passing itself to the visitor.
 
 In a typical implementation, each concrete element class corresponds to a concrete visitor class. The concrete element includes an implementation of the _accept()_ method that calls the _visit()_ method on the visitor, while the concrete visitor implements the _visit()_ method to perform the specific operation on the element.
@@ -58,9 +58,7 @@ The Visitor Design Pattern finds its utility in various real-world applications,
 ### Common Use Cases
 
 1. **Processing a Composite Structure**: This is common in applications with a tree or graph structure, like GUIs or document structures. Each node in the structure might have different operations performed on it.
-
 2. **Adding New Operations**: In systems where new operations need to be added frequently, the Visitor pattern helps in extending functionalities without modifying the existing classes.
-
 3. **Performing Operations across a Collection of Different Classes**: When you have a collection of different objects with distinct interfaces and you need to perform a set of operations that depend on their concrete classes.
 
 ### Code Example in Java
@@ -181,19 +179,15 @@ The class diagram on the figure shows the component relationships at the code le
 1. **Element Interface**:
     - Represents the abstract interface that all concrete elements (_Paragraph_, _Hyperlink_, _Image_) must implement.
     - Contains the _accept_ method, which allows a _Visitor_ to visit and operate on the concrete elements.
-
 2. **Visitor Interface**:
     - Represents the abstract interface that all concrete visitors (_RenderVisitor_, _ExportVisitor_) must implement.
     - Contains methods for visiting each type of concrete element, specifying the operations to be performed on each element.
-
 3. **Concrete Element Classes** (_Paragraph_, _Hyperlink_, _Image_):
     - Implement the _Element_ interface, ensuring they have the _accept_ method.
     - Provide their own implementation of the _accept_ method, allowing visitors to interact with and perform operations on them.
-
 4. **Concrete Visitor Classes** (_RenderVisitor_, _ExportVisitor_):
     - Implement the _Visitor_ interface, ensuring they have the methods for visiting each type of concrete element.
     - Define the specific operations (rendering or exporting) to be performed on each type of concrete element.
-
 5. **Client Class**:
     - Represents the client code that demonstrates how the Visitor pattern is used.
     - Creates instances of concrete elements (_Paragraph_, _Hyperlink_, _Image_) and adds them to a list.
@@ -210,29 +204,21 @@ The Visitor Design Pattern, like all design patterns, comes with its own set of 
 ### Advantages
 
 1. **Separation of Concerns**: The Visitor pattern helps in separating the algorithm from the object structure on which it operates. This separation of concerns means that operations can be added to complex object structures without altering those structures.
-
 2. **Adding Operations Easily**: It allows for the easy addition of new operations on existing object structures, adhering to the Open/Closed Principle. This is particularly beneficial in systems where new operations are frequently required.
-
 3. **Centralizing Complex Operations**: If an operation requires working with multiple elements of an object structure, the Visitor pattern centralizes this complex logic in one location rather than spreading it across multiple object classes.
-
 4. **Promoting Extensibility**: The pattern makes it easier to add new kinds of visitors to work with existing object structures, thereby promoting extensibility.
 
 ### Limitations
 
 1. **Breaking Encapsulation**: To make it work, a visitor needs access to the internal details of the elements it works on. This might lead to breaking the encapsulation of the elements.
-
 2. **Complexity**: The Visitor pattern can add complexity to the code, especially if the hierarchy of the element classes is extensive. It can be overkill for a simple object structure.
-
 3. **Difficult to Add New Element Classes**: While it's easy to add new visitors, adding new element classes can be difficult, as it requires changing every visitor class.
-
 4. **Tight Coupling Between Visitors and Elements**: The Visitor pattern tends to create a tight coupling between the visitors and the elements they operate on, which can be a drawback in a system that requires frequent changes in element classes.
 
 ### When to Avoid
 
 - **Simple Object Structures**: If the object structure is simple and not expected to change frequently, using the Visitor pattern might be unnecessary and could overcomplicate the design.
-
 - **Frequent Changes in Element Classes**: In systems where new element classes are added frequently, the Visitor pattern might not be the best choice due to the need for constant updates to all visitor classes.
-
 - **Concerns about Encapsulation**: If maintaining the encapsulation of elements is a high priority, and you don’t want to expose their internal state, the Visitor pattern might not be suitable.
 
 In conclusion, while the Visitor Design Pattern offers significant benefits in terms of adding operations to object structures without modifying them, it is important to consider its limitations and the specific needs of the system before implementation. It is most effective in complex, stable object structures where new operations are needed more frequently than new types of elements.
@@ -245,25 +231,19 @@ To fully appreciate the Visitor Design Pattern, it's essential to compare it wit
 ### Comparison with the Strategy Pattern
 
 1. **Purpose**: The <a href="/software/2023/10/27/strategy-pattern-over-polymorphism.html" target="_blank">Strategy Pattern</a> is used to define a family of algorithms, encapsulate each one, and make them interchangeable. The Visitor Pattern, on the other hand, is about performing operations on a set of objects with different classes.
-
 2. **Use Case**: Use the Strategy Pattern when you have different ways of doing the same operation (e.g., different sorting algorithms), and these can be switched at runtime. The Visitor is more suited for operations to be performed on a composite object structure, especially when they need to be extended frequently.
-
 3. **Flexibility**: The Strategy Pattern offers more flexibility in changing the behavior of an object at runtime. The Visitor pattern allows for more flexibility in adding new operations without changing the objects.
 
 ### Comparison with the Observer Pattern
 
 1. **Objective**: The <a href="/java/2023/10/18/observer-design-pattern.html" target="_blank">Observer Pattern</a> is used for creating a subscription mechanism to notify multiple objects about any events that happen to the object they are observing. The Visitor Pattern is used to perform operations across a set of objects with different classes.
-
 2. **Behavior**: In the Observer Pattern, the subject (the object being observed) is central and often broadcasts events to observers, which are generally passive. In contrast, in the Visitor Pattern, the visitor actively applies an operation to the elements.
-
 3. **Applicability**: Use the Observer Pattern when changes in one object (subject) need to be reflected in others (observers), and these observers can be added or removed dynamically. Use the Visitor Pattern when a set of operations needs to be performed on a group of different kinds of object structures.
 
 ### Understanding When to Choose Visitor
 
 - **Complex Object Structures**: Choose the Visitor Pattern when you are dealing with a complex object structure, especially a composite structure, and you need to perform operations across these objects which are likely to change or extend over time.
-
 - **Adding New Operations**: If your primary need is to add new operations frequently to an existing object structure without altering those structures, the Visitor Pattern is ideal.
-
 - **Separation of Concerns**: When there is a clear need to separate an algorithm from the object structure it operates on, the Visitor Pattern is a strong choice.
 
 While each pattern has its unique advantages and specific use cases, the Visitor Pattern is particularly useful for operations on complex object structures where new operations need to be frequently added without modifying the objects. Understanding the specific needs of your application and the nature of the operations and object structures involved is crucial in choosing the right design pattern.
