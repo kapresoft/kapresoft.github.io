@@ -50,6 +50,12 @@ section {
 }
 
 .wrapper {
+  p {
+    em {
+      font-weight: 400;
+      font-family: 'Roboto Slab', Roboto, SansSerif
+    }
+  }
   section.article1 {
     ul li {
       margin-bottom: 1em;

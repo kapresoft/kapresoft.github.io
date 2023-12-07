@@ -16,7 +16,7 @@ Are you exhausted from the never-ending skincare routines and products that make
 <img src="https://cdngh.kapresoft.com/img/health-secrets-of-healthy-skin-cover-0d672f7.webp" alt="">
 </div>
 
-<small>Please review the [Disclaimer](/disclaimer.html#health--beauty-articles) prior to proceeding with this article.</small>
+<small>Please review the [Disclaimer](/disclaimer.html#health--beauty-articles) prior to proceeding with this article. This article is for informational purposes only and should not be considered medical advice. It's always best to consult with a healthcare professional for personalized recommendations and guidance.</small>
 
 ## Embrace the Power of Nourishment
 

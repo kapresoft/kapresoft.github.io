@@ -39,6 +39,10 @@ The information on the articles provided on **{{ site.name }}** is for general i
 
 Thank you for understanding and your compliance with this disclaimer.
 
-### Privacy
 
-• See [/privacy](/privacy)
+### Links
+
+- [Privacy Policy](/privacy)
+- [Copyright Page](/copyright)
+
+

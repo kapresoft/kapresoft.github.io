@@ -16,7 +16,7 @@ description: "Explore the link between stress and cortisol, its symptoms, and wa
 <img src="https://cdngh.kapresoft.com/img/stress-and-cortisol-cover-b697d6d.webp" width="300" alt="Stress & Cortisol: The Key to Balance Cover Image">
 </div>
 
-<small>Please review the [Disclaimer](/disclaimer.html#health--beauty-articles) prior to proceeding with this article.</small>
+<small>Please review the [Disclaimer](/disclaimer.html#health--beauty-articles) prior to proceeding with this article. This article is for informational purposes only and should not be considered medical advice. It's always best to consult with a healthcare professional for personalized recommendations and guidance.</small>
 
 In the context of stress, cortisol is part of the body's fight-or-flight mechanism. When a person encounters a stressful situation, the hypothalamus, a tiny region at the brain's base, sets off an alarm system in the body. This alarm triggers the adrenal glands to release a surge of hormones, including cortisol. This hormonal response temporarily boosts energy production, ensuring that the body can respond swiftly to a perceived threat. The heightened cortisol levels increase glucose in the bloodstream, enhance the brain's use of glucose, and increase the availability of substances that repair tissues.
 
