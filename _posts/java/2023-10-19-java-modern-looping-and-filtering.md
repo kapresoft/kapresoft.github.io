@@ -1,6 +1,6 @@
 ---
 title: "Java • Modern Looping And Filtering with Stream API"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/19/java-modern-looping-and-filtering.html
 category: java
 related: java
