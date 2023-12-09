@@ -607,4 +607,12 @@
         <loc>https://www.kapresoft.com/java/2023/12/07/java-stream-findfirst-findany-in-action.html</loc>
         <lastmod>2023-12-08</lastmod>
     </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/12/08/java-optional-map-vs-flatmap.html</loc>
+        <lastmod>2023-12-09</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/12/09/java-common-mistakes-optional-map-flatmap.html</loc>
+        <lastmod>2023-12-09</lastmod>
+    </url>
 </urlset>
