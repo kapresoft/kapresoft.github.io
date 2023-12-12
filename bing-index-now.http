@@ -8,7 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/java/2023/12/09/java-streams-filter-map-beyond-basics.html",
+    "{{site}}/java/2023/12/10/java-pitfalls-of-returning-null.html",
     "{{site}}"
   ]
 }
@@ -32,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/12/10/java-pitfalls-of-returning-null.html",
     "{{site}}/java/2023/12/09/java-streams-filter-map-beyond-basics.html",
     "{{site}}/java/2023/12/09/java-common-mistakes-optional-map-flatmap.html",
     "{{site}}/java/2023/12/08/java-optional-map-vs-flatmap.html",
