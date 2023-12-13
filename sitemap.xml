@@ -623,4 +623,12 @@
         <loc>https://www.kapresoft.com/java/2023/12/10/java-pitfalls-of-returning-null.html</loc>
         <lastmod>2023-12-12</lastmod>
     </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/12/12/java-what-is-a-bytecode.html</loc>
+        <lastmod>2023-12-12</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/12/12/how-to-create-your-own-jvm-language-like-kotlin.html</loc>
+        <lastmod>2023-12-12</lastmod>
+    </url>
 </urlset>
