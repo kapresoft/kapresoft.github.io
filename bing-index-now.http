@@ -8,7 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/java/2023/12/12/java-how-to-get-package-name.html",
+    "{{site}}/food/2023/12/13/why-sous-vide.html",
     "{{site}}"
   ]
 }
@@ -32,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/food/2023/12/13/why-sous-vide.html",
     "{{site}}/java/2023/12/12/java-how-to-get-package-name.html",
     "{{site}}/java/2023/12/12/how-to-create-your-own-jvm-language-like-kotlin.html",
     "{{site}}/java/2023/12/12/java-what-is-a-bytecode.html",
