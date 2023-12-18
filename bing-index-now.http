@@ -8,7 +8,8 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/java/2023/12/15/spring-intro-to-aop.html",
+    "{{site}}/java/2023/12/16/java-logback-mdc-in-thread-pools.html",
+    "{{site}}/java/2023/12/16/java-logback-propagating-mdc-to-child-thread.html",
     "{{site}}"
   ]
 }
@@ -32,6 +33,8 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/12/16/java-logback-mdc-in-thread-pools.html",
+    "{{site}}/java/2023/12/16/java-logback-propagating-mdc-to-child-thread.html",
     "{{site}}/java/2023/12/15/spring-intro-to-aop.html",
     "{{site}}/java/2023/12/14/spring-overcoming-aop-internal-call-limitation.html",
     "{{site}}/java/2023/12/14/java-understanding-role-of-classloader.html",

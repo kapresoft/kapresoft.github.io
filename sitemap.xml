@@ -651,4 +651,12 @@
         <loc>https://www.kapresoft.com/java/2023/12/15/spring-intro-to-aop.html</loc>
         <lastmod>2023-12-15</lastmod>
     </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/12/16/java-logback-propagating-mdc-to-child-thread.html</loc>
+        <lastmod>2023-12-18</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/12/16/java-logback-mdc-in-thread-pools.html</loc>
+        <lastmod>2023-12-18</lastmod>
+    </url>
 </urlset>
