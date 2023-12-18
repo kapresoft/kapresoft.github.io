@@ -1,6 +1,6 @@
 ---
 title: "HTML Anchor Tag"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/11/09/html-anchor-tags.html
 category: software
 related: software

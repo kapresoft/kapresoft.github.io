@@ -1,6 +1,6 @@
 ---
 title: "Lombok @Singular Annotation"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/05/01/lombok-singular-annotation.html
 category: java
 related: lombok

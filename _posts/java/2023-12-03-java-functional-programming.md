@@ -1,6 +1,6 @@
 ---
 title: "Functional Programming with Java"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/12/03/java-functional-programming.html
 category: java
 related: java

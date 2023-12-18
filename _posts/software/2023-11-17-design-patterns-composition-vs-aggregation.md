@@ -1,6 +1,6 @@
 ---
 title: "Design Patterns • Composition vs Aggregation"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/11/17/design-patterns-composition-vs-aggregation.html
 category: software
 related: software

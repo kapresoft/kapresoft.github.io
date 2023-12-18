@@ -1,6 +1,6 @@
 ---
 title: "Java • Are Static Classes Things Of The Past?"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/11/22/java-static-classes-thing-of-the-past.html
 category: java
 related: java

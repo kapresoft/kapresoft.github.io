@@ -1,6 +1,6 @@
 ---
 title: "Spring 5 • Getting Started With Validation"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/17/spring-5-getting-started-with-validation.html
 category: java
 related: spring

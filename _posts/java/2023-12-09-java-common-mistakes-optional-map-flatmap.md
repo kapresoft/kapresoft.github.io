@@ -1,6 +1,6 @@
 ---
 title: "Java Optional • Common Mistakes and Misconceptions of map() & flatMap()"
-title_style: title2
+title_style: title2w
 section_style: article1
 category: java
 related: java

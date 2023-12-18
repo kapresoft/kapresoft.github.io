@@ -1,6 +1,6 @@
 ---
 title: "Java vs JavaScript • Which Is In More Demand?"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/10/02/java-vs-javascript-which-more-demand.html
 category: software
 related: java

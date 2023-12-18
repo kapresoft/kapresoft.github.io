@@ -1,6 +1,6 @@
 ---
 title: "Bitcoin Environmental Impact"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/finance/2023/04/03/bitcoin-environmental-impact.html
 category: finance
 related: finance

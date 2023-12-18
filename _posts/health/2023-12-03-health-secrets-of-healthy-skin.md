@@ -1,6 +1,6 @@
 ---
 title: "Unlocking the Secrets of Healthy and Radiant Skin"
-title_style: title2
+title_style: title2w
 section_style: article1
 canonical_url: https://www.kapresoft.com/health/2023/12/03/health-secrets-of-healthy-skin.html
 category: health

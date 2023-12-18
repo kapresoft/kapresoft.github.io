@@ -1,6 +1,6 @@
 ---
 title: "Java vs. C#"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/11/29/java-vs-c-sharp-dot-net.html
 category: java
 related: java

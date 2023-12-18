@@ -1,6 +1,6 @@
 ---
 title: "Spring WebFlux/Reactive • Frequently Asked Questions"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/17/spring-webflux-reactive-faqs.html
 category: java
 related: spring

@@ -1,6 +1,6 @@
 ---
 title: "Refactor Monolithic Code in Agile"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/11/24/software-agile-refactor-monolithic-code.html
 category: software
 related: software

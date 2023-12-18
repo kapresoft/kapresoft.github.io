@@ -1,6 +1,6 @@
 ---
 title: "Lombok val vs var"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/18/java-lombok-val-vs-var.html
 category: java
 related: lombok

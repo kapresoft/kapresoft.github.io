@@ -1,6 +1,6 @@
 ---
 title: "Java Cloning Strategies"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/06/23/java-cloning-strategies.html
 category: java
 related: java

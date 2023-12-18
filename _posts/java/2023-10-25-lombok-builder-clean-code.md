@@ -1,6 +1,6 @@
 ---
 title: "Cleaner Code and Enhanced Testability: Harnessing the Power of Lombok Builders"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/25/lombok-builder-clean-code.html
 category: java
 related: lombok

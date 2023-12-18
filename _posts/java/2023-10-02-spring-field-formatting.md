@@ -1,6 +1,6 @@
 ---
 title: "Spring Field Formatting"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/02/spring-field-formatting.html
 category: java
 related: spring

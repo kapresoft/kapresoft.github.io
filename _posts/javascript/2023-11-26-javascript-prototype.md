@@ -1,6 +1,6 @@
 ---
 title: "JavaScript Prototypes • Essential Guide & Best Practices"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/11/26/javascript-prototype.html
 category: software
 related: javascript

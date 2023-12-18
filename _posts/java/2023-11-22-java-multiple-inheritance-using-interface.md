@@ -1,6 +1,6 @@
 ---
 title: "Java • Multiple Inheritance Using Interface"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/11/22/java-multiple-inheritance-using-interface.html
 category: java
 related: java

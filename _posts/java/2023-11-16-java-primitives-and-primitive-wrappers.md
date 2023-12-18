@@ -1,6 +1,6 @@
 ---
 title: "Java Primitives & Primitive Wrappers"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/11/16/java-primitives-and-primitive-wrappers.html
 category: java
 related: java

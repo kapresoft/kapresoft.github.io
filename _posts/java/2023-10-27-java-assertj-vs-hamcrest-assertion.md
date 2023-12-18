@@ -1,6 +1,6 @@
 ---
 title: "Java • AssertJ vs Hamcrest Assertion Frameworks"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/27/java-assertj-vs-hamcrest-assertion.html
 category: java
 related: java

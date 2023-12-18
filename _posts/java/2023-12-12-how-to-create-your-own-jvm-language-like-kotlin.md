@@ -1,6 +1,6 @@
 ---
 title: "How To Create Your Own JVM Language Like Kotlin"
-title_style: title2
+title_style: title2w
 section_style: article1
 category: java
 related: jvm

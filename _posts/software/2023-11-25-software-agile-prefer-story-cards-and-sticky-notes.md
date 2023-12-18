@@ -1,6 +1,6 @@
 ---
 title: "Agile • Why I Prefer Story Cards And Sticky Notes"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/11/25/software-agile-prefer-story-cards-and-sticky-notes.html
 category: software
 related: software

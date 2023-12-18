@@ -1,6 +1,6 @@
 ---
 title: "Java • Concatenating Streams"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/11/06/java-concatenating-streams.html
 category: java
 related: java

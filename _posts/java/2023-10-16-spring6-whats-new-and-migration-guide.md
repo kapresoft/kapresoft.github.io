@@ -1,6 +1,6 @@
 ---
 title: "Spring 6 • What's New & Migration Guide"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/16/spring6-whats-new-and-migration-guide.html
 category: java
 related: spring

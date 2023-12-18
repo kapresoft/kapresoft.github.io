@@ -1,6 +1,6 @@
 ---
 title: "Maven vs Gradle"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/05/01/maven-vs-gradle.html
 category: java
 related: java

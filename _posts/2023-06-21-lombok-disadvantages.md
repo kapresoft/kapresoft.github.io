@@ -1,6 +1,6 @@
 ---
 title: "Lombok Disadvantages"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/06/21/lombok-disadvantages.html
 category: java
 related: lombok

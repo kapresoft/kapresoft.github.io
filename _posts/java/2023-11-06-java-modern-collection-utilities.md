@@ -1,6 +1,6 @@
 ---
 title: "Java Modern Collection Utilities"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/11/06/java-modern-collection-utilities.html
 category: java
 related: java

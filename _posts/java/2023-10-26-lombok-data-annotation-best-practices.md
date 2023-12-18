@@ -1,6 +1,6 @@
 ---
 title: "Lombok • @Data Annotation Best Practices"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/26/lombok-data-annotation-best-practices.html
 category: java
 related: lombok

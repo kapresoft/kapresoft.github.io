@@ -1,6 +1,6 @@
 ---
 title: "Loose Coupling in Software Engineering"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/10/25/software-loose-coupling.html
 category: software
 related: software

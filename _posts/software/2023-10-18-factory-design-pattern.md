@@ -1,6 +1,6 @@
 ---
 title: "Factory Design Pattern"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/18/factory-design-pattern.html
 category: java
 related: java

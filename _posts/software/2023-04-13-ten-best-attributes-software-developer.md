@@ -1,6 +1,6 @@
 ---
 title: "10 Best Attributes of a Software Developer"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/04/13/ten-best-attributes-software-developer.html
 category: software
 related: software

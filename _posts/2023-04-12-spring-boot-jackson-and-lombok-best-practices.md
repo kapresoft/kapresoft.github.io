@@ -1,6 +1,6 @@
 ---
 title: "Spring Boot, Jackson, and Lombok Best Practices"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/04/12/spring-boot-jackson-and-lombok-best-practices.html
 category: java
 related: spring

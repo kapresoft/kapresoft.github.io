@@ -1,6 +1,6 @@
 ---
 title: "Agile • Best Practices and Strategies when Splitting User Stories"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/11/25/software-agile-splitting-stories-best-practices.html
 category: software
 related: software

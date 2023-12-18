@@ -1,6 +1,6 @@
 ---
 title: "Beyoncé vs Taylor: Who will bow down at the end of 2023?"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/music/2023/10/25/is-beyonce-bowing-down-to-taylor-swift.html
 category: music
 related: music

@@ -1,6 +1,6 @@
 ---
 title: "Spring Boot MockMVC Best Practices"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/11/16/spring-boot-mockmvc-best-practices.html
 category: java
 related: spring

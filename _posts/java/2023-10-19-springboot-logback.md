@@ -1,6 +1,6 @@
 ---
 title: "Spring Boot • Logging with Logback"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/19/springboot-logback.html
 category: java
 related: spring

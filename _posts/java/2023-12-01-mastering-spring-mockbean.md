@@ -1,6 +1,6 @@
 ---
 title: "Mastering Testing with @MockBean in Spring Boot"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/12/01/mastering-spring-mockbean.html
 category: java
 related: spring

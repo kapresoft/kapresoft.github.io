@@ -1,6 +1,6 @@
 ---
 title: "Pizzeria da Michele in Naples • Is It Worth The Hype?"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/food/2023/10/27/pizza-da-michele-naples.html
 category: food
 related: food

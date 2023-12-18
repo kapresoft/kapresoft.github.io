@@ -1,6 +1,6 @@
 ---
 title: "Lombok Test Coverage"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/06/21/lombok-test-coverage.html
 category: java
 related: lombok

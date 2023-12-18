@@ -1,6 +1,6 @@
 ---
 title: "Why Does Brandy Or Cognac Taste Sweet?"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/food/2023/11/16/why-brandy-or-cognac-taste-sweet.html
 category: food
 related: food

@@ -1,6 +1,6 @@
 ---
 title: "Java • Mockito vs EasyMock"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/11/26/java-mockito-vs-easymock.html
 category: java
 related: java

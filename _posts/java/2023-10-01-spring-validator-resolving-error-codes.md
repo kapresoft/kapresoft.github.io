@@ -1,6 +1,6 @@
 ---
 title: "Spring Validator • Resolving Error Codes"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/01/spring-validator-resolving-error-codes.html
 category: java
 related: spring

@@ -1,6 +1,6 @@
 ---
 title: "Understanding Deep Linking in SEO"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/11/26/deeplink-seo.html
 category: software
 related: software

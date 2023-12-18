@@ -1,6 +1,6 @@
 ---
 title: "Made In vs All-Clad Stainless Steel Pans"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/kitchen/2023/04/06/madein-vs-allclad-stainless-steel-pans.html
 category: kitchen
 related: kitchen

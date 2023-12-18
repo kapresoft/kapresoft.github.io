@@ -1,6 +1,6 @@
 ---
 title: "Java • Harnessing Static and Default Methods in Interfaces"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/11/06/java-static-and-default-interface-methods.html
 category: java
 related: java

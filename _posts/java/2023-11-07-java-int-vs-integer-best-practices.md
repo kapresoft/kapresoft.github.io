@@ -1,6 +1,6 @@
 ---
 title: "Java • Primitive int vs Integer Best Practices"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/11/07/java-int-vs-integer-best-practices.html
 category: java
 related: java

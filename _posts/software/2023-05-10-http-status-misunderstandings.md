@@ -1,6 +1,6 @@
 ---
 title: "Common Misunderstandings of HTTP Status Codes"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/05/10/http-status-misunderstandings.html
 category: software
 related: software

@@ -1,6 +1,6 @@
 ---
 title: "Java • Understanding the Command Design Pattern"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/12/03/java-command-pattern.html
 category: java
 related: java

@@ -1,6 +1,6 @@
 ---
 title: "Spring • Intro To Aspect-Oriented Programming"
-title_style: title2
+title_style: title2w
 section_style: article1
 category: java
 related: java

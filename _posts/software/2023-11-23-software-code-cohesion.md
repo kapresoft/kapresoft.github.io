@@ -1,6 +1,6 @@
 ---
 title: "Software • Code Cohesion"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/11/23/software-code-cohesion.html
 category: software
 related: software

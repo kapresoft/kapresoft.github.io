@@ -1,6 +1,6 @@
 ---
 title: "Docker Compose Best Practices"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/10/29/docker-compose-best-practices.html
 category: software
 related: software

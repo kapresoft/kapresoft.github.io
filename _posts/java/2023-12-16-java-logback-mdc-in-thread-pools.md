@@ -1,6 +1,6 @@
 ---
 title: "Java • Logback MDC In Thread Pools"
-title_style: title2
+title_style: title2w
 section_style: article1
 category: java
 related: java

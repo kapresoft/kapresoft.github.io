@@ -1,6 +1,6 @@
 ---
 title: "Spring Bean Manipulation and the BeanWrapper"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/01/spring-bean-manipulation-and-beanwrapper.html
 category: java
 related: spring

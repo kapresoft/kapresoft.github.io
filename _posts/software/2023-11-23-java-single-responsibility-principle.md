@@ -1,6 +1,6 @@
 ---
 title: "Java • Single Responsibility Principle"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/11/23/java-single-responsibility-principle.html
 category: java
 related: java

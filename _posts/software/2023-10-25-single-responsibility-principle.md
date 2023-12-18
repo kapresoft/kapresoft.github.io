@@ -1,6 +1,6 @@
 ---
 title: "Single Responsibility Principle in Software Development"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/10/25/single-responsibility-principle.html
 category: software
 related: software

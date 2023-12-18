@@ -1,6 +1,6 @@
 ---
 title: Spring Validation • Configuring Global Datetime Format
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/17/spring-validation-configuring-global-datetime-format.html
 category: java
 related: spring

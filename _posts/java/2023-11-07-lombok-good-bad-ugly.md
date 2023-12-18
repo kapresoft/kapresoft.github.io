@@ -1,6 +1,6 @@
 ---
 title: "Lombok • The Good, The Bad, and The Ugly"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/11/07/lombok-good-bad-ugly.html
 category: java
 related: lombok

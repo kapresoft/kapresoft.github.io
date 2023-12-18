@@ -1,6 +1,6 @@
 ---
 title: "Logback for Beginners"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/19/logback-for-beginners.html
 category: java
 related: java

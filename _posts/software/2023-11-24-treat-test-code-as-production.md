@@ -1,6 +1,6 @@
 ---
 title: "Treat Test Code As Production Code"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/11/24/treat-test-code-as-production.html
 category: software
 related: software

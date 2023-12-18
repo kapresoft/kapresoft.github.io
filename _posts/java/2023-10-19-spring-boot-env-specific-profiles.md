@@ -1,6 +1,6 @@
 ---
 title: "Spring Boot • Environment Specific Profiles"
-title_style: title2
+title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/19/spring-boot-env-specific-profiles.html
 category: java
 related: spring
