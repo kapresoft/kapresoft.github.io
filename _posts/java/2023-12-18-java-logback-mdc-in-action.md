@@ -56,10 +56,10 @@ Careful implementation and management of MDC are essential to harness its benefi
 
 The _Mapped Diagnostic Context_ (MDC) is a feature common to several Java logging frameworks, including Log4j2, slf4j, and Logback. If you want to use MDC in your Logback-based logging, you would set up MDC through slf4j and configure your Logback appenders and layouts to include the MDC values in your log messages. This combination of slf4j for MDC and Logback for logging is a common and effective approach for Java applications that need to manage contextual information in their logs.
 
-Figure 1.  Slf4j Facade Abstraction Diagram
+**Figure 1.** Slf4j Facade Abstraction Diagram
 
 <div class="uml-diagram">
-   <img src="https://www.planttext.com/api/plantuml/png/SoWkIImgAStDuUAAzaeiIrHmB2Z8oKnEBCdCpujLqDMrKuWkpaapoL9m3F2CvK9YG-HyyjEJ4fEpiSkOP1d50es5if0DWmWfE1LbfgIdnXAo6aqrLb4qInrIyr90dW80">
+   <img src="https://cdngh.kapresoft.com/img/java-logback-mdc-in-action-f1-8095674.webp">
    <small>Also available in: <a href="https://www.planttext.com/api/plantuml/svg/SoWkIImgAStDuUAAzaeiIrHmB2Z8oKnEBCdCpujLqDMrKuWkpaapoL9m3F2CvK9YG-HyyjEJ4fEpiSkOP1d50es5if0DWmWfE1LbfgIdnXAo6aqrLb4qInrIyr90dW80" target="_blank">SVG</a>&nbsp;|
    <a href="https://www.planttext.com/?text=SoWkIImgAStDuUAAzaeiIrHmB2Z8oKnEBCdCpujLqDMrKuWkpaapoL9m3F2CvK9YG-HyyjEJ4fEpiSkOP1d50es5if0DWmWfE1LbfgIdnXAo6aqrLb4qInrIyr90dW80" target="_blank">PlantText</a>
    </small>
