@@ -667,4 +667,8 @@
         <loc>https://www.kapresoft.com/java/2023/12/19/java-threadlocal-dangers.html</loc>
         <lastmod>2023-12-19</lastmod>
     </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/12/19/java-threadlocal-usecase-in-servlet-filters.html</loc>
+        <lastmod>2023-12-19</lastmod>
+    </url>
 </urlset>
