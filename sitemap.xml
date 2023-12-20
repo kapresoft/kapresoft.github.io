@@ -663,4 +663,8 @@
         <loc>https://www.kapresoft.com/java/2023/12/18/java-logback-mdc-in-action.html</loc>
         <lastmod>2023-12-19</lastmod>
     </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2023/12/19/java-threadlocal-dangers.html</loc>
+        <lastmod>2023-12-19</lastmod>
+    </url>
 </urlset>
