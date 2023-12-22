@@ -10,11 +10,11 @@ description: "Explore Java's try-with-resources with practical examples, demonst
 
 ## Overview
 
-Java's introduction of the _try-with-resources_ statement revolutionized resource management, simplifying code and enhancing reliability. This feature, integral to Java's exception handling mechanism, automatically manages resources like files and sockets, ensuring they are closed properly after operations, thus preventing resource leaks. Our discussion will delve into a practical example to understand how _try-with-resources_ works and its benefits over traditional resource management techniques. 
+Java's introduction of the _try-with-resources_ statement revolutionized resource management, simplifying code and enhancing reliability. This feature, integral to Java's exception handling mechanism, automatically manages resources like files and sockets, ensuring they are closed properly after operations, thus preventing resource leaks. Our discussion will delve into a practical example to understand how _try-with-resources_ works and its benefits over traditional resource management techniques. <!--excerpt-->
 
 <a id='gp5TDKEASthvPy8kX29CMQ' class='gie-single' href='http://www.gettyimages.com/detail/1439167368' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'gp5TDKEASthvPy8kX29CMQ',sig:'jws-b3SEQl5xJxaYkjU0TJ1WH4PuSl26qNEMNJD9-jQ=',w:'600px',h:'250px',items:'1439167368',caption: false ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
 
-Furthermore, we will cover how to write your own _try-with-resources_ resource object by implementing the _AutoCloseable_ interface. This aspect is particularly crucial for developers looking to create custom resources that benefit from the automatic resource management offered by this powerful Java feature.<!--excerpt-->
+Furthermore, we will cover how to write your own _try-with-resources_ resource object by implementing the _AutoCloseable_ interface. This aspect is particularly crucial for developers looking to create custom resources that benefit from the automatic resource management offered by this powerful Java feature.
 
 ## An Example Using FileReader
 
