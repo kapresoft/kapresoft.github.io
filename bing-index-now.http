@@ -8,7 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/java/2023/12/21/java-threadlocal-vs-thread.html",
+    "{{site}}/java/2023/12/22/java-threadlocal-alternatives.html",
     "{{site}}"
   ]
 }
@@ -32,7 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
-    "{{site}}/java/2023/12/21/java-threadlocal-vs-thread.html",
+    "{{site}}/java/2023/12/22/java-threadlocal-alternatives.html",
     "{{site}}/java/2023/12/19/java-threadlocal-best-practices.html",
     "{{site}}/java/2023/12/21/java-try-with-resources-practical-example.html",
     "{{site}}/java/2023/12/19/java-threadlocal-usecase-in-servlet-filters.html",
