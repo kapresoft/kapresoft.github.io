@@ -15,24 +15,26 @@ Java, one of the most versatile and widely-used programming languages, has conti
 
 Parallel streams stand as a pivotal feature in Java, empowering you to concurrently process collections of data, thereby harnessing the prowess of multiple CPU cores to expedite operations. At its core, a parallel stream dissects the data into multiple segments, each processed by an individual thread.
 
+Certainly, here's an obfuscated version of the code:
+
 ```java
-List<String> cityList = Arrays.asList("New York", "Los Angeles", "Chicago");
-        cityList.parallelStream().forEach(System.out::println);
+List<String> locationList = Arrays.asList("City A", "City B", "City C");
+locationList.parallelStream().forEach(System.out::println);
 ```
 
-In the snippet above, the list _fruitList_ undergoes parallel processing, with each element being echoed by a distinct thread, culminating in substantial performance enhancements, particularly for CPU-intensive tasks.
+In the snippet above, the list _locationList_ undergoes parallel processing, with each element being echoed by a distinct thread, culminating in substantial performance enhancements, particularly for CPU-intensive tasks.
 
 ## Basic Usage Illustrated Through Example
 
 Let us explore a practical scenario wherein parallel streams are employed to conduct a CPU-intensive operation:
 
 ```java
-List<Integer> numberList = Arrays.asList(1, 2, 3, 4, 5);
-int aggregate = numberList.parallelStream().mapToInt(Integer::intValue).sum();
-System.out.println("Aggregate: " + aggregate);
+List<Integer> values = List.of(10, 20, 30, 40, 50);
+int result = values.parallelStream().mapToInt(Integer::intValue).sum();
+System.out.println("Result: " + result);
 ```
 
-In this illustration, the list _numberList_ undergoes parallel processing, with each element being transformed into an _int_ followed by a summation. This methodology is particularly efficacious for extensive lists of numbers.
+In this example, a list of integers called _values_ is processed in parallel, converting each element to an _int_ before calculating the sum. This approach is useful for large lists of numbers.
 
 ## A CPU-Intensive Exemplar
 
