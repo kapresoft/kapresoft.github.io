@@ -32,12 +32,12 @@ Imagine we have a list of _Employee_ objects, and we want to transform this data
 //   • yearsOfExperience:int
 
 List<Employee> employees = List.of(
-    new Employee("Alice", 5),
-    new Employee("Bob", 8),
-    new Employee("Charlie", 2)
+    new Employee("Steve", 5),
+    new Employee("Diana", 8),
+    new Employee("Clark", 2)
 );
 
-List<String> transformedEmployees = employees.stream()
+List<String> employeesWithYearsExperience = employees.stream()
     // First transformation
     .map(employee -> 
             employee.getName() 
@@ -54,7 +54,7 @@ List<String> transformedEmployees = employees.stream()
 // BOB - 8 YEARS OF EXPERIENCE, 
 // CHARLIE - 2 YEARS OF EXPERIENCE
 // ]
-System.out.println(transformedEmployees);
+System.out.println(employeesWithYearsExperience);
 ```
 
 In this example, the first _map()_ operation converts each _Employee_ object to a string with their name and years of experience. The second _map()_ appends the string " of experience" to this information. The final _map()_ then converts each string to uppercase. The result is a list of strings, each representing an employee's information in a transformed format.
@@ -110,18 +110,18 @@ Suppose we have a list of _Person_ objects, and we want to filter individuals wh
 
 ```java
 List<Person> persons = Arrays.asList(
-    new Person("Alice", 25, "Engineer"),
-    new Person("Bob", 30, "Doctor"),
-    new Person("Charlie", 20, "Engineer")
+        new Person("Steve", 25, "Captain America"),
+        new Person("Diana", 30, "Wonder Woman"),
+        new Person("Clark", 20, "Superman")
 );
 
-List<Person> filteredPersons = persons.stream()
-    .filter(person -> person.getAge() >= 18 
-                && person.getOccupation().equals("Engineer"))
-    .collect(Collectors.toList());
+List<Person> foundHeroes = persons.stream()
+        .filter(person -> person.getAge() >= 18
+                && person.getOccupation().equals("Superman"))
+        .collect(Collectors.toList());
 ```
 
-In this example, we filter _Person_ objects based on two conditions: age greater than or equal to 18 and occupation equal to "Engineer."
+In this example, we filter _Person_ objects based on two conditions: age greater than or equal to 18 and occupation equal to "Superman."
 
 ##### Example 2: Filtering Based on a Custom Object's Attribute
 
@@ -129,8 +129,8 @@ Suppose we have a list of _Product_ objects, and we want to filter products with
 
 ```java
 List<Product> products = Arrays.asList(
-    new Product("Laptop", "Electronics", 800),
-    new Product("Smartphone", "Electronics", 400),
+    new Product("Webcam", "Electronics", 800),
+    new Product("Gaming Desktop", "Electronics", 400),
     new Product("Furniture", "Home", 1200)
 );
 
@@ -196,10 +196,10 @@ In this example, we will filter a list of _Employee_ objects based on a conditio
 //   • salary : double
 
 List<Employee> employees = List.of(
-    new Employee("Alice", "IT", 70000),
-    new Employee("Bob", "IT", 80000),
-    new Employee("Charlie", "HR", 50000),
-    new Employee("David", "HR", 60000)
+    new Employee("Steve", "IT", 70000),
+    new Employee("Diana", "IT", 80000),
+    new Employee("Clark", "HR", 50000),
+    new Employee("Barry", "HR", 60000)
 );
 
 Map<String, List<Employee>> employeesByDepartment = employees.stream()
