@@ -416,10 +416,6 @@
         <lastmod>2023-11-06</lastmod>
     </url>
     <url>
-        <loc>https://www.kapresoft.com/java/2023/11/06/java-concatenating-streams.html</loc>
-        <lastmod>2023-12-23</lastmod>
-    </url>
-    <url>
         <loc>https://www.kapresoft.com/java/2023/11/06/java-static-and-default-interface-methods.html</loc>
         <lastmod>2023-11-06</lastmod>
     </url>
@@ -689,6 +685,10 @@
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/12/24/java-mastering-parallel-streams-enh-performance.html</loc>
+        <lastmod>2023-12-24</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/2023/12/24/java-comprehensive-guide-to-stream-concatenation.html</loc>
         <lastmod>2023-12-24</lastmod>
     </url>
 </urlset>
