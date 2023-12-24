@@ -15,8 +15,6 @@ Java, one of the most versatile and widely-used programming languages, has conti
 
 Parallel streams stand as a pivotal feature in Java, empowering you to concurrently process collections of data, thereby harnessing the prowess of multiple CPU cores to expedite operations. At its core, a parallel stream dissects the data into multiple segments, each processed by an individual thread.
 
-Certainly, here's an obfuscated version of the code:
-
 ```java
 List<String> locationList = Arrays.asList("City A", "City B", "City C");
 locationList.parallelStream().forEach(System.out::println);
