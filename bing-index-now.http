@@ -32,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/music/2023/12/23/taylor-the-eras-tour-fans-who-failed-to-get-tickets.html",
     "{{site}}/java/2023/12/22/java-intro-inheritable-threadlocal.html",
     "{{site}}/java/2023/12/22/java-threadlocal-alternatives.html",
     "{{site}}/java/2023/12/19/java-threadlocal-best-practices.html",
@@ -193,7 +194,6 @@ Content-Type: application/json; charset=utf-8
     "{{site}}/kitchen/2023/05/31/smoked-pork-spare-ribs-masterbuilt-1050.html",
     "{{site}}/music/2023/03/31/taylor-vs-beyonce.html",
     "{{site}}/music/2023/05/06/why-taylor-swift-fans-connect.html",
-    "{{site}}/music/2023/05/08/taylor-the-eras-tour-watch-without-tickets.html",
     "{{site}}/music/2023/05/13/renaissance-outselling-the-eras-tour.html",
     "{{site}}/music/2023/05/14/why-cities-compete-for-taylor-swift.html",
     "{{site}}/music/2023/05/26/bench-dedicated-to-taylor-swift.html",
