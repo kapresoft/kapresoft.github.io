@@ -8,7 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/java/2023/12/22/java-intro-inheritable-threadlocal.html",
+    "{{site}}/java/2023/12/24/java-mastering-parallel-streams-enh-performance.html",
     "{{site}}"
   ]
 }
@@ -32,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/12/24/java-mastering-parallel-streams-enh-performance.html",
     "{{site}}/music/2023/12/23/taylor-the-eras-tour-fans-who-failed-to-get-tickets.html",
     "{{site}}/java/2023/12/22/java-intro-inheritable-threadlocal.html",
     "{{site}}/java/2023/12/22/java-threadlocal-alternatives.html",
