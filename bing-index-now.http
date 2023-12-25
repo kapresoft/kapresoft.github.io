@@ -8,7 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/java/2023/12/24/decoding-spring-aop-vs-aspectj-comparison.html",
+    "{{site}}/java/2023/12/24/spring-request-scope-for-beginners.html",
     "{{site}}"
   ]
 }
@@ -32,8 +32,9 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/12/24/spring-request-scope-for-beginners.html",
     "{{site}}/java/2023/12/24/decoding-spring-aop-vs-aspectj-comparison.html",
-    "{{site}}/2023/12/24/java-comprehensive-guide-to-stream-concatenation.html",
+    "{{site}}/java/2023/12/24/java-comprehensive-guide-to-stream-concatenation.html",
     "{{site}}/java/2023/12/24/java-mastering-parallel-streams-enh-performance.html",
     "{{site}}/music/2023/12/23/taylor-the-eras-tour-fans-who-failed-to-get-tickets.html",
     "{{site}}/java/2023/12/22/java-intro-inheritable-threadlocal.html",
