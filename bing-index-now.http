@@ -8,7 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/software/2023/12/26/design-pattern-composite.html",
+    "{{site}}/software/2023/12/26/design-pattern-composite-vs-decorator.html",
     "{{site}}"
   ]
 }
@@ -32,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/software/2023/12/26/design-pattern-composite-vs-decorator.html",
     "{{site}}/software/2023/12/26/design-pattern-composite.html",
     "{{site}}/software/2023/12/24/design-patterns-decorator-vs-wrapper.html",
     "{{site}}/java/2023/12/24/spring-request-scope-for-beginners.html",
