@@ -20,6 +20,12 @@ function _cleanGenerated()
     eval "${cmd}"
 }
 
+function _stopExisting()
+{
+  echo "Stopping existing instances" && ./stop.sh && sleep 2
+}
+
+# echo "Stopping existing instances" && ./stop.sh && sleep 2 && ./start.sh -c
 function _startJekyllMain()
 {
   local sname="start.sh"
@@ -32,13 +38,13 @@ function _startJekyllMain()
     echo "  ./${sname} -c     : clean before starting server"
     echo "  ./${sname} -h     : show this help text"
   elif [[ "${opt}" = "-c" ]]; then
-    _cleanGenerated && _runJekyll
+    _stopExisting && _cleanGenerated && _runJekyll
   elif [[ "${opt}" = "-p" ]]; then
-    _runJekyllProd
+    _stopExisting && _runJekyllProd
   elif [[ "${opt}" = "-pc" ]] || [[ "${opt}" = "-cp" ]]; then
-    _cleanGenerated && _runJekyllProd
+    _stopExisting && _cleanGenerated && _runJekyllProd
   else
-    _runJekyll
+    _stopExisting && _runJekyll
   fi
 
 }

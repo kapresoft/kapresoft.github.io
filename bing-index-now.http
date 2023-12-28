@@ -8,7 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/java/2023/12/27/intro-to-java-proxies.html",
+
     "{{site}}"
   ]
 }
