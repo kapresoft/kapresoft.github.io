@@ -1,5 +1,9 @@
 ## Jekyll Commands
 
+See Github Version Compatibility
+- https://pages.github.com/versions.json
+
+
 Here are some of the most common commands:
 
 - ```jekyll new PATH``` - Creates a new Jekyll site with default gem-based theme at specified path. The directories will be created as necessary.

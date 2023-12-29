@@ -1,5 +1,8 @@
 ## Troubleshooting
 
+See Github Version Compatibility
+- https://pages.github.com/versions.json
+
 ### Error
 
 ```shell

@@ -1,5 +1,8 @@
 ## Deployment
 
+See Github Version Compatibility
+- https://pages.github.com/versions.json
+
 ### Github Deployment (Automatic)
 
 Site is deployed using Github Pages
