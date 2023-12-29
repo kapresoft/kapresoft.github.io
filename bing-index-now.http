@@ -8,7 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-
+    "{{site}}/java/2023/12/27/intro-to-cglib-proxies.html",
     "{{site}}"
   ]
 }
@@ -32,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2023/12/27/intro-to-cglib-proxies.html",
     "{{site}}/java/2023/12/27/intro-to-java-proxies.html",
     "{{site}}/software/2023/12/27/decorator-design-pattern.html",
     "{{site}}/software/2023/12/26/design-pattern-composite-vs-decorator.html",
