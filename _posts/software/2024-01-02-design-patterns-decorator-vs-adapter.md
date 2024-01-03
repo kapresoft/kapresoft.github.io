@@ -4,7 +4,7 @@ title_style: title2w
 section_style: article1
 category: software
 related: software
-canonical_url: https://www.kapresoft.com/java/2024/01/02/design-patterns-decorator-vs-adapter.html
+canonical_url: https://www.kapresoft.com/software/2024/01/02/design-patterns-decorator-vs-adapter.html
 description: "Explore the differences between Decorator and Adapter design patterns in software engineering, and their unique applications."
 ---
 
@@ -12,7 +12,7 @@ description: "Explore the differences between Decorator and Adapter design patte
 
 <a href="/java/2023/10/18/factory-design-pattern.html" target="_blank">Design patterns</a> in software engineering are akin to blueprints that address recurring problems in software design. These patterns offer standardized, time-tested solutions, making the development process more efficient and the end result more robust. They are essential tools in a developer's arsenal, enabling the creation of flexible, reusable, and maintainable code.<!--excerpt-->
 
-In this exploration, we delve into two prominent design patterns: the <a href="/software/2023/12/27/decorator-design-pattern.html" target="_blank">Decorator</a> and the Adapter. Each holds a unique place in object-oriented design. The Decorator pattern excels in adding responsibilities to objects dynamically, enhancing their functionality without altering the original structure. On the other hand, the Adapter pattern focuses on enabling communication between incompatible interfaces, bridging the gap between different parts of a system. Understanding their distinct purposes and applications is crucial for developers to make informed decisions in their design strategy.
+In this exploration, we delve into two prominent design patterns: the <a href="/software/2023/12/27/decorator-design-pattern.html" target="_blank">Decorator</a> and the <a href="/software/2024/01/03/design-patterns-adapter.html" target="_blank">Adapter</a>. Each holds a unique place in object-oriented design. The Decorator pattern excels in adding responsibilities to objects dynamically, enhancing their functionality without altering the original structure. On the other hand, the Adapter pattern focuses on enabling communication between incompatible interfaces, bridging the gap between different parts of a system. Understanding their distinct purposes and applications is crucial for developers to make informed decisions in their design strategy.
 
 
 ## Understanding the Decorator Pattern

@@ -8,6 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
+    "{{site}}/software/2024/01/03/design-patterns-adapter.html",
     "{{site}}/software/2024/01/02/design-patterns-decorator-vs-adapter.html",
     "{{site}}"
   ]
@@ -32,6 +33,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/software/2024/01/03/design-patterns-adapter.html",
     "{{site}}/software/2024/01/02/design-patterns-decorator-vs-adapter.html",
     "{{site}}/java/2024/01/02/java-stream-collector-helpers.html",
     "{{site}}/java/2024/01/02/spring-conversion-service-converting-lists.html",
