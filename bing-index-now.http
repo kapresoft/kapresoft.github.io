@@ -8,8 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/java/2023/12/28/java-beginners-guide-to-reflection.html",
-    "{{site}}/java/2023/12/28/java-proxy-vs-cglib.html",
+    "{{site}}/java/2024/01/02/spring-conversion-service-converting-lists.html",
     "{{site}}"
   ]
 }
@@ -33,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2024/01/02/spring-conversion-service-converting-lists.html",
     "{{site}}/java/2023/12/28/java-beginners-guide-to-reflection.html",
     "{{site}}/java/2023/12/28/java-proxy-vs-cglib.html",
     "{{site}}/java/2023/12/27/intro-to-cglib-proxies.html",
