@@ -40,7 +40,8 @@
 
 {% if page.ui == "textarea" %}
 <div class="textarea-wrap">
-<textarea class="code">{{ content | strip_html }}</textarea>
+<!-- Replace smart quotes with dumb quotes -->
+<textarea class="code">{{ content | strip_html | replace: '“', '"' | replace: '”', '"' | strip }}</textarea>
 </div>
 {% else %}
 <div class="generator-wrapper">

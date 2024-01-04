@@ -7,7 +7,7 @@ ui: textarea
 {% assign val = "" %}
 
 {% for post in site.posts %}
-    {% assign val = val | append: '"' | append: post.url | append: '"' | append: ", " %}
+{% assign val = val | append: '"' | append: post.url | append: '"' | append: ", " %}
 {% endfor %}
 {% assign val = val | append: "#END" %}
 {% assign val = val | remove: ", #END" %}

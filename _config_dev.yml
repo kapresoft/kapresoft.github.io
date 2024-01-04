@@ -11,3 +11,5 @@ ga:
   enable: false
   tracking_id: G-1111111111
 
+#kramdown:
+#  smart_quotes: ["apos", "apos", "quot", "quot"]
