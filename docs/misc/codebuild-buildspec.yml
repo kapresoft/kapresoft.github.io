@@ -1,9 +1,9 @@
 version: 0.2
 
-  #env:
-  #variables:
-  # key: "value"
-# key: "value"
+env:
+  exported-variables:
+    - BuildNumber
+    - DeployKey
 
 phases:
   install:
@@ -11,8 +11,16 @@ phases:
     # name: version
     # name: version
     commands:
+      # Example CODEBUILD_BUILD_ID:
+      #   "Kapresoft-Articles:e5bf6e26-25c1-4910-8c36-f8b85f850641"
+      - export BuildNumber="$(echo $CODEBUILD_BUILD_ID | cut -d ':' -f 2)"
+      - export DeployKey="site/$BuildNumber/$CODEBUILD_RESOLVED_SOURCE_VERSION"
       - echo Entering Install Phase *****
       - |
+        echo EXPORTED Variables
+        echo BuildNumber=$BuildNumber
+        echo DeployKey=$DeployKey
+        echo --
         echo ENVIRONMENT VARIABLES 
         echo $(env)
       - bundle install
@@ -23,11 +31,15 @@ phases:
   post_build:
     commands:
       - echo Entering Post-Build Phase BUILD_ID *****
+      - echo 'DeployKey:' $DeployKey
       - echo 'BUILD_ID:' $CODEBUILD_BUILD_ID
       - export TZ="America/Los_Angeles"
       - echo 'date:' `date` 'America/Los_Angeles' > site/build.yml
+      - echo 'date-long:' `date '+%s'` >> site/build.yml
       - echo 'id:' $CODEBUILD_BUILD_ID >> site/build.yml
       - echo 'commit-hash:' $CODEBUILD_RESOLVED_SOURCE_VERSION >> site/build.yml
+      - echo 'build-number:' $BuildNumber >> site/build.yml
+      - echo 'deploy-key:' $DeployKey >> site/build.yml
 artifacts:
   files:
     - '**/*'
