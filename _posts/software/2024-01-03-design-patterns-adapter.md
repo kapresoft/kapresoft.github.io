@@ -10,7 +10,7 @@ description: "Exploring the Adapter Design Pattern: a key to interface compatibi
 
 ## Overview
 
-The _Adapter Design Pattern_ is a cornerstone in modern software engineering, bridging the gap between incompatible interfaces. This article delves into its essence, showcasing how it seamlessly integrates disparate system components, thereby promoting code reusability and flexibility. We'll explore its functionality, implementation strategies, and real-world applications, highlighting the significant role it plays in simplifying complex coding challenges and enhancing software design.<!--excerpt-->
+The <a href="/software/2024/01/02/design-patterns-decorator-vs-adapter.html" target="_blank" alt="_Adapter Design Pattern_">_Adapter_</a> _Design Pattern_ is a cornerstone in modern software engineering, bridging the gap between incompatible interfaces. This article delves into its essence, showcasing how it seamlessly integrates disparate system components, thereby promoting code reusability and flexibility. We'll explore its functionality, implementation strategies, and real-world applications, highlighting the significant role it plays in simplifying complex coding challenges and enhancing software design.<!--excerpt-->
 
 <div class="illustration">
 <img src="https://cdngh.kapresoft.com/img/design-patterns-adapter-overview-f838635.webp" alt="Image: The Adapter Design Pattern Overview Image">

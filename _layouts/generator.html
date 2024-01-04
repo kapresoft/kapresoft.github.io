@@ -1,0 +1,52 @@
+<!doctype json>
+<html lang="{{ site.lang | default: 'en-US' }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+  <![endif]-->
+
+  <style>
+    body {
+      padding: 1em;
+    }
+    textarea.code {
+      width: 100%; height: 80%;
+      padding: .5em;
+      font-family: 'Roboto Slab', Roboto, monospace, sans-serif;
+      font-size: .8em;
+      font-weight: 300;
+    }
+    div.textarea-wrap {
+      margin-top: 1em;
+    }
+    div.generator-wrapper {
+      margin-top: 1em;
+    }
+  </style>
+
+</head>
+
+<body>
+<h3>{{ page.title }}</h3>
+<blockquote>{{ page.description }}</blockquote>
+
+{% if page.ui == "textarea" %}
+<div class="textarea-wrap">
+<textarea class="code">{{ content | strip_html }}</textarea>
+</div>
+{% else %}
+<div class="generator-wrapper">
+{{ content | strip }}
+</div>
+{% endif %}
+
+</body>
+</html>

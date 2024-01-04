@@ -11,5 +11,6 @@ Disallow: /aws-lambda-spring-boot.html
 Disallow: /getting-started-with-maven.html
 Disallow: /getting-started-with-java.html
 Disallow: /getting-started-with-gradle.html
+Disallow: /dev/*
 
 Sitemap: https://www.kapresoft.com/sitemap.xml
