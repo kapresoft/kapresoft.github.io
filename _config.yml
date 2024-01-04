@@ -7,6 +7,7 @@ name: KapreSoft.com
 description: "From Coding to Cooking to Coins:<br>Antonio Lagnada's Blog on Software, Music, Food, and Finance"
 layout: kapresoft
 exclude:
+  - "docs/*"
   - "*.sh"
   - "*.code-workspace"
   - "*.gemspec"

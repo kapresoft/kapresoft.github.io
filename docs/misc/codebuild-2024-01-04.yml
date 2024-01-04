@@ -1,0 +1,34 @@
+version: 0.2
+
+  #env:
+  #variables:
+  # key: "value"
+# key: "value"
+
+phases:
+  install:
+    #runtime-versions:
+    # name: version
+    # name: version
+    commands:
+      - echo Entering Install Phase *****
+      - |
+        echo ENVIRONMENT VARIABLES 
+        echo $(env)
+      - bundle install
+  build:
+    commands:
+      - echo Entering Build Phase *****
+      - bundle exec jekyll build --destination site/
+  post_build:
+    commands:
+      - echo Entering Post-Build Phase BUILD_ID *****
+      - echo 'BUILD_ID:' $CODEBUILD_BUILD_ID
+      - export TZ="America/Los_Angeles"
+      - echo 'date:' `date` 'America/Los_Angeles' > site/build.yml
+      - echo 'id:' $CODEBUILD_BUILD_ID >> site/build.yml
+      - echo 'commit-hash:' $CODEBUILD_RESOLVED_SOURCE_VERSION >> site/build.yml
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'site'
