@@ -12,7 +12,7 @@ description: "Learn how to deploy and manage your application on the AWS cloud w
 
 ## Overview
 
-This article explores the benefits of using Spring Boot with AWS Lambda, a powerful serverless compute service that enables developers to run code without worrying about server management. By integrating with the AWS cloud, AWS Lambda can respond to a variety of AWS events, such as S3, Messaging Gateways, API Gateway, and other generic AWS Resource events, providing an efficient and scalable solution for your application needs.  
+This article explores the benefits of using <a href="/java/2024/01/03/spring-getting-started.html" target="_blank" alt="Spring Boot">Spring Boot</a> with AWS Lambda, a powerful serverless compute service that enables developers to run code without worrying about server management. By integrating with the AWS cloud, AWS Lambda can respond to a variety of AWS events, such as S3, Messaging Gateways, API Gateway, and other generic AWS Resource events, providing an efficient and scalable solution for your application needs.  
 
 <!--excerpt-->
 
