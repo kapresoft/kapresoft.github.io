@@ -16,7 +16,7 @@ In the world of <a href="/java/2024/01/03/spring-getting-started.html" target="_
 
 In Spring Framework, <a href="/java/2023/05/16/spring-bean-scopes.html" target="_blank" alt="bean scopes">bean scopes</a> determine the lifecycle and availability of objects created as Spring beans within an application context. Each scope defines how long an instance of a bean is retained and when it should be created or destroyed. It plays a critical role in managing the state and behavior of beans across various parts of an application.
 
-### Common Bean Scopes in Spring
+#### Common Bean Scopes in Spring
 
 1. **Singleton**: In the <a href="/software/2023/06/08/singleton-design-pattern.html" target="_blank" alt="Singleton">Singleton</a> scope, a single instance of the bean is created per Spring container (application context). This means that all requests for the bean within the container will receive the same instance. Singleton beans are suitable for sharing common resources or services.
 
@@ -28,7 +28,7 @@ In Spring Framework, <a href="/java/2023/05/16/spring-bean-scopes.html" target="
 
 Each of these bean scopes serves specific purposes, and choosing the right one depends on your application's requirements. While Singleton, Prototype, Request, and Application scopes are common, the focus of this article remains on _@SessionScope_, which is tailored for managing data within a user's session in a web application.
 
-### Introducing _@SessionScope_
+#### Introducing _@SessionScope_
 
 While <a href="/software/2023/06/08/singleton-design-pattern.html" target="_blank" alt="Singleton">Singleton</a>, Prototype, and <a href="/java/2023/12/24/spring-request-scope-for-beginners.html" target="_blank" alt="Request">Request</a> scopes are commonly used in Spring, our focus in this article is on the _@SessionScope_. Unlike the previously mentioned scopes, which primarily cater to short-term interactions, _@SessionScope_ is designed to manage longer-lasting data across multiple user interactions within a web session. It allows us to store and access user-specific information during their visit to a web application, making it a vital tool for building interactive and personalized web experiences.
 
@@ -38,11 +38,11 @@ In the sections that follow, we will delve deeper into the concept of _@SessionS
 
 In Spring Framework, the _@SessionScope_ is a specialized scope designed to cater to the needs of web applications. It revolves around the concept of an HTTP session, allowing beans annotated with _@SessionScope_ to persist throughout a user's entire session with a web application.
 
-### Purpose of _@SessionScope_
+#### Purpose of _@SessionScope_
 
 The primary purpose of _@SessionScope_ is to retain and manage user-specific data across multiple HTTP requests within the same session. This is especially valuable in web applications where maintaining stateful information for individual users is essential. _@SessionScope_ enables you to store and retrieve user-related data seamlessly, enhancing the user experience and enabling personalization.
 
-### Scenarios Where _@SessionScope_ is Useful
+#### Scenarios Where _@SessionScope_ is Useful
 
 1. **User Authentication**: When a user logs into a web application, their authentication details can be stored in _@SessionScope_. This ensures that the application remembers the user's identity throughout their session, avoiding the need for repeated authentication.
 
@@ -54,7 +54,7 @@ The primary purpose of _@SessionScope_ is to retain and manage user-specific dat
 
 Certainly, here's the revised content with additional clarity:
 
-### Differences from Other Scopes
+#### Differences from Other Scopes
 
 The key distinction between _@SessionScope_ and other common Spring bean scopes like Singleton, Prototype, and Application lies in the duration of bean existence:
 
@@ -141,7 +141,7 @@ In the following sections, we will delve into practical use cases for session sc
 
 Now that we've learned how to implement _@SessionScope_ in Spring, let's delve into practical use cases where session scoped beans can greatly benefit web applications. We will explore scenarios such as shopping carts, user sessions, and user preferences and understand why _@SessionScope_ is particularly advantageous in these situations.
 
-### Shopping Carts
+#### Shopping Carts
 
 #### Scenario:
 Imagine you're developing an e-commerce website where users can browse products, add items to their cart, and proceed to checkout. Users should be able to add or remove items from their cart as they navigate through the website.
@@ -149,7 +149,7 @@ Imagine you're developing an e-commerce website where users can browse products,
 #### Solution with _@SessionScope_:
 By using session scoped beans, you can create a dedicated cart object for each user's session. This allows users to maintain their shopping cart contents across different pages and interactions. The cart remains persistent throughout their session, ensuring a seamless and personalized shopping experience.
 
-### User Sessions
+#### User Sessions
 
 #### Scenario:
 In a web application that requires user authentication, it's essential to keep track of user sessions once they log in. You want to store information about the user, such as their username, roles, and login time, throughout their session.
@@ -157,7 +157,7 @@ In a web application that requires user authentication, it's essential to keep t
 #### Solution with _@SessionScope_:
 With session scoped beans, you can store and manage user session data effortlessly. When a user logs in, you can create a session-scoped bean to store their authentication details. This information remains accessible and consistent across various parts of the application during their session, eliminating the need for repeated logins and ensuring a secure and personalized experience.
 
-### User Preferences
+#### User Preferences
 
 #### Scenario:
 Your web application allows users to customize their experience, such as choosing a preferred language, theme, or dashboard layout. Users expect these preferences to persist while they navigate through the application.
@@ -165,7 +165,7 @@ Your web application allows users to customize their experience, such as choosin
 #### Solution with _@SessionScope_:
 By utilizing session scoped beans, you can store and manage user preferences on a per-session basis. This ensures that the chosen preferences remain in effect throughout the user's session, delivering a tailored and consistent user experience. Whether it's the language they prefer or the visual theme they select, _@SessionScope_ ensures that these preferences are retained and applied as long as the user interacts with the application.
 
-### Benefits of _@SessionScope_ in These Situations
+#### Benefits of _@SessionScope_ in These Situations
 
 1. **Consistency**: _@SessionScope_ guarantees the consistency of data throughout a user's session, enhancing user experience and reducing frustration caused by data loss.
 
@@ -181,19 +181,19 @@ By leveraging _@SessionScope_ in these and similar scenarios, you can create web
 
 Utilizing _@SessionScope_ in Spring offers several distinct advantages for web application development. In this section, we will highlight the benefits of using _@SessionScope_, focusing on improved data persistence, reduced overhead, and its role in managing user-specific data.
 
-### Improved Data Persistence
+#### Improved Data Persistence
 
 1. **Session-wide Data Persistence**: _@SessionScope_ ensures that data remains available throughout a user's session. This eliminates the need to repeatedly retrieve or store user-specific information from external sources, such as databases or cookies. Consequently, it leads to faster and more responsive user experiences.
 
 2. **Seamless Shopping Carts**: In scenarios like shopping carts, where users interact with the application over multiple pages, _@SessionScope_ guarantees that the cart's contents persist. Users can add, remove, or review items in their cart without losing progress, enhancing the shopping experience.
 
-### Reduced Overhead
+#### Reduced Overhead
 
 1. **Efficient Resource Management**: session scoped beans are created only once per user session and are disposed of when the session ends. This approach minimizes resource consumption and overhead, as opposed to creating and managing numerous transient beans for each user interaction.
 
 2. **Minimized Database Queries**: Storing user-specific data in session-scoped beans reduces the need for frequent database queries to fetch or update user information. This optimization results in lower database load and faster response times.
 
-### Managing User-Specific Data
+#### Managing User-Specific Data
 
 1. **Tailored User Experiences**: _@SessionScope_ enables the application to provide personalized experiences by storing and retrieving user-specific data seamlessly. This personalization can encompass preferences, shopping cart contents, authentication details, and more.
 
@@ -207,7 +207,7 @@ In essence, _@SessionScope_ in Spring empowers developers to build web applicati
 
 While _@SessionScope_ in Spring offers significant advantages, it also comes with potential pitfalls and challenges that developers should be aware of. In this section, we'll address common mistakes, potential memory issues, and provide guidance on when it's best not to use _@SessionScope_.
 
-### Common Mistakes and Challenges
+#### Common Mistakes and Challenges
 
 1. **Overusing Session Scope**: One common mistake is overusing _@SessionScope_ for every bean in an application. This can lead to excessive memory consumption and reduced application performance. Carefully select which beans truly require session scope.
 
@@ -215,7 +215,7 @@ While _@SessionScope_ in Spring offers significant advantages, it also comes wit
 
 3. **Security Risks**: Storing sensitive data in session-scoped beans without proper encryption or protection can pose security risks. Ensure that sensitive information is handled securely, and consider alternative storage mechanisms for critical data.
 
-### Memory Issues and Mitigation
+#### Memory Issues and Mitigation
 
 1. **Session Bloat**: When session data accumulates over time, it can lead to session bloat and increased memory consumption. Regularly review and clean up session data that is no longer required, especially in long-running sessions.
 
@@ -223,7 +223,7 @@ While _@SessionScope_ in Spring offers significant advantages, it also comes wit
 
 3. **Serialization**: Be cautious when storing complex objects in session-scoped beans. Ensure that these objects are serializable to prevent issues when sessions are serialized and deserialized.
 
-### When Not to Use _@SessionScope_
+#### When Not to Use _@SessionScope_
 
 1. **Short-Lived Data**: If the data you need to store is short-lived and only required for a single request-response cycle, using _@SessionScope_ is unnecessary and may lead to memory wastage.
 
