@@ -345,7 +345,7 @@
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/10/19/java-modern-looping-and-filtering.html</loc>
-        <lastmod>2023-10-19</lastmod>
+        <lastmod>2024-01-04</lastmod>
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2023/10/19/spring-devops-profiles-best-practices.html</loc>
@@ -757,6 +757,10 @@
     </url>
     <url>
         <loc>https://www.kapresoft.com/java/2024/01/04/spring-intro-to-application-scope.html</loc>
+        <lastmod>2024-01-04</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2024/01/04/spring-intro-to-session-scope.html</loc>
         <lastmod>2024-01-04</lastmod>
     </url>
 </urlset>

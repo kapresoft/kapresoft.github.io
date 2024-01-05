@@ -8,6 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
+    "{{site}}/java/2024/01/04/spring-intro-to-session-scope.html",
     "{{site}}/java/2024/01/04/spring-intro-to-application-scope.html",
     "{{site}}"
   ]
@@ -32,6 +33,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2024/01/04/spring-intro-to-session-scope.html",
     "{{site}}/java/2024/01/04/spring-intro-to-application-scope.html",
     "{{site}}/java/2024/01/03/design-patterns-mvc.html",
     "{{site}}/java/2024/01/03/spring-getting-started.html",

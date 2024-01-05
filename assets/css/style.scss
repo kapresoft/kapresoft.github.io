@@ -47,7 +47,7 @@ div.tag-line {
   color: #f3f3f3;
   width: 70%;
   font-size: small;
-  margin: auto;
+  margin: 10px auto auto auto;
 }
 
 section {
@@ -359,6 +359,7 @@ nav {
   }
   div.tag-line {
     font-size: smaller;
-    width: 90%;
+    width: 80%;
+    margin-top: 0;
   }
 }
