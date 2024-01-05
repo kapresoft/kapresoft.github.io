@@ -68,25 +68,29 @@ In brief, _@Application_ scope in Spring offers a versatile and efficient approa
 Let's dive into the practical steps of implementing _@Application_ scope in a Spring application. Below is a step-by-step guide with Java code snippets to help you understand and apply this scope effectively.
 
 ### 1. **Create a Spring Configuration Class**
-Start by creating a Spring configuration class where you define your beans with _@Application_ scope. Here's an example:
+Start by creating a Spring configuration class where you define your beans with _@Application_ scope. 
+
+Here's an example:
+
+Before Spring 4.3, _@Scope("application")_ is the proper syntax. Now, use <a href="https://github.com/spring-projects/spring-framework/blob/7c9307e9706535e82de231a095d94fbf855dcc23/spring-web/src/main/java/org/springframework/web/context/annotation/ApplicationScope.java" target="_blank">_@ApplicationScope_</a> for stronger typing.
 
 ```java
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
+import org.springframework.web.context.annotation.ApplicationScope;
 
 @Configuration
 public class AppConfig {
 
     @Bean
-    @Scope("application")
+    @ApplicationScope
     public MyApplicationScopedBean myApplicationScopedBean() {
         return new MyApplicationScopedBean();
     }
 }
 ```
 
-In this code, we've defined a bean _myApplicationScopedBean_ with _@Scope("application")_. This indicates that the bean will have application scope.
+In this code, we've defined a bean _myApplicationScopedBean_ with _@ApplicationScope_. This indicates that the bean will have application scope.
 
 ### 2. **Create the Application-Scoped Bean**
 Now, create the actual application-scoped bean class. Here's a simple example:
@@ -151,7 +155,7 @@ Consider using _@Application_ scope primarily for beans representing stateless o
 
  ```java
  @Bean
- @Scope("application")
+ @ApplicationScope
  public MyStatelessBean myStatelessBean() {
      return new MyStatelessBean();
  }

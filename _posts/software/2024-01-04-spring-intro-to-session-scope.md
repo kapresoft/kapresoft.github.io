@@ -78,16 +78,18 @@ Now that we have a clear understanding of what _@Session_ scope is and its signi
 
 3. **Annotate with @Component**: Annotate your Java class with _@Component_ to indicate that it's a Spring-managed bean.
 
-4. **Add @Scope Annotation**: Above the class declaration, add the _@Scope("session")_ annotation with the value "session" to specify that this bean is scoped to the session.
+4. **Add @Scope Annotation**: Above the class declaration, add the _@Scope("session")_ annotation with the value "session" (pre Spring 4.3) or @ApplicationScope for Spring 4.3+ to specify that this bean is scoped to the session.
 
 Here's an example:
 
+Before Spring 4.3, @Scope("session") is the proper syntax. Now, use <a href="https://github.com/spring-projects/spring-framework/blob/7c9307e9706535e82de231a095d94fbf855dcc23/spring-web/src/main/java/org/springframework/web/context/annotation/SessionScope.java" target="_blank" alt="@SessionScope">@SessionScope</a> for stronger typing.
+
 ```java
-import org.springframework.context.annotation.Scope;
+import org.springframework.web.context.annotation.ApplicationScope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("session")
+@SessionScope
 public class YourSessionScopedBean {
     // Class definition with attributes and methods
 }
@@ -114,7 +116,7 @@ public class AppConfig {
 
     // Define a session-scoped bean using @Scope
     @Bean
-    @Scope("session")
+    @SessionScope
     public YourSessionScopedBean yourSessionScopedBean() {
         return new YourSessionScopedBean();
     }
@@ -123,7 +125,7 @@ public class AppConfig {
 }
 ```
 
-In this example, we define a session-scoped bean named _YourSessionScopedBean_ using the _@Scope_ annotation with the value _"session"_. This ensures that an instance of _YourSessionScopedBean_ will be created for each user session.
+In this example, we define a session-scoped bean named _YourSessionScopedBean_ using the _@SessionScope_ annotation. This ensures that an instance of _YourSessionScopedBean_ will be created for each user session.
 
 By following these steps and examples, you effectively configure and make session-scoped beans available for your Spring application, enabling the management of user-specific data throughout a user's session.
 
