@@ -1,16 +1,15 @@
 /* See: https://www.w3schools.com/cssref/css_websafe_fonts.php */
 body {
-  font-family: sans-serif;
-  font-weight: 400;
-  margin: auto; padding: auto; width: 820px; 
+    font-family: sans-serif;
+    font-weight: 400;
+    margin: auto; padding: auto; width: 720px; 
 }
 
-div, p { font-size: 1em; font-family: "Verdana", sans-serif; font-weight: 400;}
+div, p { font-size: 1em; font-family: "Arial", sans-serif; font-weight: 300;}
 h1, h2, h3, h4, h5, h6 { font-family: "Trebuchet MS", sans-serif; margin: 0 0 10px; }
 h1, h2, h3 { line-height: 1.1; }
-h1 { font-size: 3em; }
-h2 { font-size: 1.8em; }
-h3 { font-size: 1.3em; line-height: 1em; }
-a { font-weight: 400; text-decoration: none; }
+h1 { font-size: 2em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.1em; line-height: 1em; }
+a { text-decoration: none; }
 a small { font-size: .8em; margin-top: -0.6em; display: block; }
-  
