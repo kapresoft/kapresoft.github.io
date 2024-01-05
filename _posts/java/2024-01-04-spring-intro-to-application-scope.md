@@ -1,5 +1,5 @@
 ---
-title: "Spring • Intro to @Application Scope"
+title: "Spring • Intro to @ApplicationScope"
 title_style: title2w
 section_style: article1
 category: java
@@ -10,13 +10,13 @@ description: "Explore the essentials of @Application Scope in Spring Framework, 
 
 ## Overview
 
-The <a href="/java/2024/01/03/spring-getting-started.html" target="_blank" alt="_Spring Framework_">_Spring Framework_</a> is a foundational element in the realm of enterprise application development, known for its powerful and flexible structures that enable developers to build robust applications. Central to effectively utilizing the Spring Framework is a thorough understanding of its various scopes, with a special emphasis on _@Application_ scope. This scope is crucial for optimizing bean management and ensuring efficient application performance.<!--excerpt-->
+The <a href="/java/2024/01/03/spring-getting-started.html" target="_blank" alt="_Spring Framework_">_Spring Framework_</a> is a foundational element in the realm of enterprise application development, known for its powerful and flexible structures that enable developers to build robust applications. Central to effectively utilizing the Spring Framework is a thorough understanding of its various scopes, with a special emphasis on _@ApplicationScope_. This scope is crucial for optimizing bean management and ensuring efficient application performance.<!--excerpt-->
 
 <div class="getty-image">
   <a id='7MOUEJuGQQ5TOJ3IPq7v0g' class='gie-single' href='http://www.gettyimages.com/detail/1646499978' target='_blank' style='color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;'>Embed from Getty Images</a><script>window.gie=window.gie||function(c){(gie.q=gie.q||[]).push(c)};gie(function(){gie.widgets.load({id:'7MOUEJuGQQ5TOJ3IPq7v0g',sig:'8of2JW1SoPhaSVuUg_aCELjzbQG6bE2Aa4MwvOGQPoE=',w:'553px',h:'250px',items:'1646499978',caption: false ,tld:'com',is360: false })});</script><script src='//embed-cdn.gettyimages.com/widgets.js' charset='utf-8' async></script>
 </div>
 
-At its core, _@Application_ scope serves a critical function within the Spring ecosystem. It orchestrates the management of beans, ensuring they are created, maintained, and disposed of in a manner that enhances the application's efficiency and scalability. This introductory article aims to demystify _@Application_ scope, offering insights into its role, advantages, and implementation in the Spring Framework. By understanding _@Application_ scope, developers can harness its potential to develop superior enterprise applications.
+At its core, _@ApplicationScope_ serves a critical function within the Spring ecosystem. It orchestrates the management of beans, ensuring they are created, maintained, and disposed of in a manner that enhances the application's efficiency and scalability. This introductory article aims to demystify _@ApplicationScope_, offering insights into its role, advantages, and implementation in the Spring Framework. By understanding _@ApplicationScope_, developers can harness its potential to develop superior enterprise applications.
 
 ## Understanding Spring Framework and Bean Scoping
 
@@ -34,41 +34,41 @@ Understanding these scopes, especially the _Application_ scope, is critical for 
 
 ## What is @Application Scope?
 
-_@Application_ scope in the Spring Framework is a powerful yet less frequently discussed bean scope that merits a closer examination for its unique role in application development. When a bean is defined to be in _@Application_ scope, it lives within the context of a single _ServletContext_, making it available across the entire web application, shared among all servlets and sessions. This is particularly useful for data that is constant or rarely changes and needs to be shared across various parts of the application.
+_@ApplicationScope_ in the Spring Framework is a powerful yet less frequently discussed bean scope that merits a closer examination for its unique role in application development. When a bean is defined to be in _@ApplicationScope_, it lives within the context of a single _ServletContext_, making it available across the entire web application, shared among all servlets and sessions. This is particularly useful for data that is constant or rarely changes and needs to be shared across various parts of the application.
 
-Unlike the _Singleton_ scope, which is also shared across the entire application but is limited to the Spring IoC (Inversion of Control) container, _@Application_ scope extends its visibility to all components and servlets within the same web context. This makes it distinct and broader in nature when compared to other scopes like _Request_, _Session_, and _Prototype_, which are more transient and cater to specific lifecycle durations and use cases.
+Unlike the _Singleton_ scope, which is also shared across the entire application but is limited to the Spring IoC (Inversion of Control) container, _@ApplicationScope_ extends its visibility to all components and servlets within the same web context. This makes it distinct and broader in nature when compared to other scopes like _Request_, _Session_, and _Prototype_, which are more transient and cater to specific lifecycle durations and use cases.
 
-The lifecycle of a bean in _@Application_ scope begins the moment the application context is initialized. At this point, the bean is created once and kept in the servlet context. It remains available and the same instance is returned each time it is requested during the entire lifespan of the application. This shared nature makes it ideal for common configuration data, caches, or any other shared resources that are needed across various components of an application. When the application or server is shut down, the _@Application_ scope bean is destroyed, and its resources are released.
+The lifecycle of a bean in _@ApplicationScope_ begins the moment the application context is initialized. At this point, the bean is created once and kept in the servlet context. It remains available and the same instance is returned each time it is requested during the entire lifespan of the application. This shared nature makes it ideal for common configuration data, caches, or any other shared resources that are needed across various components of an application. When the application or server is shut down, the _@ApplicationScope_ bean is destroyed, and its resources are released.
 
-Understanding the lifecycle and nature of _@Application_ scope is crucial for developers to leverage its benefits correctly and ensure that shared resources are utilized efficiently, enhancing the application's performance and coherence.
+Understanding the lifecycle and nature of _@ApplicationScope_ is crucial for developers to leverage its benefits correctly and ensure that shared resources are utilized efficiently, enhancing the application's performance and coherence.
 
 ## Advantages of Using @Application Scope
 
-When it comes to Spring applications, utilizing the _@Application_ scope offers distinct advantages in various scenarios. Here, we'll briefly highlight the key benefits of employing this scope and explore situations where it outshines other scopes.
+When it comes to Spring applications, utilizing the _@ApplicationScope_ offers distinct advantages in various scenarios. Here, we'll briefly highlight the key benefits of employing this scope and explore situations where it outshines other scopes.
 
 ### 1. **Global Accessibility**
-- One of the standout advantages of _@Application_ scope is its ability to provide global accessibility across the entire application context. Beans defined with this scope are available to all components, ensuring data and resources are easily shared.
+- One of the standout advantages of _@ApplicationScope_ is its ability to provide global accessibility across the entire application context. Beans defined with this scope are available to all components, ensuring data and resources are easily shared.
 
 ### 2. **Resource Efficiency**
-- Unlike session or request scopes, which create new instances for each user or request, _@Application_ scope conserves resources by maintaining a single instance throughout the application's lifecycle. This efficiency is particularly valuable in scenarios where resources are limited.
+- Unlike session or request scopes, which create new instances for each user or request, _@ApplicationScope_ conserves resources by maintaining a single instance throughout the application's lifecycle. This efficiency is particularly valuable in scenarios where resources are limited.
 
 ### 3. **Data Sharing**
-- When you need to share data or configuration settings among various parts of your application, _@Application_ scope simplifies the process. It's ideal for managing shared resources, configuration properties, or caches.
+- When you need to share data or configuration settings among various parts of your application, _@ApplicationScope_ simplifies the process. It's ideal for managing shared resources, configuration properties, or caches.
 
 ### 4. **Reduced Initialization Overhead**
-- Initialization of beans with _@Application_ scope occurs only once during application startup. This minimizes the overhead associated with creating and configuring beans repeatedly, contributing to improved application performance.
+- Initialization of beans with _@ApplicationScope_ occurs only once during application startup. This minimizes the overhead associated with creating and configuring beans repeatedly, contributing to improved application performance.
 
 ### 5. **Simplified State Management**
-- For scenarios where maintaining a consistent state across the entire application is crucial, _@Application_ scope simplifies state management. Changes made to beans in this scope are visible application-wide.
+- For scenarios where maintaining a consistent state across the entire application is crucial, _@ApplicationScope_ simplifies state management. Changes made to beans in this scope are visible application-wide.
 
-In brief, _@Application_ scope in Spring offers a versatile and efficient approach to managing beans and resources in your application. Its global accessibility, resource efficiency, and streamlined data sharing make it a compelling choice for scenarios where a broader scope is essential, outperforming other scopes in specific use cases.
+In brief, _@ApplicationScope_ in Spring offers a versatile and efficient approach to managing beans and resources in your application. Its global accessibility, resource efficiency, and streamlined data sharing make it a compelling choice for scenarios where a broader scope is essential, outperforming other scopes in specific use cases.
 
 ## Implementing @Application Scope in Spring Projects
 
-Let's dive into the practical steps of implementing _@Application_ scope in a Spring application. Below is a step-by-step guide with Java code snippets to help you understand and apply this scope effectively.
+Let's dive into the practical steps of implementing _@ApplicationScope_ in a Spring application. Below is a step-by-step guide with Java code snippets to help you understand and apply this scope effectively.
 
 ### 1. **Create a Spring Configuration Class**
-Start by creating a Spring configuration class where you define your beans with _@Application_ scope. 
+Start by creating a Spring configuration class where you define your beans with _@ApplicationScope_. 
 
 Here's an example:
 
@@ -87,6 +87,7 @@ public class AppConfig {
     public MyApplicationScopedBean myApplicationScopedBean() {
         return new MyApplicationScopedBean();
     }
+    
 }
 ```
 
@@ -116,17 +117,19 @@ public class MyApplicationScopedBean {
 You can access the application-scoped bean in your Spring components, such as controllers or services. For instance, in a controller:
 
 ```java
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class MyController {
 
-    @Autowired
-    private MyApplicationScopedBean applicationScopedBean;
+    private final MyApplicationScopedBean applicationScopedBean;
 
+    public MyController(MyApplicationScopedBean applicationScopedBean) {
+        this.applicationScopedBean = applicationScopedBean;
+    }
+    
     @GetMapping("/example")
     @ResponseBody
     public String example() {
@@ -134,6 +137,7 @@ public class MyController {
         return applicationScopedBean.getData();
     }
 }
+
 ```
 
 In this example, the _MyController_ class injects the _MyApplicationScopedBean_, allowing you to set and retrieve data shared across the application.
@@ -141,17 +145,17 @@ In this example, the _MyController_ class injects the _MyApplicationScopedBean_,
 ### 4. **Test Your Application**
 Finally, run your Spring application and test the behavior of the application-scoped bean. You'll notice that the data set in one part of the application is accessible from other parts as well.
 
-By following these steps and using the _@Application_ scope, you can efficiently manage shared resources and data across your Spring application, enhancing the overall performance and functionality.
+By following these steps and using the _@ApplicationScope_, you can efficiently manage shared resources and data across your Spring application, enhancing the overall performance and functionality.
 
 ## Best Practices and Common Pitfalls
 
-When working with _@Application_ scope in Spring applications, it's essential to follow best practices to ensure optimal performance and reliability. Additionally, being aware of common pitfalls can help you avoid potential issues. Let's explore these aspects with Java code examples:
+When working with _@ApplicationScope_ in Spring applications, it's essential to follow best practices to ensure optimal performance and reliability. Additionally, being aware of common pitfalls can help you avoid potential issues. Let's explore these aspects with Java code examples:
 
 ### Best Practices:
 
 #### 1. Singleton Beans for Stateless Objects
 
-Consider using _@Application_ scope primarily for beans representing stateless objects. This ensures that the bean's state is not altered unexpectedly. For example:
+Consider using _@ApplicationScope_ primarily for beans representing stateless objects. This ensures that the bean's state is not altered unexpectedly. For example:
 
  ```java
  @Bean
@@ -203,7 +207,7 @@ public class ApplicationScopedBean {
 
 #### 2. Inappropriate Use Cases
 
-Don't use _@Application_ scope for beans that should have a narrower scope, such as request or session scope. Choose the appropriate scope based on the intended use case.
+Don't use _@ApplicationScope_ for beans that should have a narrower scope, such as request or session scope. Choose the appropriate scope based on the intended use case.
 
 #### 3. Resource Management
 
@@ -226,10 +230,10 @@ public class ResourceManagingBean {
 }
 ```
 
-By following these best practices and being aware of common pitfalls, you can harness the power of _@Application_ scope effectively in your Spring applications, ensuring they perform reliably and efficiently.
+By following these best practices and being aware of common pitfalls, you can harness the power of _@ApplicationScope_ effectively in your Spring applications, ensuring they perform reliably and efficiently.
 
 ## Conclusion
 
-In this article, we've explored the essential concepts of _@Application_ scope in Spring applications. We discussed its advantages, practical implementation steps, best practices, and common pitfalls.
+In this article, we've explored the essential concepts of _@ApplicationScope_ in Spring applications. We discussed its advantages, practical implementation steps, best practices, and common pitfalls.
 
-Understanding _@Application_ scope is pivotal for efficient Spring application development. Its global accessibility, resource efficiency, and data-sharing capabilities make it a valuable tool in your development toolbox. By following best practices and avoiding common pitfalls, you can harness its power effectively.
+Understanding _@ApplicationScope_ is pivotal for efficient Spring application development. Its global accessibility, resource efficiency, and data-sharing capabilities make it a valuable tool in your development toolbox. By following best practices and avoiding common pitfalls, you can harness its power effectively.
