@@ -7,8 +7,6 @@
 
     {% seo %}
 
-    {% include fonts.html %}
-
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
@@ -35,7 +33,7 @@
     <div class="logo-wrap">
         <div class="inner-wrap"><img class="logo" src="https://cdngh.kapresoft.com/img/kapresoft1-210x-09aaa6e.png" alt="kapresoft logo"/></div>
     </div>
-    <a href="/" class="logo-link" title="Click to navigate to kapresoft.com home page."
+    <a href="/" title="Click to navigate to kapresoft.com home page."
         ><div class="site-name">{{ site.title | default: site.github.repository_name }}</div></a>
     <div class="tag-line">{{ site.description | default: site.github.project_tagline }}</div>
 </header>

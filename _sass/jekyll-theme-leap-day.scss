@@ -15,133 +15,66 @@ $pre-bg: #333333;
 //@import "rouge-zenburn";
 // ==============================================================
 //@import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/androidstudio.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Merriweather:ital,wght@0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;700&family=Merriweather:ital,wght@0,700;1,300&display=swap');
 
-// --- (Start) Custom Code
-
-// ital=1 if it supports italic
-@mixin font-weight($fontWeight: normal, $ital: 0) {
-  @if not $body-font-is-variable {
-    font-weight: $fontWeight;
-  } @else if $ital == 0 {
-    @supports (font-variation-settings: "wght" $fontWeight) {
-      font-variation-settings: "wght" $fontWeight;
-    }
-  } @else {
-    $fv-body-font: "wght" $fontWeight, "ital" $ital;
-    @supports (font-variation-settings: $fv-body-font) {
-      font-variation-settings: $fv-body-font;
-    }
-  }
-}
-
-$font-open-sans: 'Open Sans', 'Tahoma', 'Verdana', sans-serif;
-$font-roboto: 'Roboto', 'Tahoma', 'Verdana', sans-serif;
-$font-roboto-slab: 'Roboto Slab', 'Tahoma', 'Verdana', sans-serif;
-$font-noto-serif: 'Noto Serif', 'Georgia', serif;
-$font-playfair: 'Playfair', 'Georgia', serif;
-
-$body-font: $font-playfair;
-$body-font-is-variable: true;
-$body-optical-size: 10;
-
-$root-font-size: 16px;
-$body-font-size: 1rem;
-$body-font-weight: 300;
-$body-font-color: #666;
-
-$header-font: 'Roboto Slab', serif;
+$body-font: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 $header-font-weight: 700;
-$header-line-height: 1.1;
-$header-font-color: #565656;
-
-$h1-font-weight: 900;
-
-$h2-font: $header-font;
-$h2-font-weight: 900;
-$h2-font-color: #393939;
-
-$h3-font: 'Merriweather', serif;
-$h3-font-color: $header-font-color;
-$h3-font-weight: 700;
-$h3-line-height: $header-line-height;
-
-$h1-font-size: 1.7rem;
-$h2-font-size: 1.5rem;
-$h3-font-size: 1.4rem;
-$h4-font-size: 1.3rem;
-$h5-font-size: 1.2rem;
-$h6-font-size: 1.1rem;
-
-// ------------------------------
-
-@import "../assets/css/variables";
-
-// Use font-size px unit in html, the rest will use rem unit
-html {
-  font-size: $root-font-size;
-}
-// --- (end) Custom Code
+$header-font-family: 'Roboto Slab', serif;
+$header3-font-family: 'Merriweather', serif;
+$header3-font-weight: 700;
 
 body {
-  font-optical-sizing: auto; // for variable fonts
   font-family: $body-font;
-  font-size: $body-font-size;
-  color: $body-font-color;
-
-  @include font-weight($body-font-weight);
-
-  margin: 0;
-  padding:0 0 20px 0;
+  font-size: 1rem;
+  color:#666;
+  font-weight: 300;
+  margin: 0px;
+  padding:0px 0 20px 0px;
   background: url(../images/body-background.png) #eae6d1;
-
-  // custom: added
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $header-font-color;
-  font-family: $header-font;
-  font-weight: $header-font-weight;
+h1, h2, h4, h5, h6 {
+  color:#333;
   margin:0 0 10px;
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
 }
-h1, h2, h3 {
-  line-height: $header-line-height;
-}
-h1 {
-  font-weight:  $h1-font-weight;
-  font-size:    $h1-font-size !important;
-}
-h2 {
-  font-weight: $h2-font-weight;
-  font-size: $h2-font-size;
-  color: $h2-font-color;
-}
+
 h3 {
-  font-family: $h3-font;
-  font-size: $h3-font-size !important;
-  font-weight: $h3-font-weight;
-  color: $h3-font-color !important;
-}
-h4 {
-  font-size: $h4-font-size !important;
-}
-h5 {
-  font-size: $h5-font-size !important;
-}
-h6 {
-  font-size: $h6-font-size !important;
+  font-family: $header3-font-family;
+  font-weight: $header3-font-weight;
 }
 
 div {
-  .top-tag {
-    margin-bottom: 10px;
-  }
+    .top-tag {
+        margin-bottom: 10px;
+    }
 }
 
 p, ul, ol, table, pre, dl {
   margin:0 0 20px;
+}
+
+h1, h2, h3 {
+  line-height:1.1;
+}
+
+h1 {
+  font-size:28px;
+}
+
+h2 {
+  font-size: 24px;
+  color:#393939;
+}
+
+h3, h4, h5, h6 {
+  color:#666666;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 a {

@@ -1,35 +1,12 @@
 ---
 ---
 
-// The three dashes above are important somehow
-// Don't delete them.
-
 @import "{{ site.theme }}";
-
-// ==============================================================
-// Local Variables:
-// Web-Safe fonts: https://www.w3schools.com/cssref/css_websafe_fonts.php
-// ==============================================================
 
 .noindex { display: none; }
 
-//body {
-//  @include var-font-weight(400);
-//}
-
-p {
-  line-height: $site-line-height;
-}
-
-a, a small {
-  color: $body-font-color;
-  text-decoration: $body-font-color underline;
-}
-
-div.excerpt {
-  line-height: 1.2;
-  font-size: 0.8rem;
-  padding: 5px 0 20px 0;
+p, div.excerpt {
+  line-height: 1.3em;
 }
 
 .image, .illustration {
@@ -47,6 +24,9 @@ div.getty-image {
   margin-bottom: 1em;
 }
 
+div.excerpt {
+  padding: 5px 0 20px 0;
+}
 
 div.site-name {
   line-height:1.1;
@@ -75,10 +55,10 @@ section {
 }
 
 .wrapper {
-  $em-fv-settings: "wght" 300, "ital" 1;
   p {
     em {
-      @include em-prop()
+      font-weight: 400;
+      font-family: 'Roboto Slab', Roboto, SansSerif
     }
   }
   section.article1 {
@@ -103,12 +83,17 @@ section {
   }
 }
 
+
 .figure {
   margin-bottom: .5em;
   .title {
     font-weight: bold;
     margin-right: .5em;
   }
+}
+
+h1 {
+  font-size:24px;
 }
 
 h1.title, h1.titlew, h1.title2, h1.title2w, h1.title3, h1.title3w {
@@ -124,20 +109,32 @@ h1.title2w { white-space: normal; }
 h1.title3, h1.title3w { font-size:21px; }
 h1.title3w { white-space: normal; }
 
+h2 {
+  font-size: 24px;
+  color:#393939;
+}
+
+h3 {
+  font-size: 18px;
+  color:#51678a;
+}
+
 h4 {
   font-size: 17px;
-  //color:#666666;
+  color:#666666;
 }
 
 h5 {
   font-family: 'Quattrocento Sans', 'Copse', 'SansSerif';
   font-weight: bold;
+  font-size: 17px;
   color:#767676;
 }
 
 h6 {
   font-family: 'Arial Narrow', 'Copse', 'SansSerif';
   font-weight: bold;
+  font-size: 14px;
   color: #274769;
 }
 
@@ -245,25 +242,16 @@ nav {
   }
   .excerpt_title {
     font-size: large;
-    font-family: $header-font;
+    font-family: $header-font-family;
     font-weight: 500;
   }
-
-  a {
-    text-decoration: underline $link-underline-color;
-  }
-
-  a.logo-link {
-    text-decoration: none;
-  }
-
   .logo-wrap {
     position: fixed;
     width: 100px;
     height: 100px;
     left: 40px;
-    top: 0;
-    border: 0 solid #000000;
+    top: 0px;
+    border: 0px solid #000000;
     .inner-wrap {
       float: left;
     }
