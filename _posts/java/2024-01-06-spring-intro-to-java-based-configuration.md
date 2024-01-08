@@ -10,7 +10,38 @@ description: "Java-based configuration in Spring: transitioning from XML, levera
 
 ## Overview
 
-In this article, we delve into the transformative world of <a href="/java/2024/01/03/spring-getting-started.html" target="_blank" alt="Java">Java</a>-based configuration in <a href="/java/2024/01/03/spring-getting-started.html" target="_blank" alt="Spring Framework">Spring Framework</a>. We begin by exploring the evolution from traditional XML configurations to the more dynamic Java-based approach, highlighting the advantages and flexibility it brings to modern software development. This introduction sets the stage for a comprehensive understanding of Java-based configuration in Spring, offering insights into why it has become a preferred method for developers worldwide.<!--excerpt-->
+Spring Framework<br>
+_Spring Framework_
+
+In the dynamic landscape of web development, Spring Framework the _Spring Framework_ has emerged as a cornerstone for building robust and scalable web applications. At the heart of this framework lies Spring Web MVC, a powerful
+
+In this article, we delve into the transformative world of <a href="/java/2024/01/03/spring-getting-started.html" target="_blank" alt="Java">Java</a>-based configuration in <a href="/java/2024/01/03/spring-getting-started.html" target="_blank" alt="Spring Framework">_Spring Framework_</a>. We begin by exploring the evolution from traditional XML configurations to the more dynamic Java-based approach, highlighting the advantages and flexibility it brings to modern software development. This introduction sets the stage for a comprehensive understanding of Java-based configuration in Spring, offering insights into why it has become a preferred method for developers worldwide.<!--excerpt-->
+
+```xml
+<beans>
+    <bean id="restTemplate" class="RestTemplate"/>
+</beans>
+```
+
+### Qui alias nemo cum
+
+_Lorem_ ipsum dolor sit amet. At dolorem harum in ipsum labore aut rerum doloremque aut velit iste quo blanditiis voluptatum. Qui alias nemo cum exercitationem iusto qui fuga quis vel galisum fuga sed expedita blanditiis.
+
+Non tempora repudiandae qui necessitatibus quam qui excepturi distinctio ea nemo nihil vel fugiat mollitia et saepe delectus. Est quas vero et necessitatibus obcaecati et dolor consequatur est quia facere rem alias deserunt qui dolores inventore sit cupiditate iusto.
+
+#### Est laudantium veritatis
+
+Est laudantium veritatis eos quas cupiditate qui sint inventore ex reprehenderit officiis et aperiam quibusdam qui mollitia mollitia quo dolorem excepturi? Aut perspiciatis doloribus qui quaerat nemo et porro aliquid in officiis iure et magni repellat sed illum libero.
+
+##### Sed nihil inventore
+
+Sed nihil inventore non quasi veritatis est voluptatem pariatur id doloribus delectus. Ut harum quas qui voluptatem magni qui omnis neque et ipsum eaque. Vel omnis molestias ut voluptatem doloribus eum architecto dicta!
+
+###### Et nostrum vitae et neque voluptatem
+
+Et nostrum vitae et neque voluptatem et sunt eius in eius distinctio. Non quae voluptatem cum exercitationem voluptas sed doloremque omnis et Quis quia nam enim magni in dolor illum. Quo internos temporibus in quae esse sit labore necessitatibus.
+
+--------------------
 
 <div class="illustration">
 <img src="https://cdngh.kapresoft.com/img/spring-intro-to-java-based-configuration-cover-751e312.webp" alt="Image: Spring • Intro To Java • Based Configuration">

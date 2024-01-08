@@ -1,0 +1,38 @@
+// theme overrides
+// theme fonts: see fonts.scss
+$body-font: $font-noto-serif;
+$root-font-size: 18px;
+$body-font-size: 1rem;
+$body-font-weight: 450;
+$body-font-color: #252525;
+
+$site-line-height: 1.7;
+$p-italic-font-weight: 400;
+$p-italic-font: $body-font;
+$p-italic-font-color: #6e6e6e;
+$link-underline-color: #6e6e6e;
+
+$header-font: 'Roboto', serif;
+$header-font-weight: 500;
+
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.4rem;
+$h3-font-size: 1.3rem;
+$h4-font-size: 1.2rem;
+$h5-font-size: 1.1rem;
+$h6-font-size: 1rem;
+
+$h3-font-color: #51678a;
+
+
+// ---- functions ---
+
+@mixin em-prop() {
+  font-family: $p-italic-font;
+  color: $p-italic-font-color;
+  @if not $body-font-is-variable {
+    font-weight: $p-italic-font-weight;
+  } @else {
+    @include font-weight($p-italic-font-weight);
+  }
+}
