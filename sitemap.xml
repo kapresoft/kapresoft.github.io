@@ -775,4 +775,12 @@
         <loc>https://www.kapresoft.com/java/2024/01/05/spring-strongly-typed-autowire-qualifier.html</loc>
         <lastmod>2024-01-05</lastmod>
     </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2024/01/06/autowiring-with-factory-beans.html</loc>
+        <lastmod>2024-01-07</lastmod>
+    </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2024/01/06/spring-intro-to-java-based-configuration.html</loc>
+        <lastmod>2024-01-07</lastmod>
+    </url>
 </urlset>

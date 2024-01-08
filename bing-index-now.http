@@ -8,7 +8,8 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
-    "{{site}}/java/2024/01/05/spring-strongly-typed-autowire-qualifier.html",
+    "{{site}}/java/2024/01/06/spring-intro-to-java-based-configuration.html",
+    "{{site}}/java/2024/01/06/autowiring-with-factory-beans.html",
     "{{site}}"
   ]
 }
@@ -32,6 +33,8 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2024/01/06/spring-intro-to-java-based-configuration.html",
+    "{{site}}/java/2024/01/06/autowiring-with-factory-beans.html",
     "{{site}}/java/2024/01/05/spring-strongly-typed-autowire-qualifier.html",
     "{{site}}/java/2024/01/05/spring-web-mvc-functional-endpoints.html",
     "{{site}}/java/2024/01/04/spring-intro-to-prototype-scope.html",
