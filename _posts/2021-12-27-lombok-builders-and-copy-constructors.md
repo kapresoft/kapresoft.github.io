@@ -8,7 +8,7 @@ description: "Discover how Lombok's @Builder simplifies implementing the Builder
 
 ## Overview
 
-Lombok's builder and copy constructor feature using _[@Builder](https://projectlombok.org/features/Builder)_ is a mechanism that allows the implementation of the _Builder Pattern_ and _Copy Constructors_ in Object-Oriented Programming.  This article further illustrates how Lombok mitigates the disadvantages of creating builder methods and copy constructors making Lombok's @Builder a good foundation for design and code maintainability.
+<a href="/java/2023/03/13/lombok-overview.html" target="_blank" alt="Lombok">Lombok</a>'s builder and copy constructor feature using <a href="/java/2023/10/25/lombok-builder-clean-code.html" target="_blank" alt="_@Builder_">_@Builder_</a> is a mechanism that allows the implementation of the _Builder Pattern_ and _Copy Constructors_ in Object-Oriented Programming.  This article further illustrates how Lombok mitigates the disadvantages of creating builder methods and copy constructors making Lombok's @Builder a good foundation for design and code maintainability.
 
 <!--excerpt-->
 
@@ -285,6 +285,6 @@ Full SuperUser tests can be found in [SuperUserTest](https://github.com/kapresof
 
 ## Summary
 
-For this article, the Lombok _@Builder_ annotation on a method was illustrated to create a builder and copy constructor via the default _builder()_ and  _toBuilder()_ methods on immutable objects. A few points are also mentioned how the caveats with implementing builder and copy constructors in plain java implementations may no longer apply when using Lombok.
+For this article, the Lombok <a href="/java/2023/10/25/lombok-builder-clean-code.html" target="_blank" alt="_@Builder_">_@Builder_</a> annotation on a method was illustrated to create a builder and copy constructor via the default _builder()_ and  _toBuilder()_ methods on immutable objects. A few points are also mentioned how the caveats with implementing builder and copy constructors in plain <a href="/java/2018/08/15/getting-started-with-java.html" target="_blank">java</a> implementations may no longer apply when using <a href="/java/2023/03/13/lombok-overview.html" target="_blank" alt="Lombok">Lombok</a>.
 
 The GitHub repository that this article references can be found in [https://github.com/kapresoft/lombok/tree/1.0.0](https://github.com/kapresoft/lombok/tree/1.0.0). Refer to the main documentation on the repository on how to build this project in your local environment.

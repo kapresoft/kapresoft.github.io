@@ -7,7 +7,7 @@ description: "Lombok is a Java library that provides annotations to help reduce 
 ---
 ## Overview
 
-Lombok is a Java library that provides annotations to help reduce boilerplate code and increase developer productivity. By using Lombok annotations, Java developers can automatically generate common code such as getters, setters, constructors, equals and hashCode methods, and more. <!--excerpt-->This can save time and effort, while also reducing the likelihood of errors. However, it's important to be aware of the potential pitfalls of using Lombok, such as reduced readability and debuggability, and compatibility issues with other Java tools and frameworks.
+<a href="/java/2023/11/07/lombok-good-bad-ugly.html" target="_blank" alt="Lombok">Lombok</a> is a <a href="/java/2018/08/15/getting-started-with-java.html" target="_blank" alt="Java">Java</a> library that provides annotations to help reduce boilerplate code and increase developer productivity. By using Lombok annotations, Java developers can automatically generate common code such as getters, setters, constructors, equals and hashCode methods, and more. <!--excerpt-->This can save time and effort, while also reducing the likelihood of errors. However, it's important to be aware of the potential pitfalls of using Lombok, such as reduced readability and debuggability, and compatibility issues with other Java tools and frameworks.
 
 <!--excerpt-->
 
