@@ -1,14 +1,16 @@
 ### Index Now: Home + Updated Pages
 
-POST https://www.bing.com/indexnow
+POST {{index-now-url}}
 Content-Type: application/json; charset=utf-8
 
 {
-  "host": "www.kapresoft.com",
+  "host": "{{host-kapresoft}}",
   "key": "{{index-now-key}}",
   "keyLocation": "{{index-now-key-url}}",
   "urlList": [
+    "{{site}}/java/2024/01/06/autowiring-with-factory-beans.html",
     "{{site}}/java/2024/01/08/spring-intro-to-bean-post-processors.html",
+    "{{site}}/software/2024/01/02/design-patterns-decorator-vs-adapter.html",
     "{{site}}"
   ]
 }
