@@ -6,11 +6,9 @@ Content-Type: application/json; charset=utf-8
 {
   "host": "{{host-kapresoft}}",
   "key": "{{index-now-key}}",
-  "keyLocation": "{{index-now-key-url}}",
+  "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
-    "{{site}}/java/2024/01/06/autowiring-with-factory-beans.html",
     "{{site}}/java/2024/01/08/spring-intro-to-bean-post-processors.html",
-    "{{site}}/software/2024/01/02/design-patterns-decorator-vs-adapter.html",
     "{{site}}"
   ]
 }
@@ -25,13 +23,13 @@ Content-Type: application/json; charset=utf-8
 ###
 ### Index Now Bulk
 
-POST https://www.bing.com/indexnow
+POST {{index-now-url}}
 Content-Type: application/json; charset=utf-8
 
 {
   "host": "www.kapresoft.com",
   "key": "{{index-now-key}}",
-  "keyLocation": "{{index-now-key-url}}",
+  "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
     "{{site}}",
     "{{site}}/java/2024/01/08/spring-intro-to-bean-post-processors.html",
@@ -242,7 +240,7 @@ Content-Type: application/json; charset=utf-8
 ###
 ### Submit Individual Page
 
-GET https://www.bing.com/indexnow?key={{index-now-key}}&url={{site}}/finance/2023/07/18/building-wealth.html
+GET {{index-now-url}}?key={{index-now-key}}&url={{site}}/finance/2023/07/18/building-wealth.html
 
 > {%
     client.test("Success", function() {
