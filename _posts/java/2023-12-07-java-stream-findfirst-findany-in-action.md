@@ -43,7 +43,7 @@ The typical syntax for _findFirst()_ looks like this:
 Optional<T> firstElement = stream.findFirst();
 ```
 
-If the stream is empty or no elements match the criteria, _findFirst()_ returns an empty _Optional_. This approach avoids the pitfalls of returning _null_, thus helping in preventing _NullPointerException_ in Java applications.
+If the stream is empty or no elements match the criteria, _findFirst()_ returns an empty _Optional_. This approach avoids the <a href="https://www.kapresoft.com/java/2023/12/10/java-pitfalls-of-returning-null.html" target="_blank" alt="pitfalls of returning _null_">pitfalls of returning _null_</a>, thus helping in preventing <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/NullPointerException.html" target="_blank" alt="_NullPointerException_">_NullPointerException_</a> in Java applications.
 
 Consider the following code snippet:
 
@@ -101,7 +101,7 @@ The syntax for using _findAny()_ is quite straightforward:
 Optional<T> anyElement = stream.findAny();
 ```
 
-As with _findFirst()_, _findAny()_ returns an _Optional\<T\>_ which either contains some element from the stream or is empty if the stream has no elements. This approach is in line with Java's philosophy of avoiding _null_ where possible.
+As with _findFirst()_, _findAny()_ returns an _Optional\<T\>_ which either contains some element from the stream or is empty if the stream has no elements. This approach is also in line with Java's philosophy of <a href="https://www.kapresoft.com/java/2023/12/10/java-pitfalls-of-returning-null.html" target="_blank" alt="avoiding _null_">avoiding _null_</a> where possible.
 
 #### Use Cases
 1. **Parallel Stream Processing**: In multi-threaded stream operations, using _findAny()_ is more efficient than _findFirst()_, as it allows for more flexibility in the element retrieval process.
