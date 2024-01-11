@@ -114,7 +114,6 @@ To transform our mutable classes to immutable ones, the changes and annotations 
 - Class User and SuperUser Constructor Annotations
   - @SuperBuilder(toBuilder=true)    `// experimental`
   - @EqualsAndHashCode(callSuper = true)
-  - @SuperBuilder(toBuilder = true)
 - Class User fields
   * use _@Getter_ add private keyword
 
