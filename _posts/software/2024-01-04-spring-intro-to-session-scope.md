@@ -52,8 +52,6 @@ The primary purpose of _@SessionScope_ is to retain and manage user-specific dat
 
 4. **Multi-Step Forms**: Applications with multi-step forms or wizards can use _@SessionScope_ to retain form data across different steps. This ensures that users don't lose their progress when navigating between form sections.
 
-Certainly, here's the revised content with additional clarity:
-
 #### Differences from Other Scopes
 
 The key distinction between _@SessionScope_ and other common Spring bean scopes like Singleton, Prototype, and Application lies in the duration of bean existence:
@@ -94,8 +92,6 @@ public class YourSessionScopedBean {
     // Class definition with attributes and methods
 }
 ```
-
-Certainly, here's the updated section on configuring session-scoped beans in a Spring configuration file, with a focus on configuring the bean definition:
 
 ### Configuring Bean Definition in a Spring Configuration File
 

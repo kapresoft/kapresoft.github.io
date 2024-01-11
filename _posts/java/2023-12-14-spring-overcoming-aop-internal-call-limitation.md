@@ -158,7 +158,7 @@ The limitation of Spring's Aspect-Oriented Programming (AOP) in handling interna
    </small>
 </div>
 
-To include the refactored _OrderShippingService_ in the PlantUML diagram, we'll adjust the relationships to show how _OrderService_ now interacts with this new service, and how _OrderAspect_ advises both services. Here's the updated PlantUML code:
+To include the refactored _OrderShippingService_ in the PlantUML diagram, we'll adjust the relationships to show how _OrderService_ now interacts with this new service, and how _OrderAspect_ advises both services.
 
 In this refactored diagram:
 

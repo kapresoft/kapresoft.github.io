@@ -24,8 +24,6 @@ However, when dealing with multi-threaded applications and child threads, preser
 
 In the example below, we'll demonstrate how to seamlessly pass the MDC context to child threads, enhancing the contextual richness of your logs. Let's explore the code that illustrates this essential technique.
 
-Here's the code rewritten using lambda expressions (arrow functions) in Java:
-
 ```java
 import org.slf4j.MDC;
 import java.util.Map;

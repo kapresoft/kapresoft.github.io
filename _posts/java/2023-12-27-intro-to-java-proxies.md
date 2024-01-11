@@ -26,7 +26,7 @@ Java dynamic proxies are a feature of the Java programming language that enables
 ### How Dynamic Proxies Work in Java
 The mechanism of Java dynamic proxies revolves around two key components: the _Proxy_ class and the _InvocationHandler_ interface. The _Proxy_ class, part of the _java.lang.reflect_ package, is responsible for generating the proxy instance. This proxy instance is then linked to an _InvocationHandler_. Whenever a method on the proxy instance is invoked, the call is delegated to the _InvocationHandler_'s _invoke_ method. This design allows the _InvocationHandler_ to perform operations before or after the method invocation, or even modify the call entirely. This process is highly dynamic, as it allows for the runtime determination of the method being called and the arguments passed, providing immense flexibility in handling method invocations.
 
-To illustrate the workings of Java dynamic proxies with PlantUML, we can create a sequence diagram that captures the interaction between the _Proxy_ class, the _InvocationHandler_ interface, and the method invocation process. Here's the PlantUML text diagram for the passage:
+To illustrate the workings of Java dynamic proxies with PlantUML, we can create a sequence diagram that captures the interaction between the _Proxy_ class, the _InvocationHandler_ interface, and the method invocation process.
 
 **Figure 1.** Java Dynamic Proxy Sequence Diagram
 

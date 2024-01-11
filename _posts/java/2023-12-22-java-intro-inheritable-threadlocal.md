@@ -36,7 +36,7 @@ Here's a brief overview of how InheritableThreadLocal works:
 
 Here's a simple example of how InheritableThreadLocal might be used:
 
-To demonstrate that the child value in InheritableThreadLocal is independent of the parent value after it's been set, you can modify the child thread to change the value of the context and then print it. This will illustrate that changes made in the child thread do not affect the parent thread's context. Here's the modified code:
+To demonstrate that the child value in InheritableThreadLocal is independent of the parent value after it's been set, you can modify the child thread to change the value of the context and then print it. This will illustrate that changes made in the child thread do not affect the parent thread's context. 
 
 ```java
 public class InheritableThreadLocalExample {
