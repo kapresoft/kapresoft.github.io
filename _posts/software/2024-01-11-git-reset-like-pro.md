@@ -8,7 +8,7 @@ canonical_url: https://www.kapresoft.com/software/2024/01/11/git-reset-like-pro.
 description: "Master Git Reset with confidence! Explore use cases, options, and examples to handle your repositories like a pro."
 ---
 
-### Overview
+## Overview
 
 In this comprehensive guide, we dive into the intricate world of _git reset_, a powerful tool in the Git version control system. We'll explore its various use cases, demystifying the command and its options to empower developers with the confidence to harness its full potential.<!--excerpt--> Whether you're correcting a commit, managing branches, or tidying up your repository, understanding _git reset_ is key to navigating these scenarios with expertise.
 
