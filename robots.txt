@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /dev/*
+Disallow: /index.html
 Disallow: /site.html
 Disallow: /?m=0
 Disallow: /search
@@ -11,6 +13,6 @@ Disallow: /aws-lambda-spring-boot.html
 Disallow: /getting-started-with-maven.html
 Disallow: /getting-started-with-java.html
 Disallow: /getting-started-with-gradle.html
-Disallow: /dev/*
+Disallow: /assets/img/lombok-version.webp
 
 Sitemap: https://www.kapresoft.com/sitemap.xml
