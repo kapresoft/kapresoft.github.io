@@ -1,5 +1,5 @@
 ---
-title: "Git Reset Like Pro"
+title: "Git Reset Like a Pro"
 title_style: title2w
 section_style: article1
 category: software
