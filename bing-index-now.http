@@ -8,8 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
-    "{{site}}/java/2024/01/11/java-guice-for-beginners.html",
-    "{{site}}/software/2024/01/11/git-reset-like-pro.html",
+    "{{site}}/food/2024/01/11/scotch-whisky-unveiled.html",
     "{{site}}"
   ]
 }
@@ -33,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
     "{{site}}",
+    "{{site}}/food/2024/01/11/scotch-whisky-unveiled.html",
     "{{site}}/java/2024/01/11/java-guice-for-beginners.html",
     "{{site}}/software/2024/01/11/git-reset-like-pro.html",
     "{{site}}/java/2024/01/10/spring-intro-to-webtestclient.html",
