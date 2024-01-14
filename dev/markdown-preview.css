@@ -13,3 +13,9 @@ h2 { font-size: 1.4em; }
 h3 { font-size: 1.1em; line-height: 1em; }
 a { text-decoration: none; }
 a small { font-size: .8em; margin-top: -0.6em; display: block; }
+
+div.link {margin-bottom: 20px;}
+div.link small {display: block;padding-left: 0;}
+div.uml-diagram {margin-bottom: 20px;}
+div.uml-diagram img {display: block;}
+div.uml-diagram small {display: block;padding-left: 8px;}
