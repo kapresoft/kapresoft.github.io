@@ -10,7 +10,7 @@ description: "Explore Java coding without a DI framework, using a manual approac
 
 ## Overview
 
-Imagine navigating the world of <a href="/java/2018/08/15/getting-started-with-java.html" target="_blank">Java</a> development without the convenience of Dependency Injection (DI) frameworks like <a href="/java/2024/01/03/spring-getting-started.html" target="_blank" alt="Spring">Spring</a> or <a href="/java/2024/01/11/java-guice-for-beginners.html" target="_blank" alt="Guice">Guice</a>. What if you had to manage every component and its dependencies manually? It might sound daunting, but there's a certain charm and depth in this alternative approach: coding without a DI framework. 
+Imagine navigating the world of <a href="/java/2018/08/15/getting-started-with-java.html" target="_blank">Java</a> development without the convenience of Dependency Injection (DI) frameworks like <a href="/java/2024/01/03/spring-getting-started.html" target="_blank" alt="Spring">Spring</a> or <a href="/java/2024/01/11/java-guice-for-beginners.html" target="_blank" alt="Guice">Guice</a>. What if you had to manage every component and its dependencies manually? It might sound daunting, but there's a certain charm and depth in this alternative approach: coding without a DI framework.<!--excerpt-->
 
 <div class="illustration">
 <img src="https://cdngh.kapresoft.com/img/java-code-without-di-c83b734.webp" alt="Image: Java • Code Without Dependency Injection Framework">
