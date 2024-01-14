@@ -1,5 +1,5 @@
 ---
-title: "Java • Code Without Dependency Injection Framework"
+title: "Handcrafting Java: The Art of Coding Without DI Frameworks"
 title_style: title2w
 section_style: article1
 category: java
