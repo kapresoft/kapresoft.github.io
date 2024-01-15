@@ -49,6 +49,10 @@ plugins:
   - jekyll-last-modified-at
   - jekyll-default-layout
 
+whitelist:
+  - c_merge_list
+  - c_whitespace_filter
+
 last-modified-at:
   date-format: '%d-%b-%y %T %z'
 

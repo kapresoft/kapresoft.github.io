@@ -3,7 +3,8 @@ title: "Java • Google Guice For Beginners"
 title_style: title2w
 section_style: article1
 category: java
-related: java
+tags: 
+  - software
 canonical_url: https://www.kapresoft.com/java/2024/01/11/java-guice-for-beginners.html
 description: "Explore the basics of Google Guice in Java - simplifying dependency injection for efficient software development."
 ---

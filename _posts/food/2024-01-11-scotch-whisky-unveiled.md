@@ -3,7 +3,6 @@ title: "Scotch Whisky Unveiled: A Novice's Spirited Odyssey"
 title_style: title2w
 section_style: article1
 category: food
-related: food
 canonical_url: https://www.kapresoft.com/food/2024/01/11/scotch-whisky-unveiled.html
 description: "Embark on a novice's journey through the rich world of Scotch whisky, exploring its regional nuances and distinct flavors."
 ---

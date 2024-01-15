@@ -3,7 +3,8 @@ title: "Handcrafting Java: The Art of Coding Without DI Frameworks"
 title_style: title2w
 section_style: article1
 category: java
-related: java
+tags:
+   - spring
 canonical_url: https://www.kapresoft.com/java/2024/01/11/java-code-without-dependency-injection-framework.html
 description: "Explore Java coding without a DI framework, using a manual approach to replicate features of frameworks like Spring."
 ---

@@ -3,7 +3,9 @@ title: "Java vs Kotlin"
 title_style: title
 canonical_url: https://www.kapresoft.com/java/2023/05/16/java-vs-kotlin.html
 category: java
-related: java
+tags:
+  - kotlin
+  - software
 description: "Java vs Kotlin: A comprehensive comparison of features, performance, community support, and tooling for informed programming language decisions."
 ---
 

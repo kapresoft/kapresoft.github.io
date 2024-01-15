@@ -3,9 +3,10 @@ title: "Java vs Javascript: Understanding the Differences"
 title_style: title2
 canonical_url: https://www.kapresoft.com/software/2023/11/19/java-vs-javascript.html
 category: software
-related: javascript
+tags: 
+  - javascript
+  - java
 description: "Explore differences between Java and JavaScript, covering their use in object-oriented programming, enterprise applications, dynamic web pages, and more."
-
 ---
 
 ## Overview

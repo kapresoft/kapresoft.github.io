@@ -3,7 +3,8 @@ title: "Git Reset Like a Pro"
 title_style: title2w
 section_style: article1
 category: software
-related: git
+tags:
+  - git
 canonical_url: https://www.kapresoft.com/software/2024/01/11/git-reset-like-pro.html
 description: "Master Git Reset with confidence! Explore use cases, options, and examples to handle your repositories like a pro."
 ---
