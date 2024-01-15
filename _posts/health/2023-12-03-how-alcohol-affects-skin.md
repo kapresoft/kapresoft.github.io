@@ -4,7 +4,8 @@ title_style: title2w
 section_style: article1
 canonical_url: https://www.kapresoft.com/health/2023/12/03/how-alcohol-affects-skin.html
 category: health
-related: health
+tags:
+  - alcohol
 description: "Discover how alcohol affects skin health, from immediate dehydration to long-term aging effects, and learn ways to reverse these impacts."
 ---
 

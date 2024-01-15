@@ -4,7 +4,8 @@ title_style: title2w
 section_style: article1
 canonical_url: https://www.kapresoft.com/health/2023/12/04/health-stress-and-cortisol.html
 category: health
-related: health
+tags:
+  - stress
 description: "Explore the link between stress and cortisol, its symptoms, and ways to manage cortisol imbalance effectively."
 ---
 

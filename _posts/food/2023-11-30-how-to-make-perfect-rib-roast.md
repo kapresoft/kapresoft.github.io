@@ -1,9 +1,9 @@
 ---
 title: "How To Make The Perfect Rib Roast"
 title_style: title2w
+section_style: article1
 canonical_url: https://www.kapresoft.com/food/2023/11/30/how-to-make-perfect-rib-roast.html
 category: food
-related: food
 description: "Master the art of the perfect rib roast with our expert guide on selecting the best cut; sides and wine pairing."
 ---
 

@@ -1,9 +1,12 @@
 ---
 title: "Quick Relief: Top Tips to Reduce Inflammation Effectively"
 title_style: title2w
+section_style: article1
 canonical_url: https://www.kapresoft.com/health/2023/12/06/health-reducing-inflammation.html
 category: health
-related: health
+tags:
+  - stress
+  - inflammation
 description: "Explore effective strategies to reduce inflammation, understanding its causes, signs, and natural remedies for a healthier body."
 ---
 

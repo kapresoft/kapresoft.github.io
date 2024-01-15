@@ -1,10 +1,14 @@
 ---
 title: "Is Bitcoin the gold killer?"
+title_style: title2w
+section_style: article1
 canonical_url: https://www.kapresoft.com/finance/2023/04/03/is-bitcoin-gold-killer.html
 category: finance
-related: finance
+tags:
+  - cryptocurrency
+  - money
+  - tax
 description: "Explore the potential of Bitcoin to replace gold as a store of value. Learn about transaction speed, security, and investment risks."
-
 ---
 
 ## Overview

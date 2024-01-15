@@ -1,9 +1,11 @@
 ---
 title: "Why Does Brandy Or Cognac Taste Sweet?"
 title_style: title2w
+section_style: article1
 canonical_url: https://www.kapresoft.com/food/2023/11/16/why-brandy-or-cognac-taste-sweet.html
 category: food
-related: food
+tags:
+  - alcohol
 description: "Discover why brandy and cognac taste sweet despite having no sugar, and understand the key differences between these refined spirits."
 ---
 

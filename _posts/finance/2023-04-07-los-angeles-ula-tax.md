@@ -1,7 +1,13 @@
 ---
 title: "Los Angeles ULA Tax"
+title_style: title2w
+section_style: article1
 canonical_url: https://www.kapresoft.com/finance/2023/04/07/los-angeles-ula-tax.html
 category: finance
+tags: 
+  - tax
+  - money
+  - tax 
 description: "Impact of the ULA tax or Mansion tax on property ownership and investment in Los Angeles. How does it affect the real estate market?"
 ---
 
