@@ -18,6 +18,7 @@
 
     {% if site.env != "dev" %}
     {% if site.show_google_ads %}
+    {% include adsense-blocking-recovery.html %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5036910301295841"
             crossorigin="anonymous"></script>
     {% endif %}
