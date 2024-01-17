@@ -1,0 +1,7 @@
+date: ${K_DATE_TEXT}
+date-long: ${K_UNIX_DATE}
+id: Kapresoft-Articles:manual-build
+commit-hash: ${K_COMMIT_HASH}
+build-number: manual
+deploy-key: site/${K_SITE_DEPLOY}
+

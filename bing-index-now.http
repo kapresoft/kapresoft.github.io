@@ -8,7 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
-    "{{site}}/java/2024/01/14/spring-managed-servlet-filters.html",
+    "{{site}}/seo/2024/01/17/google-adsense-personalized-vs-non-personalized-ads.html",
     "{{site}}"
   ]
 }
@@ -32,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
     "{{site}}",
+    "{{site}}/seo/2024/01/17/google-adsense-personalized-vs-non-personalized-ads.html",
     "{{site}}/java/2024/01/14/spring-managed-servlet-filters.html",
     "{{site}}/java/2024/01/11/java-code-without-dependency-injection-framework.html",
     "{{site}}/food/2024/01/11/scotch-whisky-unveiled.html",
