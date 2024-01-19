@@ -11,5 +11,7 @@ ga:
   enable: false
   tracking_id: G-1111111111
 
+limit_posts: 10
+
 #kramdown:
 #  smart_quotes: ["apos", "apos", "quot", "quot"]

@@ -7,12 +7,28 @@ name: KapreSoft.com
 description: "Thank you for unblocking ads; your support allows us to continue delivering free, high-quality content that truly matters to you."
 layout: kapresoft
 exclude:
+  - ".notes"
   - "docs/*"
-  - "*.sh"
-  - "*.code-workspace"
-  - "*.gemspec"
   - "README*.md"
-  - ".idea/*"
+  - "*.sh"
+  - "*.http"
+  - "http-client.env.json"
+  - "jekyll-theme-leap-day.gemspec"
+  - "README.md"
+  - "*.code-workspace"
+  - ".idea"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor/bundle/"
+  - "vendor/cache/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
+
+
+collections:
+  blog:
+    output: true
 
 # set to "dev" so that analytics and adds won't show
 env: prod

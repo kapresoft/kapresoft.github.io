@@ -1,12 +1,24 @@
 ---
-#
+published: false
 title: AWS Lambda Spring Cloud Functions
-canonical_url: https://www.kapresoft.com/java/2021/04/02/aws-lambda-springcloud-functions.html
-category: java
+title_style: title2w
+section_style: article1
+category: aws
+tags:
+- java
+- cloud-computing
+canonical_url: https://www.kapresoft.com/java/2024/01/18/aws-lambda-springcloud-functions.html
+description: "Aws Lambda Springcloud Functions"
 ---
 
+## Overview
 
-# Overview
+Aws Lambda Springcloud Functions
+<!--excerpt-->
+
+
+
+## Overview
 
 In this tutorial, we are going to look at the Spring Cloud Function module.
 
@@ -14,7 +26,7 @@ We'll focus on and discuss the high level goals of Spring Cloud Function.
 
 <!--excerpt-->
 
-# What is Spring Cloud Function?
+## What is Spring Cloud Function?
 
 Spring Cloud Function is a powerful tool for the decoupling of the development life cycle of business logic so that the same code can run as a web api endpoint, a stream processor, or a simple task.
 
@@ -25,26 +37,26 @@ In Addition, the following high-level are worth mentioning
 - Takes advantage of spring boot features including but not limited to auto-configuration, dependency injection, and metrics, in a serverless environment
 - Support a uniform and testable programming practice across serverless platform providers, including the ability to run standalone.
 
-# Basic Example
+## Basic Example
 
 >TBD
 
-# Custom Function Example
+## Custom Function Example
 
 >TBD
 
-# Custom Run Time Example
+## Custom Run Time Example
 
 >TBD
 
-# Custom Bootstrapping
+## Custom Bootstrapping
 
 >TBD
 
-# Packaging and Deployment
+## Packaging and Deployment
 
 >TBD
 > 
-# Conclusion
+## Conclusion
 
 >TBD

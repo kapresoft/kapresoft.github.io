@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
 
+# shellcheck disable=SC2120
 function _runJekyll()
 {
   local cmd="bundle exec jekyll serve --incremental --config _config.yml,_config_dev.yml"
+  if [[ "$1" == "limit" ]]; then
+    cmd="$cmd,_config_limit.yml"
+  fi
   echo "executing: ${cmd} [DEV]"
   eval "${cmd}"
 }
+
 function _runJekyllProd()
 {
   local cmd="bundle exec jekyll serve --incremental --config _config.yml"
@@ -36,9 +41,12 @@ function _startJekyllMain()
     echo "usage: ${sname} <option>"
     echo "  ./${sname}        : start server in incremental mode"
     echo "  ./${sname} -c     : clean before starting server"
+    echo "  ./${sname} -l     : limit the number of posts for faster startup"
     echo "  ./${sname} -h     : show this help text"
   elif [[ "${opt}" = "-c" ]]; then
     _stopExisting && _cleanGenerated && _runJekyll
+  elif [[ "${opt}" = "-cl" ]]; then
+    _stopExisting && _cleanGenerated && _runJekyll "limit"
   elif [[ "${opt}" = "-p" ]]; then
     _stopExisting && _runJekyllProd
   elif [[ "${opt}" = "-pc" ]] || [[ "${opt}" = "-cp" ]]; then
