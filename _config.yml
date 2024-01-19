@@ -27,6 +27,8 @@ ga:
   tracking_id: G-1EG60WX50K
 
 show_google_ads: true
+# toggle ads on the homepage feed
+show_google_ads_feed: true
 show_banner: false
 
 excerpt_separator: <!--excerpt-->
