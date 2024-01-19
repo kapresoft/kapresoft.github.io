@@ -1,3 +1,5 @@
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5036910301295841"
+        crossorigin="anonymous"></script>
 <div>
     {% for post in site.posts %}
     <div>
@@ -7,15 +9,22 @@
             <span style="float: right; font-size: smaller;">Post Date: {{ post.date | date_to_string }}</span><br/>
             <div class="excerpt">
                 {{ post.excerpt | remove: '<p>' | remove: '</p>' | remove_first: '1.' | remove_first: 'Overview' | strip_html }}
-                <a href="{{ post.url }}"></a>
             </div>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-format="fluid"
+                 data-ad-layout-key="-fb+5w+4e-db+86"
+                 data-ad-client="ca-pub-5036910301295841"
+                 data-ad-slot="4673887346"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
             {% else %}
             {% if site.env == 'dev' %}
             <a href="{{ post.url }}"><span class="excerpt_title">{% if post.draft %}DRAFT // {% endif %}{{ post.title }}</span></a>
             <span style="float: right; font-size: smaller;">Post Date: {{ post.date | date_to_string }}</span><br/>
             <div class="excerpt">
             {{ post.excerpt | remove: '<p>' | remove: '</p>' | remove_first: '1.' | remove_first: 'Overview' | strip_html }}
-            <a href="{{ post.url }}"></a>
             </div>
             {% endif %}
             {% endunless %}
