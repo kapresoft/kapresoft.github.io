@@ -2,23 +2,30 @@
 ---
 
 @import "{{ site.theme }}";
+@import "site-defs";
 
 // ==============================================================
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Merriweather:ital,wght@0,700;1,300&display=swap');
-@import "robot-fonts";
-@import "robot-slab-fonts";
-
-$header-font-weight: 700;
-$header-font-family: 'Roboto Slab', serif;
-$header3-font-family: 'Merriweather', serif;
-$header3-font-weight: 700;
-$code-bg: #333333;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap');
+// Roboto+Slab:wght@100;300;400;500;700;900
+// ==============================================================
+$code-bg              : #333;
+$header-color-default : #333;
 // ==============================================================
 
 .noindex { display: none; }
 
+html {
+  font-size: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
+
+  font-optical-sizing: auto; // for variable fonts
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
-  @include roboto-light;
+  @include roboto(300);
   font-size: 1rem;
   color:#666;
   margin: 0;
@@ -27,15 +34,22 @@ body {
 }
 
 h1, h2, h4, h5, h6 {
-  color:#333;
-  margin:0 0 10px;
-  font-family: $header-font-family;
-  font-weight: $header-font-weight;
+  color  : $header-color-default;
+  margin : 0 0 10px;
 }
 
+
+h1 {
+  @include roboto-slab(900);
+}
+h2 {
+  @include roboto-slab(900);
+}
 h3 {
-  font-family: $header3-font-family;
-  font-weight: $header3-font-weight;
+  @include merriweather();
+}
+h4 {
+  @include roboto-slab(900);
 }
 
 div {
@@ -104,12 +118,13 @@ section {
 }
 
 .wrapper {
+
   p {
     em {
-      font-weight: 400;
-      font-family: 'Roboto Slab', Roboto, SansSerif
+      @include roboto-slab(400, italic);
     }
   }
+
   section.article1 {
     ul li {
       margin-bottom: 1em;
@@ -174,14 +189,13 @@ h4 {
 }
 
 h5 {
-  font-family: 'Quattrocento Sans', 'Copse', 'SansSerif';
-  font-weight: bold;
+  @include quattrocento-sans();
   font-size: 17px;
   color:#767676;
 }
 
 h6 {
-  font-family: 'Arial Narrow', 'Copse', 'SansSerif';
+  @include arial-narrow();
   font-weight: bold;
   font-size: 14px;
   color: #274769;
@@ -220,9 +234,8 @@ div.share-spb {
 
 div.share-note {
   margin-bottom: 5px;
-  font-family: 'Merriweather', 'SansSerif';
   font-size: 0.7em;
-  font-weight: 400;
+  @include merriweather(400);
 }
 div.share {
   margin-bottom: 20px;
@@ -304,8 +317,7 @@ pre {
   }
   .excerpt_title {
     font-size: large;
-    font-family: $header-font-family;
-    font-weight: 500;
+    @include roboto-slab(500);
   }
   .logo-wrap {
     position: fixed;

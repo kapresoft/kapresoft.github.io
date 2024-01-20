@@ -1,0 +1,95 @@
+/**
+ * Theme
+ * H1/Title: Open Sans
+ * Body: Playfair
+ */
+
+// web safe ---------------------------------------
+
+$sans-serif       : 'Tahoma', 'Verdana', sans-serif;
+$monospace        : 'Courier New', monospace;
+$font-serif       : 'Georgia', serif;
+
+$sans-serif       : (
+  variable: false,
+  font-family: '#{$sans-serif}'
+);
+$font-roboto      : (
+  variable: false,
+  font-family: 'Roboto'
+);
+$font-roboto-slab : (
+  variable: true,
+  font-family: 'Roboto Slab'
+);
+
+// ------------------------------------------------
+
+/**
+ * $a is the argument data structure.
+ */
+@mixin x-font($a : ( font: $sans-serif, weight: 700,
+  color: #000000, font-size: 1.0rem, line-height: 1.1 )) {
+  $font        : map-get($a, font);
+  $is-variable : map-get($font, variable);
+  $fs          : map-get($a, font-size);
+  $fw          : map-get($a, weight);
+
+  font-family  : map-get($font, font-family);
+  font-size    : map-get($a, font-size);
+  line-height  : map-get($a, line-height);
+  color        : map-get($a, color);
+  @include x-font-weight($font, $fw)
+}
+
+@mixin x-font-weight($font: $sans-serif, $weight: 400, $ital: 0) {
+  @if map-get($font, 'variable') == true {
+    @if $ital == 0 {
+      font-variation-settings : "wght" $weight;
+      //@supports (font-variation-settings: "wght" $fontWeight) {
+      //  font-variation-settings: "wght" $fontWeight;
+      //}
+    } @else {
+      $fv-body-font           : "wght" $weight, "ital" $ital;
+      @supports (font-variation-settings: $fv-body-font) {
+        font-variation-settings : $fv-body-font;
+      }
+    }
+  } @else {
+    font-weight : $weight;
+  }
+}
+
+/**
+ * $weight: 100 to 900
+ * $style: normal | italic
+ */
+@mixin roboto($weight: 300, $style: normal) {
+  font-family: "Roboto", sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin roboto-slab($weight: 300, $style: normal) {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin merriweather($weight: 700, $style: normal) {
+  font-family: "Merriweather", serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin quattrocento-sans($weight: bold, $style: normal) {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin arial-narrow($weight: bold, $style: normal) {
+  font-family: "Arial Narrow", sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+}
