@@ -3,46 +3,7 @@
 
 @import "{{ site.theme }}";
 
-// ==============================================================
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Merriweather:ital,wght@0,700;1,300&display=swap');
-@import "robot-fonts";
-@import "robot-slab-fonts";
-
-$header-font-weight: 700;
-$header-font-family: 'Roboto Slab', serif;
-$header3-font-family: 'Merriweather', serif;
-$header3-font-weight: 700;
-$code-bg: #333333;
-// ==============================================================
-
 .noindex { display: none; }
-
-body {
-  @include roboto-light;
-  font-size: 1rem;
-  color:#666;
-  margin: 0;
-  padding:0 0 20px 0;
-  background: url(../images/body-background.png) #eae6d1;
-}
-
-h1, h2, h4, h5, h6 {
-  color:#333;
-  margin:0 0 10px;
-  font-family: $header-font-family;
-  font-weight: $header-font-weight;
-}
-
-h3 {
-  font-family: $header3-font-family;
-  font-weight: $header3-font-weight;
-}
-
-div {
-  .top-tag {
-    margin-bottom: 10px;
-  }
-}
 
 p, div.excerpt {
   line-height: 1.3em;
@@ -55,16 +16,6 @@ p, div.excerpt {
   img {
     display: block;
     margin: 20px auto 30px;
-  }
-}
-
-.highlight table {
-  $lineNumberMode-Padding: 5px 0 5px 5px !important;
-  td pre.lineno {
-    padding: $lineNumberMode-Padding;
-  }
-  td.code pre {
-    padding: $lineNumberMode-Padding;
   }
 }
 
@@ -285,19 +236,6 @@ nav {
   }
 }
 
-code {
-  background: $code-bg;
-}
-pre {
-  background: $code-bg;
-}
-
-
-// ==============================================================
-// Media Customizations
-// ==============================================================
-
-
 @media print, screen {
   h1 {
     padding: 0px 0px;
@@ -323,9 +261,6 @@ pre {
   }
   div.tag-line {
     font-size: smaller; width: 60%;
-  }
-  section {
-    padding:20px 20px !important;
   }
 }
 

@@ -1,0 +1,38 @@
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+@mixin roboto-slab-thin {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@mixin roboto-slab-light {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin roboto-slab-regular {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin roboto-slab-medium {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin roboto-slab-bold {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin roboto-slab-black {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
