@@ -25,6 +25,8 @@ exclude:
   - "vendor/gems/"
   - "vendor/ruby/"
 
+related:
+  max-count: 10
 
 collections:
   blog:
