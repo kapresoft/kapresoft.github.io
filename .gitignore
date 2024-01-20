@@ -28,3 +28,7 @@ hs_err_pid*
 /_site/
 /live-*
 .sass-cache/
+
+# include theses
+!.gitignore
+!.run
