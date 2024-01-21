@@ -5,14 +5,31 @@
 @import "site-defs";
 
 // ==============================================================
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap');
 // Roboto+Slab:wght@100;300;400;500;700;900
 // ==============================================================
 $code-bg              : #333;
 $header-color-default : #333;
 // ==============================================================
 
-.noindex { display: none; }
+// title is the only h1 in articles
+$h1 : (font: $font-roboto-slab,
+  font-weight: 900, font-size: 1.9rem, color: #393939, line-height: 1.1);
+$h2 : (font: $font-roboto-slab,
+  font-weight: 900, font-size: 1.5rem, color: #393939, line-height: 1.1);
+$h3 : (font: $font-merriweather,
+  font-weight: 500, font-size: 1.3rem, color: #51678a, line-height: 1.1);
+$h4 : (font: $font-roboto-slab,
+  font-weight: 500, font-size: 1.2rem, color: #666666, line-height: 1.1);
+$h5 : (font: $font-quattrocento-sans,
+  font-weight: 500, font-size: 1.1rem, color: #767676, line-height: 1.1);
+$h6 : (font: $font-arial-narrow,
+  font-weight: 500, font-size: 1.0rem, color: #274769, line-height: 1.1);
+
+%h1-title {color : #3399cc; margin-bottom : 10px; white-space: normal;}
+%headers {margin : 0 0 10px;}
+
+// ==============================================================
 
 html {
   font-size: 100%; /* 1 */
@@ -33,33 +50,31 @@ body {
   background: url(../images/body-background.png) #eae6d1;
 }
 
-h1, h2, h4, h5, h6 {
-  color  : $header-color-default;
-  margin : 0 0 10px;
-}
-
-
 h1 {
-  @include roboto-slab(900);
+  @include x-font($h1);
+  // use "title" by default from now on
+  &.title {@extend %h1-title;}
+  &.titlew {@extend %h1-title;}
+  &.title2 {@extend %h1-title;}
+  &.title2w {@extend %h1-title;}
+  &.title3 {@extend %h1-title;}
+  &.title3w {@extend %h1-title;}
 }
-h2 {
-  @include roboto-slab(900);
-}
-h3 {
-  @include merriweather();
-}
-h4 {
-  @include roboto-slab(900);
-}
+h2 {@include x-font($h2);@extend %headers;}
+h3 {@include x-font($h3);@extend %headers;}
+h4 {@include x-font($h4); @extend %headers;}
+h5 {@include x-font($h5); @extend %headers;}
+h6 {@include x-font($h6); @extend %headers;}
 
-div {
-  .top-tag {
-    margin-bottom: 10px;
-  }
-}
+.noindex { display: none; }
 
-p, div.excerpt {
-  line-height: 1.3em;
+div { .top-tag {margin-bottom: 10px;} }
+p, div.excerpt { line-height: 1.3em; }
+
+span {
+  &.post-date {font-size : x-small;}
+  &.left {float : left;}
+  &.right {float : right;}
 }
 
 .image, .illustration {
@@ -92,13 +107,12 @@ div.excerpt {
 }
 
 div.site-name {
-  line-height:1.1;
-  font-size:28px;
-
-  font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  font-family: 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f3f3f3;
-  text-shadow: 0px 2px 0px #235796;
-  margin: 0px;
+  text-shadow: 0 2px 0 #235796;
+  margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -156,51 +170,6 @@ section {
   }
 }
 
-h1 {
-  font-size:24px;
-}
-
-h1.title, h1.titlew, h1.title2, h1.title2w, h1.title3, h1.title3w {
-  font-size:28px;
-  color: #3399cc;
-  margin-bottom: 10px;
-}
-
-h1.titlew { white-space: normal; }
-h1.title2, h1.title2w { font-size:24px; }
-h1.title2w { white-space: normal; }
-
-h1.title3, h1.title3w { font-size:21px; }
-h1.title3w { white-space: normal; }
-
-h2 {
-  font-size: 24px;
-  color:#393939;
-}
-
-h3 {
-  font-size: 18px;
-  color:#51678a;
-}
-
-h4 {
-  font-size: 17px;
-  color:#666666;
-}
-
-h5 {
-  @include quattrocento-sans();
-  font-size: 17px;
-  color:#767676;
-}
-
-h6 {
-  @include arial-narrow();
-  font-weight: bold;
-  font-size: 14px;
-  color: #274769;
-}
-
 div.uml-diagram {
   margin-bottom: 20px;
   img {
@@ -220,17 +189,9 @@ div.link {
   }
 }
 
-.share-placeholder {
-  height: 29px;
-}
-
-div.share-spt {
-  margin-top: 30px;
-}
-
-div.share-spb {
-  margin-bottom: 50px;
-}
+.share-placeholder {height: 29px;}
+div.share-spt {margin-top: 30px;}
+div.share-spb {margin-bottom: 50px;}
 
 div.share-note {
   margin-bottom: 5px;
@@ -274,19 +235,20 @@ nav {
   ul {
     li {
       &.tag-h1 {
-        font-size: 1.0em;
+        font-size: 0.9rem;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
       }
       &.tag-h2 {
-        font-size: 0.9em;
+        font-size: 0.8rem;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
       }
       &.tag-h3 {
-        font-size: 0.8em;
+        line-height: 0.5;
+        font-size: 0.7rem;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -298,13 +260,8 @@ nav {
   }
 }
 
-code {
-  background: $code-bg;
-}
-pre {
-  background: $code-bg;
-}
-
+code {background: $code-bg;}
+pre {background: $code-bg;}
 
 // ==============================================================
 // Media Customizations
@@ -312,9 +269,7 @@ pre {
 
 
 @media print, screen {
-  h1 {
-    padding: 0px 0px;
-  }
+  h1 {padding: 0 0;}
   .excerpt_title {
     font-size: large;
     @include roboto-slab(500);
@@ -324,40 +279,26 @@ pre {
     width: 100px;
     height: 100px;
     left: 40px;
-    top: 0px;
-    border: 0px solid #000000;
-    .inner-wrap {
-      float: left;
-    }
-    .logo {
-      width: 140px;
-    }
+    top: 0;
+    border: 0 solid #000000;
+    .inner-wrap {float: left;}
+    .logo {width: 140px;}
   }
-  div.tag-line {
-    font-size: smaller; width: 60%;
-  }
-  section {
-    padding:20px 20px !important;
-  }
+  div.tag-line {font-size: smaller; width: 60%;}
+  section {padding : 20px 20px !important;}
 }
 
 @media print, screen and (max-width: 720px) {
 
-  h1 {
-    font-size: 1.6rem;
-  }
-  h1.title, .excerpt_title {
-    font-size: 1.8rem;
-  }
-  code {
-    font-size: 0.8rem;
-  }
-  section {
-    margin: 130px 5px 10px 5px;
-  }
+  h1 {font-size: 1.6rem;}
+  h1.title, .excerpt_title {font-size: 1.8rem;}
+  code {font-size: 0.8rem;}
+  section {margin: 130px 5px 10px 5px;}
+
   header {
     p { display: block;}
   }
+
   div.tag-line {
     font-size: smaller;
     width: 50%;
@@ -366,22 +307,11 @@ pre {
 
 @media print, screen and (max-width: 680px) {
 
-  body {
-    font-size: 0.9rem;
-  }
-  h1 {
-    font-size: 1.5rem;
-  }
-  h1.title, .excerpt_title {
-    font-size: 1.5rem;
-  }
-  code {
-    font-size: 0.7rem;
-  }
-
-  section,section.index-page {
-    margin: 120px auto;
-  }
+  body {font-size: 0.9rem;}
+  h1 {font-size: 1.5rem;}
+  h1.title, .excerpt_title {font-size: 1.5rem;}
+  code {font-size: 0.7rem;}
+  section,section.index-page {margin: 120px auto;}
 
   header {
     p {
@@ -411,13 +341,8 @@ pre {
   h1.title, .excerpt_title {
     font-size: 1rem;
   }
-  code {
-    font-size: 0.7rem;
-  }
-
-  section {
-    margin: 5px;
-  }
+  code {font-size: 0.7rem;}
+  section {margin: 5px;}
 
   header {
     p {
@@ -431,9 +356,8 @@ pre {
     }
   }
 
-  .logo-wrap {
-    display: none;
-  }
+  .logo-wrap {display: none;}
+
   div.tag-line {
     font-size: smaller;
     width: 80%;

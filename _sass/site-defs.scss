@@ -6,21 +6,33 @@
 
 // web safe ---------------------------------------
 
-$sans-serif       : 'Tahoma', 'Verdana', sans-serif;
-$monospace        : 'Courier New', monospace;
-$font-serif       : 'Georgia', serif;
+$sans-serif        : 'Tahoma', 'Verdana', sans-serif;
+$monospace         : 'Courier New', monospace;
+$font-serif        : 'Georgia', serif;
 
-$sans-serif       : (
+$sans-serif        : (
   variable: false,
-  font-family: '#{$sans-serif}'
+  font-family: "#{$sans-serif}"
 );
-$font-roboto      : (
+$font-roboto       : (
   variable: false,
-  font-family: 'Roboto'
+  font-family: #{"Roboto", sans-serif}
 );
-$font-roboto-slab : (
-  variable: true,
-  font-family: 'Roboto Slab'
+$font-roboto-slab  : (
+  variable: false,
+  font-family: #{"Roboto Slab", sans-serif}
+);
+$font-merriweather : (
+  variable: false,
+  font-family: #{"Merriweather", serif}
+);
+$font-quattrocento-sans : (
+  variable: false,
+  font-family: #{"Quattrocento Sans", sans-serif}
+);
+$font-arial-narrow : (
+  variable: false,
+  font-family: #{"Arial Narrow", sans-serif}
 );
 
 // ------------------------------------------------
