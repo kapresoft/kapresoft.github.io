@@ -65,8 +65,9 @@ audio:not([controls]) {
 
 html {
     font-size: 100%; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-    -ms-text-size-adjust: 100%; /* 2 */
+    // manual edit(tony) -- these properties are no longer supported:
+    //-webkit-text-size-adjust: 100%; /* 2 */
+    //-ms-text-size-adjust: 100%; /* 2 */
 }
 
 /*

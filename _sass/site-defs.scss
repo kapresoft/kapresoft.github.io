@@ -5,70 +5,99 @@
  */
 
 // web safe ---------------------------------------
+// Tahoma, Arial, Verdana, Georgia, Courier New
 
-$sans-serif        : 'Tahoma', 'Verdana', sans-serif;
-$monospace         : 'Courier New', monospace;
-$font-serif        : 'Georgia', serif;
+$font-sans-serif        : (font-family: #{'Tahoma', 'Verdana', sans-serif}, variable: false);
+$font-serif             : (font-family: #{'Georgia', serif});
+$font-roboto            : (font-family: #{"Roboto", sans-serif});
+$font-roboto-slab       : (font-family: #{"Roboto Slab", sans-serif});
+$font-merriweather      : (font-family: #{"Merriweather", serif});
+$font-quattrocento-sans : (font-family: #{"Quattrocento Sans", sans-serif});
+$font-arial-narrow      : (font-family: #{"Arial Narrow", sans-serif});
+$font-tahoma            : (font-family: #{"Tahoma", "Verdana", sans-serif});
+$font-verdana           : (font-family: #{"Verdana", "Tahoma", sans-serif});
 
-$sans-serif        : (
-  variable: false,
-  font-family: "#{$sans-serif}"
-);
-$font-roboto       : (
-  variable: false,
-  font-family: #{"Roboto", sans-serif}
-);
-$font-roboto-slab  : (
-  variable: false,
-  font-family: #{"Roboto Slab", sans-serif}
-);
-$font-merriweather : (
-  variable: false,
-  font-family: #{"Merriweather", serif}
-);
-$font-quattrocento-sans : (
-  variable: false,
-  font-family: #{"Quattrocento Sans", sans-serif}
-);
-$font-arial-narrow : (
-  variable: false,
-  font-family: #{"Arial Narrow", sans-serif}
-);
+/**
+ * weight: 300 - 900
+ * italic: yes
+ * @see: https://fonts.google.com/specimen/Playfair/tester?query=playfair&stroke=Serif
+ */
+$font-playfair          : (font-family: #{"Playfair", "Georgia", serif});
+
+/**
+ * weight: 400 - 900
+ * italic: yes
+ * @see: https://fonts.google.com/specimen/Playfair+Display/tester?query=playfair&stroke=Serif
+ */
+$font-playfair-display  : (font-family: #{"Playfair Display", "Georgia", serif});
+
+/**
+ * weight: 100 - 900
+ * italic: yes
+ * @see: https://fonts.google.com/noto/specimen/Noto+Serif/tester?stroke=Serif
+ */
+$font-noto-serif        : (font-family: #{"Noto Serif", "Georgia", serif});
+/**
+ * weight: 200 - 900
+ * italic: yes
+ * @see: https://fonts.google.com/specimen/Source+Serif+4/tester?query=source&stroke=Serif
+ */
+$font-source-serif        : (font-family: #{"Source Serif 4", "Georgia", serif});
 
 // ------------------------------------------------
 
 /**
- * $a is the argument data structure.
+ * Get a $key value from a $map, or return $default.
  */
-@mixin x-font($a : ( font: $sans-serif, weight: 700,
-  color: #000000, font-size: 1.0rem, line-height: 1.1 )) {
-  $font        : map-get($a, font);
-  $is-variable : map-get($font, variable);
-  $fs          : map-get($a, font-size);
-  $fw          : map-get($a, weight);
-
-  font-family  : map-get($font, font-family);
-  font-size    : map-get($a, font-size);
-  line-height  : map-get($a, line-height);
-  color        : map-get($a, color);
-  @include x-font-weight($font, $fw)
+@function val($map, $key, $default) {
+  @if map-has-key($map, $key) {
+    @return map-get($map, $key);
+  } @else {
+    @return $default;
+  }
+}
+@function label($map, $label) {
+  $bracket-open: '['; $bracket-close: ']';
+  @if map-has-key($map, $label) {
+    @return "#{$bracket-open}#{map-get($map, $label)}#{$bracket-close}"
+  } @else {@return '';}
 }
 
-@mixin x-font-weight($font: $sans-serif, $weight: 400, $ital: 0) {
-  @if map-get($font, 'variable') == true {
-    @if $ital == 0 {
-      font-variation-settings : "wght" $weight;
-      //@supports (font-variation-settings: "wght" $fontWeight) {
-      //  font-variation-settings: "wght" $fontWeight;
-      //}
-    } @else {
-      $fv-body-font           : "wght" $weight, "ital" $ital;
-      @supports (font-variation-settings: $fv-body-font) {
-        font-variation-settings : $fv-body-font;
-      }
-    }
-  } @else {
-    font-weight : $weight;
+/**
+ * $a is the argument data structure.
+ */
+@mixin x-font($a : ( font: $font-sans-serif, weight: 300, color: #000000, size: 1.0rem,
+        line-height: 1.1, style: 'normal', debug: true, debug-label: 300 )) {
+
+  $font        : val($a, 'font', $font-sans-serif);
+  $is-variable : val($font, 'variable', false);
+  $fam         : val($font, 'font-family', sans-serif);
+  $style       : val($a, 'style', normal);
+  $size        : val($a, 'size', 1.1rem);
+  $weight      : val($a, 'weight', normal);
+  $line-height : val($a, 'line-height', inherit);
+  $color       : val($a, 'color', inherit);
+
+  $debug       : val($a, 'debug', false);
+  $debugLabel  : label($a, 'debug-label');
+
+  font-family  : $fam;
+  font-size    : $size;
+  font-weight  : $weight;
+  font-style   : $style;
+
+  line-height  : $line-height;
+  color        : $color;
+
+  @if $debug == true {
+    @debug "#{$debugLabel} »🔹font-family: #{$fam}";
+    @debug "#{$debugLabel} »    font-size: #{$size}";
+    @debug "#{$debugLabel} »  font-weight: #{$weight}";
+    @debug "#{$debugLabel} »   font-style: #{$style}";
+    @debug "#{$debugLabel} »        color: #{$color}";
+    @debug "#{$debugLabel} »  line-height: #{$line-height}";
+    @debug "#{$debugLabel} »  is-variable: #{$is-variable}";
+    @debug "#{$debugLabel} ⎯ ⎯ ⎯ ⎯ ⎯";
   }
 }
 
@@ -77,31 +106,37 @@ $font-arial-narrow : (
  * $style: normal | italic
  */
 @mixin roboto($weight: 300, $style: normal) {
-  font-family: "Roboto", sans-serif;
+  font-family: map-get($font-roboto, font-family);
   font-weight: $weight;
   font-style: $style;
 }
 
 @mixin roboto-slab($weight: 300, $style: normal) {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: map-get($font-roboto-slab, font-family);
   font-weight: $weight;
   font-style: $style;
 }
 
 @mixin merriweather($weight: 700, $style: normal) {
-  font-family: "Merriweather", serif;
+  font-family: map-get($font-merriweather, font-family);
   font-weight: $weight;
   font-style: $style;
 }
 
 @mixin quattrocento-sans($weight: bold, $style: normal) {
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: map-get($font-quattrocento-sans, font-family);
   font-weight: $weight;
   font-style: $style;
 }
 
-@mixin arial-narrow($weight: bold, $style: normal) {
-  font-family: "Arial Narrow", sans-serif;
+@mixin arial-narrow($weight: 300, $style: normal) {
+  font-family: map-get($font-arial-narrow, font-family);
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin playfair($weight: inherit, $style: normal) {
+  font-family: map-get($font-playfair, font-family);
   font-weight: $weight;
   font-style: $style;
 }

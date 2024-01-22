@@ -5,49 +5,57 @@
 @import "site-defs";
 
 // ==============================================================
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap');
 // Roboto+Slab:wght@100;300;400;500;700;900
+// Playfair:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900
+// Playfair+Display:ital,wght@0,400..900;1,400..900
+//
 // ==============================================================
 $code-bg              : #333;
 $header-color-default : #333;
 // ==============================================================
 
 // title is the only h1 in articles
-$h1 : (font: $font-roboto-slab,
-  font-weight: 900, font-size: 1.9rem, color: #393939, line-height: 1.1);
-$h2 : (font: $font-roboto-slab,
-  font-weight: 900, font-size: 1.5rem, color: #393939, line-height: 1.1);
-$h3 : (font: $font-merriweather,
-  font-weight: 500, font-size: 1.3rem, color: #51678a, line-height: 1.1);
-$h4 : (font: $font-roboto-slab,
-  font-weight: 500, font-size: 1.2rem, color: #666666, line-height: 1.1);
-$h5 : (font: $font-quattrocento-sans,
-  font-weight: 500, font-size: 1.1rem, color: #767676, line-height: 1.1);
-$h6 : (font: $font-arial-narrow,
-  font-weight: 500, font-size: 1.0rem, color: #274769, line-height: 1.1);
+$body-line-height: 1.55;
+$body-font : (font: $font-noto-serif, weight: 400, size: 1.2rem, color: #242424,
+  line-height: $body-line-height, debug: true, debug-label: 'body');
+$italic-font : (font: $font-source-serif, weight: 350, size: 1.2rem, color: #343434, style: italic,
+  line-height: $body-line-height, debug: true, debug-label: 'em');
 
-%h1-title {color : #3399cc; margin-bottom : 10px; white-space: normal;}
+$h1 : (font: $font-verdana, weight: 900, size: 2.2rem, color: #393939,
+  line-height: 1.1, debug: false, debug-label: 'h1');
+$h2 : (font: $font-roboto-slab, weight: 900, size: 1.5rem, color: #393939,
+  line-height: 1.1, debug: false, debug-label: 'h2');
+$h3 : (font: $font-merriweather, weight: 500, size: 1.3rem, color: #51678a,
+  line-height: 1.1, debug: false, debug-label: 'h3');
+$h4 : (font: $font-roboto-slab, weight: 500, size: 1.2rem, color: #666666,
+  line-height: 1.1, debug: false, debug-label: 'h4');
+$h5 : (font: $font-quattrocento-sans, weight: 500, size: 1.1rem, color: #767676,
+  line-height: 1.1, debug: false, debug-label: 'h5');
+$h6 : (font: $font-arial-narrow, weight: 500, size: 1.0rem, color: #274769,
+  line-height: 1.1, debug: false, debug-label: 'h6');
+
+%h1-title { color : #3399cc; margin-bottom : 10px; white-space: normal;}
 %headers {margin : 0 0 10px;}
 
 // ==============================================================
 
 html {
-  font-size: 100%; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -ms-text-size-adjust: 100%; /* 2 */
+  //-webkit-text-size-adjust: 100%;
+  //-ms-text-size-adjust: 100%;
 
-  font-optical-sizing: auto; // for variable fonts
+  //font-optical-sizing: auto; // for variable fonts
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+
+  font-size: 100%;
 }
 
 body {
-  @include roboto(300);
-  font-size: 1rem;
-  color:#666;
-  margin: 0;
-  padding:0 0 20px 0;
-  background: url(../images/body-background.png) #eae6d1;
+  @include x-font($body-font);
+  margin     : 0;
+  padding    : 0 0 20px 0;
+  background : url(../images/body-background.png) #eae6d1;
 }
 
 h1 {
@@ -59,6 +67,8 @@ h1 {
   &.title2w {@extend %h1-title;}
   &.title3 {@extend %h1-title;}
   &.title3w {@extend %h1-title;}
+  //text-shadow: 1px 1px 1px #235796;
+  text-shadow: 1px 1px 1px #565656;
 }
 h2 {@include x-font($h2);@extend %headers;}
 h3 {@include x-font($h3);@extend %headers;}
@@ -69,7 +79,7 @@ h6 {@include x-font($h6); @extend %headers;}
 .noindex { display: none; }
 
 div { .top-tag {margin-bottom: 10px;} }
-p, div.excerpt { line-height: 1.3em; }
+p, div.excerpt {line-height: $body-line-height;}
 
 span {
   &.post-date {font-size : x-small;}
@@ -89,75 +99,73 @@ span {
 
 .highlight table {
   $lineNumberMode-Padding: 5px 0 5px 5px !important;
-  td pre.lineno {
-    padding: $lineNumberMode-Padding;
-  }
-  td.code pre {
-    padding: $lineNumberMode-Padding;
-  }
+  td pre.lineno {padding: $lineNumberMode-Padding;}
+  td.code pre {padding: $lineNumberMode-Padding;}
 }
 
-div.getty-image {
-  text-align: center !important;
-  margin-bottom: 1em;
-}
+div.getty-image {text-align: center !important;margin-bottom: 1em;}
+div.excerpt {padding: 5px 0 20px 0;}
 
-div.excerpt {
-  padding: 5px 0 20px 0;
-}
-
-div.site-name {
-  font-size: 40px;
-  line-height: 1.2;
-  font-family: 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #f3f3f3;
-  text-shadow: 0 2px 0 #235796;
-  margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  -ms-text-overflow: ellipsis;
-}
-
-div.tag-line {
-  color: #f3f3f3;
-  width: 70%;
-  font-size: small;
-  margin: 10px auto auto auto;
-}
-
-section {
-  margin-top: 150px;
-}
 
 .wrapper {
 
-  p {
-    em {
-      @include roboto-slab(400, italic);
+  section {
+    padding : 20px 20px; margin: 130px auto;
+
+    .article1 {
+      ul li {
+        margin-bottom: 1em;
+        ul, ol {margin-top: .5em}
+        ul li, ol li {margin-bottom: auto;}
+      }
+      ol li {
+        margin-bottom: 1em;
+        ul, ol {margin-top: .5em}
+        ul li, ol li {margin-bottom: auto;}
+      }
+    }
+
+  }
+
+  p { em {@include x-font($italic-font);} }
+
+}
+
+header {
+  height: 120px;
+  margin: 0; padding: 10px 0 0 0;
+  p {display: block;}
+
+  .tag-line {
+    font-family: 'Tahoma';
+    font-size: 0.9rem; width: 60%;
+    font-size: small;
+    color: #f3f3f3;
+    width: 60%;
+    margin: 5px auto;
+  }
+  .logo-wrap {
+    .inner-wrap {
+      margin: 0; padding: 0;
+      position: absolute;
+      left: 40px; top: 10px;
+      float: left;
+      img.logo {width: 120px;}
     }
   }
 
-  section.article1 {
-    ul li {
-      margin-bottom: 1em;
-      ul, ol {
-        margin-top: .5em
-      }
-      ul li, ol li {
-        margin-bottom: auto;
-      }
-    }
-    ol li {
-      margin-bottom: 1em;
-      ul, ol {
-        margin-top: .5em
-      }
-      ul li, ol li {
-        margin-bottom: auto;
-      }
-    }
+  .site-name {
+    font-size: 40px;
+    line-height: 1.2;
+    font-family: 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #f3f3f3;
+    text-shadow: 0 2px 0 #235796;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
   }
 }
 
@@ -263,84 +271,80 @@ nav {
 code {background: $code-bg;}
 pre {background: $code-bg;}
 
+
+.excerpt_title {font-size: large; @include roboto-slab(500);}
+
 // ==============================================================
 // Media Customizations
 // ==============================================================
 
 
+/**
+ * section settings: affects the top-padding of the title
+ */
 @media print, screen {
   h1 {padding: 0 0;}
-  .excerpt_title {
-    font-size: large;
-    @include roboto-slab(500);
-  }
-  .logo-wrap {
-    position: fixed;
-    width: 100px;
-    height: 100px;
-    left: 40px;
-    top: 0;
-    border: 0 solid #000000;
-    .inner-wrap {float: left;}
-    .logo {width: 140px;}
-  }
-  div.tag-line {font-size: smaller; width: 60%;}
-  section {padding : 20px 20px !important;}
 }
 
+@media print, screen and (max-width: 790px) {
+  section {margin: 190px auto;}
+}
+
+/**
+ * section settings: affects the top-padding of the title
+ */
 @media print, screen and (max-width: 720px) {
 
   h1 {font-size: 1.6rem;}
   h1.title, .excerpt_title {font-size: 1.8rem;}
+  div.tag-line {font-size: smaller;width: 50%;}
+  section {margin: 140px auto;}
+  header { p {display: block;} }
   code {font-size: 0.8rem;}
-  section {margin: 130px 5px 10px 5px;}
 
-  header {
-    p { display: block;}
-  }
-
-  div.tag-line {
-    font-size: smaller;
-    width: 50%;
-  }
 }
 
+/**
+ * section settings: affects the top-padding of the title
+ */
 @media print, screen and (max-width: 680px) {
+
+  .logo-wrap { .logo {width: 110px;} }
 
   body {font-size: 0.9rem;}
   h1 {font-size: 1.5rem;}
   h1.title, .excerpt_title {font-size: 1.5rem;}
+  div.site-name { font-size: 1.5rem; }
+  div.tag-line {
+    width : 50%; margin-top : 0; line-height : 1.0;
+    font-size: smaller;
+  }
   code {font-size: 0.7rem;}
-  section,section.index-page {margin: 120px auto;}
+  section {margin: 115px auto;}
+  //section,section.index-page {margin: 120px auto;}
 
   header {
     p {
       display: block;
-      font-size: 16px;
+      font-size: 0.9rem;
     }
-  }
-
-  .logo-wrap {
-    .logo {
-      width: 110px;
-    }
-  }
-  div.tag-line {
-    font-size: smaller;
-    width: 60%;
   }
 }
 
+/**
+ * section settings: affects the top-padding of the title
+ */
 @media print, screen and (max-width: 480px) {
   body {
     font-size: 0.9rem;
   }
-  h1 {
-    font-size: 1rem;
+  h1, h1.title, .excerpt_title {font-size: 1.1rem;}
+  div.site-name { font-size: 1.1rem; }
+  div.tag-line {
+    width : 80%; margin-top : 0; line-height : 1.0;
+    font-size: xx-small;
   }
-  h1.title, .excerpt_title {
-    font-size: 1rem;
-  }
+
   code {font-size: 0.7rem;}
   section {margin: 5px;}
 
@@ -350,17 +354,12 @@ pre {background: $code-bg;}
       font-size: 13px;
       white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis;
       -o-text-overflow: ellipsis;
       -ms-text-overflow: ellipsis;
+      text-overflow: ellipsis;
     }
   }
 
   .logo-wrap {display: none;}
 
-  div.tag-line {
-    font-size: smaller;
-    width: 80%;
-    margin-top: 0;
-  }
 }
