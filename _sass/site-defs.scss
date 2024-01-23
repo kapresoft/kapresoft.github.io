@@ -140,3 +140,14 @@ $font-source-serif        : (font-family: #{"Source Serif 4", "Georgia", serif})
   font-weight: $weight;
   font-style: $style;
 }
+
+@mixin h1-size($size: 1.0rem) {
+  h1 {
+    &.title { font-size : $size; }
+    &.titlew { font-size : $size; }
+    &.title2 { font-size : $size; }
+    &.title2w { font-size : $size; }
+    &.title3 { font-size : $size; }
+    &.title3w { font-size : $size; }
+  }
+}

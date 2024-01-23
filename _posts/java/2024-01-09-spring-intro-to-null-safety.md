@@ -30,7 +30,6 @@ public class UserService {
         // implementation
     }
 }
-
 ```
 
 In this example, if _createUser(..)_ is called with a null _username_, it will result in a compile-time warning or error, depending on the IDE configuration, thus preventing a possible runtime exception.
@@ -45,7 +44,6 @@ public class ProductService {
         // implementation
     }
 }
-
 ```
 
 In this case, the _findProductById_ method clearly communicates to the developers that it might return a null _Product_, enabling them to handle this scenario appropriately in their code.

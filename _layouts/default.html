@@ -33,7 +33,7 @@
 <body>
 
 {% assign isArticlePage = true %}
-{% include share-scripts.html %}
+{% comment %}{% include share-scripts.html %}{% endcomment %}
 
 <header>
     <div class="logo-wrap">
@@ -65,7 +65,7 @@
             </div>
         {% endif %}
 
-        {% include share-page.html %}
+        {% comment %}{% include share-page.html %}{% endcomment%}
 
         {% if site.env != "dev" %}
         {% if site.show_google_ads %}

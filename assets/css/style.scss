@@ -5,38 +5,50 @@
 @import "site-defs";
 
 // ==============================================================
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap");
 // Roboto+Slab:wght@100;300;400;500;700;900
 // Playfair:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900
 // Playfair+Display:ital,wght@0,400..900;1,400..900
 //
 // ==============================================================
-$code-bg              : #333;
 $header-color-default : #333;
+$body-line-height     : 1.55;
+$body-font-size       : 1.2rem;
+$code-bg              : #333;
+$code-padding         : 10px;
+
+$site-name-font-size  : 3.5rem;
+
+$h1-font-size         : 2.5rem;
+$h2-font-size         : 1.8rem;
+$h3-font-size         : 1.6rem;
+$h4-font-size         : 1.4rem;
+$h5-font-size         : 1.3rem;
+$h6-font-size         : 1.1rem;
 // ==============================================================
 
 // title is the only h1 in articles
-$body-line-height: 1.55;
-$body-font : (font: $font-noto-serif, weight: 400, size: 1.2rem, color: #242424,
-  line-height: $body-line-height, debug: true, debug-label: 'body');
-$italic-font : (font: $font-source-serif, weight: 350, size: 1.2rem, color: #343434, style: italic,
-  line-height: $body-line-height, debug: true, debug-label: 'em');
-
-$h1 : (font: $font-verdana, weight: 900, size: 2.2rem, color: #393939,
-  line-height: 1.1, debug: false, debug-label: 'h1');
-$h2 : (font: $font-roboto-slab, weight: 900, size: 1.5rem, color: #393939,
-  line-height: 1.1, debug: false, debug-label: 'h2');
-$h3 : (font: $font-merriweather, weight: 500, size: 1.3rem, color: #51678a,
-  line-height: 1.1, debug: false, debug-label: 'h3');
-$h4 : (font: $font-roboto-slab, weight: 500, size: 1.2rem, color: #666666,
-  line-height: 1.1, debug: false, debug-label: 'h4');
-$h5 : (font: $font-quattrocento-sans, weight: 500, size: 1.1rem, color: #767676,
-  line-height: 1.1, debug: false, debug-label: 'h5');
-$h6 : (font: $font-arial-narrow, weight: 500, size: 1.0rem, color: #274769,
-  line-height: 1.1, debug: false, debug-label: 'h6');
-
-%h1-title { color : #3399cc; margin-bottom : 10px; white-space: normal;}
-%headers {margin : 0 0 10px;}
+$body-font   : (font: $font-noto-serif, weight: 400, size: $body-font-size, color: #242424,
+    line-height: $body-line-height, debug: false, debug-label: "body");
+$italic-font : (font: $font-source-serif, weight: 350, size: $body-font-size, color: #343434,
+    style: italic, line-height: $body-line-height, debug: false, debug-label: "em");
+$h1: (font: $font-verdana, weight: 900, size: $h1-font-size, color: #393939,
+         line-height: 1.2, debug: false, debug-label: "h1");
+$h2: (font: $font-verdana, weight: 700, size: $h2-font-size, color: #212121,
+         line-height: 1.1, debug: false, debug-label: "h2");
+$h3: (font: $font-roboto, weight: 500, size: $h3-font-size, color: #3c5780,
+         line-height: 1.1, debug: false, debug-label: "h3");
+$h4: (font: $font-roboto-slab, weight: 700, size: $h4-font-size, color: #414141,
+         line-height: 1.1, debug: false, debug-label: "h4");
+$h5: (font: $font-noto-serif, weight: 700, size: $h5-font-size, color: #3c5780,
+         line-height: 1.1, debug: false, debug-label: "h5");
+$h6: (font: $font-roboto-slab, weight: 700, size: $h6-font-size, color: #414141,
+         line-height: 1.1, debug: false, debug-label: "h6");
+%h1-title {
+  color       : #3399cc; margin-bottom : 10px;
+  white-space : normal; overflow : unset;
+}
+%headers {margin : 0 0 10px 0; }
 
 // ==============================================================
 
@@ -55,7 +67,7 @@ body {
   @include x-font($body-font);
   margin     : 0;
   padding    : 0 0 20px 0;
-  background : url(../images/body-background.png) #eae6d1;
+  background : url(../images/body-background.png) #000;
 }
 
 h1 {
@@ -70,13 +82,23 @@ h1 {
   //text-shadow: 1px 1px 1px #235796;
   text-shadow: 1px 1px 1px #565656;
 }
-h2 {@include x-font($h2);@extend %headers;}
-h3 {@include x-font($h3);@extend %headers;}
-h4 {@include x-font($h4); @extend %headers;}
-h5 {@include x-font($h5); @extend %headers;}
-h6 {@include x-font($h6); @extend %headers;}
+h2 {@include x-font($h2); @extend %headers; }
+h3 {@include x-font($h3); @extend %headers; }
+h4 {@include x-font($h4); @extend %headers; }
+h5 {@include x-font($h5); @extend %headers; }
+h6 {@include x-font($h6); @extend %headers; }
 
 .noindex { display: none; }
+
+/**
+ * This class is used when scrolling top/bottom to hide header accordingly.
+ * Uses: header "transition: opacity 0.5s ease, transform 0.5s ease;"
+ */
+.hidden {
+  //display: none;
+  opacity: 0;
+  transform: translateY(-100%); /* Move the div up */
+}
 
 div { .top-tag {margin-bottom: 10px;} }
 p, div.excerpt {line-height: $body-line-height;}
@@ -107,7 +129,7 @@ div.getty-image {text-align: center !important;margin-bottom: 1em;}
 div.excerpt {padding: 5px 0 20px 0;}
 
 
-.wrapper {
+div.wrapper {
 
   section {
     padding : 20px 20px; margin: 130px auto;
@@ -125,48 +147,83 @@ div.excerpt {padding: 5px 0 20px 0;}
       }
     }
 
+    div.highlight > pre {
+      &.highlight {
+        background: $code-bg;
+        padding-bottom : $code-padding;
+        line-height: 1.1;
+        font-weight: 700;
+      }
+      & > code {
+        padding-bottom : $code-bg;
+      }
+    }
+
+    //div.highlight {
+    //  pre.highlight, pre.highlight > code {
+    //      //background: #282828;
+    //      background: #333;
+    //      padding-bottom : 10px;
+    //  }
+    //  pre.highlight {
+    //    line-height: 1.1;
+    //  }
+    //}
+
+    a {
+      color           : #242424;
+      font-weight     : 400;
+      text-decoration : underline;
+      text-decoration-thickness: 0.13em;
+      text-decoration-color: #4276b6;
+      &.post-title {
+        color:#3399cc !important;
+        text-decoration:none;
+      }
+    }
+
   }
 
   p { em {@include x-font($italic-font);} }
 
+
+
 }
 
 header {
-  height: 120px;
-  margin: 0; padding: 10px 0 0 0;
-  p {display: block;}
-
+  transition : opacity 0.5s ease, transform 0.5s ease;
+  height     : 130px;
+  margin     : 0; padding : 5px 0 0 0;
+  p {display : block;}
   .tag-line {
-    font-family: 'Tahoma';
-    font-size: 0.9rem; width: 60%;
-    font-size: small;
-    color: #f3f3f3;
-    width: 60%;
-    margin: 5px auto;
+    font-family : "Tahoma";
+    font-size   : 0.9rem; width : 60%;
+    color       : #f3f3f3;
+    margin      : 5px auto;
   }
   .logo-wrap {
     .inner-wrap {
-      margin: 0; padding: 0;
-      position: absolute;
-      left: 40px; top: 10px;
-      float: left;
-      img.logo {width: 120px;}
+      margin   : 0; padding : 0;
+      position : absolute;
+      left     : 40px; top : 10px;
+      float    : left;
+      img.logo {width : 120px;}
     }
   }
-
   .site-name {
-    font-size: 40px;
-    line-height: 1.2;
-    font-family: 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #f3f3f3;
-    text-shadow: 0 2px 0 #235796;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    -ms-text-overflow: ellipsis;
-    text-overflow: ellipsis;
+    font-size         : $site-name-font-size;
+    line-height       : 1.2;
+    font-family       : "Copse", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color             : #f3f3f3;
+    text-shadow       : 0 2px 0 #235796;
+    margin            : 0;
+    white-space       : nowrap;
+    overflow          : hidden;
+    -o-text-overflow  : ellipsis;
+    -ms-text-overflow : ellipsis;
+    text-overflow     : ellipsis;
   }
+
 }
 
 
@@ -278,36 +335,62 @@ pre {background: $code-bg;}
 // Media Customizations
 // ==============================================================
 
+@media print, screen and (max-width: 1060px) {
 
-/**
- * section settings: affects the top-padding of the title
- */
-@media print, screen {
-  h1 {padding: 0 0;}
+  header {
+    height : 120px;
+    .site-name {
+      font-size : $site-name-font-size - 0.5rem;
+    }
+    .logo-wrap {
+      .inner-wrap {top : 0;}
+    }
+  }
+  h2 { font-size: $h2-font-size - 0.1rem; }
+  h3 { font-size: $h3-font-size - 0.1rem; }
+  h4 { font-size: $h4-font-size - 0.1rem; }
+  h5 { font-size: $h5-font-size - 0.1rem; }
+  h6 { font-size: $h6-font-size - 0.1rem; }
+  div.wrapper {
+    section {
+      // 1368 x 912
+      @include h1-size($h1-font-size - 0.4rem);
+    }
+  }
+
 }
 
-@media print, screen and (max-width: 790px) {
-  section {margin: 190px auto;}
-}
-
 /**
+ * Tablets: 768px to 1023px
  * section settings: affects the top-padding of the title
  */
 @media print, screen and (max-width: 720px) {
 
-  h1 {font-size: 1.6rem;}
-  h1.title, .excerpt_title {font-size: 1.8rem;}
-  div.tag-line {font-size: smaller;width: 50%;}
-  section {margin: 140px auto;}
-  header { p {display: block;} }
-  code {font-size: 0.8rem;}
+  header {
+    $tag-line-fs: 0.8rem;
+    position: fixed; height: 120px;
+    .tag-line {font-size: $tag-line-fs; width: 55%; margin: 10px auto;}
+  }
+
+  body { font-size: $body-font-size - 0.1rem; }
+  div.wrapper {
+    p { line-height: $body-line-height - 0.1; }
+    section {
+      margin : 130px auto;
+      @include h1-size($h1-font-size - 0.2rem);
+    }
+    div.highlight > pre > code {
+      font-size : 0.9rem;
+    }
+  }
 
 }
 
 /**
+ * Larger Mobile Devices: 481px to 767px
  * section settings: affects the top-padding of the title
  */
-@media print, screen and (max-width: 680px) {
+@media print, screen and (max-width: 640px) {
 
   .logo-wrap { .logo {width: 110px;} }
 
@@ -332,9 +415,17 @@ pre {background: $code-bg;}
 }
 
 /**
+ * Ideal for viewports : 320px to 480px
+ *
+ * Common Viewports
+ * Ipad Pro            : 430px x 932px
+ * Samsung S20 Ultra   : 412px x 915px
+ * iPhone 12 Pro       : 390px x 844px
+
  * section settings: affects the top-padding of the title
  */
 @media print, screen and (max-width: 480px) {
+
   body {
     font-size: 0.9rem;
   }
@@ -345,21 +436,47 @@ pre {background: $code-bg;}
     font-size: xx-small;
   }
 
-  code {font-size: 0.7rem;}
-  section {margin: 5px;}
+  //code {font-size: 0.7rem;}
+  //section {margin: 5px;}
 
-  header {
-    p {
-      display: block;
-      font-size: 13px;
-      white-space: nowrap;
-      overflow: hidden;
-      -o-text-overflow: ellipsis;
-      -ms-text-overflow: ellipsis;
-      text-overflow: ellipsis;
+  div.wrapper {
+    section {
+      width: 500px;
+      padding : 20px 20px; margin: 110px auto;
     }
   }
 
-  .logo-wrap {display: none;}
+  header {
+    height: 100px;
+    position: fixed;
 
+    .tag-line {
+      font-size: 0.7rem; width: 50%;
+      margin: 10px auto;
+    }
+
+    .logo-wrap {
+      .inner-wrap {
+        //left: 40px; top: 10px;
+        img.logo { width: 90px; }
+      }
+    }
+  }
+
+}
+
+/**
+ * Viewports:
+ * Ipad Pro          : 430px x 932px
+ * Samsung S20 Ultra : 412px x 915px
+ * iPhone 12 Pro     : 390px x 844px
+ * Samsung S7+       : 360px x 740px
+ */
+@media print, screen and (max-width: 360px) {
+}
+
+/**
+ * Galaxy Fold : 280px x 653px
+ */
+@media print, screen and (max-width: 280px) {
 }

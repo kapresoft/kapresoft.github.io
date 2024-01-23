@@ -31,3 +31,27 @@ $(function() {
 
   $('img').on('load', sectionHeight);
 });
+
+const info = '[info]'
+const debug = '[debug]'
+/**
+ * Triggers On DOM Load
+ */
+$(function () {
+  const defaultHeight = 130;
+  let headerHeight = $('header').height()
+  headerHeight = headerHeight || defaultHeight;
+  headerHeight = headerHeight > 0 ? headerHeight : defaultHeight;
+
+  console.info('%s header-height: %s', info, headerHeight);
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > headerHeight) { // Check if page is scrolled
+      //console.debug('%s Scrolling Down: %s', debug, $(this).scrollTop())
+      $('header').addClass('hidden'); // Hide the div
+    } else {
+      $('header').removeClass('hidden'); // Show the div
+      //console.debug('%s Scrolled Top: %s', debug, $(this).scrollTop())
+    }
+  });
+});
