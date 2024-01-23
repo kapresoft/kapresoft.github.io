@@ -87,7 +87,7 @@
         <div class="share-spt">&nbsp;</div>
         {% include share-page.html %}
 
-        {% if related == null or page.tags == null or page.tags.size > 0 %}
+        {% if page.related == null or page.tags == null or page.tags.size > 0 %}
             {% include related-by-tags.html page=page %}
         {% else %}
             {% include related.html page=page %}

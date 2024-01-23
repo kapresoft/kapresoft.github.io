@@ -7,13 +7,13 @@
 // web safe ---------------------------------------
 // Tahoma, Arial, Verdana, Georgia, Courier New
 
-$font-sans-serif        : (font-family: #{'Tahoma', 'Verdana', sans-serif}, variable: false);
-$font-serif             : (font-family: #{'Georgia', serif});
+$font-sans-serif        : (font-family: #{"Tahoma", "Verdana", sans-serif}, variable: false);
+$font-serif             : (font-family: #{"Georgia", serif});
 $font-roboto            : (font-family: #{"Roboto", sans-serif});
-$font-roboto-slab       : (font-family: #{"Roboto Slab", sans-serif});
+$font-roboto-slab       : (font-family: #{"'Roboto Slab'", sans-serif});
 $font-merriweather      : (font-family: #{"Merriweather", serif});
-$font-quattrocento-sans : (font-family: #{"Quattrocento Sans", sans-serif});
-$font-arial-narrow      : (font-family: #{"Arial Narrow", sans-serif});
+$font-quattrocento-sans : (font-family: #{"'Quattrocento Sans'", sans-serif});
+$font-arial-narrow      : (font-family: #{"'Arial Narrow'", sans-serif});
 $font-tahoma            : (font-family: #{"Tahoma", "Verdana", sans-serif});
 $font-verdana           : (font-family: #{"Verdana", "Tahoma", sans-serif});
 
@@ -29,20 +29,22 @@ $font-playfair          : (font-family: #{"Playfair", "Georgia", serif});
  * italic: yes
  * @see: https://fonts.google.com/specimen/Playfair+Display/tester?query=playfair&stroke=Serif
  */
-$font-playfair-display  : (font-family: #{"Playfair Display", "Georgia", serif});
+$font-playfair-display  : (font-family: #{"'Playfair Display'", "Georgia", serif});
 
 /**
  * weight: 100 - 900
  * italic: yes
  * @see: https://fonts.google.com/noto/specimen/Noto+Serif/tester?stroke=Serif
  */
-$font-noto-serif        : (font-family: #{"Noto Serif", "Georgia", serif});
+$font-noto-serif        : (font-family: #{"'Noto Serif'", "Georgia", serif});
 /**
  * weight: 200 - 900
  * italic: yes
  * @see: https://fonts.google.com/specimen/Source+Serif+4/tester?query=source&stroke=Serif
  */
-$font-source-serif        : (font-family: #{"Source Serif 4", "Georgia", serif});
+//$font-source-serif        : (font-family: #{"'Source Serif 4'", "Georgia", serif});
+
+$font-georgia             : (font-family: #{"Georgia", serif});
 
 // ------------------------------------------------
 
@@ -57,29 +59,29 @@ $font-source-serif        : (font-family: #{"Source Serif 4", "Georgia", serif})
   }
 }
 @function label($map, $label) {
-  $bracket-open: '['; $bracket-close: ']';
+  $bracket-open: "["; $bracket-close: "]";
   @if map-has-key($map, $label) {
     @return "#{$bracket-open}#{map-get($map, $label)}#{$bracket-close}"
-  } @else {@return '';}
+  } @else {@return "";}
 }
 
 /**
  * $a is the argument data structure.
  */
 @mixin x-font($a : ( font: $font-sans-serif, weight: 300, color: #000000, size: 1.0rem,
-        line-height: 1.1, style: 'normal', debug: true, debug-label: 300 )) {
+        line-height: 1.1, style: "normal", debug: true, debug-label: 300 )) {
 
-  $font        : val($a, 'font', $font-sans-serif);
-  $is-variable : val($font, 'variable', false);
-  $fam         : val($font, 'font-family', sans-serif);
-  $style       : val($a, 'style', normal);
-  $size        : val($a, 'size', 1.1rem);
-  $weight      : val($a, 'weight', normal);
-  $line-height : val($a, 'line-height', inherit);
-  $color       : val($a, 'color', inherit);
+  $font        : val($a, "font", $font-sans-serif);
+  $is-variable : val($font, "variable", false);
+  $fam         : val($font, "font-family", sans-serif);
+  $style       : val($a, "style", normal);
+  $size        : val($a, "size", 1.1rem);
+  $weight      : val($a, "weight", normal);
+  $line-height : val($a, "line-height", inherit);
+  $color       : val($a, "color", inherit);
 
-  $debug       : val($a, 'debug', false);
-  $debugLabel  : label($a, 'debug-label');
+  $debug       : val($a, "debug", false);
+  $debugLabel  : label($a, "debug-label");
 
   font-family  : $fam;
   font-size    : $size;
@@ -141,13 +143,52 @@ $font-source-serif        : (font-family: #{"Source Serif 4", "Georgia", serif})
   font-style: $style;
 }
 
-@mixin h1-size($size: 1.0rem) {
+/**
+ * $bySize can be a positive or negative incremental value.
+ * Use within: section { @include h1-size(0.1rem); }
+ */
+@mixin h1-size($bySize: 1.0rem) {
+  $size : $h1-font-size + $bySize;
   h1 {
-    &.title { font-size : $size; }
-    &.titlew { font-size : $size; }
-    &.title2 { font-size : $size; }
+    &.title   { font-size : $size; }
+    &.titlew  { font-size : $size; }
+    &.title2  { font-size : $size; }
     &.title2w { font-size : $size; }
-    &.title3 { font-size : $size; }
+    &.title3  { font-size : $size; }
     &.title3w { font-size : $size; }
   }
+}
+
+/**
+ * $bySize can be a positive or negative incremental value.
+ */
+@mixin header-sizes($bySize: 0.1rem) {
+  h2 { font-size: $h2-font-size + $bySize; }
+  h3 { font-size: $h3-font-size + $bySize; }
+  h4 { font-size: $h4-font-size + $bySize; }
+  h5 { font-size: $h5-font-size + $bySize; }
+  h6 { font-size: $h6-font-size + $bySize; }
+}
+
+/**
+ * $bySize can be a positive or negative incremental value.
+ * Usage: @include body-font-size(0.2rem);
+ */
+@mixin body-font-size($bySize: 0.1rem) {
+  $new-size : $body-font-size + $bySize;
+  body { font-size : $new-size; }
+  div.wrapper {
+    p {
+      em { font-size : $new-size; }
+    }
+  }
+}
+/**
+ * $bySize can be a positive or negative incremental value.
+ * Usage: @include body-font-size(0.2rem);
+ * Use within section { .. } block.
+ */
+@mixin code-font-size($bySize: 0.1rem) {
+  $new-size : $code-font-size + $bySize;
+  div.highlight > pre > code { font-size : $new-size; }
 }

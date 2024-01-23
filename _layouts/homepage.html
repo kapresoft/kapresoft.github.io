@@ -17,7 +17,7 @@
 
 <body>
 
-{% include share-scripts.html %}
+{% comment %} {% include share-scripts.html %}{% endcomment %}
 
 <header>
   <div class="logo-wrap">
@@ -28,8 +28,7 @@
 </header>
 <div class="wrapper">
   <section>
-    {% include share-page.html %}
-
+    {% comment %}{% include share-page.html %}{% endcomment %}
     {{ content }}
   </section>
 

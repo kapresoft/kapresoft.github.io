@@ -5,15 +5,19 @@
 @import "site-defs";
 
 // ==============================================================
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 // Roboto+Slab:wght@100;300;400;500;700;900
 // Playfair:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900
 // Playfair+Display:ital,wght@0,400..900;1,400..900
-//
+// Merriweather:ital,wght@0,400;0,700;1,300
+// Source+Serif+4:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;
 // ==============================================================
 $header-color-default : #333;
 $body-line-height     : 1.55;
 $body-font-size       : 1.2rem;
+
+$code-font-size       : 1rem;
 $code-bg              : #333;
 $code-padding         : 10px;
 
@@ -30,7 +34,7 @@ $h6-font-size         : 1.1rem;
 // title is the only h1 in articles
 $body-font   : (font: $font-noto-serif, weight: 400, size: $body-font-size, color: #242424,
     line-height: $body-line-height, debug: false, debug-label: "body");
-$italic-font : (font: $font-source-serif, weight: 350, size: $body-font-size, color: #343434,
+$italic-font : (font: $font-noto-serif, weight: 400, size: $body-font-size, color: #343434,
     style: italic, line-height: $body-line-height, debug: false, debug-label: "em");
 $h1: (font: $font-verdana, weight: 900, size: $h1-font-size, color: #393939,
          line-height: 1.2, debug: false, debug-label: "h1");
@@ -53,13 +57,8 @@ $h6: (font: $font-roboto-slab, weight: 700, size: $h6-font-size, color: #414141,
 // ==============================================================
 
 html {
-  //-webkit-text-size-adjust: 100%;
-  //-ms-text-size-adjust: 100%;
-
-  //font-optical-sizing: auto; // for variable fonts
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-
   font-size: 100%;
 }
 
@@ -69,6 +68,7 @@ body {
   padding    : 0 0 20px 0;
   background : url(../images/body-background.png) #000;
 }
+@include body-font-size(0.0rem);
 
 h1 {
   @include x-font($h1);
@@ -89,6 +89,8 @@ h5 {@include x-font($h5); @extend %headers; }
 h6 {@include x-font($h6); @extend %headers; }
 
 .noindex { display: none; }
+#recent-posts { margin-bottom: 30px; }
+.related-header { margin-top: 50px; margin-bottom: 20px; }
 
 /**
  * This class is used when scrolling top/bottom to hide header accordingly.
@@ -101,7 +103,8 @@ h6 {@include x-font($h6); @extend %headers; }
 }
 
 div { .top-tag {margin-bottom: 10px;} }
-p, div.excerpt {line-height: $body-line-height;}
+p {line-height: $body-line-height;}
+//div.excerpt {line-height: $body-line-height;}
 
 span {
   &.post-date {font-size : x-small;}
@@ -128,7 +131,6 @@ span {
 div.getty-image {text-align: center !important;margin-bottom: 1em;}
 div.excerpt {padding: 5px 0 20px 0;}
 
-
 div.wrapper {
 
   section {
@@ -146,16 +148,16 @@ div.wrapper {
         ul li, ol li {margin-bottom: auto;}
       }
     }
-
     div.highlight > pre {
       &.highlight {
         background: $code-bg;
         padding-bottom : $code-padding;
         line-height: 1.1;
-        font-weight: 700;
+        //font-weight: 700;
       }
       & > code {
         padding-bottom : $code-bg;
+        font-size: $code-font-size;
       }
     }
 
@@ -171,22 +173,44 @@ div.wrapper {
     //}
 
     a {
-      color           : #242424;
-      font-weight     : 400;
-      text-decoration : underline;
-      text-decoration-thickness: 0.13em;
-      text-decoration-color: #4276b6;
-      &.post-title {
-        color:#3399cc !important;
-        text-decoration:none;
+      color                     : #242424;
+      font-weight               : 400;
+      text-decoration           : underline;
+      text-decoration-thickness : 0.13em;
+      text-decoration-color     : #4276b6;
+    }
+
+    div.excerpt-wrap {
+      .post-title {
+        color           : #3399cc !important;
+        text-decoration : none;
       }
+      a {
+        &.post-link {
+          text-decoration : none;
+          & > span {
+            color           : #3399cc;
+            font-family     : map-get($font-roboto, font-family);
+            font-size       : $body-font-size + 0.5rem;
+            line-height     : 1.0;
+            font-weight     : 700;
+            text-decoration : none;
+          }
+        }
+      }
+      div.post-date { text-align : right;font-size  : 1.0rem; }
+      div.excerpt { line-height : $body-line-height; margin-bottom: 20px; }
     }
 
   }
 
-  p { em {@include x-font($italic-font);} }
-
-
+  p {
+    em {@include x-font($italic-font);}
+    strong {
+      font-weight: bold;
+      em { font-weight: bold; }
+    }
+  }
 
 }
 
@@ -329,7 +353,7 @@ code {background: $code-bg;}
 pre {background: $code-bg;}
 
 
-.excerpt_title {font-size: large; @include roboto-slab(500);}
+//.excerpt_title {font-size: large; @include roboto-slab(500);}
 
 // ==============================================================
 // Media Customizations
@@ -339,23 +363,12 @@ pre {background: $code-bg;}
 
   header {
     height : 120px;
-    .site-name {
-      font-size : $site-name-font-size - 0.5rem;
-    }
-    .logo-wrap {
-      .inner-wrap {top : 0;}
-    }
+    .site-name {font-size : $site-name-font-size - 0.5rem;}
+    .logo-wrap { .inner-wrap {top : 0;} }
   }
-  h2 { font-size: $h2-font-size - 0.1rem; }
-  h3 { font-size: $h3-font-size - 0.1rem; }
-  h4 { font-size: $h4-font-size - 0.1rem; }
-  h5 { font-size: $h5-font-size - 0.1rem; }
-  h6 { font-size: $h6-font-size - 0.1rem; }
+  @include header-sizes(-0.1rem);
   div.wrapper {
-    section {
-      // 1368 x 912
-      @include h1-size($h1-font-size - 0.4rem);
-    }
+    section { @include h1-size(-0.4rem); }
   }
 
 }
@@ -365,25 +378,22 @@ pre {background: $code-bg;}
  * section settings: affects the top-padding of the title
  */
 @media print, screen and (max-width: 720px) {
-
   header {
     $tag-line-fs: 0.8rem;
     position: fixed; height: 120px;
     .tag-line {font-size: $tag-line-fs; width: 55%; margin: 10px auto;}
   }
-
-  body { font-size: $body-font-size - 0.1rem; }
+  @include header-sizes(-0.1rem);
   div.wrapper {
-    p { line-height: $body-line-height - 0.1; }
+    p { line-height : $body-line-height - 0.1; }
     section {
-      margin : 130px auto;
-      @include h1-size($h1-font-size - 0.2rem);
+      margin : 125px auto;
+      @include h1-size(-0.3rem);
     }
-    div.highlight > pre > code {
-      font-size : 0.9rem;
-    }
+    //div.highlight > pre > code {
+    //  font-size : 0.9rem;
+    //}
   }
-
 }
 
 /**
@@ -392,24 +402,35 @@ pre {background: $code-bg;}
  */
 @media print, screen and (max-width: 640px) {
 
-  .logo-wrap { .logo {width: 110px;} }
+  // @include body-font-size(0.1rem);
+  @include header-sizes(-0.2rem);
 
-  body {font-size: 0.9rem;}
-  h1 {font-size: 1.5rem;}
-  h1.title, .excerpt_title {font-size: 1.5rem;}
-  div.site-name { font-size: 1.5rem; }
-  div.tag-line {
-    width : 50%; margin-top : 0; line-height : 1.0;
-    font-size: smaller;
-  }
-  code {font-size: 0.7rem;}
-  section {margin: 115px auto;}
+  //h1.title, .excerpt_title {font-size: 1.5rem;}
   //section,section.index-page {margin: 120px auto;}
 
   header {
+    .site-name {
+      margin-top: 9px;
+      font-size : $site-name-font-size - 0.9rem;
+    }
+    .logo-wrap {
+      .inner-wrap {
+        left: 30px; top: 16px;
+        img.logo { width : 90px; }
+      }
+    }
+    .tag-line {font-size: 0.8rem; width: 60%; margin: 2px auto;}
+
     p {
       display: block;
       font-size: 0.9rem;
+    }
+  }
+  div.wrapper {
+    section {
+      margin : 115px auto;
+      @include h1-size(-0.5rem);
+      @include code-font-size(-0.1rem);
     }
   }
 }
@@ -425,40 +446,35 @@ pre {background: $code-bg;}
  * section settings: affects the top-padding of the title
  */
 @media print, screen and (max-width: 480px) {
+  @include body-font-size(-0.2rem);
+  @include header-sizes(-0.3rem);
+  //h1, h1.title, .excerpt_title {font-size: 1.1rem;}
+  header {
+    height   : 100px;
 
-  body {
-    font-size: 0.9rem;
+    .site-name { font-size : 1.8rem; margin-top: 5px; }
+    .tag-line {
+      font-size : 0.6rem; width : 55%;
+      margin    : 5px auto;
+    }
+    .logo-wrap {
+      .inner-wrap {
+        left: 30px; top: 7px;
+        img.logo { width : 90px; }
+      }
+    }
   }
-  h1, h1.title, .excerpt_title {font-size: 1.1rem;}
-  div.site-name { font-size: 1.1rem; }
-  div.tag-line {
-    width : 80%; margin-top : 0; line-height : 1.0;
-    font-size: xx-small;
-  }
-
-  //code {font-size: 0.7rem;}
-  //section {margin: 5px;}
 
   div.wrapper {
     section {
-      width: 500px;
-      padding : 20px 20px; margin: 110px auto;
-    }
-  }
+      margin : 105px auto;
+      @include h1-size(-0.8rem);
+      @include code-font-size(-0.1rem);
 
-  header {
-    height: 100px;
-    position: fixed;
-
-    .tag-line {
-      font-size: 0.7rem; width: 50%;
-      margin: 10px auto;
-    }
-
-    .logo-wrap {
-      .inner-wrap {
-        //left: 40px; top: 10px;
-        img.logo { width: 90px; }
+      div.excerpt-wrap {
+        a.post-link { & > span { font-size : $body-font-size + 0.2rem; } }
+        div.post-date { font-size : 0.8rem; }
+        div.excerpt { line-height : $body-line-height - 0.1; }
       }
     }
   }
