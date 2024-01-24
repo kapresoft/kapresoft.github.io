@@ -23,7 +23,7 @@ $code-padding         : 10px;
 
 $site-name-font-size : 3.5rem;
 
-$h1-font-size        : 2.5rem;
+$h1-font-size        : 2.8rem;
 $h2-font-size        : 1.8rem;
 $h3-font-size        : 1.6rem;
 $h4-font-size        : 1.4rem;
@@ -39,11 +39,11 @@ $body-font   : (font: $font-noto-serif, weight: 400, size: $body-font-size, colo
     line-height: $body-line-height, debug: false, debug-label: "body");
 $italic-font : (font: $font-noto-serif, weight: 400, size: $body-font-size, color: #343434,
     style: italic, line-height: $body-line-height, debug: false, debug-label: "em");
-$h1: (font: $font-verdana, weight: 900, size: $h1-font-size, color: #393939,
-         line-height: 1.2, debug: false, debug-label: "h1");
-$h2: (font: $font-verdana, weight: 700, size: $h2-font-size, color: #212121,
+$h1: (font: $font-roboto, weight: 900, size: $h1-font-size, color: #393939,
+         line-height: 1.1, debug: false, debug-label: "h1");
+$h2: (font: $font-tahoma, weight: 700, size: $h2-font-size, color: #212121,
          line-height: 1.1, debug: false, debug-label: "h2");
-$h3: (font: $font-roboto, weight: 500, size: $h3-font-size, color: #3c5780,
+$h3: (font: $font-roboto, weight: 700, size: $h3-font-size, color: #3c5780,
          line-height: 1.1, debug: false, debug-label: "h3");
 $h4: (font: $font-roboto-slab, weight: 700, size: $h4-font-size, color: #414141,
          line-height: 1.1, debug: false, debug-label: "h4");
@@ -300,8 +300,9 @@ div.wrapper {
         &.post-link {
           text-decoration : none;
           & > span {
+            $h-font        : map-get($h2, 'font');
             color           : #3399cc;
-            font-family     : map-get($font-roboto, font-family);
+            font-family     : map-get($h-font, font-family);
             font-size       : $body-font-size + 0.5rem;
             line-height     : 1.0;
             font-weight     : 700;
