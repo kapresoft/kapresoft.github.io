@@ -21,14 +21,17 @@ $code-font-size       : 1rem;
 $code-bg              : #333;
 $code-padding         : 10px;
 
-$site-name-font-size  : 3.5rem;
+$site-name-font-size : 3.5rem;
 
-$h1-font-size         : 2.5rem;
-$h2-font-size         : 1.8rem;
-$h3-font-size         : 1.6rem;
-$h4-font-size         : 1.4rem;
-$h5-font-size         : 1.3rem;
-$h6-font-size         : 1.1rem;
+$h1-font-size        : 2.5rem;
+$h2-font-size        : 1.8rem;
+$h3-font-size        : 1.6rem;
+$h4-font-size        : 1.4rem;
+$h5-font-size        : 1.3rem;
+$h6-font-size        : 1.1rem;
+
+$h-tag-font          : $font-roboto-slab;
+
 // ==============================================================
 
 // title is the only h1 in articles
@@ -103,9 +106,7 @@ h6 {@include x-font($h6); @extend %headers; }
 }
 
 div { .top-tag {margin-bottom: 10px;} }
-p {line-height: $body-line-height;}
-//div.excerpt {line-height: $body-line-height;}
-
+p { line-height: $body-line-height; }
 span {
   &.post-date {font-size : x-small;}
   &.left {float : left;}
@@ -174,10 +175,9 @@ div.wrapper {
 
     a {
       color                     : #242424;
-      font-weight               : 400;
       text-decoration           : underline;
-      text-decoration-thickness : 0.13em;
-      text-decoration-color     : #4276b6;
+      text-decoration-thickness : 2px;
+      text-decoration-color     : #224670;
     }
 
     div.excerpt-wrap {
@@ -323,27 +323,39 @@ hr.separator {
 nav {
   ul {
     li {
+      &.active {
+        border-right  : groove 4px rgba(30, 87, 112, 0.24);
+        padding-right : 5px;
+        border-radius : 3px;
+        a {font-weight: 900;}
+      }
+      $tag-h-font: map-get($h-tag-font, "font-family");
       &.tag-h1 {
-        font-size: 0.9rem;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
+        // not used: see main.js
+        font-family   : $tag-h-font;
+        font-size     : 0.9rem;
+        text-overflow : ellipsis;
+        white-space   : nowrap;
+        overflow      : hidden;
       }
       &.tag-h2 {
-        font-size: 0.8rem;
+        font-family: $tag-h-font;
+        font-size: 0.9rem;
+        padding-bottom: 3px;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        line-height: 1.3;
       }
       &.tag-h3 {
-        line-height: 0.5;
+        padding-left: 10px;
+        font-family: $tag-h-font;
+        line-height: 1.0;
         font-size: 0.7rem;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        a {
-          color: rgba(159, 130, 13, 0.73);
-        }
+        a {color: rgba(91, 71, 6, 0.73);}
       }
     }
   }
