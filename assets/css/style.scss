@@ -71,7 +71,7 @@ body {
   padding    : 0 0 20px 0;
   background : url(../images/body-background.png) #000;
 }
-@include body-font-size(0.0rem);
+@include body-font-size();
 
 h1 {
   @include x-font($h1);
@@ -91,6 +91,8 @@ h4 {@include x-font($h4); @extend %headers; }
 h5 {@include x-font($h5); @extend %headers; }
 h6 {@include x-font($h6); @extend %headers; }
 
+// ==============================================================
+
 .noindex { display: none; }
 #recent-posts { margin-bottom: 30px; }
 .related-header { margin-top: 50px; margin-bottom: 20px; }
@@ -107,11 +109,6 @@ h6 {@include x-font($h6); @extend %headers; }
 
 div { .top-tag {margin-bottom: 10px;} }
 p { line-height: $body-line-height; }
-span {
-  &.post-date {font-size : x-small;}
-  &.left {float : left;}
-  &.right {float : right;}
-}
 
 .image, .illustration {
   display: block;
@@ -129,128 +126,6 @@ span {
   td.code pre {padding: $lineNumberMode-Padding;}
 }
 
-div.getty-image {text-align: center !important;margin-bottom: 1em;}
-div.excerpt {padding: 5px 0 20px 0;}
-
-div.wrapper {
-
-  section {
-    padding : 20px 20px; margin: 130px auto;
-
-    .article1 {
-      ul li {
-        margin-bottom: 1em;
-        ul, ol {margin-top: .5em}
-        ul li, ol li {margin-bottom: auto;}
-      }
-      ol li {
-        margin-bottom: 1em;
-        ul, ol {margin-top: .5em}
-        ul li, ol li {margin-bottom: auto;}
-      }
-    }
-    div.highlight > pre {
-      &.highlight {
-        background: $code-bg;
-        padding-bottom : $code-padding;
-        line-height: 1.1;
-        //font-weight: 700;
-      }
-      & > code {
-        padding-bottom : $code-bg;
-        font-size: $code-font-size;
-      }
-    }
-
-    //div.highlight {
-    //  pre.highlight, pre.highlight > code {
-    //      //background: #282828;
-    //      background: #333;
-    //      padding-bottom : 10px;
-    //  }
-    //  pre.highlight {
-    //    line-height: 1.1;
-    //  }
-    //}
-
-    a {
-      color                     : #242424;
-      text-decoration           : underline;
-      text-decoration-thickness : 2px;
-      text-decoration-color     : #224670;
-    }
-
-    div.excerpt-wrap {
-      .post-title {
-        color           : #3399cc !important;
-        text-decoration : none;
-      }
-      a {
-        &.post-link {
-          text-decoration : none;
-          & > span {
-            color           : #3399cc;
-            font-family     : map-get($font-roboto, font-family);
-            font-size       : $body-font-size + 0.5rem;
-            line-height     : 1.0;
-            font-weight     : 700;
-            text-decoration : none;
-          }
-        }
-      }
-      div.post-date { text-align : right;font-size  : 1.0rem; }
-      div.excerpt { line-height : $body-line-height; margin-bottom: 20px; }
-    }
-
-  }
-
-  p {
-    em {@include x-font($italic-font);}
-    strong {
-      font-weight: bold;
-      em { font-weight: bold; }
-    }
-  }
-
-}
-
-header {
-  transition : opacity 0.5s ease, transform 0.5s ease;
-  height     : 130px;
-  margin     : 0; padding : 5px 0 0 0;
-  p {display : block;}
-  .tag-line {
-    font-family : "Tahoma";
-    font-size   : 0.9rem; width : 60%;
-    color       : #f3f3f3;
-    margin      : 5px auto;
-  }
-  .logo-wrap {
-    .inner-wrap {
-      margin   : 0; padding : 0;
-      position : absolute;
-      left     : 40px; top : 10px;
-      float    : left;
-      img.logo {width : 120px;}
-    }
-  }
-  .site-name {
-    font-size         : $site-name-font-size;
-    line-height       : 1.2;
-    font-family       : "Copse", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color             : #f3f3f3;
-    text-shadow       : 0 2px 0 #235796;
-    margin            : 0;
-    white-space       : nowrap;
-    overflow          : hidden;
-    -o-text-overflow  : ellipsis;
-    -ms-text-overflow : ellipsis;
-    text-overflow     : ellipsis;
-  }
-
-}
-
-
 .figure {
   margin-bottom: .5em;
   .title {
@@ -259,6 +134,7 @@ header {
   }
 }
 
+div.getty-image {text-align: center !important;margin-bottom: 1em;}
 div.uml-diagram {
   margin-bottom: 20px;
   img {
@@ -320,6 +196,134 @@ hr.separator {
   margin: auto auto 20px auto;
 }
 
+code {background: $code-bg;}
+pre {background: $code-bg;}
+
+// ==============================================================
+
+header {
+  transition : opacity 0.5s ease, transform 0.5s ease;
+  height     : 130px;
+  margin     : 0; padding : 5px 0 0 0;
+  p {display : block;}
+  .tag-line {
+    font-family : "Tahoma";
+    font-size   : 0.9rem; width : 60%;
+    color       : #f3f3f3;
+    margin      : 5px auto;
+  }
+  .logo-wrap {
+    .inner-wrap {
+      margin   : 0; padding : 0;
+      position : absolute;
+      left     : 40px; top : 10px;
+      float    : left;
+      img.logo {width : 120px;}
+    }
+  }
+  .site-name {
+    font-size         : $site-name-font-size;
+    line-height       : 1.2;
+    font-family       : "Copse", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color             : #f3f3f3;
+    text-shadow       : 0 2px 0 #235796;
+    margin            : 0;
+    white-space       : nowrap;
+    overflow          : hidden;
+    -o-text-overflow  : ellipsis;
+    -ms-text-overflow : ellipsis;
+    text-overflow     : ellipsis;
+  }
+
+}
+
+div.wrapper {
+
+  section {
+    width:670px; margin: 135px auto; padding : 20px 20px;
+
+    .article1 {
+      ul li {
+        margin-bottom: 1em;
+        ul, ol { margin-top: .5em }
+        ul li, ol li { margin-bottom: auto; }
+      }
+      ol li {
+        margin-bottom: 1em;
+        ul, ol {margin-top: .5em}
+        ul li, ol li { margin-bottom: auto; }
+      }
+    }
+    .post-dates-wrap {
+      .post-date { font-size : 0.9rem; }
+      .left { float : left; }
+      .right { float : right; }
+    }
+
+    div.highlight > pre {
+      &.highlight {
+        background: $code-bg;
+        padding-bottom : $code-padding;
+        line-height: 1.1;
+        //font-weight: 700;
+      }
+      & > code {
+        padding-bottom : $code-bg;
+        font-size: $code-font-size;
+      }
+    }
+
+    //div.highlight {
+    //  pre.highlight, pre.highlight > code {
+    //      //background: #282828;
+    //      background: #333;
+    //      padding-bottom : 10px;
+    //  }
+    //  pre.highlight {
+    //    line-height: 1.1;
+    //  }
+    //}
+
+    a {
+      color                     : #242424;
+      text-decoration           : underline;
+      text-decoration-thickness : 2px;
+      text-decoration-color     : #224670;
+    }
+
+    div.excerpt-wrap {
+      .post-title {
+        color           : #3399cc !important;
+        text-decoration : none;
+      }
+      a {
+        &.post-link {
+          text-decoration : none;
+          & > span {
+            color           : #3399cc;
+            font-family     : map-get($font-roboto, font-family);
+            font-size       : $body-font-size + 0.5rem;
+            line-height     : 1.0;
+            font-weight     : 700;
+            text-decoration : none;
+          }
+        }
+      }
+      .post-date { text-align : right;font-size  : 1.0rem; }
+      .excerpt { line-height : $body-line-height;padding: 5px 0 50px 0; }
+    }
+  }
+
+  p {
+    em {@include x-font($italic-font);}
+    strong {
+      font-weight: bold;
+      em { font-weight: bold; }
+    }
+  }
+
+}
+
 nav {
   ul {
     li {
@@ -361,18 +365,12 @@ nav {
   }
 }
 
-code {background: $code-bg;}
-pre {background: $code-bg;}
-
-
-//.excerpt_title {font-size: large; @include roboto-slab(500);}
-
 // ==============================================================
 // Media Customizations
 // ==============================================================
 
 @media print, screen and (max-width: 1060px) {
-
+  //@include body-font-size(-0.1rem);
   header {
     height : 120px;
     .site-name {font-size : $site-name-font-size - 0.5rem;}
@@ -380,7 +378,10 @@ pre {background: $code-bg;}
   }
   @include header-sizes(-0.1rem);
   div.wrapper {
-    section { @include h1-size(-0.4rem); }
+    section {
+      margin : 125px auto; max-width: 670px;
+      @include h1-size(-0.4rem);
+    }
   }
 
 }
@@ -390,6 +391,7 @@ pre {background: $code-bg;}
  * section settings: affects the top-padding of the title
  */
 @media print, screen and (max-width: 720px) {
+  //@include body-font-size();
   header {
     $tag-line-fs: 0.8rem;
     position: fixed; height: 120px;
@@ -412,14 +414,8 @@ pre {background: $code-bg;}
  * Larger Mobile Devices: 481px to 767px
  * section settings: affects the top-padding of the title
  */
-@media print, screen and (max-width: 640px) {
-
-  // @include body-font-size(0.1rem);
+@media print, screen and (max-width: 680px) {
   @include header-sizes(-0.2rem);
-
-  //h1.title, .excerpt_title {font-size: 1.5rem;}
-  //section,section.index-page {margin: 120px auto;}
-
   header {
     .site-name {
       margin-top: 9px;
@@ -440,7 +436,7 @@ pre {background: $code-bg;}
   }
   div.wrapper {
     section {
-      margin : 115px auto;
+      margin : 125px auto;
       @include h1-size(-0.5rem);
       @include code-font-size(-0.1rem);
     }
@@ -458,17 +454,12 @@ pre {background: $code-bg;}
  * section settings: affects the top-padding of the title
  */
 @media print, screen and (max-width: 480px) {
-  @include body-font-size(-0.2rem);
-  @include header-sizes(-0.3rem);
-  //h1, h1.title, .excerpt_title {font-size: 1.1rem;}
+  @include header-sizes(-0.1rem);
   header {
     height   : 100px;
 
     .site-name { font-size : 1.8rem; margin-top: 5px; }
-    .tag-line {
-      font-size : 0.6rem; width : 55%;
-      margin    : 5px auto;
-    }
+    .tag-line { font-size : 0.6rem; width : 55%;margin : 5px auto; }
     .logo-wrap {
       .inner-wrap {
         left: 30px; top: 7px;
@@ -481,11 +472,11 @@ pre {background: $code-bg;}
     section {
       margin : 105px auto;
       @include h1-size(-0.8rem);
-      @include code-font-size(-0.1rem);
+      @include code-font-size(0.1rem);
 
       div.excerpt-wrap {
-        a.post-link { & > span { font-size : $body-font-size + 0.2rem; } }
-        div.post-date { font-size : 0.8rem; }
+        a.post-link { & > span { font-size : $h2-font-size; } }
+        div.post-date { font-size : 0.9rem; }
         div.excerpt { line-height : $body-line-height - 0.1; }
       }
     }
@@ -500,11 +491,11 @@ pre {background: $code-bg;}
  * iPhone 12 Pro     : 390px x 844px
  * Samsung S7+       : 360px x 740px
  */
-@media print, screen and (max-width: 360px) {
-}
+//@media print, screen and (max-width: 360px) {
+//}
 
 /**
  * Galaxy Fold : 280px x 653px
  */
-@media print, screen and (max-width: 280px) {
-}
+//@media print, screen and (max-width: 280px) {
+//}

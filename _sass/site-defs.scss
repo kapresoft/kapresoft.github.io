@@ -174,7 +174,7 @@ $font-georgia             : (font-family: #{"Georgia", serif});
  * $bySize can be a positive or negative incremental value.
  * Usage: @include body-font-size(0.2rem);
  */
-@mixin body-font-size($bySize: 0.1rem) {
+@mixin body-font-size($bySize: 0rem) {
   $new-size : $body-font-size + $bySize;
   body { font-size : $new-size; }
   div.wrapper {
