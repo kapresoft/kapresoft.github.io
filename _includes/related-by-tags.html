@@ -36,12 +36,12 @@
 <div class="noindex">
 <div class="share-spb">&nbsp;</div>
 {% include separator.html %}
-<h2 style="margin-top: 50px; margin-bottom: 20px;">Related Articles</h2>
+<h2 class="related-header">Related Articles</h2>
 <div>
     {% for post in related limit:maxCount %}
-    <div>
-        <a href="{{ post.url }}"><span class="excerpt_title">{{ post.title }}</span></a>
-        <span style="float: right; font-size: smaller;">Post Date: {{ post.date | date_to_string }}</span><br/>
+    <div class="excerpt-wrap">
+        <a class="post-link" href="{{ post.url }}"><span>{{ post.title }}</span></a>
+        <div class="post-date">Post Date: {{ post.date | date_to_string }}</div>
         <div class="excerpt">
             {{ post.excerpt | remove: '<p>' | remove: '</p>' | remove_first: '1.' | remove_first: 'Overview' | strip_html }}
             <a href="{{ post.url }}"></a>

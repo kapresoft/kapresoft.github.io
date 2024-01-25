@@ -5,22 +5,50 @@ by Matt Graham
 
 @import "normalize";
 @import "fonts";
-@import "rouge-base16-dark";
+@import "robot-fonts";
+@import "robot-slab-fonts";
 
-// Get more themes at: https://jwarby.github.io/jekyll-pygments-themes/languages/java.html
+// ==============================================================
+// Used in rouge themes
+//Get more themes at: https://jwarby.github.io/jekyll-pygments-themes/languages/java.html
+$pre-bg: #333333;
+@import "rouge-base16-dark";
+//@import "rouge-zenburn";
+// ==============================================================
+//@import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/androidstudio.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Merriweather:ital,wght@0,700;1,300&display=swap');
+
+$header-font-weight: 700;
+$header-font-family: 'Roboto Slab', serif;
+$header3-font-family: 'Merriweather', serif;
+$header3-font-weight: 700;
 
 body {
-  font:14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#2b2b2b;
-  font-weight:300;
+  @include roboto-light;
+  font-size: 1rem;
+  color:#666;
   margin: 0px;
   padding:0px 0 20px 0px;
   background: url(../images/body-background.png) #eae6d1;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   color:#333;
   margin:0 0 10px;
+  font-family: $header-font-family;
+  font-weight: $header-font-weight;
+}
+
+h3 {
+  font-family: $header3-font-family;
+  font-weight: $header3-font-weight;
+}
+
+div {
+    .top-tag {
+        margin-bottom: 10px;
+    }
 }
 
 p, ul, ol, table, pre, dl {
@@ -95,13 +123,13 @@ code {
   text-shadow: 0px 1px 0px #000;
   margin: 0 4px;
   padding: 2px 6px;
-  background: #333;
+  background: $pre-bg;
   border-radius: 2px;
 }
 
 pre {
   padding:8px 15px;
-  background: #333333;
+  background: $pre-bg;
   border-radius: 3px;
   border:1px solid #c7c7c7;
   overflow: auto;
@@ -112,6 +140,16 @@ pre {
     padding: 0px;
   }
 
+}
+
+.highlight table {
+  $lineNumberMode-Padding: 5px 0 5px 5px !important;
+  td pre.lineno {
+    padding: $lineNumberMode-Padding;
+  }
+  td.code pre {
+    padding: $lineNumberMode-Padding;
+  }
 }
 
 table {
@@ -395,7 +433,7 @@ footer {
   section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
-    padding:20px 0;
+    padding:20px auto;
     margin: 190px auto 20px;
     max-width: 600px;
   }

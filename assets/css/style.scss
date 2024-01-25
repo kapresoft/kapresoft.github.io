@@ -2,12 +2,113 @@
 ---
 
 @import "{{ site.theme }}";
+@import "site-defs";
+
+// ==============================================================
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// Roboto+Slab:wght@100;300;400;500;700;900
+// Playfair:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900
+// Playfair+Display:ital,wght@0,400..900;1,400..900
+// Merriweather:ital,wght@0,400;0,700;1,300
+// Source+Serif+4:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;
+// ==============================================================
+$header-color-default : #333;
+$body-line-height     : 1.55;
+$body-font-size       : 1.15rem;
+
+$code-font-size       : 1rem;
+$code-bg              : #333;
+$code-padding         : 10px;
+
+$site-name-font-size : 3.5rem;
+
+$h1-font-size        : 2.9rem;
+$h2-font-size        : 2.0rem;
+$h3-font-size        : 1.5rem;
+$h4-font-size        : 1.4rem;
+$h5-font-size        : 1.3rem;
+$h6-font-size        : 1.1rem;
+
+$h-tag-font          : $font-roboto-slab;
+
+// ==============================================================
+
+// title is the only h1 in articles
+$body-font   : (font: $font-noto-serif, weight: 400, size: $body-font-size, color: #242424,
+    line-height: $body-line-height, debug: false, debug-label: "body");
+$italic-font : (font: $font-noto-serif, weight: 400, size: $body-font-size, color: #343434,
+    style: italic, line-height: $body-line-height, debug: false, debug-label: "em");
+$h1: (font: $font-roboto, weight: 900, size: $h1-font-size, color: #393939,
+         line-height: 1.1, debug: false, debug-label: "h1");
+$h2: (font: $font-tahoma, weight: 700, size: $h2-font-size, color: #212121,
+         line-height: 1.1, debug: false, debug-label: "h2");
+$h3: (font: $font-roboto, weight: 700, size: $h3-font-size, color: #3c5780,
+         line-height: 1.1, debug: false, debug-label: "h3");
+$h4: (font: $font-roboto-slab, weight: 700, size: $h4-font-size, color: #414141,
+         line-height: 1.1, debug: false, debug-label: "h4");
+$h5: (font: $font-noto-serif, weight: 700, size: $h5-font-size, color: #3c5780,
+         line-height: 1.1, debug: false, debug-label: "h5");
+$h6: (font: $font-roboto-slab, weight: 700, size: $h6-font-size, color: #414141,
+         line-height: 1.1, debug: false, debug-label: "h6");
+%h1-title {
+  color       : #3399cc; margin-bottom : 10px;
+  white-space : normal; overflow : unset;
+}
+%headers {margin : 0 0 10px 0; }
+
+// ==============================================================
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+}
+
+body {
+  @include x-font($body-font);
+  margin     : 0;
+  padding    : 0 0 20px 0;
+  background : url(../images/body-background.png) #000;
+}
+@include body-font-size();
+
+h1 {
+  @include x-font($h1);
+  // use "title" by default from now on
+  &.title {@extend %h1-title;}
+  &.titlew {@extend %h1-title;}
+  &.title2 {@extend %h1-title;}
+  &.title2w {@extend %h1-title;}
+  &.title3 {@extend %h1-title;}
+  &.title3w {@extend %h1-title;}
+  //text-shadow: 1px 1px 1px #235796;
+  text-shadow: 1px 1px 1px #565656;
+}
+h2 {@include x-font($h2); @extend %headers; }
+h3 {@include x-font($h3); @extend %headers; }
+h4 {@include x-font($h4); @extend %headers; }
+h5 {@include x-font($h5); @extend %headers; }
+h6 {@include x-font($h6); @extend %headers; }
+
+// ==============================================================
 
 .noindex { display: none; }
+#recent-posts { margin-bottom: 30px; }
+.related-header { margin-top: 50px; margin-bottom: 20px; }
 
-p, div.excerpt {
-  line-height: 1.3em;
+/**
+ * This class is used when scrolling top/bottom to hide header accordingly.
+ * Uses: header "transition: opacity 0.5s ease, transform 0.5s ease;"
+ */
+.hidden {
+  //display: none;
+  opacity: 0;
+  transform: translateY(-100%); /* Move the div up */
 }
+
+div { .top-tag {margin-bottom: 10px;} }
+p { line-height: $body-line-height; text-align: justify; }
 
 .image, .illustration {
   display: block;
@@ -19,70 +120,11 @@ p, div.excerpt {
   }
 }
 
-div.getty-image {
-  text-align: center !important;
-  margin-bottom: 1em;
+.highlight table {
+  $lineNumberMode-Padding: 5px 0 5px 5px !important;
+  td pre.lineno {padding: $lineNumberMode-Padding;}
+  td.code pre {padding: $lineNumberMode-Padding;}
 }
-
-div.excerpt {
-  padding: 5px 0 20px 0;
-}
-
-div.site-name {
-  line-height:1.1;
-  font-size:28px;
-
-  font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #f3f3f3;
-  text-shadow: 0px 2px 0px #235796;
-  margin: 0px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  -ms-text-overflow: ellipsis;
-}
-
-div.tag-line {
-  color: #f3f3f3;
-  width: 70%;
-  font-size: small;
-  margin: 10px auto auto auto;
-}
-
-section {
-  margin-top: 150px;
-}
-
-.wrapper {
-  p {
-    em {
-      font-weight: 400;
-      font-family: 'Roboto Slab', Roboto, SansSerif
-    }
-  }
-  section.article1 {
-    ul li {
-      margin-bottom: 1em;
-      ul, ol {
-        margin-top: .5em
-      }
-      ul li, ol li {
-        margin-bottom: auto;
-      }
-    }
-    ol li {
-      margin-bottom: 1em;
-      ul, ol {
-        margin-top: .5em
-      }
-      ul li, ol li {
-        margin-bottom: auto;
-      }
-    }
-  }
-}
-
 
 .figure {
   margin-bottom: .5em;
@@ -92,52 +134,7 @@ section {
   }
 }
 
-h1 {
-  font-size:24px;
-}
-
-h1.title, h1.titlew, h1.title2, h1.title2w, h1.title3, h1.title3w {
-  font-size:28px;
-  color: #3399cc;
-  margin-bottom: 10px;
-}
-
-h1.titlew { white-space: normal; }
-h1.title2, h1.title2w { font-size:24px; }
-h1.title2w { white-space: normal; }
-
-h1.title3, h1.title3w { font-size:21px; }
-h1.title3w { white-space: normal; }
-
-h2 {
-  font-size: 24px;
-  color:#393939;
-}
-
-h3 {
-  font-size: 18px;
-  color:#51678a;
-}
-
-h4 {
-  font-size: 17px;
-  color:#666666;
-}
-
-h5 {
-  font-family: 'Quattrocento Sans', 'Copse', 'SansSerif';
-  font-weight: bold;
-  font-size: 17px;
-  color:#767676;
-}
-
-h6 {
-  font-family: 'Arial Narrow', 'Copse', 'SansSerif';
-  font-weight: bold;
-  font-size: 14px;
-  color: #274769;
-}
-
+div.getty-image {text-align: center !important;margin-bottom: 1em;}
 div.uml-diagram {
   margin-bottom: 20px;
   img {
@@ -157,23 +154,14 @@ div.link {
   }
 }
 
-.share-placeholder {
-  height: 29px;
-}
-
-div.share-spt {
-  margin-top: 30px;
-}
-
-div.share-spb {
-  margin-bottom: 50px;
-}
+.share-placeholder {height: 29px;}
+div.share-spt {margin-top: 30px;}
+div.share-spb {margin-bottom: 50px;}
 
 div.share-note {
   margin-bottom: 5px;
-  font-family: 'Merriweather', 'SansSerif';
   font-size: 0.7em;
-  font-weight: 400;
+  @include merriweather(400);
 }
 div.share {
   margin-bottom: 20px;
@@ -208,158 +196,361 @@ hr.separator {
   margin: auto auto 20px auto;
 }
 
+code {background: $code-bg;}
+pre {background: $code-bg;}
+
+// ==============================================================
+
+header {
+  transition : opacity 0.5s ease, transform 0.5s ease;
+  height     : 130px;
+  margin     : 0; padding : 5px 0 0 0;
+  p {display : block;}
+  .tag-line {
+    font-family : "Tahoma";
+    font-size   : 0.9rem; width : 60%;
+    color       : #f3f3f3;
+    margin      : 5px auto;
+  }
+  .logo-wrap {
+    .inner-wrap {
+      margin   : 0; padding : 0;
+      position : absolute;
+      left     : 40px; top : 10px;
+      float    : left;
+      img.logo {width : 120px;}
+    }
+  }
+  .site-name {
+    font-size         : $site-name-font-size;
+    line-height       : 1.2;
+    font-family       : "Copse", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color             : #f3f3f3;
+    text-shadow       : 0 2px 0 #235796;
+    margin            : 0;
+    white-space       : nowrap;
+    overflow          : hidden;
+    -o-text-overflow  : ellipsis;
+    -ms-text-overflow : ellipsis;
+    text-overflow     : ellipsis;
+  }
+
+}
+
+div.wrapper {
+
+  section {
+    width:670px;
+    margin: 135px auto; padding : 20px 20px;
+
+    .article1 {
+      ul li {
+        margin-bottom: 1em;
+        ul, ol { margin-top: .5em }
+        ul li, ol li { margin-bottom: auto; }
+      }
+      ol li {
+        margin-bottom: 1em;
+        ul, ol {margin-top: .5em}
+        ul li, ol li { margin-bottom: auto; }
+      }
+    }
+    .post-dates-wrap {
+      .post-date { font-size : 0.9rem; }
+      .left { float : left; }
+      .right { float : right; }
+    }
+
+    div.highlight > pre {
+      &.highlight {
+        background: $code-bg;
+        padding-bottom : $code-padding;
+        line-height: 1.1;
+        //font-weight: 700;
+      }
+      & > code {
+        padding-bottom : $code-bg;
+        font-size: $code-font-size;
+      }
+    }
+
+    //div.highlight {
+    //  pre.highlight, pre.highlight > code {
+    //      //background: #282828;
+    //      background: #333;
+    //      padding-bottom : 10px;
+    //  }
+    //  pre.highlight {
+    //    line-height: 1.1;
+    //  }
+    //}
+
+    a {
+      color                     : #242424;
+      text-decoration           : underline;
+      text-decoration-thickness : 2px;
+      text-decoration-color     : #224670;
+    }
+
+    div.excerpt-wrap {
+      .post-title {
+        color           : #3399cc !important;
+        text-decoration : none;
+      }
+      a {
+        &.post-link {
+          text-decoration : none;
+          & > span {
+            $h-font        : map-get($h2, "font");
+            color           : #3399cc;
+            font-family     : map-get($h-font, font-family);
+            font-size       : $body-font-size + 0.5rem;
+            line-height     : 1.0;
+            font-weight     : 700;
+            text-decoration : none;
+          }
+        }
+      }
+      .post-date { text-align : right;font-size  : 1.0rem; }
+      .excerpt { line-height : $body-line-height;padding: 5px 0 50px 0; }
+    }
+  }
+
+  p {
+    em {@include x-font($italic-font);}
+    strong {
+      font-weight: bold;
+      em { font-weight: bold; }
+    }
+  }
+
+}
+
 nav {
   ul {
     li {
+      &.active {
+        border-right  : groove 4px rgba(30, 87, 112, 0.24);
+        padding-right : 5px;
+        border-radius : 3px;
+        a {font-weight: 900;}
+      }
+      $tag-h-font: map-get($h-tag-font, "font-family");
       &.tag-h1 {
-        font-size: 1.0em;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
+        // not used: see main.js
+        font-family   : $tag-h-font;
+        font-size     : 0.9rem;
+        text-overflow : ellipsis;
+        white-space   : nowrap;
+        overflow      : hidden;
       }
       &.tag-h2 {
-        font-size: 0.9em;
+        font-family: $tag-h-font;
+        font-size: 0.9rem;
+        padding-bottom: 3px;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        line-height: 1.3;
       }
       &.tag-h3 {
-        font-size: 0.8em;
+        padding-left: 10px;
+        font-family: $tag-h-font;
+        line-height: 1.0;
+        font-size: 0.7rem;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        a {
-          color: rgba(159, 130, 13, 0.73);
-        }
+        a {color: rgba(91, 71, 6, 0.73);}
       }
     }
   }
 }
 
-@media print, screen {
-  h1 {
-    padding: 0px 0px;
+// ==============================================================
+// Media Customizations
+// ==============================================================
+
+@media print, screen and (max-width: 1060px) {
+  header {
+    height : 120px;
+    .site-name {font-size : $site-name-font-size - 0.5rem;}
+    .logo-wrap { .inner-wrap {top : 0;} }
   }
-  .excerpt_title {
-    font-size: large;
-    font-family: $header-font-family;
-    font-weight: 500;
-  }
-  .logo-wrap {
-    position: fixed;
-    width: 100px;
-    height: 100px;
-    left: 40px;
-    top: 0px;
-    border: 0px solid #000000;
-    .inner-wrap {
-      float: left;
-    }
-    .logo {
-      width: 140px;
+  div.wrapper {
+    section {
+      width: auto;
+      margin : 125px auto;
+      @include h1-size(-0.5rem);
     }
   }
-  div.tag-line {
-    font-size: smaller; width: 60%;
-  }
+
 }
 
+/**
+ * Tablets: 768px to 1023px
+ * section settings: affects the top-padding of the title
+ */
 @media print, screen and (max-width: 720px) {
-
-  h1 {
-    font-size: 1.6rem;
-  }
-  h1.title, .excerpt_title {
-    font-size: 1.8rem;
-  }
-  code {
-    font-size: 0.8rem;
-  }
-  section {
-    margin: 130px 5px 10px 5px;
-  }
+  @include header-sizes(-0.1rem);
   header {
-    p { display: block;}
+    $tag-line-fs: 0.8rem;
+    position: fixed; height: 120px;
+    .tag-line {font-size: $tag-line-fs; width: 55%; margin: 10px auto;}
   }
-  div.tag-line {
-    font-size: smaller;
-    width: 50%;
+  div.wrapper {
+    p { line-height : $body-line-height - 0.1; }
+    section {
+      margin : 125px auto;
+    }
   }
 }
 
+/**
+ * Larger Mobile Devices: 481px to 767px
+ * section settings: affects the top-padding of the title
+ */
 @media print, screen and (max-width: 680px) {
-
-  body {
-    font-size: 0.9rem;
-  }
-  h1 {
-    font-size: 1.5rem;
-  }
-  h1.title, .excerpt_title {
-    font-size: 1.5rem;
-  }
-  code {
-    font-size: 0.7rem;
-  }
-
-  section,section.index-page {
-    margin: 120px auto;
-  }
-
   header {
-    p {
-      display: block;
-      font-size: 16px;
+    .site-name {
+      margin-top: 9px;
+      font-size : $site-name-font-size - 0.9rem;
     }
-  }
+    .logo-wrap {
+      .inner-wrap {
+        left: 30px; top: 16px;
+        img.logo { width : 90px; }
+      }
+    }
+    .tag-line {font-size: 0.8rem; width: 60%; margin: 2px auto;}
 
-  .logo-wrap {
-    .logo {
-      width: 110px;
-    }
   }
-  div.tag-line {
-    font-size: smaller;
-    width: 60%;
+  div.wrapper {
+    section {
+      margin : 125px auto;
+      @include code-font-size(-0.1rem);
+    }
   }
 }
 
+/**
+ * Ideal for viewports : 320px to 480px
+ *
+ * Common Viewports
+ * Ipad Pro            : 430px x 932px
+ * Samsung S20 Ultra   : 412px x 915px
+ * iPhone 12 Pro       : 390px x 844px
+
+ * section settings: affects the top-padding of the title
+ */
 @media print, screen and (max-width: 480px) {
-  body {
-    font-size: 0.9rem;
-  }
-  h1 {
-    font-size: 1rem;
-  }
-  h1.title, .excerpt_title {
-    font-size: 1rem;
-  }
-  code {
-    font-size: 0.7rem;
-  }
-
-  section {
-    margin: 5px;
-  }
-
+  @include header-sizes(-0.2rem);
   header {
-    p {
-      display: block;
-      font-size: 13px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      -o-text-overflow: ellipsis;
-      -ms-text-overflow: ellipsis;
+    height   : 100px;
+
+    .site-name { font-size : 1.8rem; margin-top: 5px; }
+    .tag-line { font-size : 0.6rem; width : 55%; margin : 5px auto; }
+    .logo-wrap {
+      .inner-wrap {
+        left: 30px; top: 7px;
+        img.logo { width : 90px; }
+      }
     }
   }
 
-  .logo-wrap {
-    display: none;
+  div.wrapper {
+    section {
+      margin : 105px auto;
+      @include h1-size(-1.0rem);
+      @include code-font-size(0.1rem);
+
+      div.excerpt-wrap {
+        a.post-link { & > span { font-size : $h2-font-size; } }
+        div.post-date { font-size : 0.9rem; }
+        div.excerpt { line-height : $body-line-height - 0.1; }
+      }
+    }
   }
-  div.tag-line {
-    font-size: smaller;
-    width: 80%;
-    margin-top: 0;
+
+}
+
+/**
+ * Samsung S7 : 412px x 670px
+ */
+@media print, screen and (max-width: 412px) {
+  header {
+    .site-name { font-size : 1.4rem; margin-top: 7px; }
+    .tag-line { font-size : 0.6rem; width : 55%; margin : 5px auto; }
+    .logo-wrap {
+      .inner-wrap {
+        left: 15px; top: 12px;
+        img.logo { width : 80px; }
+      }
+    }
+  }
+  div.wrapper {
+    p { line-height : $body-line-height - 0.2; }
+    section {
+      @include code-font-size(-0.02rem);
+      div.excerpt-wrap {
+        a.post-link { & > span { font-size : $h4-font-size; } }
+        div.post-date { font-size : 0.7rem; }
+        div.excerpt { line-height : $body-line-height - 0.2; }
+      }
+    }
+  }
+
+}
+
+/**
+ * Viewports:
+ * - iPhone 7 : 375px x 561px
+ */
+@media print, screen and (max-width: 375px) {
+  header {
+    .site-name { font-size : 1.4rem; margin-top: 7px; }
+    .tag-line { font-size : 0.6rem; width : 55%; margin : 5px auto; }
+    .logo-wrap {
+      .inner-wrap {
+        left: 15px; top: 17px;
+        img.logo { width : 70px; }
+      }
+    }
+  }
+  div.wrapper {
+    $post-date-fs: 0.75rem;
+    section {
+      .post-dates-wrap { .post-date { font-size : $post-date-fs; } }
+    }
+  }
+}
+
+/**
+ * Viewports:
+ * Ipad Pro          : 430px x 932px
+ * Samsung S20 Ultra : 412px x 915px
+ * iPhone 12 Pro     : 390px x 844px
+ * Samsung S8        : 360px x 740px
+ */
+//@media print, screen and (max-width: 360px) {
+//}
+
+/**
+ * Galaxy Fold : 280px x 653px
+ */
+@media print, screen and (max-width: 280px) {
+  @include header-sizes(-0.6rem);
+  header { .logo-wrap { .inner-wrap {display: none;} } }
+  @include body-font-size(-0.1rem);
+  div.wrapper {
+    #recent-posts { font-size : $h2-font-size; }
+    $post-date-fs: 0.7rem;
+    section {
+      @include h1-size(-1.5rem);
+      .post-dates-wrap {
+        .post-date { font-size : $post-date-fs; }
+        .right { float : left; }
+      }
+    }
   }
 }

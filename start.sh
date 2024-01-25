@@ -11,6 +11,18 @@ function _runJekyll()
   eval "${cmd}"
 }
 
+function _runJekyllHost()
+{
+  # -H 192.168.0.129 -P 4000
+  local hostArgs="-H 192.168.0.129"
+  local cmd="bundle exec jekyll serve $hostArgs --incremental --config _config.yml,_config_dev.yml"
+  if [[ "$1" == "limit" ]]; then
+    cmd="$cmd,_config_limit.yml"
+  fi
+  echo "executing: ${cmd} [DEV]"
+  eval "${cmd}"
+}
+
 function _runJekyllProd()
 {
   local cmd="bundle exec jekyll serve --incremental --config _config.yml"
@@ -47,6 +59,10 @@ function _startJekyllMain()
     _stopExisting && _cleanGenerated && _runJekyll
   elif [[ "${opt}" = "-cl" ]]; then
     _stopExisting && _cleanGenerated && _runJekyll "limit"
+  elif [[ "${opt}" = "-ch" ]]; then
+    _stopExisting && _cleanGenerated && _runJekyllHost
+  elif [[ "${opt}" = "-clh" ]]; then
+    _stopExisting && _cleanGenerated && _runJekyllHost "limit"
   elif [[ "${opt}" = "-p" ]]; then
     _stopExisting && _runJekyllProd
   elif [[ "${opt}" = "-pc" ]] || [[ "${opt}" = "-cp" ]]; then

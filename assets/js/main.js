@@ -13,7 +13,7 @@ var sectionHeight = function() {
 $(window).resize(sectionHeight);
 
 $(function() {
-  $("section h1, section h2, section h3").each(function(){
+  $("section h2, section h3").each(function(){
     $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
     $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
     $("nav ul li:first-child a").parent().addClass("active");
@@ -30,4 +30,29 @@ $(function() {
   sectionHeight();
 
   $('img').on('load', sectionHeight);
+});
+
+const info = '[info]'
+const debug = '[debug]'
+/**
+ * Triggers On DOM Load
+ */
+$(function () {
+  const defaultHeight = 130;
+  let headerHeight = $('header').height()
+  headerHeight = headerHeight || defaultHeight;
+  headerHeight = headerHeight > 0 ? headerHeight : defaultHeight;
+  //console.info('%s header-height: %s', info, headerHeight);
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > headerHeight) { // Check if page is scrolled
+      let hasClass = $('header').hasClass('hidden');
+      if (hasClass !== true) {
+        //console.info('%s Scrolling Down: %s has: %s', debug, $(this).scrollTop(), hasClass);
+        $('header').addClass('hidden'); // Hide the div
+      }
+    } else {
+      $('header').removeClass('hidden'); // Show the div
+      //console.info('%s Scrolled Top: %s', debug, $(this).scrollTop())
+    }
+  });
 });
