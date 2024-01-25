@@ -108,7 +108,15 @@ h6 {@include x-font($h6); @extend %headers; }
 }
 
 div { .top-tag {margin-bottom: 10px;} }
-p { line-height: $body-line-height; text-align: justify; }
+p { line-height: $body-line-height; }
+
+footer {
+  p {
+    @include arial-narrow();
+    line-height: 1.0;
+    padding: 0; margin: 0;
+  }
+}
 
 .image, .illustration {
   display: block;
@@ -186,10 +194,13 @@ div.share {
     }
   }
 }
-.clear-spacer {
-  clear: both;
-  margin-top: 50px;
-}
+
+%spacer-common { clear: both; margin: 0; padding: 0; font-size: 0; }
+.spacer-50 { @extend %spacer-common; height: 50px; }
+.spacer-30 { @extend %spacer-common; height: 30px; }
+.spacer-20 { @extend %spacer-common; height: 20px; }
+.spacer-10 { @extend %spacer-common; height: 10px; }
+
 
 hr.separator {
   max-width: 100px;
@@ -242,6 +253,11 @@ div.wrapper {
   section {
     width:670px;
     margin: 135px auto; padding : 20px 20px;
+
+    p { text-align: justify; }
+
+    // Front-Matter Usage:  section_style: left-aligned
+    &.left-aligned { p { text-align: unset; } }
 
     .article1 {
       ul li {

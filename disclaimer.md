@@ -1,13 +1,11 @@
 ---
 layout: no_ads
-title: Disclaimer for Kapresoft.com
+title: Disclaimer and Terms of Use for KapreSoft.com
 canonical_url: https://www.kapresoft.com/disclaimer
 image: https://cdngh.kapresoft.com/img/kapresoft1-210x-09aaa6e.png 
 notes:
     - template from https://www.inforbiro.com/blog/google-adsense-privacy-policy-example
 ---
-
-# Disclaimers and Terms of Use for <a href="/">{{ site.name }}</a>
 
 ### Overview
 

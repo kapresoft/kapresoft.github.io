@@ -1,7 +1,5 @@
 ---
 title: "Scotch Whisky Unveiled: A Novice's Spirited Odyssey"
-title_style: title2w
-section_style: article1
 category: food
 tags:
   - alcohol

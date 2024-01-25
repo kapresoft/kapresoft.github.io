@@ -1,15 +1,12 @@
 ---
 layout: no_ads
-title: Privacy Policy for Kapresoft.com
+title: Privacy Policy
 canonical_url: https://www.kapresoft.com/privacy.html
 notes:
     - template from https://www.inforbiro.com/blog/google-adsense-privacy-policy-example
 ---
 
-# Privacy Policy for <a href="/">{{ site.name }}</a>
-
-
-<h3 style="text-align:center; margin: 20px 0 20px 0; color: #5f5f5f;">The privacy of our visitors to {{ site.name }} is important to us.</h3>
+<h3 style="text-align:center; margin: 20px 0 20px 0; color: #5f5f5f;">The privacy of our visitors to {{ site.name }} <br>is important to us.</h3>
 
 At **{{ site.name }}**, we recognize that privacy of your personal information is important. Here is information on what types of personal information we receive and collect when you use and visit **{{ site.name }}**, and how we safeguard your information.  We never sell your personal information to third parties.
 

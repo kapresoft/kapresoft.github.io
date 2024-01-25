@@ -1,7 +1,6 @@
 ---
 title: "Personalized or Not? Mastering Ad Choices in Google AdSense for Revenue and Privacy"
-title_style: title2w
-section_style: article1
+section_style: left-aligned
 category: seo
 tags:
   - blogging

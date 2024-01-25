@@ -1,13 +1,11 @@
 ---
 layout: no_ads
-title: Copyright Information
+title: Copyright and Trademarks Information
 canonical_url: https://www.kapresoft.com/copyright
 image: https://cdngh.kapresoft.com/img/kapresoft1-210x-09aaa6e.png 
 notes:
     - template from https://www.inforbiro.com/blog/google-adsense-privacy-policy-example
 ---
-
-# Copyright and Trademarks Page
 
 Welcome to the Copyright and Trademarks Page, where we provide comprehensive information regarding the copyrights associated with this website and acknowledge the intellectual property rights of other entities. Explore this page to gain insights into our commitment to respecting copyrights and trademarks in the digital landscape.
 

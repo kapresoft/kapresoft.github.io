@@ -108,39 +108,34 @@ $font-georgia             : (font-family: #{"Georgia", serif});
  * $style: normal | italic
  */
 @mixin roboto($weight: 300, $style: normal) {
-  font-family: map-get($font-roboto, font-family);
-  font-weight: $weight;
-  font-style: $style;
+  font-family : map-get($font-roboto, font-family);
+  font-weight : $weight;
+  font-style  : $style;
 }
-
 @mixin roboto-slab($weight: 300, $style: normal) {
-  font-family: map-get($font-roboto-slab, font-family);
-  font-weight: $weight;
-  font-style: $style;
+  font-family : map-get($font-roboto-slab, font-family);
+  font-weight : $weight;
+  font-style  : $style;
 }
-
 @mixin merriweather($weight: 700, $style: normal) {
-  font-family: map-get($font-merriweather, font-family);
-  font-weight: $weight;
-  font-style: $style;
+  font-family : map-get($font-merriweather, font-family);
+  font-weight : $weight;
+  font-style  : $style;
 }
-
 @mixin quattrocento-sans($weight: bold, $style: normal) {
-  font-family: map-get($font-quattrocento-sans, font-family);
-  font-weight: $weight;
-  font-style: $style;
+  font-family : map-get($font-quattrocento-sans, font-family);
+  font-weight : $weight;
+  font-style  : $style;
 }
-
 @mixin arial-narrow($weight: 300, $style: normal) {
-  font-family: map-get($font-arial-narrow, font-family);
-  font-weight: $weight;
-  font-style: $style;
+  font-family : map-get($font-arial-narrow, font-family);
+  font-weight : $weight;
+  font-style  : $style;
 }
-
 @mixin playfair($weight: inherit, $style: normal) {
-  font-family: map-get($font-playfair, font-family);
-  font-weight: $weight;
-  font-style: $style;
+  font-family : map-get($font-playfair, font-family);
+  font-weight : $weight;
+  font-style  : $style;
 }
 
 /**

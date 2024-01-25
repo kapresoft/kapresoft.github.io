@@ -6,8 +6,6 @@ image: https://cdngh.kapresoft.com/img/kapresoft1-210x-09aaa6e.png
 description: "Antonio Lagnada, a highly-motivated Senior Software Engineer with experience in designing, and development of enterprise-wide systems."
 ---
 
-# About the Author (Antonio Lagnada)
-
 Antonio or Tony, a highly-motivated Senior Software Engineer with extensive experience in designing, developing, and supporting enterprise-wide client/server systems.<!--excerpt--> Antonio's programming expertise includes agile, test-driven, XP practices using object-oriented, open-source, and clean coding Java technologies.
 
 ## I. Background and Experience

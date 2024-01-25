@@ -1,11 +1,11 @@
 ---
 title: "Pizzeria da Michele in Naples • Is It Worth The Hype?"
-title_style: title2w
-section_style: article1
+section_style: left-aligned
 canonical_url: https://www.kapresoft.com/food/2023/10/27/pizza-da-michele-naples.html
 category: food
 tags: 
   - travel
+  - pizza
 description: "Explore the culinary journey of Pizzeria da Michele in Naples, a renowned Naples pizza spot serving the best Margherita and Marinara pizzas."
 ---
 

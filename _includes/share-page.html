@@ -1,4 +1,4 @@
-{% capture randomNumber %}{{ 'now' | date: "%09N" }}{% endcapture %}
+{% comment %}{% capture randomNumber %}{{ 'now' | date: "%09N" }}{% endcapture %}
             <div id="fb-root-{{ randomNumber }}"></div>
 
             {% if isArticlePage %}<div class="share-note">If you like this article, please like and share it with your friends and colleagues.</div>{% endif %}
@@ -17,3 +17,4 @@
                 }
                 $('.fb-share-button').data('href', canonHref).attr('data-href', canonHref);
             </script>
+{% endcomment %}

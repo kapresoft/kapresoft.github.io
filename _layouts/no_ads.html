@@ -25,18 +25,14 @@
   </div>
   <a href="/" title="Click to navigate to kapresoft.com home page."
   ><div class="site-name">{{ site.title | default: site.github.repository_name }}</div></a>
-  <p>{{ site.description | default: site.github.project_tagline }}</p>
+  <div class="tag-line">{{ site.description | default: site.github.project_tagline }}</div>
 </header>
 
 <div class="wrapper">
-<!--
-  <nav>
-    <ul></ul>
-  </nav>
--->
-  <section>
+  <section class="{{ page.section_style | default: '' }}">
+    <h1 class="{{ page.title_style | default: 'title' }}">{{ page.title | default: ''}}</h1>
     {% include share-page.html %}
-
+    <div class="spacer-10"></div>
     {{ content }}
   </section>
 
