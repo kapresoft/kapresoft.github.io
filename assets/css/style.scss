@@ -24,7 +24,7 @@ $code-padding         : 10px;
 $site-name-font-size : 3.5rem;
 
 $h1-font-size        : 2.9rem;
-$h2-font-size        : 2.0rem;
+$h2-font-size        : 1.8rem;
 $h3-font-size        : 1.5rem;
 $h4-font-size        : 1.4rem;
 $h5-font-size        : 1.3rem;
@@ -69,6 +69,7 @@ body {
   @include x-font($body-font);
   margin     : 0;
   padding    : 0 0 20px 0;
+  letter-spacing: normal;
   background : url(../images/body-background.png) #000;
 }
 @include body-font-size();
@@ -207,8 +208,8 @@ hr.separator {
   margin: auto auto 20px auto;
 }
 
-code {background: $code-bg;}
-pre {background: $code-bg;}
+code { background: $code-bg; letter-spacing: -0.04em; }
+pre { background: $code-bg; }
 
 // ==============================================================
 
@@ -254,10 +255,11 @@ div.wrapper {
     width:670px;
     margin: 135px auto; padding : 20px 20px;
 
-    p { text-align: justify; }
+    p { text-align: justify; letter-spacing: -0.0358em; }
+    p.left-aligned {  text-align: left; }
 
     // Front-Matter Usage:  section_style: left-aligned
-    &.left-aligned { p { text-align: unset; } }
+    &.left-aligned { p { text-align: left; } }
 
     .article1 {
       ul li {
