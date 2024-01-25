@@ -5,7 +5,7 @@
 <div>
     {% for post in site.posts %}
     <div class="excerpt-wrap">{% if site.env == 'prod' and site.show_google_ads_feed == true %}
-        <a class="excerpt" href="{{ post.url }}"><span class="excerpt-title">{{ post.title }}</span></a>
+        <a class="post-link" href="{{ post.url }}"><span>{{ post.title }}</span></a>
         <div class="post-date">Post Date: {{ post.date | date_to_string }}</div>
         <div class="excerpt">
             {{ post.excerpt | remove: '<p>' | remove: '</p>' | remove_first: '1.' | remove_first: 'Overview' | strip_html }}

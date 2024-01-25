@@ -162,7 +162,7 @@ $font-georgia             : (font-family: #{"Georgia", serif});
 /**
  * $bySize can be a positive or negative incremental value.
  */
-@mixin header-sizes($bySize: 0.1rem) {
+@mixin header-sizes($bySize: 0rem) {
   h2 { font-size: $h2-font-size + $bySize; }
   h3 { font-size: $h3-font-size + $bySize; }
   h4 { font-size: $h4-font-size + $bySize; }

@@ -15,7 +15,7 @@
 // ==============================================================
 $header-color-default : #333;
 $body-line-height     : 1.55;
-$body-font-size       : 1.2rem;
+$body-font-size       : 1.15rem;
 
 $code-font-size       : 1rem;
 $code-bg              : #333;
@@ -23,9 +23,9 @@ $code-padding         : 10px;
 
 $site-name-font-size : 3.5rem;
 
-$h1-font-size        : 2.8rem;
-$h2-font-size        : 1.8rem;
-$h3-font-size        : 1.6rem;
+$h1-font-size        : 2.9rem;
+$h2-font-size        : 2.0rem;
+$h3-font-size        : 1.5rem;
 $h4-font-size        : 1.4rem;
 $h5-font-size        : 1.3rem;
 $h6-font-size        : 1.1rem;
@@ -108,7 +108,7 @@ h6 {@include x-font($h6); @extend %headers; }
 }
 
 div { .top-tag {margin-bottom: 10px;} }
-p { line-height: $body-line-height; }
+p { line-height: $body-line-height; text-align: justify; }
 
 .image, .illustration {
   display: block;
@@ -240,7 +240,8 @@ header {
 div.wrapper {
 
   section {
-    width:670px; margin: 135px auto; padding : 20px 20px;
+    width:670px;
+    margin: 135px auto; padding : 20px 20px;
 
     .article1 {
       ul li {
@@ -300,7 +301,7 @@ div.wrapper {
         &.post-link {
           text-decoration : none;
           & > span {
-            $h-font        : map-get($h2, 'font');
+            $h-font        : map-get($h2, "font");
             color           : #3399cc;
             font-family     : map-get($h-font, font-family);
             font-size       : $body-font-size + 0.5rem;
@@ -371,17 +372,16 @@ nav {
 // ==============================================================
 
 @media print, screen and (max-width: 1060px) {
-  //@include body-font-size(-0.1rem);
   header {
     height : 120px;
     .site-name {font-size : $site-name-font-size - 0.5rem;}
     .logo-wrap { .inner-wrap {top : 0;} }
   }
-  @include header-sizes(-0.1rem);
   div.wrapper {
     section {
-      margin : 125px auto; max-width: 670px;
-      @include h1-size(-0.4rem);
+      width: auto;
+      margin : 125px auto;
+      @include h1-size(-0.5rem);
     }
   }
 
@@ -392,22 +392,17 @@ nav {
  * section settings: affects the top-padding of the title
  */
 @media print, screen and (max-width: 720px) {
-  //@include body-font-size();
+  @include header-sizes(-0.1rem);
   header {
     $tag-line-fs: 0.8rem;
     position: fixed; height: 120px;
     .tag-line {font-size: $tag-line-fs; width: 55%; margin: 10px auto;}
   }
-  @include header-sizes(-0.1rem);
   div.wrapper {
     p { line-height : $body-line-height - 0.1; }
     section {
       margin : 125px auto;
-      @include h1-size(-0.3rem);
     }
-    //div.highlight > pre > code {
-    //  font-size : 0.9rem;
-    //}
   }
 }
 
@@ -416,7 +411,6 @@ nav {
  * section settings: affects the top-padding of the title
  */
 @media print, screen and (max-width: 680px) {
-  @include header-sizes(-0.2rem);
   header {
     .site-name {
       margin-top: 9px;
@@ -430,15 +424,10 @@ nav {
     }
     .tag-line {font-size: 0.8rem; width: 60%; margin: 2px auto;}
 
-    p {
-      display: block;
-      font-size: 0.9rem;
-    }
   }
   div.wrapper {
     section {
       margin : 125px auto;
-      @include h1-size(-0.5rem);
       @include code-font-size(-0.1rem);
     }
   }
@@ -455,12 +444,12 @@ nav {
  * section settings: affects the top-padding of the title
  */
 @media print, screen and (max-width: 480px) {
-  @include header-sizes(-0.1rem);
+  @include header-sizes(-0.2rem);
   header {
     height   : 100px;
 
     .site-name { font-size : 1.8rem; margin-top: 5px; }
-    .tag-line { font-size : 0.6rem; width : 55%;margin : 5px auto; }
+    .tag-line { font-size : 0.6rem; width : 55%; margin : 5px auto; }
     .logo-wrap {
       .inner-wrap {
         left: 30px; top: 7px;
@@ -472,7 +461,7 @@ nav {
   div.wrapper {
     section {
       margin : 105px auto;
-      @include h1-size(-0.8rem);
+      @include h1-size(-1.0rem);
       @include code-font-size(0.1rem);
 
       div.excerpt-wrap {
@@ -486,11 +475,62 @@ nav {
 }
 
 /**
+ * Samsung S7 : 412px x 670px
+ */
+@media print, screen and (max-width: 412px) {
+  header {
+    .site-name { font-size : 1.4rem; margin-top: 7px; }
+    .tag-line { font-size : 0.6rem; width : 55%; margin : 5px auto; }
+    .logo-wrap {
+      .inner-wrap {
+        left: 15px; top: 12px;
+        img.logo { width : 80px; }
+      }
+    }
+  }
+  div.wrapper {
+    p { line-height : $body-line-height - 0.2; }
+    section {
+      @include code-font-size(-0.02rem);
+      div.excerpt-wrap {
+        a.post-link { & > span { font-size : $h4-font-size; } }
+        div.post-date { font-size : 0.7rem; }
+        div.excerpt { line-height : $body-line-height - 0.2; }
+      }
+    }
+  }
+
+}
+
+/**
+ * Viewports:
+ * - iPhone 7 : 375px x 561px
+ */
+@media print, screen and (max-width: 375px) {
+  header {
+    .site-name { font-size : 1.4rem; margin-top: 7px; }
+    .tag-line { font-size : 0.6rem; width : 55%; margin : 5px auto; }
+    .logo-wrap {
+      .inner-wrap {
+        left: 15px; top: 17px;
+        img.logo { width : 70px; }
+      }
+    }
+  }
+  div.wrapper {
+    $post-date-fs: 0.75rem;
+    section {
+      .post-dates-wrap { .post-date { font-size : $post-date-fs; } }
+    }
+  }
+}
+
+/**
  * Viewports:
  * Ipad Pro          : 430px x 932px
  * Samsung S20 Ultra : 412px x 915px
  * iPhone 12 Pro     : 390px x 844px
- * Samsung S7+       : 360px x 740px
+ * Samsung S8        : 360px x 740px
  */
 //@media print, screen and (max-width: 360px) {
 //}
@@ -498,5 +538,19 @@ nav {
 /**
  * Galaxy Fold : 280px x 653px
  */
-//@media print, screen and (max-width: 280px) {
-//}
+@media print, screen and (max-width: 280px) {
+  @include header-sizes(-0.6rem);
+  header { .logo-wrap { .inner-wrap {display: none;} } }
+  @include body-font-size(-0.1rem);
+  div.wrapper {
+    #recent-posts { font-size : $h2-font-size; }
+    $post-date-fs: 0.7rem;
+    section {
+      @include h1-size(-1.5rem);
+      .post-dates-wrap {
+        .post-date { font-size : $post-date-fs; }
+        .right { float : left; }
+      }
+    }
+  }
+}
