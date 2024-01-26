@@ -1,21 +1,39 @@
 /* See: https://www.w3schools.com/cssref/css_websafe_fonts.php */
-body {
-    font-family: sans-serif;
-    font-weight: 400;
-    margin: auto; padding: auto; width: 720px; 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-size: 100%;
 }
 
-div, p { font-size: 1em; font-family: "Arial", sans-serif; font-weight: 300;}
-h1, h2, h3, h4, h5, h6 { font-family: "Trebuchet MS", sans-serif; margin: 0 0 10px; }
-h1, h2, h3 { line-height: 1.1; }
-h1 { font-size: 2em; }
-h2 { font-size: 1.4em; }
-h3 { font-size: 1.1em; line-height: 1em; }
+body {
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: justify;
+    letter-spacing: -0.0358em;
+    margin: auto; padding: 10px 30px;
+}
+
+div, p { font-size: 1.1rem; font-family: "Noto Serif", "Georgia", serif; font-weight: normal;}
+h1, h2, h3, h4, h5, h6 { font-family: sans-serif; margin: 0 0 10px; }
+h1, h2, h3, h4, h5 { line-height: 1.1; }
+h1 { font-size: 2.9rem; font-weight: 900; font-family: Roboto, sans-serif; }
+h2 { font-size: 1.8rem; font-weight: 700; font-family: Tahoma, sans-serif; }
+h3 { font-size: 1.5rem; font-weight: 700; font-family: Roboto, sans-serif; }
+h4 { font-size: 1.4rem; font-weight: 700; font-family: 'Roboto Slab', sans-serif; }
+h5 { font-size: 1.3rem; font-weight: 700; font-family: 'Noto Serif', serif; }
+h6 { font-size: 1.1rem; font-weight: 700; font-family: 'Roboto Slab', sans-serif; }
 a { text-decoration: none; }
-a small { font-size: .8em; margin-top: -0.6em; display: block; }
+a small { font-size: 0.8rem; margin-top: -0.6em; display: block; }
 
 div.link {margin-bottom: 20px;}
 div.link small {display: block;padding-left: 0;}
 div.uml-diagram {margin-bottom: 20px;}
 div.uml-diagram img {display: block;}
 div.uml-diagram small {display: block;padding-left: 8px;}
+
+
+/*@media print, screen and (max-width: 720px) {*/
+/*    div, p { font-size: 0.5rem; }*/
+/*}*/
