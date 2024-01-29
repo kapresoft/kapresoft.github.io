@@ -10,7 +10,7 @@ description: "Explore the intricacies of software testing with Mockito Spy, a to
 
 ## Overview
 
-Navigating the complexities of software development demands a robust approach to testing. Mockito emerges as a key player in this domain, particularly within the Java community. Renowned for its transformative impact on unit testing, Mockito serves as a powerful mocking framework. Its primary function is to enable developers to craft and manipulate mock objects. exThese mocks are essential in isolating specific components of an application for testing, free from the unpredictability of external dependencies and interactions.<!--excerpt--> This strategic isolation is not just a matter of efficiency; it's fundamental to achieving rapid, dependable test results, ensuring each component functions correctly in a controlled environment.
+Navigating the complexities of software development demands a robust approach to testing. Mockito emerges as a key player in this domain, particularly within the Java community. Renowned for its transformative impact on unit testing, Mockito serves as a powerful mocking framework. Its primary function is to enable developers to craft and manipulate mock objects. These mocks are essential in isolating specific components of an application for testing, free from the unpredictability of external dependencies and interactions.<!--excerpt--> This strategic isolation is not just a matter of efficiency; it's fundamental to achieving rapid, dependable test results, ensuring each component functions correctly in a controlled environment.
 
 <div class="illustration">
 <img src="https://cdngh.kapresoft.com/img/java-mockito-spy-cover-6cbf356.webp" alt="Image: Java • Mockito Spy">
