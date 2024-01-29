@@ -8,7 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
-    "{{site}}/java/2024/01/25/java-18-and-beyond.html",
+    "{{site}}/java/2024/01/29/java-mockito-spy.html",
     "{{site}}"
   ]
 }
@@ -32,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2024/01/29/java-mockito-spy.html",
     "{{site}}/java/2024/01/25/java-18-and-beyond.html",
     "{{site}}/java/2024/01/24/lombok-custom-log.html",
     "{{site}}/seo/2024/01/17/google-adsense-personalized-vs-non-personalized-ads.html",
