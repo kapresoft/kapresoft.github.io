@@ -261,18 +261,17 @@ div.wrapper {
     // Front-Matter Usage:  section_style: left-aligned
     &.left-aligned { p { text-align: left; } }
 
-    .article1 {
-      ul li {
-        margin-bottom: 1em;
-        ul, ol { margin-top: .5em }
-        ul li, ol li { margin-bottom: auto; }
-      }
-      ol li {
-        margin-bottom: 1em;
-        ul, ol {margin-top: .5em}
-        ul li, ol li { margin-bottom: auto; }
-      }
+    ul li {
+      margin-bottom: .5em;
+      ul, ol { margin-top: .5em }
+      ul li, ol li { margin-bottom: .5em; }
     }
+    ol li {
+      margin-bottom: .5em;
+      ul, ol {margin-top: .5em}
+      ul li, ol li { margin-bottom: .5em; }
+    }
+
     .post-dates-wrap {
       .post-date { font-size : 0.9rem; }
       .left { float : left; }

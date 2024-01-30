@@ -207,6 +207,8 @@ Navigate through the essentials of implementing _@MockBean_ in Spring testing wi
 3. **Set Up Mock Behavior**: Utilize Mockito's _when()_ and _thenReturn()_ to define the mock's behavior.
 4. **Write Test Methods**: Implement your test methods, focusing on the behavior that involves the mocked bean.
 
+Here's an illustrative example of how to effectively utilize @MockBean in Spring testing:
+
 ```java
 @SpringBootTest
 public class OrderServiceTest {
@@ -236,7 +238,9 @@ This following offers a step-by-step tutorial on effectively utilizing _@SpyBean
 2. **Declare SpyBean**: Use _@SpyBean_ on the bean you wish to spy.
 3. **Override Methods as Needed**: Apply Mockito's _doReturn()_ or _doThrow()_ for method behavior modification.
 4. **Conduct Tests**: Implement tests to validate both the overridden and actual behaviors of the spied bean.
-5. 
+
+Here's an illustrative example of how to effectively utilize @SpyBean in Spring testing:
+
 ```java
 @SpringBootTest
 public class InventoryServiceTest {
