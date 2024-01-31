@@ -3,7 +3,8 @@ title: "The Composite Design Pattern"
 title_style: title2w
 section_style: article1
 category: software
-related: software
+tags:
+   - "design patterns"
 canonical_url: https://www.kapresoft.com/software/2023/12/26/design-pattern-composite.html
 description: "Explore the Composite Design Pattern, a key to simplified hierarchical structures in object-oriented design."
 ---

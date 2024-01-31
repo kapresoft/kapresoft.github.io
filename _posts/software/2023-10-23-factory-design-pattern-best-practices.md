@@ -3,7 +3,9 @@ title: "Factory Design Pattern Best Practices"
 title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/23/factory-design-pattern-best-practices.html
 category: java
-related: java
+tags:
+  - software
+  - "design patterns"
 description: "Learn about the best practices for implementing the Factory Pattern in Java, including design principles and examples to create flexible and maintainable code."
 ---
 

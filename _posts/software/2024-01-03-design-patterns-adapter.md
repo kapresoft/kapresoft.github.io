@@ -3,7 +3,8 @@ title: "The Adapter Design Pattern"
 title_style: title2w
 section_style: article1
 category: software
-related: software
+tags:
+  - "design patterns"
 canonical_url: https://www.kapresoft.com/software/2024/01/03/design-patterns-adapter.html
 description: "Exploring the Adapter Design Pattern: a key to interface compatibility and code flexibility in software engineering."
 ---

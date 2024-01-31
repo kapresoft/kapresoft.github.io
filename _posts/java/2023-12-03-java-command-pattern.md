@@ -3,7 +3,9 @@ title: "Java • Understanding the Command Design Pattern"
 title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/12/03/java-command-pattern.html
 category: java
-related: java
+tags:
+  - software
+  - "design patterns"
 description: "Explore the Command Design Pattern in software engineering, its implementation, benefits, and real-world applications like Spring Batch."
 ---
 

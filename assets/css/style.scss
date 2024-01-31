@@ -272,6 +272,11 @@ div.wrapper {
       ul li, ol li { margin-bottom: .5em; }
     }
 
+    ul.verbose-debug {
+      margin-left: 50px;
+      li { margin: 0; padding: 0; }
+    }
+
     .post-dates-wrap {
       .post-date { font-size : 0.9rem; }
       .left { float : left; }

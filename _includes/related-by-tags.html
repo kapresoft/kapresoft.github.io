@@ -1,3 +1,5 @@
+{% assign verbose = false %}
+
 {% assign relatedTitle = '' | split: ',' %}
 {% assign related = '' | split: ',' %}
 {% assign pageCat = page.categories | default: [] %}
@@ -9,26 +11,33 @@
 {% unless page.categories == null %} {% assign mergedTags = mergedTags | concat: page.categories uniq %} {% endunless %}
 {% unless page.categories == null %} {% assign mergedTags = mergedTags | concat: page.tags uniq %} {% endunless %}
 
-{% comment %}
-<p>page.categories: {{ page.categories | inspect }}</p>
-<p>page.tags: {{ page.tags | inspect }}</p>
-<p>unique page tags: {{ mergedTags | inspect }}</p>
-{% endcomment %}
-
+{% assign exitLoop = false %}
 {% for tag in mergedTags %}
 {% for post in site.posts %}
-
     {% comment %} ##### Merge Categories and Tags in a Posting ##### {% endcomment %}
     {% assign postTags = post.categories | concat: post.tags | uniq %}
     {% if post.title != page.title and postTags contains tag %}
         {% unless relatedTitle contains post.title %}
             {% assign relatedTitle = relatedTitle | push: post.title %}
             {% assign related = related | push: post %}
+            {% if relatedTitle.size > maxCount %}
+            {% assign exitLoop = true %}
+            {% endif %}
         {% endunless %}
-    {% endif %}
+    {% endif %}{% if exitLoop %}{% break %}{% endif %}
+{% endfor %}
+{% endfor %}
 
-{% endfor %}
-{% endfor %}
+{% if verbose %}
+<h4>Verbose Mode:</h4>
+<p><ul class="verbose-debug">
+    <li>page categories: {{ page.categories | inspect }}</li>
+    <li>page tags      : {{ page.tags | inspect }}</li>
+    <li>merged tags    : {{ mergedTags | inspect }}</li>
+    <li>exitLoop       : {{ relatedTitle.size | minus: 1 }}</li>
+</ul></p>
+{% endif %}
+
 
 {% unless relatedTitle.size <= 0 %}
 

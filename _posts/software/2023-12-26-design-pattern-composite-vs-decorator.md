@@ -3,7 +3,8 @@ title: "Design Pattern • Composite vs Decorator"
 title_style: title2w
 section_style: article1
 category: software
-related: software
+tags:
+    - "design patterns"
 canonical_url: https://www.kapresoft.com/software/2023/12/26/design-pattern-composite-vs-decorator.html
 description: "Explore the nuances of Composite and Decorator design patterns in software engineering, and their impact on system structure and extensibility."
 ---

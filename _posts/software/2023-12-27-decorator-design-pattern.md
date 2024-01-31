@@ -3,7 +3,8 @@ title: "The Decorator Design Pattern"
 title_style: title2w
 section_style: article1
 category: software
-related: software
+tags:
+  - "design patterns"
 canonical_url: https://www.kapresoft.com/software/2023/12/27/decorator-design-pattern.html
 description: "Explore the Decorator Design Pattern in software engineering: Enhancing functionality dynamically without altering structure."
 ---

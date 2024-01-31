@@ -3,7 +3,8 @@ title: "When to Choose Strategy Pattern Over Polymorphism"
 title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/10/27/strategy-pattern-over-polymorphism.html
 category: software
-related: software
+tags:
+  - "design patterns"
 description: "Delve into the depths of choosing strategy pattern over polymorphism in software design, featuring detailed Java examples."
 ---
 

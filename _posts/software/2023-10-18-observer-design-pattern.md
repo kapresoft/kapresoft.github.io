@@ -3,7 +3,9 @@ title: "Observer Design Pattern"
 title_style: title2w
 canonical_url: https://www.kapresoft.com/java/2023/10/18/observer-design-pattern.html
 category: java
-related: java
+tags:
+    - software
+    - "design patterns"
 description: "Observer Design Pattern, its application in modern programming, and its utilization in Spring Framework. Gain insights on its Java implementation, core principles, and benefits."
 ---
 

@@ -3,7 +3,8 @@ title: "The Singleton Design Pattern"
 title_style: title2w
 canonical_url: https://www.kapresoft.com/software/2023/06/08/singleton-design-pattern.html
 category: software
-related: software
+tags:
+  - "design patterns"
 description: "Principles and popular approaches for implementing Singletons in Java. Learn lazy initialization, thread safety, and unit testing."
 ---
 

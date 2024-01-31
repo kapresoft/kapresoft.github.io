@@ -3,7 +3,8 @@ title: "The Mock Object Design Pattern"
 title_style: title2
 canonical_url: https://www.kapresoft.com/software/2023/11/26/design-patterns-mock-object.html
 category: software
-related: software
+tags:
+  - "design patterns"
 description: "Explore the power of Mock Object Design Pattern in software testing and development."
 ---
 

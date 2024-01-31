@@ -3,7 +3,8 @@ title: "Decorator vs Adapter Design Pattern"
 title_style: title2w
 section_style: article1
 category: software
-related: software
+tags:
+  - "design patterns"
 canonical_url: https://www.kapresoft.com/software/2024/01/02/design-patterns-decorator-vs-adapter.html
 description: "Explore the differences between Decorator and Adapter design patterns in software engineering, and their unique applications."
 ---

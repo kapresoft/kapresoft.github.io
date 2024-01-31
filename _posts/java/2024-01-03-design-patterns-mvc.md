@@ -3,7 +3,9 @@ title: "The Model-View-Controller Design Pattern"
 title_style: title2w
 section_style: article1
 category: java
-related: java
+tags:
+  - software
+  - "design patterns"
 canonical_url: https://www.kapresoft.com/java/2024/01/03/design-patterns-mvc.html
 description: "Explore the Model-View-Controller design pattern: its roles, benefits, and impact in modern software development."
 ---

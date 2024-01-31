@@ -4,7 +4,9 @@ title_style: title2w
 section_style: article1
 canonical_url: https://www.kapresoft.com/java/2023/12/02/java-visitor-design-pattern-deep-dive.html
 category: java
-related: java
+tags:
+   - software
+   - "design patterns"
 description: "Explore the Visitor Design Pattern in-depth, understanding its structure, applications, and impact on software design."
 ---
 

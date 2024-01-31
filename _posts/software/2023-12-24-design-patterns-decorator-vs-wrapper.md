@@ -3,7 +3,8 @@ title: "Design Patterns • Decorator vs Wrapper"
 title_style: title2w
 section_style: article1
 category: software
-related: software
+tags:
+  - "design patterns"
 canonical_url: https://www.kapresoft.com/software/2023/12/24/design-patterns-decorator-vs-wrapper.html
 description: "Explore the nuances of Decorator vs Wrapper design patterns in software engineering, understanding their unique applications and differences."
 ---
