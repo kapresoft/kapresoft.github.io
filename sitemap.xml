@@ -843,4 +843,8 @@
         <loc>https://www.kapresoft.com/java/2024/01/29/spring-mockito-mockbean-vs-spybean.html</loc>
         <lastmod>2024-01-29</lastmod>
     </url>
+    <url>
+        <loc>https://www.kapresoft.com/java/2024/01/30/spring-boot-task-after-startup.html</loc>
+        <lastmod>2024-01-30</lastmod>
+    </url>
 </urlset>
