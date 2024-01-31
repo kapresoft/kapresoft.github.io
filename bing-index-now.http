@@ -8,7 +8,8 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
-    "{{site}}/java/2024/01/29/spring-mockito-mockbean-vs-spybean.html",
+    "{{site}}/java/2024/01/31/spring-handler-interceptor.html",
+    "{{site}}/java/2024/01/30/spring-boot-task-after-startup.html",
     "{{site}}"
   ]
 }
@@ -32,6 +33,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2024/01/31/spring-handler-interceptor.html",
     "{{site}}/java/2024/01/30/spring-boot-task-after-startup.html",
     "{{site}}/java/2024/01/29/spring-mockito-mockbean-vs-spybean.html",
     "{{site}}/java/2024/01/29/java-mockito-spy.html",
