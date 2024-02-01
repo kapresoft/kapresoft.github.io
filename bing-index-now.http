@@ -8,7 +8,7 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
-    "{{site}}/health/2024/01/31/health-benefits-turmeric.html",
+    "{{site}}/health/2024/02/01/health-benefits-ginger.html",
     "{{site}}"
   ]
 }
@@ -32,6 +32,7 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
     "{{site}}",
+    "{{site}}/health/2024/02/01/health-benefits-ginger.html",
     "{{site}}/health/2024/01/31/health-benefits-turmeric.html",
     "{{site}}/software/2024/01/31/template-method-vs-builder-pattern.html",
     "{{site}}/software/2024/01/31/template-method-vs-strategy-pattern.html",
