@@ -144,6 +144,24 @@ footer {
 }
 
 div.getty-image {text-align: center !important;margin-bottom: 1em;}
+%common-getty-image-left {
+  float: left; padding: 0 10px 0 0; margin: -9px 0 0 0;
+}
+%common-getty-image-right {
+  float: right; padding: 0 0 0 10px; margin: -9px 0 0 0;
+}
+div.getty-image-left {
+  &-200 { @extend %common-getty-image-left; width: 200px; }
+  &-250 { @extend %common-getty-image-left; width: 250px; }
+  &-350 { @extend %common-getty-image-left; width: 350px; }
+  &-400 { @extend %common-getty-image-left; width: 400px; }
+}
+div.getty-image-right {
+  &-200 { @extend %common-getty-image-right; width: 200px; }
+  &-250 { @extend %common-getty-image-right; width: 250px; }
+  &-350 { @extend %common-getty-image-right; width: 350px; }
+  &-400 { @extend %common-getty-image-right; width: 400px; }
+}
 div.uml-diagram {
   margin-bottom: 20px;
   img {
