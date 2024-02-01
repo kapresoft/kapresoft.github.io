@@ -80,7 +80,8 @@ last-modified-at:
 author:
   name: Antonio Lagnada
   twitter: deloy72
-logo: https://cdngh.kapresoft.com/img/kapresoft1-210x-09aaa6e.png
+#logo: https://cdngh.kapresoft.com/img/kapresoft1-210x-09aaa6e.png
+logo: https://cdngh.kapresoft.com/img/kapresoft1-100x-d250428.png
 
 twitter:
   username: deloy72
@@ -91,4 +92,5 @@ twitter:
 #  - https://jekyllrb.com/docs/configuration/front-matter-defaults/
 defaults:
   - values:
-      image: https://cdngh.kapresoft.com/img/kapresoft1-210x-09aaa6e.png
+      #image: https://cdngh.kapresoft.com/img/kapresoft1-210x-09aaa6e.png
+      image: https://cdngh.kapresoft.com/img/kapresoft1-100x-d250428.png
