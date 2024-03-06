@@ -8,8 +8,8 @@ Content-Type: application/json; charset=utf-8
   "key": "{{index-now-key}}",
   "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
-    "{{site}}/java/2024/02/03/java-private-interface-methods.html",
-    "{{site}}/food/2024/03/05/beef-short-ribs-dutch-oven.html",
+    "{{site}}/java/2024/03/06/spring-vs-spring-boot.html",
+    "{{site}}/java/2024/03/06/spring-core-best-practices.html",
     "{{site}}"
   ]
 }
@@ -33,6 +33,8 @@ Content-Type: application/json; charset=utf-8
   "keyLocation": "{{site}}/{{index-now-key}}.txt",
   "urlList": [
     "{{site}}",
+    "{{site}}/java/2024/03/06/spring-core-best-practices.html",
+    "{{site}}/java/2024/03/06/spring-vs-spring-boot.html",
     "{{site}}/food/2024/03/05/beef-short-ribs-dutch-oven.html",
     "{{site}}/java/2024/02/03/java-private-interface-methods.html",
     "{{site}}/health/2024/02/01/health-benefits-ginger.html",
