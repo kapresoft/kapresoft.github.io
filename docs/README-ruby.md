@@ -1,7 +1,17 @@
 ## Installation
 
-## Ruby Managment
-rbenv seems to work well
+## Brew
+```shell
+$ brew install ruby ruby-build
+```
+
+Override the system ruby by making it first on the path
+
+```shell
+export PATH=/opt/homebrew/Cellar/ruby/3.3.4/bin:$PATH
+```
+
+## Ruby Management (Not my favorite at the moment)
 
 ##### Install _rbenv_
 ```shell
@@ -13,7 +23,7 @@ $ brew install rbenv ruby-build
 Note that there's issues with rebenv on M1 macs
 
 ```shell
-$ rbenv install 3.0.0
+$ rbenv install 3.3.4
 ```
 ##### Switch to a Ruby Version
 ```shell
